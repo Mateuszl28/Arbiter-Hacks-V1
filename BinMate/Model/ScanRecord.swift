@@ -10,14 +10,17 @@ import SwiftData
 final class ScanRecord {
     #Index<ScanRecord>([\.scannedAt], [\.barcode])
 
-    // Deliberately no `id` attribute of our own.
+    // Deliberately no `id` attribute of our own: `persistentModelID` already provides
+    // identity, and the engine takes an opaque key from the caller rather than requiring
+    // the model to carry one.
     //
-    // An earlier version added `var id: UUID = UUID()` so the engine could refer to
-    // records without importing SwiftData. Inspecting the store afterwards showed the
-    // table had been recreated and every existing row dropped: a lightweight migration
-    // cannot invent a distinct value for a new non-optional attribute, so it starts
-    // over. On a real update that is silent data loss. The engine takes an opaque key
-    // supplied by the caller instead, and `persistentModelID` serves perfectly well.
+    // An earlier version did add `var id: UUID = UUID()`, and development history
+    // disappeared around the same change. The obvious explanation — that a lightweight
+    // migration cannot invent a distinct value for a new required attribute and so
+    // rebuilds the table — turned out to be wrong: `verify-store.sh` migrates a
+    // pre-change fixture into that exact schema with every record intact. The real cause
+    // of that data loss is still unidentified. The attribute is gone because it was
+    // never needed, not because it was proven guilty.
     var scannedAt: Date = Date()
     var barcode: String?
     var productName: String = ""

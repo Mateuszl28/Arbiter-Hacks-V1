@@ -143,6 +143,7 @@ Four suites, all runnable in seconds on any Mac, none needing a simulator:
 ./Tools/build.sh            # compile the app
 ./Tools/verify-bundle.sh    # load the built .app and validate every bundled resource
 ./Tools/verify-guess.sh     # photo-label to packaging-part mapping
+./Tools/verify-store.sh     # an older build's history still opens, intact and writable
 ./Tools/verify-api.sh       # live Open Food Facts calls (needs a network; not part of the build)
 ```
 
@@ -155,6 +156,14 @@ deposit multiplies correctly to 1.50 €.
 `verify-bundle.sh` loads the actual built `.app` and checks every ruleset and sample
 product is discoverable. This caught a real bug: **Xcode flattens resource folders**, so
 `Resources/Rules/*.json` lands in the bundle root, not in a `Rules/` subdirectory.
+
+`verify-store.sh` opens a history store cut from an **earlier** schema and checks every
+record, every field and the ability to write afterwards. It exists because development
+history once vanished during a schema change with every other suite still green — an
+empty history screen is indistinguishable from a fresh install. Notably, it also refuted
+the explanation I had assumed for that loss: migrating into the suspected schema
+preserves everything. The guard protects the property that matters (an older build's
+history must still open) rather than the mechanism I guessed at.
 
 `verify-guess.sh` checks the photo-label mapping, including that token matching is used
 rather than substring matching — otherwise *candle*, *candy*, *canyon* and *toucan* all

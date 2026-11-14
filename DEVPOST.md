@@ -142,15 +142,23 @@ calibrated `hasMinimumPrecision(_:forRecall:)` in, with a fallback to the strong
 labels. The same measurement killed my confidence percentage in the UI — "2% match"
 reads as broken — so it shows *likely / possible / long shot* instead.
 
-**A migration that quietly ate the data.** Building the take-back list, I added a `UUID`
-to the history model so the engine could refer to records without importing SwiftData.
-Everything compiled, every test passed, and the app looked fine — but the history was
-empty. Opening the store with `sqlite3` showed why: the table had been recreated and
-every existing row dropped. A lightweight migration cannot invent a distinct value for a
-new non-optional attribute, so it starts over. On a real update that is silent data loss.
-The attribute is gone; `persistentModelID` was always enough. The app also used to fall
-back to an in-memory store without telling anyone — that now shows up in Settings,
-because a fallback nobody can see is worse than the crash it avoids.
+**Data that vanished, and a diagnosis that was wrong.** Building the take-back list, my
+development history disappeared. Everything compiled, every suite was green, and an empty
+history screen looks exactly like a fresh install. Opening the store with `sqlite3`
+showed the table rebuilt with zero rows, and I blamed a `UUID` attribute I had just added
+to the model — a lightweight migration, I reasoned, cannot invent a distinct value for a
+new required attribute.
+
+Then I wrote the test to prove it, and the test refused to fail. Migrating a fixture cut
+from the *old* schema into that exact new schema preserves every record. My explanation
+was wrong, and I had already written it into a commit message.
+
+So the guard now protects the property that matters rather than the mechanism I guessed
+at: a build must be able to read history written by an earlier build, with every field
+intact and the store still writable afterwards. The real cause remains unidentified, and
+the code says so instead of carrying a confident story that my own test disproves. The
+app also used to fall back to an in-memory store silently — that now shows up in
+Settings, because a fallback nobody can see is worse than the crash it avoids.
 
 **Knowing when *not* to fall back.** Bundled sample products make the app usable offline,
 but serving one when the database genuinely says "this barcode doesn't exist" would be a
