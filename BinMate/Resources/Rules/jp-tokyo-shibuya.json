@@ -1,0 +1,144 @@
+{
+  "id": "jp-tokyo-shibuya",
+  "displayName": "Tokyo (Shibuya)",
+  "region": "Japan",
+  "flag": "🇯🇵",
+  "regionCode": "JP",
+  "latitude": 35.6618,
+  "longitude": 139.7041,
+  "compiledOn": "2026-11-14",
+  "sourceName": "Shibuya City — household waste separation guide",
+  "sourceURL": "https://www.city.shibuya.tokyo.jp/",
+  "defaultStreamID": "burnable",
+  "streams": [
+    {
+      "id": "pet-bottles",
+      "name": "PET bottles",
+      "localName": "ペットボトル",
+      "colorHex": "2196F3",
+      "symbol": "waterbottle",
+      "kind": "recycling"
+    },
+    {
+      "id": "plastic-packaging",
+      "name": "Plastic packaging",
+      "localName": "プラスチック製容器包装",
+      "colorHex": "FF8F00",
+      "symbol": "shippingbox",
+      "kind": "recycling"
+    },
+    {
+      "id": "cans-glass",
+      "name": "Cans & glass bottles",
+      "localName": "かん・びん",
+      "colorHex": "00ACC1",
+      "symbol": "cylinder",
+      "kind": "recycling"
+    },
+    {
+      "id": "paper",
+      "name": "Paper & cardboard",
+      "localName": "古紙",
+      "colorHex": "8D6E63",
+      "symbol": "newspaper",
+      "kind": "recycling"
+    },
+    {
+      "id": "burnable",
+      "name": "Burnable waste",
+      "localName": "可燃ごみ",
+      "colorHex": "E53935",
+      "symbol": "flame",
+      "kind": "residual"
+    },
+    {
+      "id": "non-burnable",
+      "name": "Non-burnable waste",
+      "localName": "不燃ごみ",
+      "colorHex": "607D8B",
+      "symbol": "cube",
+      "kind": "residual"
+    }
+  ],
+  "rules": [
+    {
+      "materials": ["en:pet-polyethylene-terephthalate"],
+      "shapes": ["en:bottle"],
+      "stream": "pet-bottles",
+      "instruction": "Take the cap and the label off, rinse it, then crush it flat.",
+      "caution": "The cap and label are a different stream — only the bottle itself counts as PET."
+    },
+    {
+      "materials": ["en:plastic"],
+      "shapes": [
+        "en:cap", "en:lid", "en:label", "en:sleeve", "en:film", "en:wrapper",
+        "en:tray", "en:bag", "en:seal", "en:pot", "en:cup", "en:box"
+      ],
+      "stream": "plastic-packaging",
+      "instruction": "Rinse it and put it out with plastic packaging, on the marked collection day.",
+      "caution": "Only packaging marked with the プラ symbol belongs here."
+    },
+    {
+      "materials": ["en:plastic"],
+      "stream": "burnable",
+      "instruction": "Burnable waste.",
+      "caution": "Plastic that is not container packaging is burned here, not recycled."
+    },
+    {
+      "materials": ["en:aluminium", "en:steel", "en:tinplate"],
+      "shapes": ["en:can"],
+      "stream": "cans-glass",
+      "instruction": "Rinse it and put it out with cans and bottles. Do not crush it.",
+      "caution": null
+    },
+    {
+      "materials": ["en:metal"],
+      "stream": "non-burnable",
+      "instruction": "Metal that is not a drinks can goes with non-burnable waste.",
+      "caution": null
+    },
+    {
+      "materials": ["en:glass"],
+      "shapes": ["en:bottle", "en:jar"],
+      "stream": "cans-glass",
+      "instruction": "Rinse it, take the cap off, and put it out with cans and bottles.",
+      "caution": null
+    },
+    {
+      "materials": ["en:glass"],
+      "stream": "non-burnable",
+      "instruction": "Non-burnable waste. Wrap anything broken in paper and mark it.",
+      "caution": "Only bottles and jars count as a resource — other glass does not."
+    },
+    {
+      "materials": ["en:beverage-carton"],
+      "stream": "paper",
+      "instruction": "Rinse it, cut it open, dry it flat, then put it out with paper.",
+      "caution": "Cartons with a foil lining are burnable, not paper."
+    },
+    {
+      "materials": ["en:composite"],
+      "stream": "burnable",
+      "instruction": "Mixed-material packaging is burnable here.",
+      "caution": null
+    },
+    {
+      "materials": ["en:paper-or-cardboard"],
+      "stream": "paper",
+      "instruction": "Flatten it and tie it with string for paper collection.",
+      "caution": "Anything greasy, waxed or food-soiled is burnable instead."
+    },
+    {
+      "materials": ["en:pla-polylactic-acid", "en:bio-based-plastic"],
+      "stream": "burnable",
+      "instruction": "Burnable waste.",
+      "caution": "There is no household composting collection here, so compostable plastic is simply burned."
+    },
+    {
+      "materials": ["en:wood", "en:cork"],
+      "stream": "burnable",
+      "instruction": "Small wooden and cork items are burnable.",
+      "caution": null
+    }
+  ]
+}

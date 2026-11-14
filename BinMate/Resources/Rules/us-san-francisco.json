@@ -1,0 +1,129 @@
+{
+  "id": "us-san-francisco",
+  "displayName": "San Francisco",
+  "region": "California, USA",
+  "flag": "🇺🇸",
+  "regionCode": "US",
+  "latitude": 37.7749,
+  "longitude": -122.4194,
+  "compiledOn": "2026-11-14",
+  "sourceName": "Recology San Francisco & SF Environment — three-bin guidance",
+  "sourceURL": "https://www.recology.com/recology-san-francisco/",
+  "defaultStreamID": "landfill",
+  "streams": [
+    {
+      "id": "crv",
+      "name": "Deposit return",
+      "localName": "CRV recycling centre",
+      "colorHex": "00897B",
+      "symbol": "arrow.uturn.backward.circle",
+      "kind": "deposit",
+      "depositAmount": 0.05,
+      "depositCurrencyCode": "USD"
+    },
+    {
+      "id": "recycle",
+      "name": "Recycling",
+      "localName": "Blue bin",
+      "colorHex": "1565C0",
+      "symbol": "arrow.3.trianglepath",
+      "kind": "recycling"
+    },
+    {
+      "id": "compost",
+      "name": "Compost",
+      "localName": "Green bin",
+      "colorHex": "2E7D32",
+      "symbol": "leaf",
+      "kind": "organic"
+    },
+    {
+      "id": "landfill",
+      "name": "Landfill",
+      "localName": "Black bin",
+      "colorHex": "37474F",
+      "symbol": "trash",
+      "kind": "residual"
+    },
+    {
+      "id": "hazardous",
+      "name": "Household hazardous waste",
+      "localName": "Drop-off only",
+      "colorHex": "8E44AD",
+      "symbol": "exclamationmark.triangle",
+      "kind": "dropOff"
+    }
+  ],
+  "rules": [
+    {
+      "materials": ["en:pet-polyethylene-terephthalate"],
+      "shapes": ["en:bottle"],
+      "stream": "crv",
+      "instruction": "Labelled CA REDEMPTION VALUE? A recycling centre pays you 5 cents for it.",
+      "caution": "The blue bin also accepts it — you just forfeit the nickel."
+    },
+    {
+      "materials": ["en:aluminium", "en:steel", "en:tinplate"],
+      "shapes": ["en:can"],
+      "stream": "crv",
+      "instruction": "Drinks cans carry CRV. 5 cents each at a recycling centre.",
+      "caution": null
+    },
+    {
+      "materials": ["en:ldpe-low-density-polyethylene", "en:hdpe-high-density-polyethylene"],
+      "shapes": ["en:film", "en:bag", "en:wrapper"],
+      "stream": "landfill",
+      "instruction": "Black bin, or take it to a grocery-store film drop-off.",
+      "caution": "Plastic film tangles the sorting machinery. Never put it in the blue bin."
+    },
+    {
+      "materials": ["en:plastic"],
+      "stream": "recycle",
+      "instruction": "Rigid plastic, empty and dry. Blue bin.",
+      "caution": null
+    },
+    {
+      "materials": ["en:pla-polylactic-acid", "en:bio-based-plastic"],
+      "stream": "compost",
+      "instruction": "Certified compostable plastic belongs in the green bin here.",
+      "caution": "Only if it carries a BPI compostable certification mark."
+    },
+    {
+      "materials": ["en:metal"],
+      "stream": "recycle",
+      "instruction": "Rinse and put it in the blue bin.",
+      "caution": null
+    },
+    {
+      "materials": ["en:composite"],
+      "stream": "recycle",
+      "instruction": "Cartons are accepted in the blue bin. Flatten them.",
+      "caution": null
+    },
+    {
+      "materials": ["en:paper-or-cardboard"],
+      "shapes": ["en:wrapper", "en:napkin", "en:plate"],
+      "stream": "compost",
+      "instruction": "Food-soiled paper goes in the green bin.",
+      "caution": null
+    },
+    {
+      "materials": ["en:paper-or-cardboard"],
+      "stream": "recycle",
+      "instruction": "Flatten boxes. Blue bin.",
+      "caution": "If it is greasy or food-soiled, it belongs in the green compost bin instead."
+    },
+    {
+      "materials": ["en:glass"],
+      "stream": "recycle",
+      "instruction": "All colours together. Caps off, then blue bin.",
+      "caution": null
+    },
+    {
+      "materials": ["en:wood", "en:cork"],
+      "stream": "compost",
+      "instruction": "Untreated wood and natural cork are compostable here.",
+      "caution": "Painted or treated wood is not — that is landfill."
+    }
+  ]
+}

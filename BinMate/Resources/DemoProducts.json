@@ -1,0 +1,106 @@
+{
+  "_comment": "Curated sample products so BinMate is fully usable with no network and no camera. Packaging breakdowns were assembled by hand from the physical items; they are samples, not Open Food Facts records, and the app labels them as such wherever they are shown.",
+  "products": [
+    {
+      "barcode": "5449000000996",
+      "name": "Cola, 500 ml bottle",
+      "brand": "Sample",
+      "components": [
+        {
+          "shape": "en:bottle",
+          "material": "en:pet-polyethylene-terephthalate",
+          "quantityPerUnit": "24 g"
+        },
+        {
+          "shape": "en:cap",
+          "material": "en:pp-polypropylene",
+          "quantityPerUnit": "2 g"
+        },
+        {
+          "shape": "en:label",
+          "material": "en:paper"
+        }
+      ]
+    },
+    {
+      "barcode": "3017620422003",
+      "name": "Hazelnut spread, 400 g jar",
+      "brand": "Sample",
+      "components": [
+        {
+          "shape": "en:jar",
+          "material": "en:clear-glass",
+          "quantityPerUnit": "220 g"
+        },
+        {
+          "shape": "en:lid",
+          "material": "en:pp-polypropylene"
+        },
+        {
+          "shape": "en:seal",
+          "material": "en:aluminium"
+        },
+        {
+          "shape": "en:label",
+          "material": "en:paper"
+        }
+      ]
+    },
+    {
+      "barcode": "4000000000017",
+      "name": "Fruit yogurt, 150 g pot",
+      "brand": "Sample",
+      "components": [
+        {
+          "shape": "en:pot",
+          "material": "en:ps-polystyrene"
+        },
+        {
+          "shape": "en:lid",
+          "material": "en:aluminium"
+        },
+        {
+          "shape": "en:sleeve",
+          "material": "en:non-corrugated-cardboard"
+        }
+      ]
+    },
+    {
+      "barcode": "4000000000031",
+      "name": "Salad bowl, compostable packaging",
+      "brand": "Sample",
+      "components": [
+        {
+          "shape": "en:pot",
+          "material": "en:pla-polylactic-acid",
+          "upstreamRecyclingHint": "Marked compostable by the producer"
+        },
+        {
+          "shape": "en:film",
+          "material": "en:pet-polyethylene-terephthalate"
+        },
+        {
+          "shape": "en:label",
+          "material": "en:coated-paper"
+        }
+      ]
+    },
+    {
+      "barcode": "4000000000048",
+      "name": "Sparkling water, 6 × 330 ml cans",
+      "brand": "Sample",
+      "components": [
+        {
+          "shape": "en:can",
+          "material": "en:aluminium",
+          "numberOfUnits": 6,
+          "quantityPerUnit": "13 g each"
+        },
+        {
+          "shape": "en:film",
+          "material": "en:ldpe-low-density-polyethylene"
+        }
+      ]
+    }
+  ]
+}

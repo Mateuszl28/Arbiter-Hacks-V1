@@ -1,0 +1,157 @@
+{
+  "id": "de-berlin",
+  "displayName": "Berlin",
+  "region": "Germany",
+  "flag": "🇩🇪",
+  "regionCode": "DE",
+  "latitude": 52.5200,
+  "longitude": 13.4050,
+  "compiledOn": "2026-11-14",
+  "sourceName": "BSR Berliner Stadtreinigung — separation guidance",
+  "sourceURL": "https://www.bsr.de/",
+  "defaultStreamID": "hausmuell",
+  "streams": [
+    {
+      "id": "pfand",
+      "name": "Deposit return",
+      "localName": "Pfandautomat",
+      "colorHex": "00897B",
+      "symbol": "arrow.uturn.backward.circle",
+      "kind": "deposit",
+      "depositAmount": 0.25,
+      "depositCurrencyCode": "EUR"
+    },
+    {
+      "id": "gelbe",
+      "name": "Packaging",
+      "localName": "Gelbe Tonne",
+      "colorHex": "F5C518",
+      "symbol": "arrow.3.trianglepath",
+      "kind": "recycling"
+    },
+    {
+      "id": "blaue",
+      "name": "Paper",
+      "localName": "Blaue Tonne",
+      "colorHex": "1565C0",
+      "symbol": "newspaper",
+      "kind": "recycling"
+    },
+    {
+      "id": "weissglas",
+      "name": "Clear glass",
+      "localName": "Weißglas",
+      "colorHex": "90A4AE",
+      "symbol": "wineglass",
+      "kind": "recycling"
+    },
+    {
+      "id": "buntglas",
+      "name": "Coloured glass",
+      "localName": "Buntglas",
+      "colorHex": "388E3C",
+      "symbol": "wineglass.fill",
+      "kind": "recycling"
+    },
+    {
+      "id": "biogut",
+      "name": "Organic waste",
+      "localName": "Biogut",
+      "colorHex": "6D4C41",
+      "symbol": "leaf",
+      "kind": "organic"
+    },
+    {
+      "id": "hausmuell",
+      "name": "Residual waste",
+      "localName": "Hausmüll",
+      "colorHex": "546E7A",
+      "symbol": "trash",
+      "kind": "residual"
+    },
+    {
+      "id": "recyclinghof",
+      "name": "Drop-off centre",
+      "localName": "Recyclinghof",
+      "colorHex": "8E44AD",
+      "symbol": "building.2",
+      "kind": "dropOff"
+    }
+  ],
+  "rules": [
+    {
+      "materials": ["en:pet-polyethylene-terephthalate"],
+      "shapes": ["en:bottle"],
+      "stream": "pfand",
+      "instruction": "Take it back to any shop that sells drinks and get 25 cents.",
+      "caution": "Do not crush it. The machine has to read the barcode and the shape."
+    },
+    {
+      "materials": ["en:aluminium", "en:steel", "en:tinplate"],
+      "shapes": ["en:can"],
+      "stream": "pfand",
+      "instruction": "Drinks cans carry a deposit. Return it to a shop for 25 cents.",
+      "caution": "Keep it intact — a crushed can is often rejected by the machine."
+    },
+    {
+      "materials": ["en:plastic"],
+      "stream": "gelbe",
+      "instruction": "Empty it and drop it in the yellow bin. No need to rinse.",
+      "caution": null
+    },
+    {
+      "materials": ["en:metal"],
+      "stream": "gelbe",
+      "instruction": "Metal packaging goes in the yellow bin.",
+      "caution": null
+    },
+    {
+      "materials": ["en:composite"],
+      "stream": "gelbe",
+      "instruction": "Flatten the carton — yellow bin, with the packaging.",
+      "caution": null
+    },
+    {
+      "materials": ["en:paper-or-cardboard"],
+      "stream": "blaue",
+      "instruction": "Flatten it and keep it dry.",
+      "caution": null
+    },
+    {
+      "materials": ["en:clear-glass"],
+      "stream": "weissglas",
+      "instruction": "Clear glass has its own container. Caps off.",
+      "caution": null
+    },
+    {
+      "materials": ["en:green-glass", "en:brown-glass"],
+      "stream": "buntglas",
+      "instruction": "Green and brown glass share the coloured container. Caps off.",
+      "caution": null
+    },
+    {
+      "materials": ["en:glass"],
+      "stream": "buntglas",
+      "instruction": "Caps off, then into the coloured glass container.",
+      "caution": "Berlin sorts glass by colour. If you cannot tell the colour, coloured glass is the safe choice."
+    },
+    {
+      "materials": ["en:pla-polylactic-acid", "en:bio-based-plastic"],
+      "stream": "hausmuell",
+      "instruction": "Residual waste.",
+      "caution": "Compostable plastics are rejected by the Biogut process here — they do not break down fast enough."
+    },
+    {
+      "materials": ["en:cork"],
+      "stream": "recyclinghof",
+      "instruction": "Cork is collected separately at drop-off points.",
+      "caution": null
+    },
+    {
+      "materials": ["en:wood"],
+      "stream": "hausmuell",
+      "instruction": "Small wooden items go in residual waste.",
+      "caution": null
+    }
+  ]
+}

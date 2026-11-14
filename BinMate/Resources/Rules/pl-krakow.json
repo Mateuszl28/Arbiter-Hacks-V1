@@ -1,0 +1,107 @@
+{
+  "id": "pl-krakow",
+  "displayName": "Kraków",
+  "region": "Poland",
+  "flag": "🇵🇱",
+  "regionCode": "PL",
+  "latitude": 50.0647,
+  "longitude": 19.9450,
+  "compiledOn": "2026-11-14",
+  "sourceName": "MPO Kraków — municipal segregation guidance",
+  "sourceURL": "https://mpo.krakow.pl/",
+  "defaultStreamID": "mixed",
+  "streams": [
+    {
+      "id": "plastic-metal",
+      "name": "Plastics & metals",
+      "localName": "Żółty pojemnik",
+      "colorHex": "F2C300",
+      "symbol": "arrow.3.trianglepath",
+      "kind": "recycling"
+    },
+    {
+      "id": "paper",
+      "name": "Paper",
+      "localName": "Niebieski pojemnik",
+      "colorHex": "1F6FB2",
+      "symbol": "newspaper",
+      "kind": "recycling"
+    },
+    {
+      "id": "glass",
+      "name": "Glass, all colours",
+      "localName": "Zielony pojemnik",
+      "colorHex": "2E7D32",
+      "symbol": "wineglass",
+      "kind": "recycling"
+    },
+    {
+      "id": "bio",
+      "name": "Organic waste",
+      "localName": "Brązowy pojemnik",
+      "colorHex": "6D4C41",
+      "symbol": "leaf",
+      "kind": "organic"
+    },
+    {
+      "id": "mixed",
+      "name": "Mixed waste",
+      "localName": "Czarny pojemnik",
+      "colorHex": "4A4A4A",
+      "symbol": "trash",
+      "kind": "residual"
+    },
+    {
+      "id": "pszok",
+      "name": "Drop-off centre",
+      "localName": "PSZOK",
+      "colorHex": "8E44AD",
+      "symbol": "building.2",
+      "kind": "dropOff"
+    }
+  ],
+  "rules": [
+    {
+      "materials": ["en:plastic"],
+      "stream": "plastic-metal",
+      "instruction": "Empty it and squash it flat so it takes less space.",
+      "caution": null
+    },
+    {
+      "materials": ["en:metal"],
+      "stream": "plastic-metal",
+      "instruction": "Rinse briefly and squash it flat.",
+      "caution": null
+    },
+    {
+      "materials": ["en:composite"],
+      "stream": "plastic-metal",
+      "instruction": "Flatten the carton and put it with plastics and metals.",
+      "caution": "Cartons are not paper in Poland — the blue bin is the wrong bin."
+    },
+    {
+      "materials": ["en:paper-or-cardboard"],
+      "stream": "paper",
+      "instruction": "Flatten boxes. Keep it dry.",
+      "caution": "Greasy or wet paper contaminates the whole batch — that goes to mixed waste."
+    },
+    {
+      "materials": ["en:glass"],
+      "stream": "glass",
+      "instruction": "All colours go in together here. Take the cap or cork off first.",
+      "caution": "No window glass, mirrors, ceramics or light bulbs."
+    },
+    {
+      "materials": ["en:pla-polylactic-acid", "en:bio-based-plastic"],
+      "stream": "mixed",
+      "instruction": "Put it in mixed waste.",
+      "caution": "Compostable plastic is not accepted in the brown bio bin here, despite the label."
+    },
+    {
+      "materials": ["en:wood", "en:cork"],
+      "stream": "mixed",
+      "instruction": "Small wooden and cork items go to mixed waste.",
+      "caution": null
+    }
+  ]
+}
