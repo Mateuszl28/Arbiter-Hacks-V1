@@ -136,7 +136,7 @@ lets a user calibrate their trust, and doubles as a to-do list for ruleset maint
 
 ## Verification
 
-Four suites, all runnable in seconds on any Mac, none needing a simulator:
+Five suites, all runnable in seconds on any Mac, none needing a simulator:
 
 ```bash
 ./Tools/verify-rules.sh     # engine logic against the real city JSON
