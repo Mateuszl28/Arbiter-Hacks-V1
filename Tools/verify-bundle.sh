@@ -34,6 +34,7 @@ swiftc -Onone -o "$OUT/bundle-checks" \
   "$ROOT/BinMate/Engine/TakeBackList.swift" \
   "$ROOT/BinMate/Services/SampleProducts.swift" \
   "$ROOT/BinMate/Services/QuickItem.swift" \
+  "$ROOT/BinMateWidget/CityConfiguration.swift" \
   "$ROOT/Tools/BundleLoadChecks/main.swift"
 
 BINMATE_APP="$APP" \

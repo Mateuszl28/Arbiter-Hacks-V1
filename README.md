@@ -358,19 +358,30 @@ predicate lives in `Shared` and is asserted for every city, along with the requi
 that the catch-all bin always appears — a bin list that omits "everything else" looks
 more decisive than the rules actually are.
 
-**Known limitation, verified not assumed.** Following the app's selected city needs the
-`group.app.binmate` App Group, and App Group entitlements require a provisioning profile.
-An unsigned or ad-hoc simulator build gets none — `codesign -d --entitlements` returns an
-empty dict either way — so in the simulator the widget falls back to the first bundled
-city rather than tracking the app. On a signed build it follows the selection. The
-fallback is a real city with real rules, so the widget is never wrong, only possibly
-about the wrong place.
+**The city is configured on the widget**, not inherited from the app — long-press, pick
+a city. That design came out of a constraint rather than a preference: following the
+app's choice needs the `group.app.binmate` App Group, and App Group entitlements require
+a provisioning profile, so an unsigned or ad-hoc build gets none. `codesign -d
+--entitlements` returns an empty dict for both. Rather than ship a widget that silently
+showed the wrong place, the widget carries its own setting, which works in every build —
+and turns out to be better anyway, since someone who travels can keep one widget per
+city. The app's choice is still read as the *starting* value where the entitlement is
+available.
 
-What *is* verified here: the extension builds, embeds into the app at
-`PlugIns/BinMateWidget.appex` with its own copy of the rules, declares
-`com.apple.widgetkit-extension`, and is registered by the system — `pluginkit -mv` inside
-the simulator lists `app.binmate.BinMate.widget`. Its rendered appearance on a home
-screen has not been seen.
+The picker is a `WidgetConfigurationIntent` backed by the same rulesets the app loads, so
+the list it offers can never drift from what the app can actually sort against. That is
+asserted: every bundled city appears, a stored id round-trips back to its city, an id
+from a ruleset that no longer ships drops out instead of resurrecting as a blank entry,
+and a freshly added widget lands on a city that really loaded.
+
+Writing that test immediately found a gap — `CityEntityQuery` read `Bundle.main` with no
+seam, which is right inside the extension and empty in a host harness. It now takes an
+injectable library like every other loader in the project.
+
+What is verified: the extension builds, embeds at `PlugIns/BinMateWidget.appex` with its
+own copy of the rules, declares `com.apple.widgetkit-extension`, exports its intent
+metadata, and is registered by the system — `pluginkit -mv` inside the simulator lists
+`app.binmate.BinMate.widget`. Its rendered appearance on a home screen has not been seen.
 
 ## Siri and Shortcuts
 

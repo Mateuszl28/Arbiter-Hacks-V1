@@ -60,8 +60,9 @@ instruction and the thing people get wrong.
   a search understands synonyms — type `tetra` and you learn that in Kraków a drinks
   carton goes in the *yellow* bin, not with paper. Bins with no rules say so rather than
   looking complete.
-- **A home screen widget.** What the local bins mean, at a glance — kerbside bins only,
-  because a deposit machine is a destination, not something standing in your kitchen.
+- **A home screen widget.** What the bins mean in a city you pick, at a glance — kerbside
+  bins only, because a deposit machine is a destination, not something standing in your
+  kitchen. Keep one per city if you travel.
 - **Answers from Siri.** *"Hey Siri, which bin in BinMate?"* — spoken, instant, without
   opening the app, because the rules are bundled and resolving them is a pure function.
 - **Works with no network at all.** Every rule ships in the app.
@@ -161,6 +162,14 @@ intact and the store still writable afterwards. The real cause remains unidentif
 the code says so instead of carrying a confident story that my own test disproves. The
 app also used to fall back to an in-memory store silently — that now shows up in
 Settings, because a fallback nobody can see is worse than the crash it avoids.
+
+**A constraint that turned into the better design.** I built the widget to follow the
+city chosen in the app, which needs an App Group. Then `codesign -d --entitlements`
+showed an empty dict on both unsigned and ad-hoc builds: App Group entitlements require a
+provisioning profile, so the widget was silently showing whichever city happened to be
+first. I could have documented that and moved on. Instead the widget now carries its own
+city, configured by long-pressing it — no entitlement needed, works in every build, and
+better anyway, because someone who travels can keep one widget per city.
 
 **Knowing when *not* to fall back.** Bundled sample products make the app usable offline,
 but serving one when the database genuinely says "this barcode doesn't exist" would be a

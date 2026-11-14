@@ -545,5 +545,47 @@ let emptyDefaults = UserDefaults(suiteName: "app.binmate.widgetcheck")!
 emptyDefaults.removePersistentDomain(forName: "app.binmate.widgetcheck")
 check(library.fallbackCity != nil, "the widget needs a fallback city when none is stored")
 
+// MARK: - Widget configuration
+
+// The widget carries its own city because the App Group that would carry the app's
+// choice needs a provisioning profile an unsigned build does not have. This is the list
+// the configuration sheet offers, and it must never drift from what the app can sort
+// against.
+print("\nWidget city picker:")
+
+// In the extension this reads the appex bundle; here it must be pointed at the built
+// app bundle, because a host test binary carries no rules of its own.
+CityEntityQuery.library = library
+
+let offered = try await CityEntityQuery().suggestedEntities()
+check(
+    offered.count == library.cities.count,
+    "the picker should offer every bundled city, got \(offered.count) of \(library.cities.count)"
+)
+check(
+    Set(offered.map(\.id)) == Set(library.cities.map(\.id)),
+    "the picker's ids must match the loaded rulesets exactly"
+)
+for entity in offered {
+    print("  \(entity.name) — \(entity.regionCode)")
+}
+
+// Round-tripping an id is what WidgetKit does when it restores a configured widget.
+let restored = try await CityEntityQuery().entities(for: ["jp-tokyo-shibuya"])
+check(restored.first?.name == "Tokyo (Shibuya)", "a stored id should restore to its city")
+
+// An id from a ruleset that no longer ships must drop out rather than crash or
+// resurrect as a blank entry.
+let stale = try await CityEntityQuery().entities(for: ["xx-nowhere"])
+check(stale.isEmpty, "an unknown city id should resolve to nothing")
+
+// A freshly added widget must land on a real city rather than an empty face.
+let fallback = await CityEntityQuery().defaultResult()
+check(fallback != nil, "a new widget needs a default city")
+check(
+    library.city(id: fallback?.id ?? "") != nil,
+    "the default city must be one that actually loaded"
+)
+
 print(failures == 0 ? "\nAll bundle checks passed." : "\n\(failures) check(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

@@ -1,3 +1,4 @@
+import AppIntents
 import SwiftUI
 import WidgetKit
 
@@ -8,13 +9,12 @@ import WidgetKit
 /// someone throws away, and keeping SwiftData out of it means the widget can never put
 /// that store at risk.
 ///
-/// One caveat worth knowing before trusting a screenshot: reading the app's choice needs
-/// the `group.app.binmate` App Group, and App Group entitlements require a provisioning
-/// profile. An unsigned or ad-hoc simulator build therefore gets *no* entitlements —
-/// verified with `codesign -d --entitlements`, which returns an empty dict — so the
-/// widget falls back to the first bundled city instead of following the app. On a signed
-/// build it tracks the app's selection. The fallback is a real city with real rules, so
-/// the widget is never wrong, only potentially about the wrong place.
+/// The city comes from the widget's own configuration rather than from the app, because
+/// the App Group that would carry the app's choice needs a provisioning profile that an
+/// unsigned build does not have — `codesign -d --entitlements` returns an empty dict
+/// there. Configuring the widget works in every build, and lets someone who travels keep
+/// one widget per city. The app's choice is still used as the starting value when it is
+/// readable.
 struct BinsEntry: TimelineEntry {
     var date: Date
     var cityName: String
@@ -25,31 +25,40 @@ struct BinsEntry: TimelineEntry {
     var isUnavailable: Bool
 }
 
-struct BinsProvider: TimelineProvider {
+struct BinsProvider: AppIntentTimelineProvider {
     /// Loaded once per process rather than per timeline request — parsing five JSON
     /// files on every refresh would be wasteful in an extension with a tight budget.
     private static let library = RulesLibrary.loadBundled()
 
     func placeholder(in context: Context) -> BinsEntry {
-        Self.entry(at: Date())
+        Self.entry(at: Date(), cityID: nil)
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (BinsEntry) -> Void) {
-        completion(Self.entry(at: Date()))
+    func snapshot(for configuration: SelectCityIntent, in context: Context) async -> BinsEntry {
+        Self.entry(at: Date(), cityID: configuration.city?.id)
     }
 
-    func getTimeline(in context: Context, completion: @escaping (Timeline<BinsEntry>) -> Void) {
-        // The rules are bundled and the city changes only when the user says so, so there
-        // is nothing to poll for. Refresh on a slow heartbeat and rely on the app
-        // reloading timelines when the city actually changes.
-        let entry = Self.entry(at: Date())
+    func timeline(for configuration: SelectCityIntent, in context: Context) async -> Timeline<BinsEntry> {
+        // Nothing to poll for: the rules are bundled and the city changes only when the
+        // user says so. A slow heartbeat is enough, and reconfiguring the widget
+        // refreshes it immediately.
+        let entry = Self.entry(at: Date(), cityID: configuration.city?.id)
         let next = Calendar.current.date(byAdding: .hour, value: 6, to: entry.date) ?? entry.date
-        completion(Timeline(entries: [entry], policy: .after(next)))
+        return Timeline(entries: [entry], policy: .after(next))
     }
 
-    static func entry(at date: Date, library: RulesLibrary = BinsProvider.library) -> BinsEntry {
-        let stored = SharedDefaults.selectedCityID() ?? ""
-        guard let city = library.city(id: stored) ?? library.fallbackCity else {
+    static func entry(
+        at date: Date,
+        cityID: String?,
+        library: RulesLibrary = BinsProvider.library
+    ) -> BinsEntry {
+        // Configured city first; then whatever the app stored, when the App Group is
+        // readable; then anything at all, so a widget is never blank.
+        let resolved = cityID.flatMap { library.city(id: $0) }
+            ?? SharedDefaults.selectedCityID().flatMap { library.city(id: $0) }
+            ?? library.fallbackCity
+
+        guard let city = resolved else {
             return BinsEntry(
                 date: date,
                 cityName: "No city",
@@ -125,12 +134,12 @@ struct BinMateWidget: Widget {
     let kind = "BinMateBins"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: BinsProvider()) { entry in
+        AppIntentConfiguration(kind: kind, intent: SelectCityIntent.self, provider: BinsProvider()) { entry in
             BinsWidgetView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
         .configurationDisplayName("Your bins")
-        .description("What the bins mean where you are. Tap to scan something.")
+        .description("What the bins mean in a city you choose. Tap to scan something.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
