@@ -14,7 +14,7 @@ let barcodes = CommandLine.arguments.count > 1
         "0000000000000",  // Should be a clean "not found", not a crash
     ]
 
-let rulesBase = ProcessInfo.processInfo.environment["BINMATE_RULES"] ?? "BinMate/Resources/Rules"
+let rulesBase = ProcessInfo.processInfo.environment["BINMATE_RULES"] ?? "Shared/Rules"
 let cities = try ["pl-krakow.json", "de-berlin.json", "us-san-francisco.json"].map {
     try JSONDecoder().decode(
         CityRuleset.self,

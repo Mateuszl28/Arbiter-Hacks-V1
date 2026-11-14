@@ -13,7 +13,8 @@ final class AppModel {
 
     /// Selected city, persisted across launches.
     var selectedCityID: String {
-        didSet { UserDefaults.standard.set(selectedCityID, forKey: Keys.city) }
+        // Written through SharedDefaults so the widget sees the same choice.
+        didSet { SharedDefaults.setSelectedCityID(selectedCityID) }
     }
 
     /// Hard offline mode. Exposed in Settings because a demo that cannot be made
@@ -43,7 +44,7 @@ final class AppModel {
         self.samples = samples
 
         let defaults = UserDefaults.standard
-        let stored = defaults.string(forKey: Keys.city)
+        let stored = SharedDefaults.selectedCityID()
         // Fall back to the first available city rather than trusting a stored id that
         // may refer to a ruleset removed in an update.
         self.selectedCityID = library.city(id: stored ?? "")?.id

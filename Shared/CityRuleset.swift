@@ -91,3 +91,14 @@ struct CityRuleset: Identifiable, Hashable, Codable, Sendable {
 
     var subtitle: String { "\(displayName), \(region)" }
 }
+
+extension CityRuleset {
+    /// Streams you can simply put something into, without making a special trip.
+    ///
+    /// Deposit returns and drop-off points are destinations, not bins. A glanceable
+    /// widget listing "Pfandautomat" beside "Gelbe Tonne" would imply there is one
+    /// standing in the kitchen. The app's take-back list is where those belong.
+    var kerbsideStreams: [WasteStream] {
+        streams.filter { $0.kind != .deposit && $0.kind != .dropOff }
+    }
+}

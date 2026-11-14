@@ -13,12 +13,12 @@ OUT="$(mktemp -d)"
 trap 'rm -rf "$OUT"' EXIT
 
 swiftc -Onone -o "$OUT/guess-checks" \
-  "$ROOT/BinMate/Model/TaxonomyID.swift" \
+  "$ROOT/Shared/TaxonomyID.swift" \
   "$ROOT/BinMate/Model/MaterialTaxonomy.swift" \
   "$ROOT/BinMate/Model/PackagingComponent.swift" \
-  "$ROOT/BinMate/Model/CityRuleset.swift" \
+  "$ROOT/Shared/CityRuleset.swift" \
   "$ROOT/BinMate/Engine/RulesEngine.swift" \
   "$ROOT/BinMate/Services/PackagingGuess.swift" \
   "$ROOT/Tools/GuessChecks/main.swift"
 
-BINMATE_RULES="$ROOT/BinMate/Resources/Rules" "$OUT/guess-checks"
+BINMATE_RULES="$ROOT/Shared/Rules" "$OUT/guess-checks"

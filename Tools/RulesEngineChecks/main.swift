@@ -9,7 +9,7 @@ func loadRuleset(_ path: String) throws -> CityRuleset {
 }
 
 // Set by Tools/verify-rules.sh so the checks are not tied to one machine.
-let base = (ProcessInfo.processInfo.environment["BINMATE_RULES"] ?? "BinMate/Resources/Rules")
+let base = (ProcessInfo.processInfo.environment["BINMATE_RULES"] ?? "Shared/Rules")
     + "/"
 let cities = try [
     "pl-krakow.json",

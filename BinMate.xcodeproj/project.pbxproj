@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		0000000000000000000000AB /* BinMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0000000000000000000000C1 /* BinMateWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BinMateWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +17,45 @@
 			path = BinMate;
 			sourceTree = "<group>";
 		};
+		0000000000000000000000B0 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		0000000000000000000000B1 /* BinMateWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BinMateWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0000000000000000000000C5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0000000000000000000000C6 /* BinMateWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXBuildFile section */
+		0000000000000000000000C6 /* BinMateWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0000000000000000000000C1 /* BinMateWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0000000000000000000000AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000000000000000000C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				0000000000000000000000AF /* BinMate */,
+				0000000000000000000000B0 /* Shared */,
+				0000000000000000000000B1 /* BinMateWidget */,
 				0000000000000000000000AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				0000000000000000000000AB /* BinMate.app */,
+				0000000000000000000000C1 /* BinMateWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,13 +94,16 @@
 				0000000000000000000000AC /* Sources */,
 				0000000000000000000000AD /* Frameworks */,
 				0000000000000000000000AE /* Resources */,
+				0000000000000000000000C5 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0000000000000000000000C9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				0000000000000000000000AF /* BinMate */,
+				0000000000000000000000B0 /* Shared */,
 			);
 			name = BinMate;
 			packageProductDependencies = (
@@ -70,7 +112,48 @@
 			productReference = 0000000000000000000000AB /* BinMate.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0000000000000000000000C0 /* BinMateWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0000000000000000000000C7 /* Build configuration list for PBXNativeTarget "BinMateWidget" */;
+			buildPhases = (
+				0000000000000000000000C2 /* Sources */,
+				0000000000000000000000C4 /* Frameworks */,
+				0000000000000000000000C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0000000000000000000000B1 /* BinMateWidget */,
+				0000000000000000000000B0 /* Shared */,
+			);
+			name = BinMateWidget;
+			packageProductDependencies = (
+			);
+			productName = BinMateWidget;
+			productReference = 0000000000000000000000C1 /* BinMateWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
+
+/* Begin PBXTargetDependency section */
+		0000000000000000000000C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0000000000000000000000C0 /* BinMateWidget */;
+			targetProxy = 0000000000000000000000CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		0000000000000000000000CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0000000000000000000000A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0000000000000000000000C0;
+			remoteInfo = BinMateWidget;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXProject section */
 		0000000000000000000000A1 /* Project object */ = {
@@ -100,6 +183,7 @@
 			projectRoot = "";
 			targets = (
 				0000000000000000000000A2 /* BinMate */,
+				0000000000000000000000C0 /* BinMateWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -112,10 +196,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0000000000000000000000C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0000000000000000000000AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000000000000000000C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -203,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BinMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -233,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BinMate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
@@ -258,6 +358,62 @@
 			};
 			name = Release;
 		};
+		0000000000000000000000CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				CODE_SIGN_ENTITLEMENTS = BinMateWidget.entitlements;
+				INFOPLIST_FILE = BinMateWidget-Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BinMate;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.binmate.BinMate.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0000000000000000000000CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				CODE_SIGN_ENTITLEMENTS = BinMateWidget.entitlements;
+				INFOPLIST_FILE = BinMateWidget-Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BinMate;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.binmate.BinMate.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +431,15 @@
 			buildConfigurations = (
 				0000000000000000000000A7 /* Debug */,
 				0000000000000000000000A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0000000000000000000000C7 /* Build configuration list for PBXNativeTarget "BinMateWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0000000000000000000000CB /* Debug */,
+				0000000000000000000000CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -105,7 +105,7 @@ check(
 )
 
 // 12. Suggestions must convert into components the rules engine can actually resolve.
-let rulesBase = ProcessInfo.processInfo.environment["BINMATE_RULES"] ?? "BinMate/Resources/Rules"
+let rulesBase = ProcessInfo.processInfo.environment["BINMATE_RULES"] ?? "Shared/Rules"
 let cityFiles = ["pl-krakow.json", "de-berlin.json", "us-san-francisco.json", "jp-tokyo-shibuya.json"]
 let cities = try cityFiles.map {
     try JSONDecoder().decode(

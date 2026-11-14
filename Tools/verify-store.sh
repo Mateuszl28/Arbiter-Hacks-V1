@@ -14,10 +14,10 @@ OUT="$(mktemp -d)"
 trap 'rm -rf "$OUT"' EXIT
 
 swiftc -Onone -o "$OUT/store-checks" \
-  "$ROOT/BinMate/Model/TaxonomyID.swift" \
+  "$ROOT/Shared/TaxonomyID.swift" \
   "$ROOT/BinMate/Model/MaterialTaxonomy.swift" \
   "$ROOT/BinMate/Model/PackagingComponent.swift" \
-  "$ROOT/BinMate/Model/CityRuleset.swift" \
+  "$ROOT/Shared/CityRuleset.swift" \
   "$ROOT/BinMate/Model/ScanRecord.swift" \
   "$ROOT/Tools/StoreMigrationChecks/main.swift"
 

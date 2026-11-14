@@ -94,8 +94,10 @@ struct BinLookup: Sendable {
     }
 
     /// The city the user last chose, falling back the same way `AppModel` does.
-    func currentCity(defaults: UserDefaults = .standard) -> CityRuleset? {
-        let stored = defaults.string(forKey: "selectedCityID") ?? ""
+    func currentCity(defaults: UserDefaults? = nil) -> CityRuleset? {
+        let stored = defaults?.string(forKey: SharedDefaults.selectedCityKey)
+            ?? SharedDefaults.selectedCityID()
+            ?? ""
         return library.city(id: stored) ?? library.fallbackCity
     }
 
@@ -148,7 +150,7 @@ struct BinLookup: Sendable {
         }
     }
 
-    func answer(for item: QuickItem, defaults: UserDefaults = .standard) -> Answer? {
+    func answer(for item: QuickItem, defaults: UserDefaults? = nil) -> Answer? {
         guard let city = currentCity(defaults: defaults) else { return nil }
         return Answer(
             city: city,

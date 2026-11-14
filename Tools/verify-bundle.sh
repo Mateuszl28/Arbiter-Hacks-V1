@@ -20,14 +20,15 @@ OUT="$(mktemp -d)"
 trap 'rm -rf "$OUT"' EXIT
 
 swiftc -Onone -o "$OUT/bundle-checks" \
-  "$ROOT/BinMate/Model/TaxonomyID.swift" \
+  "$ROOT/Shared/TaxonomyID.swift" \
   "$ROOT/BinMate/Model/MaterialTaxonomy.swift" \
   "$ROOT/BinMate/Model/PackagingComponent.swift" \
-  "$ROOT/BinMate/Model/CityRuleset.swift" \
+  "$ROOT/Shared/CityRuleset.swift" \
   "$ROOT/BinMate/Model/CurrencyFormatting.swift" \
   "$ROOT/BinMate/Model/StreamContrast.swift" \
   "$ROOT/BinMate/Engine/RulesEngine.swift" \
-  "$ROOT/BinMate/Engine/RulesLibrary.swift" \
+  "$ROOT/Shared/RulesLibrary.swift" \
+  "$ROOT/Shared/SharedDefaults.swift" \
   "$ROOT/BinMate/Engine/CityGuide.swift" \
   "$ROOT/BinMate/Engine/NearestCity.swift" \
   "$ROOT/BinMate/Engine/TakeBackList.swift" \

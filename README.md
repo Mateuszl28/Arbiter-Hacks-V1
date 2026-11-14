@@ -345,6 +345,33 @@ selected: a bottle scanned in Berlin is worth 25 cents at a German machine no ma
 where its owner is standing today. Euros and dollars are totalled separately, and a city
 with no deposit scheme produces nothing rather than a zero.
 
+## Home screen widget
+
+A glance at what the bins mean where you are, in small and medium sizes. It reads the
+bundled rulesets and the selected city, and nothing else — deliberately **no SwiftData**:
+a widget has no business reading a list of what someone throws away, and keeping the
+store out of reach means the widget can never endanger it.
+
+It lists only *kerbside* bins. A deposit machine is a destination, not a bin, and showing
+"Pfandautomat" beside "Gelbe Tonne" would imply one is standing in the kitchen. That
+predicate lives in `Shared` and is asserted for every city, along with the requirement
+that the catch-all bin always appears — a bin list that omits "everything else" looks
+more decisive than the rules actually are.
+
+**Known limitation, verified not assumed.** Following the app's selected city needs the
+`group.app.binmate` App Group, and App Group entitlements require a provisioning profile.
+An unsigned or ad-hoc simulator build gets none — `codesign -d --entitlements` returns an
+empty dict either way — so in the simulator the widget falls back to the first bundled
+city rather than tracking the app. On a signed build it follows the selection. The
+fallback is a real city with real rules, so the widget is never wrong, only possibly
+about the wrong place.
+
+What *is* verified here: the extension builds, embeds into the app at
+`PlugIns/BinMateWidget.appex` with its own copy of the rules, declares
+`com.apple.widgetkit-extension`, and is registered by the system — `pluginkit -mv` inside
+the simulator lists `app.binmate.BinMate.widget`. Its rendered appearance on a home
+screen has not been seen.
+
 ## Siri and Shortcuts
 
 *"Hey Siri, which bin in BinMate?"* — answered without opening the app, because the rules

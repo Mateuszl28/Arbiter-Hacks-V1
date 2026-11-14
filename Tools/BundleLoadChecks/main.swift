@@ -513,5 +513,37 @@ check(
     "Kraków has no deposit scheme, so there is nothing to reclaim"
 )
 
+// MARK: - What the widget shows
+
+// The widget lists bins at a glance. A deposit machine or a drop-off centre is a
+// destination, not a bin, and listing one beside "Gelbe Tonne" would imply there is one
+// standing in the kitchen.
+print("\nWidget bin lists:")
+
+for city in library.cities {
+    let kerbside = city.kerbsideStreams
+    check(
+        kerbside.allSatisfy { $0.kind != .deposit && $0.kind != .dropOff },
+        "\(city.displayName): the widget list must contain no deposit or drop-off stream"
+    )
+    check(
+        kerbside.count >= 2,
+        "\(city.displayName): a glance should show at least two bins, got \(kerbside.count)"
+    )
+    // The catch-all has to be there: "everything else" is the most useful line on a bin
+    // list, and omitting it would make the widget look more decisive than the rules are.
+    check(
+        kerbside.contains { $0.id == city.defaultStreamID },
+        "\(city.displayName): the default bin should appear in the widget list"
+    )
+    let named = kerbside.compactMap(\.localName).filter { !$0.isEmpty }
+    print("  \(city.flag) \(city.displayName): \(kerbside.count) bins (\(named.count) with a local name)")
+}
+
+// Every city must survive a fresh install, where no city has been chosen yet.
+let emptyDefaults = UserDefaults(suiteName: "app.binmate.widgetcheck")!
+emptyDefaults.removePersistentDomain(forName: "app.binmate.widgetcheck")
+check(library.fallbackCity != nil, "the widget needs a fallback city when none is stored")
+
 print(failures == 0 ? "\nAll bundle checks passed." : "\n\(failures) check(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

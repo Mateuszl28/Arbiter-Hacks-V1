@@ -1,24 +1,5 @@
 import SwiftUI
 
-extension Color {
-    /// Builds a colour from the `RRGGBB` strings used in the city rulesets.
-    ///
-    /// Falls back to grey rather than crashing, because the rulesets are data and data
-    /// can be wrong; a wrong colour is a cosmetic bug, a crash is not.
-    init(hex: String) {
-        let cleaned = hex.trimmingCharacters(in: CharacterSet(charactersIn: "# ")).uppercased()
-        guard cleaned.count == 6, let value = UInt32(cleaned, radix: 16) else {
-            self = .gray
-            return
-        }
-        self.init(
-            red: Double((value >> 16) & 0xFF) / 255,
-            green: Double((value >> 8) & 0xFF) / 255,
-            blue: Double(value & 0xFF) / 255
-        )
-    }
-}
-
 extension WasteStream {
     var color: Color { Color(hex: colorHex) }
 
