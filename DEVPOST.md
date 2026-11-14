@@ -47,9 +47,11 @@ instruction and the thing people get wrong.
 - **Checks its own rules for contradictions.** A rule shadowed by a broader one above it
   never fires, and nothing else would notice — the answer would just be wrong, with a
   confident explanation attached.
-- **Says how sure it is.** Every verdict is labelled *specific local rule*, *inherited
-  general rule*, or *no specific rule — default bin*. The failure mode of every sorting
-  app is confident nonsense; this lets you calibrate.
+- **Says how sure it is, and why not more.** Uncertainty is a set of distinct reasons
+  rather than a percentage: the material is unknown, there is no rule for it specifically,
+  the rule covers any part in a city that narrows other rules by part, the ruleset is two
+  years old. Several apply at once, and each carries a remedy — a warning with nothing to
+  do about it is noise.
 - **Lets you correct it.** Packaging data is crowd-sourced and often thin or wrong, so
   when a record looks incomplete BinMate says so and lets you add the parts you can
   actually see. The correction updates the verdict and the history entry.

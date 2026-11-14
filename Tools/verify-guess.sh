@@ -18,6 +18,7 @@ swiftc -Onone -o "$OUT/guess-checks" \
   "$ROOT/BinMate/Model/PackagingComponent.swift" \
   "$ROOT/Shared/CityRuleset.swift" \
   "$ROOT/BinMate/Engine/RulesEngine.swift" \
+  "$ROOT/BinMate/Engine/Uncertainty.swift" \
   "$ROOT/BinMate/Services/PackagingGuess.swift" \
   "$ROOT/Tools/GuessChecks/main.swift"
 

@@ -1,0 +1,7507 @@
+[
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bag",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bottle",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:box",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:aluminium",
+    "quality" : "exactWithShape",
+    "shape" : "en:can",
+    "stream" : "pfand"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:cap",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:film",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:jar",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:label",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:pot",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:bag",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:bottle",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:box",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:can",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:cap",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:film",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:jar",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:label",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:pot",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:brown-glass",
+    "quality" : "exactMaterial",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:brown-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:brown-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:brown-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:brown-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:brown-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:brown-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:brown-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:brown-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:brown-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:clear-glass",
+    "quality" : "exactMaterial",
+    "stream" : "weissglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:clear-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "weissglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:clear-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "weissglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:clear-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "weissglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:clear-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "weissglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:clear-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "weissglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:clear-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "weissglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:clear-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "weissglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:clear-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "weissglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:clear-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "weissglas"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "stream" : "recyclinghof"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "recyclinghof"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "recyclinghof"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "recyclinghof"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "recyclinghof"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "recyclinghof"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "recyclinghof"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "recyclinghof"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "recyclinghof"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "recyclinghof"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:green-glass",
+    "quality" : "exactMaterial",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:green-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:green-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:green-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:green-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:green-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:green-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:green-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:green-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:green-glass",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "buntglas"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "blaue"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "exactWithShape",
+    "shape" : "en:bottle",
+    "stream" : "pfand"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bag",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bottle",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:box",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:steel",
+    "quality" : "exactWithShape",
+    "shape" : "en:can",
+    "stream" : "pfand"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:cap",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:film",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:jar",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:label",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "de-berlin",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:pot",
+    "stream" : "gelbe"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "high",
+    "city" : "de-berlin",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "hausmuell"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bag",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bottle",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:box",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:aluminium",
+    "quality" : "exactWithShape",
+    "shape" : "en:can",
+    "stream" : "cans-glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:cap",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:film",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:jar",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:label",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:pot",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:beverage-carton",
+    "quality" : "exactMaterial",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:beverage-carton",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:beverage-carton",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:beverage-carton",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:beverage-carton",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:beverage-carton",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:beverage-carton",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:beverage-carton",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:beverage-carton",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:beverage-carton",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bag",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bottle",
+    "stream" : "cans-glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:box",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:can",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:cap",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:film",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:jar",
+    "stream" : "cans-glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:label",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:pot",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bag",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bottle",
+    "stream" : "cans-glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:box",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:can",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:cap",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:film",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:jar",
+    "stream" : "cans-glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:label",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:pot",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bag",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bottle",
+    "stream" : "cans-glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:box",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:can",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:cap",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:film",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:jar",
+    "stream" : "cans-glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:label",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:pot",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "exactWithShape",
+    "shape" : "en:bottle",
+    "stream" : "pet-bottles"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "plastic-packaging"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bag",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bottle",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:box",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:steel",
+    "quality" : "exactWithShape",
+    "shape" : "en:can",
+    "stream" : "cans-glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:cap",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:film",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:jar",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:label",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:pot",
+    "stream" : "non-burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "high",
+    "city" : "jp-tokyo-shibuya",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "burnable"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bag",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bottle",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:box",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:can",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:cap",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:film",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:jar",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:label",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:pot",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:bag",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:bottle",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:box",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:can",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:cap",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:film",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:jar",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:label",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:pot",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bag",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bottle",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:box",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:can",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:cap",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:film",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:jar",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:label",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:pot",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bag",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bottle",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:box",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:can",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:cap",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:film",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:jar",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:label",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:pot",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bag",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bottle",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:box",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:can",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:cap",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:film",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:jar",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:label",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:pot",
+    "stream" : "glass"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bag",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bottle",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:box",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:can",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:cap",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:film",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:jar",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:label",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "pl-krakow",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:pot",
+    "stream" : "plastic-metal"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "high",
+    "city" : "pl-krakow",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "mixed"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bag",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bottle",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:aluminium",
+    "quality" : "exactWithShape",
+    "shape" : "en:can",
+    "stream" : "deposit"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:film",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:bag",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:bottle",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:can",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:film",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bag",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bottle",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:can",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:film",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bag",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bottle",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:can",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:film",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bag",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bottle",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:can",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:film",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "exactWithShape",
+    "shape" : "en:bag",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "exactWithShape",
+    "shape" : "en:film",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "exactWithShape",
+    "shape" : "en:bag",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "exactWithShape",
+    "shape" : "en:film",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "paper"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "exactWithShape",
+    "shape" : "en:bottle",
+    "stream" : "deposit"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bag",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bottle",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:box",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:steel",
+    "quality" : "exactWithShape",
+    "shape" : "en:can",
+    "stream" : "deposit"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:cap",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:film",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:jar",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:label",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-new-york-city",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:pot",
+    "stream" : "mgp"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-new-york-city",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "trash"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:aluminium",
+    "quality" : "exactWithShape",
+    "shape" : "en:can",
+    "stream" : "crv"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:aluminium",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:beverage-carton",
+    "quality" : "inherited(en:composite)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:brown-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:cardboard",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:clear-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:coated-paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:composite",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:cork",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:green-glass",
+    "quality" : "inherited(en:glass)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "exactWithShape",
+    "shape" : "en:bag",
+    "stream" : "landfill"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "exactWithShape",
+    "shape" : "en:film",
+    "stream" : "landfill"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:hdpe-high-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "exactWithShape",
+    "shape" : "en:bag",
+    "stream" : "landfill"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "exactWithShape",
+    "shape" : "en:film",
+    "stream" : "landfill"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ldpe-low-density-polyethylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:other-plastics",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:paper",
+    "quality" : "inherited(en:paper-or-cardboard)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "exactWithShape",
+    "shape" : "en:bottle",
+    "stream" : "crv"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pet-polyethylene-terephthalate",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:pla-polylactic-acid",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:pp-polypropylene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:can",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:ps-polystyrene",
+    "quality" : "inherited(en:plastic)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bag",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:bottle",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:box",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:steel",
+    "quality" : "exactWithShape",
+    "shape" : "en:can",
+    "stream" : "crv"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:cap",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:film",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:jar",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:label",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "limited",
+    "city" : "us-san-francisco",
+    "material" : "en:steel",
+    "quality" : "inherited(en:metal)",
+    "shape" : "en:pot",
+    "stream" : "recycle"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:bag",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:bottle",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:box",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:can",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:cap",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:film",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:jar",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:label",
+    "stream" : "compost"
+  },
+  {
+    "certainty" : "high",
+    "city" : "us-san-francisco",
+    "material" : "en:wood",
+    "quality" : "exactMaterial",
+    "shape" : "en:pot",
+    "stream" : "compost"
+  }
+]

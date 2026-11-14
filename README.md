@@ -155,6 +155,27 @@ Every line is checkable against the object in your hand, and it names the rule a
 source that produced the answer. An app that says "yellow bin" and cannot say why is
 asking to be trusted on authority; this one can be argued with, which is the point.
 
+### Uncertainty is a set of reasons, not a score
+
+A percentage would be easier to display and worth less. A PP cap in a city whose ruleset
+is two years old, matched by a rule that covers any part in a city that *does* narrow
+other rules by part, is uncertain for three separate reasons — and collapsing them into
+"73% confident" throws away exactly what a person could act on.
+
+So the engine reports them individually, each with a remedy:
+
+- **The material is not one BinMate knows** — the ancestry walk had nothing to climb, so
+  the fallback was a shrug, not a considered general rule. *Describe the part yourself.*
+- **No rule for this material specifically** — a broader ancestor rule applied.
+- **No rule at all** — the city's catch-all. *Worth checking with your local service.*
+- **The rule covers any part** — but this city narrows *other* rules for this material by
+  part, so the part plausibly matters here.
+- **The ruleset may be stale** — measured against `compiledOn`, not assumed.
+
+Several can apply at once, and the overall certainty is derived from them rather than
+stored, so the two can never drift apart. Every reason must carry a remedy: a warning
+with nothing to do about it is noise.
+
 ### Rules can contradict each other, so they are checked
 
 Cities being data is only an advantage if the data can be checked. A rule written in good
@@ -171,15 +192,16 @@ that cannot fail is decoration.
 
 ## Verification
 
-Five suites, all runnable in seconds on any Mac, none needing a simulator:
+Six suites, all runnable in seconds on any Mac, none needing a simulator:
 
 ```bash
-./Tools/verify-rules.sh     # engine logic against the real city JSON
-./Tools/build.sh            # compile the app
-./Tools/verify-bundle.sh    # load the built .app and validate every bundled resource
-./Tools/verify-guess.sh     # photo-label to packaging-part mapping
-./Tools/verify-store.sh     # an older build's history still opens, intact and writable
-./Tools/verify-api.sh       # live Open Food Facts calls (needs a network; not part of the build)
+./Tools/verify-rules.sh       # engine logic against the real city JSON
+./Tools/build.sh              # compile the app
+./Tools/verify-bundle.sh      # load the built .app and validate every bundled resource
+./Tools/verify-guess.sh       # photo-label to packaging-part mapping
+./Tools/verify-store.sh       # an older build's history still opens, intact and writable
+./Tools/verify-regression.sh  # 950 known cases still resolve exactly as recorded
+./Tools/verify-api.sh         # live Open Food Facts calls (needs a network; not in the build)
 ```
 
 `verify-rules.sh` asserts, among other things, that shape-specific rules beat material
@@ -199,6 +221,19 @@ empty history screen is indistinguishable from a fresh install. Notably, it also
 the explanation I had assumed for that loss: migrating into the suspected schema
 preserves everything. The guard protects the property that matters (an older build's
 history must still open) rather than the mechanism I guessed at.
+
+`verify-regression.sh` resolves **950 cases** — every picker material against ten shapes
+in all five cities — and diffs them against a recorded baseline. Rules being data is the
+design's strength and its exposure: one line of JSON can re-route answers for materials
+nobody was thinking about. Inserting a single broad `plastic → mixed waste` rule at the
+top of Kraków's file changes **60 cases**, and the only symptom in the app would be users
+being told something different.
+
+A change is not automatically a failure — most are intended. Not knowing is what this
+prevents. It pairs with the conflict detector, which catches the same edit from the other
+end: the regression lab shows the blast radius, the conflict detector names the cause
+("rule 2 is unreachable for Plastic: rule 1 matches it first"). Both were verified by
+deliberately breaking a ruleset and watching them fire.
 
 `verify-guess.sh` checks the photo-label mapping, including that token matching is used
 rather than substring matching — otherwise *candle*, *candy*, *canyon* and *toucan* all

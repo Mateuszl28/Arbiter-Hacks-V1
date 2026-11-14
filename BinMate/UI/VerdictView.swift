@@ -366,9 +366,10 @@ struct PartRow: View {
 
             HStack(spacing: 8) {
                 TagPill(
-                    text: verdict.quality.label,
-                    symbol: verdict.quality.symbol,
-                    tint: verdict.quality == .cityDefault ? .orange : .secondary
+                    text: verdict.certainty.label,
+                    symbol: verdict.certainty.symbol,
+                    tint: verdict.certainty == .high ? .secondary
+                        : (verdict.certainty == .low ? .orange : .secondary)
                 )
                 Button(showingWhy ? "Hide reasoning" : "Why?") {
                     withAnimation(.snappy) { showingWhy.toggle() }
@@ -391,6 +392,30 @@ struct PartRow: View {
     /// disagreeing with it is possible, which is the point.
     private var reasoning: some View {
         VStack(alignment: .leading, spacing: 8) {
+            // Why it is not fully certain, before how it was decided — that is the part
+            // a person acts on. Several reasons can apply at once, and collapsing them
+            // into one number would throw away exactly what makes them actionable.
+            if !verdict.uncertainty.isEmpty {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("Why not full confidence?")
+                        .font(.caption.weight(.semibold))
+                    ForEach(verdict.uncertainty, id: \.self) { reason in
+                        HStack(alignment: .top, spacing: 6) {
+                            Text("•").font(.caption2).foregroundStyle(.secondary)
+                            VStack(alignment: .leading, spacing: 1) {
+                                Text(reason.summary).font(.caption)
+                                Text(reason.remedy)
+                                    .font(.caption2)
+                                    .foregroundStyle(.tertiary)
+                            }
+                        }
+                    }
+                }
+                .padding(.bottom, 2)
+
+                Divider()
+            }
+
             ForEach(verdict.explanation.steps) { step in
                 HStack(alignment: .firstTextBaseline, spacing: 8) {
                     Text(step.label)

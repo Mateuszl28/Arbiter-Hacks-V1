@@ -196,5 +196,73 @@ for (city, instruction) in zip(cities, bottleInstructions) {
     print("    \(city.flag) \(city.displayName): \(instruction)")
 }
 
+// 13. Uncertainty is a set of reasons, not a score. Several can apply at once, and each
+// has to name something the user can act on.
+print("\n--- uncertainty ---")
+
+let berlinEngine = RulesEngine(ruleset: cities[1])
+
+// A PET bottle in Berlin: exact material AND exact shape. Nothing to flag.
+let certainVerdict = berlinEngine.verdict(for: bottle.components[0])
+check(certainVerdict.uncertainty.isEmpty, "an exact material+shape match should flag nothing")
+check(certainVerdict.certainty == .high, "and should read as confident")
+
+// The PP cap inherits the general plastic rule, and Berlin *does* narrow other plastic
+// rules by part — so both reasons apply.
+let capVerdict2 = berlinEngine.verdict(for: bottle.components[1])
+check(
+    capVerdict2.uncertainty.contains { if case .noRuleForMaterial = $0 { return true }; return false },
+    "an inherited match should say there is no rule for the material itself"
+)
+check(capVerdict2.certainty == .limited, "inherited should be limited, not low")
+for reason in capVerdict2.uncertainty { print("  cap: \(reason.summary)") }
+
+// A material nobody has described is a different situation from one with no rule, and
+// must be worded differently — the ancestry walk had nothing to climb.
+let alien = PackagingComponent(material: "en:moon-rock")
+let alienVerdict = berlinEngine.verdict(for: alien)
+check(
+    alienVerdict.uncertainty.contains { if case .materialNotRecognised = $0 { return true }; return false },
+    "an unknown material should be reported as unrecognised, not merely unruled"
+)
+check(
+    alienVerdict.uncertainty.contains { if case .noRuleAtAll = $0 { return true }; return false },
+    "and also as having no rule"
+)
+check(alienVerdict.certainty == .low, "an unrecognised material should read as low confidence")
+check(alienVerdict.uncertainty.count >= 2, "two distinct problems should produce two reasons")
+for reason in alienVerdict.uncertainty { print("  unknown: \(reason.summary)") }
+
+// "The rule ignores the part" must only fire where the part could plausibly matter.
+// Kraków writes no shape-narrowed rules at all, so a cap there is simply covered.
+let krakowCap = RulesEngine(ruleset: cities[0]).verdict(for: bottle.components[1])
+check(
+    !krakowCap.uncertainty.contains { if case .ruleIgnoresPart = $0 { return true }; return false },
+    "a city that never narrows by part should not warn that the part was ignored"
+)
+
+// Staleness is measured, not assumed. A ruleset compiled two years from the test date
+// must be flagged; today's must not.
+let future = Calendar.current.date(byAdding: .month, value: 25, to: Date(timeIntervalSince1970: 1_763_000_000))!
+let stale = berlinEngine.uncertainty(
+    for: bottle.components[0],
+    verdict: certainVerdict,
+    now: future
+)
+check(
+    stale.contains { if case .rulesetMayBeStale = $0 { return true }; return false },
+    "a ruleset 25 months old should be flagged as possibly stale"
+)
+check(
+    berlinEngine.uncertainty(for: bottle.components[0], verdict: certainVerdict, now: Date(timeIntervalSince1970: 1_763_000_000)).isEmpty,
+    "a freshly compiled ruleset should not be flagged"
+)
+
+// Every reason must offer a remedy. A warning with nothing to do about it is noise.
+for reason in alienVerdict.uncertainty + capVerdict2.uncertainty + stale {
+    check(!reason.remedy.isEmpty, "every reason needs a remedy")
+    check(!reason.summary.isEmpty, "every reason needs a summary")
+}
+
 print(failures == 0 ? "\nAll assertions passed." : "\n\(failures) assertion(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

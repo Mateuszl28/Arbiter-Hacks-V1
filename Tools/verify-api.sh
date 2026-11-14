@@ -18,6 +18,7 @@ swiftc -Onone -o "$OUT/api-checks" \
   "$ROOT/BinMate/Model/PackagingComponent.swift" \
   "$ROOT/Shared/CityRuleset.swift" \
   "$ROOT/BinMate/Engine/RulesEngine.swift" \
+  "$ROOT/BinMate/Engine/Uncertainty.swift" \
   "$ROOT/BinMate/Services/OpenFoodFactsClient.swift" \
   "$ROOT/Tools/APIChecks/main.swift"
 

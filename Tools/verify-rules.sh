@@ -17,6 +17,7 @@ swiftc -Onone -o "$OUT/rules-checks" \
   "$ROOT/BinMate/Model/PackagingComponent.swift" \
   "$ROOT/Shared/CityRuleset.swift" \
   "$ROOT/BinMate/Engine/RulesEngine.swift" \
+  "$ROOT/BinMate/Engine/Uncertainty.swift" \
   "$ROOT/Tools/RulesEngineChecks/main.swift"
 
 BINMATE_RULES="$ROOT/Shared/Rules" "$OUT/rules-checks"

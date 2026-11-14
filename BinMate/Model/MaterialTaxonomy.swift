@@ -139,6 +139,16 @@ enum MaterialTaxonomy {
         displayNames[canonical(id)] ?? canonical(id).humanized
     }
 
+    /// Whether the taxonomy has ever heard of this material.
+    ///
+    /// Distinct from "has no rule": an unknown material means even the ancestry walk had
+    /// nothing to climb, so the fallback was not a considered general rule but a shrug.
+    /// The two deserve different wording, and a user can act on the difference.
+    static func isKnown(_ id: TaxonomyID) -> Bool {
+        let canonical = canonical(id)
+        return displayNames[canonical] != nil || parents[canonical] != nil
+    }
+
     /// Materials offered in the manual picker, ordered by how often household packaging
     /// actually uses them rather than alphabetically.
     static let pickerMaterials: [TaxonomyID] = [

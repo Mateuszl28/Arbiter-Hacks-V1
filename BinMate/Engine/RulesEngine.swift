@@ -49,6 +49,8 @@ struct BinVerdict: Identifiable, Hashable, Sendable {
     var quality: MatchQuality
     /// Why this verdict came out the way it did, in the engine's own terms.
     var explanation: Explanation
+    /// Every reason this answer deserves a second look. Often more than one.
+    var uncertainty: [UncertaintyReason] = []
 
     /// The decision, laid out.
     ///
@@ -155,7 +157,18 @@ struct RulesEngine: Sendable {
         product.components.map(verdict(for:))
     }
 
+    /// Resolves, then annotates with why the answer might not be the last word.
+    private func annotated(_ verdict: BinVerdict, for component: PackagingComponent) -> BinVerdict {
+        var result = verdict
+        result.uncertainty = uncertainty(for: component, verdict: verdict)
+        return result
+    }
+
     func verdict(for component: PackagingComponent) -> BinVerdict {
+        annotated(resolve(component), for: component)
+    }
+
+    private func resolve(_ component: PackagingComponent) -> BinVerdict {
         let ancestry = MaterialTaxonomy.ancestry(of: component.material)
 
         guard let match = bestMatch(for: component) else {
