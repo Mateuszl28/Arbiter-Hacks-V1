@@ -16,6 +16,8 @@ struct VerdictView: View {
     @State private var didAttemptSave = false
     @State private var correction: ScannedProduct?
     @State private var showingCorrection = false
+    /// What this product's packaging looked like the last time it was scanned, if ever.
+    @State private var previousComponents: [PackagingComponent]?
 
     /// What is actually on screen: the user's correction if they made one.
     private var activeProduct: ScannedProduct { correction ?? product }
@@ -35,6 +37,7 @@ struct VerdictView: View {
                         StreamCard(stream: group.stream, verdicts: group.verdicts)
                     }
 
+                    packagingChangeNote
                     attentionNote
                     thinDataNote
 
@@ -54,7 +57,10 @@ struct VerdictView: View {
         .navigationTitle("Where it goes")
         .navigationBarTitleDisplayMode(.inline)
         .background(Color(.systemGroupedBackground))
-        .task { saveToHistoryOnce() }
+        .task {
+            loadPreviousScan()
+            saveToHistoryOnce()
+        }
         // Confirms the lookup landed, and marks each city switch as a deliberate change.
         .sensoryFeedback(.success, trigger: activeProduct.id)
         .sensoryFeedback(.selection, trigger: app.selectedCityID)
@@ -184,6 +190,59 @@ struct VerdictView: View {
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(Color.orange.opacity(0.1), in: RoundedRectangle(cornerRadius: 12))
+        }
+    }
+
+    /// Producers change packaging and rarely announce it. Every scan is already kept, so
+    /// the app is in a position to notice — and noticing matters because a changed
+    /// material can change the bin, which is exactly when someone is relying on the habit
+    /// they formed last time.
+    @ViewBuilder
+    private var packagingChangeNote: some View {
+        if let previousComponents, let engine {
+            let diff = PackagingDiff.between(previous: previousComponents, current: activeProduct.components)
+            let moving = diff.binAffecting(under: engine)
+
+            if !diff.isEmpty {
+                VStack(alignment: .leading, spacing: 6) {
+                    Label(
+                        moving.isEmpty
+                            ? "The packaging changed since you last scanned this"
+                            : "The packaging changed — and some of it now goes somewhere else",
+                        systemImage: moving.isEmpty ? "clock.arrow.2.circlepath" : "exclamationmark.arrow.circlepath"
+                    )
+                    .font(.footnote.weight(.semibold))
+
+                    ForEach(diff.changes, id: \.self) { change in
+                        Text("• " + change.summary)
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .background(
+                    (moving.isEmpty ? Color.secondary : Color.orange).opacity(0.1),
+                    in: RoundedRectangle(cornerRadius: 12)
+                )
+            }
+        }
+    }
+
+    /// The most recent earlier scan of this exact barcode.
+    private func loadPreviousScan() {
+        guard previousComponents == nil, let barcode = product.barcode else { return }
+        var descriptor = FetchDescriptor<ScanRecord>(
+            predicate: #Predicate { $0.barcode == barcode },
+            sortBy: [SortDescriptor(\.scannedAt, order: .reverse)]
+        )
+        descriptor.fetchLimit = 1
+        guard let earlier = try? context.fetch(descriptor).first else { return }
+        let components = earlier.components
+        // Only interesting if it actually differs; an identical re-scan is not news.
+        if components != product.components, !components.isEmpty {
+            previousComponents = components
         }
     }
 

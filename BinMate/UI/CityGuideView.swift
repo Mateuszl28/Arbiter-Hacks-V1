@@ -147,6 +147,8 @@ struct CityGuideView: View {
                         .foregroundStyle(finding.severity == .error ? Color.orange : .secondary)
                     }
                 }
+                coverageSummary(ruleset)
+
                 Text("Compiled \(ruleset.compiledOn) from \(ruleset.sourceName). Not an official source — verify anything that matters with your local waste service.")
             }
             .font(.caption)
@@ -156,6 +158,30 @@ struct CityGuideView: View {
                 Link(destination: url) {
                     Label("Open the source", systemImage: "safari")
                         .font(.footnote)
+                }
+            }
+        }
+    }
+}
+
+private extension CityGuideView {
+    /// Where this city's ruleset is thin, worst first.
+    ///
+    /// The bottleneck on this project is research per city, not code. Knowing which
+    /// missing rule actually costs something is what turns "add more rules" into a
+    /// queue — a gap on PET bottles matters, a gap on cork is a footnote.
+    @ViewBuilder
+    func coverageSummary(_ ruleset: CityRuleset) -> some View {
+        let analysis = CoverageAnalysis.analyse(cities: [ruleset])
+        let counts = analysis.byCity.first
+
+        if let counts {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Covers \(counts.specific) of \(counts.specific + counts.inherited + counts.missing) common materials with a rule of their own; \(counts.inherited) fall back to a broader rule, \(counts.missing) to the default bin.")
+
+                let worst = analysis.gaps.filter { $0.level == .none }.prefix(4)
+                if !worst.isEmpty {
+                    Text("Biggest gaps: " + worst.map { MaterialTaxonomy.displayName(for: $0.material) }.joined(separator: ", ") + ".")
                 }
             }
         }

@@ -696,5 +696,105 @@ check(
     "the specific-before-general order is correct and must not be reported"
 )
 
+// MARK: - Packaging change detection
+
+// Producers change packaging and rarely announce it. Matching is by part rather than by
+// position, because contributors list components in no order and matching on index would
+// report nonsense every time somebody reordered a record.
+print("\nPackaging changes:")
+
+let oldBottle = [
+    PackagingComponent(shape: "en:bottle", material: "en:clear-glass"),
+    PackagingComponent(shape: "en:cap", material: "en:pp-polypropylene"),
+    PackagingComponent(shape: "en:label", material: "en:paper"),
+]
+let newBottle = [
+    // Same three parts, but the bottle is now plastic.
+    PackagingComponent(shape: "en:cap", material: "en:pp-polypropylene"),
+    PackagingComponent(shape: "en:label", material: "en:paper"),
+    PackagingComponent(shape: "en:bottle", material: "en:pet-polyethylene-terephthalate"),
+]
+
+let diff = PackagingDiff.between(previous: oldBottle, current: newBottle)
+check(diff.changes.count == 1, "only the bottle changed, got \(diff.changes.count) change(s)")
+check(
+    diff.changes.contains { if case .materialChanged = $0 { return true }; return false },
+    "a swapped material should read as a change, not an add plus a remove"
+)
+for change in diff.changes { print("  \(change.summary)") }
+
+// Reordering alone must report nothing. This is the whole reason matching is by part.
+let reordered = Array(oldBottle.reversed())
+check(
+    PackagingDiff.between(previous: oldBottle, current: reordered).isEmpty,
+    "reordering the same components must not be reported as a change"
+)
+check(
+    PackagingDiff.between(previous: oldBottle, current: oldBottle).isEmpty,
+    "an identical rescan is not news"
+)
+
+// Added and removed parts.
+let withSeal = oldBottle + [PackagingComponent(shape: "en:seal", material: "en:aluminium")]
+check(
+    PackagingDiff.between(previous: oldBottle, current: withSeal).changes.count == 1,
+    "a new part should be one change"
+)
+check(
+    PackagingDiff.between(previous: withSeal, current: oldBottle).changes.contains {
+        if case .removed = $0 { return true }; return false
+    },
+    "a vanished part should be reported as removed"
+)
+
+// A count change is a change, but never moves a bin.
+let sixPack = [PackagingComponent(shape: "en:can", material: "en:aluminium", numberOfUnits: 6)]
+let fourPack = [PackagingComponent(shape: "en:can", material: "en:aluminium", numberOfUnits: 4)]
+let countDiff = PackagingDiff.between(previous: sixPack, current: fourPack)
+check(countDiff.changes.count == 1, "a quantity change is a change")
+if let berlin = library.city(id: "de-berlin") {
+    check(
+        countDiff.binAffecting(under: RulesEngine(ruleset: berlin)).isEmpty,
+        "a quantity change must not be reported as moving a bin"
+    )
+    // Glass to PET in Berlin really does move the bin — glass container to deposit return.
+    let moving = diff.binAffecting(under: RulesEngine(ruleset: berlin))
+    check(!moving.isEmpty, "glass → PET in Berlin should be flagged as moving the bin")
+    print("  bin-affecting in Berlin: \(moving.count) of \(diff.changes.count)")
+}
+
+// MARK: - Coverage and knowledge gaps
+
+// The bottleneck here is research per city, not code. Counting gaps without weighting
+// them would point the work at whatever is alphabetically first.
+print("\nRule coverage:")
+
+let coverage = CoverageAnalysis.analyse(cities: library.cities)
+for entry in coverage.byCity.sorted(by: { $0.specific > $1.specific }) {
+    print("  \(entry.cityName): \(entry.specific) specific, \(entry.inherited) general, \(entry.missing) uncovered")
+}
+
+let common = MaterialTaxonomy.pickerMaterials.count
+for entry in coverage.byCity {
+    check(
+        entry.specific + entry.inherited + entry.missing == common,
+        "\(entry.cityName): every common material must be accounted for exactly once"
+    )
+}
+
+// Gaps must be ordered worst-first, then by how common the material is — not
+// alphabetically, or the queue points at the wrong work.
+if coverage.gaps.count > 1 {
+    let levels = coverage.gaps.map(\.level.rawValue)
+    check(levels == levels.sorted(), "gaps should be ordered worst level first")
+}
+if let worst = coverage.gaps.first {
+    print("  most urgent gap: \(worst.summary) (\(worst.priority) priority)")
+}
+check(
+    coverage.gaps.allSatisfy { $0.level != .specific },
+    "a material with its own rule is not a gap"
+)
+
 print(failures == 0 ? "\nAll bundle checks passed." : "\n\(failures) check(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

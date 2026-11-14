@@ -176,6 +176,37 @@ Several can apply at once, and the overall certainty is derived from them rather
 stored, so the two can never drift apart. Every reason must carry a remedy: a warning
 with nothing to do about it is noise.
 
+### It notices when packaging changes
+
+Producers change packaging and rarely announce it. A bottle that was glass last year is
+PET now; a cap switches polymer. Every scan is already kept, so the app is in a position
+to notice — and noticing matters because a changed material can change the bin, which is
+exactly the moment someone is relying on the habit they formed last time.
+
+Rescanning a product whose packaging has changed says so, and distinguishes changes that
+**move a bin** from ones that do not. Comparison is by *part*, not by position:
+contributors list components in no particular order, and matching on index would report
+nonsense every time somebody reordered a record. That is asserted — reordering the same
+three components reports nothing.
+
+### Where each ruleset is thin, worst first
+
+The bottleneck on this project is research per city, not code. So the rule book reports
+its own coverage, and ranks the gaps by how much they cost — a gap on PET bottles matters,
+a gap on cork is a footnote:
+
+| City | Own rule | General rule | Uncovered |
+|---|---|---|---|
+| Berlin | 7 | 12 | 0 |
+| Tokyo (Shibuya) | 5 | 14 | 0 |
+| Kraków | 4 | 15 | 0 |
+| New York City | 4 | 15 | 0 |
+| San Francisco | 4 | 15 | 0 |
+
+No common material falls through to a default bin in any city — the ancestry fallback is
+doing its job. Most resolve through a broader rule rather than one of their own, which is
+usually correct and occasionally a gap worth closing.
+
 ### Rules can contradict each other, so they are checked
 
 Cities being data is only an advantage if the data can be checked. A rule written in good

@@ -28,6 +28,8 @@ swiftc -Onone -o "$OUT/bundle-checks" \
   "$ROOT/BinMate/Model/StreamContrast.swift" \
   "$ROOT/BinMate/Engine/RulesEngine.swift" \
   "$ROOT/BinMate/Engine/Uncertainty.swift" \
+  "$ROOT/BinMate/Engine/PackagingDiff.swift" \
+  "$ROOT/BinMate/Engine/CoverageAnalysis.swift" \
   "$ROOT/Shared/RulesLibrary.swift" \
   "$ROOT/Shared/SharedDefaults.swift" \
   "$ROOT/Shared/DeepLink.swift" \

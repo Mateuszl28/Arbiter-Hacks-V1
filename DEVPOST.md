@@ -52,6 +52,12 @@ instruction and the thing people get wrong.
   the rule covers any part in a city that narrows other rules by part, the ruleset is two
   years old. Several apply at once, and each carries a remedy — a warning with nothing to
   do about it is noise.
+- **Notices when packaging changes.** Rescan something and it tells you if the producer
+  changed the packaging since last time — and whether that moves a part to a different
+  bin.
+- **Knows where its own rules are thin.** Each city's rule book reports how many common
+  materials have a rule of their own versus falling back to a broader one, and ranks the
+  gaps by how much they cost.
 - **Lets you correct it.** Packaging data is crowd-sourced and often thin or wrong, so
   when a record looks incomplete BinMate says so and lets you add the parts you can
   actually see. The correction updates the verdict and the history entry.
