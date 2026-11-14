@@ -30,6 +30,7 @@ swiftc -Onone -o "$OUT/bundle-checks" \
   "$ROOT/BinMate/Engine/Uncertainty.swift" \
   "$ROOT/BinMate/Engine/PackagingDiff.swift" \
   "$ROOT/BinMate/Engine/CoverageAnalysis.swift" \
+  "$ROOT/BinMate/Engine/DecisionRecord.swift" \
   "$ROOT/Shared/RulesLibrary.swift" \
   "$ROOT/Shared/SharedDefaults.swift" \
   "$ROOT/Shared/DeepLink.swift" \

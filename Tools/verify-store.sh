@@ -18,6 +18,10 @@ swiftc -Onone -o "$OUT/store-checks" \
   "$ROOT/BinMate/Model/MaterialTaxonomy.swift" \
   "$ROOT/BinMate/Model/PackagingComponent.swift" \
   "$ROOT/Shared/CityRuleset.swift" \
+  "$ROOT/BinMate/Engine/RulesEngine.swift" \
+  "$ROOT/BinMate/Engine/Uncertainty.swift" \
+  "$ROOT/Shared/RulesLibrary.swift" \
+  "$ROOT/BinMate/Engine/DecisionRecord.swift" \
   "$ROOT/BinMate/Model/ScanRecord.swift" \
   "$ROOT/Tools/StoreMigrationChecks/main.swift"
 

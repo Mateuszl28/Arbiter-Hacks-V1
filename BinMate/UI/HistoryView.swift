@@ -67,6 +67,11 @@ struct HistoryRow: View {
                 Text("\(record.scannedAt.formatted(date: .abbreviated, time: .shortened)) · \(record.cityName)")
                     .font(.caption)
                     .foregroundStyle(.secondary)
+
+                // History is an account of what was actually said. If the rules have been
+                // corrected since, the scans they affected are exactly the ones worth
+                // mentioning — and the only ones the app can mention honestly.
+                reviewNote
             }
 
             Spacer(minLength: 0)
@@ -82,6 +87,32 @@ struct HistoryRow: View {
         }
         .padding(.vertical, 2)
         .accessibilityElement(children: .combine)
+    }
+
+    @ViewBuilder
+    private var reviewNote: some View {
+        switch DecisionReview.review(
+            recorded: record.decisions,
+            product: record.product,
+            library: app.library
+        ) {
+        case .changed(let differences):
+            let moved = differences.contains { !$0.sameBin }
+            Label(
+                moved
+                    ? "The rules changed — \(differences.filter { !$0.sameBin }.count) part(s) would go elsewhere now"
+                    : "The rules behind this changed, but the bins are the same",
+                systemImage: moved ? "exclamationmark.arrow.circlepath" : "arrow.triangle.2.circlepath"
+            )
+            .font(.caption2)
+            .foregroundStyle(moved ? Color.orange : .secondary)
+        case .rulesetGone(let cityID):
+            Label("\(cityID) is no longer bundled", systemImage: "questionmark.circle")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
+        case .unchanged, .notRecorded:
+            EmptyView()
+        }
     }
 
     /// Resolved against the city recorded with the scan, not the current one, so the row

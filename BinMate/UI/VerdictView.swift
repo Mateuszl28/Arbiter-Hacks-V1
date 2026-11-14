@@ -300,6 +300,9 @@ struct VerdictView: View {
         didAttemptSave = true
 
         let record = ScanRecord(product: activeProduct, city: city)
+        // Freeze what was actually said, so history is an account rather than a
+        // recomputation against whatever the rules happen to be when it is next opened.
+        record.recordDecision(verdicts, cityID: city.id)
         context.insert(record)
         try? context.save()
         savedRecord = record
@@ -310,6 +313,9 @@ struct VerdictView: View {
     private func apply(correction corrected: ScannedProduct) {
         correction = corrected
         savedRecord?.update(with: corrected)
+        if let city = app.city, let engine {
+            savedRecord?.recordDecision(engine.verdicts(for: corrected), cityID: city.id)
+        }
         try? context.save()
     }
 }

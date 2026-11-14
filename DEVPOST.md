@@ -52,6 +52,10 @@ instruction and the thing people get wrong.
   the rule covers any part in a city that narrows other rules by part, the ruleset is two
   years old. Several apply at once, and each carries a remedy — a warning with nothing to
   do about it is noise.
+- **Keeps an account of what it actually said.** Each scan records the decision — the
+  bin, the matching, the confidence, the rule, the source and its date — so history is
+  not silently rewritten when rules change. It can then answer *would today's rules say
+  the same?* and flag the scans a correction affected.
 - **Notices when packaging changes.** Rescan something and it tells you if the producer
   changed the packaging since last time — and whether that moves a part to a different
   bin.

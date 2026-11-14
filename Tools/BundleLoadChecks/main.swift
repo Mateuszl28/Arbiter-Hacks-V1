@@ -796,5 +796,72 @@ check(
     "a material with its own rule is not a gap"
 )
 
+// MARK: - Decision audit trail
+
+// Everything else in this project recomputes, which quietly rewrites history: a scan from
+// last spring is shown against today's rules, so a user who remembers being told
+// something different has no way to show it. Recording the decision fixes that, and makes
+// one more question answerable — would today's rules say the same?
+print("\nDecision audit trail:")
+
+guard let berlinCity = library.city(id: "de-berlin") else { exit(1) }
+let auditEngine = RulesEngine(ruleset: berlinCity)
+let auditedProduct = ScannedProduct(
+    barcode: "1", name: "Audited bottle", brand: nil, imageURL: nil,
+    components: [
+        PackagingComponent(shape: "en:bottle", material: "en:pet-polyethylene-terephthalate"),
+        PackagingComponent(shape: "en:cap", material: "en:pp-polypropylene"),
+    ],
+    origin: .manual
+)
+let recordedNow = auditEngine.verdicts(for: auditedProduct).map {
+    RecordedDecision(verdict: $0, cityID: berlinCity.id)
+}
+
+// Against the same rules, nothing has changed. The obvious case, and the one that must
+// not produce noise — a badge on every row would be worthless.
+check(
+    DecisionReview.review(recorded: recordedNow, product: auditedProduct, library: library) == .unchanged,
+    "a decision recorded under today's rules must review as unchanged"
+)
+
+// A scan from before decisions were recorded must stay silent rather than guess.
+check(
+    DecisionReview.review(recorded: [], product: auditedProduct, library: library) == .notRecorded,
+    "an unrecorded scan should say so rather than invent a comparison"
+)
+
+// A ruleset that no longer ships must be named, not silently ignored.
+var orphaned = recordedNow
+orphaned[0].cityID = "xx-nowhere"
+if case .rulesetGone = DecisionReview.review(recorded: orphaned, product: auditedProduct, library: library) {
+    print("  a removed ruleset is reported rather than ignored")
+} else {
+    check(false, "a decision recorded under a removed ruleset should be reported")
+}
+
+// The real case: the rules changed since. Pretend the bottle was once sent to the yellow
+// bin rather than the deposit machine — exactly the correction that would matter.
+var corrected = recordedNow
+corrected[0].streamID = "gelbe"
+corrected[0].streamName = "Packaging"
+let outcome = DecisionReview.review(recorded: corrected, product: auditedProduct, library: library)
+check(outcome.movesABin, "a changed destination must be reported as moving a bin")
+if case .changed(let differences) = outcome {
+    check(differences.count == 1, "only the bottle changed, got \(differences.count)")
+    for difference in differences { print("  \(difference.summary)") }
+}
+
+// A change in reasoning that lands in the same bin is worth showing but must not be
+// dressed up as a moved bin.
+var reasoningOnly = recordedNow
+reasoningOnly[1].quality = "exactMaterial"
+let soft = DecisionReview.review(recorded: reasoningOnly, product: auditedProduct, library: library)
+check(!soft.movesABin, "a reasoning-only change must not claim the bin moved")
+if case .changed(let differences) = soft {
+    check(differences.allSatisfy(\.sameBin), "and should be marked as same-bin")
+    for difference in differences { print("  \(difference.summary)") }
+}
+
 print(failures == 0 ? "\nAll bundle checks passed." : "\n\(failures) check(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

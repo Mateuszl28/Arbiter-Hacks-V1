@@ -176,6 +176,29 @@ Several can apply at once, and the overall certainty is derived from them rather
 stored, so the two can never drift apart. Every reason must carry a remedy: a warning
 with nothing to do about it is noise.
 
+### History is an account, not a recomputation
+
+Everything else here recomputes: switch city and the verdict re-resolves, edit a rule and
+every answer changes. That is the right default and it has one consequence — history
+quietly rewrites itself. A scan from last spring is shown against today's rules, so a
+user who remembers being told something different has no way to show it, and neither has
+the app.
+
+Each scan now records what the engine actually decided: the bin, how the rule was
+matched, the confidence, which rule fired, and the source and date it came from. That
+makes one more question answerable — *would today's rules say the same?* — which is the
+regression lab pointed at one person's own history rather than at a test corpus. If a
+ruleset has been corrected since, the scans it affected are exactly the ones worth
+mentioning, and the only ones the app can mention honestly.
+
+History rows say so, and distinguish *the bins are the same but the reasoning changed*
+from *this would go somewhere else now*. A scan from before decisions were recorded stays
+silent rather than inventing a comparison.
+
+This was a schema change, which is the thing that had already bitten once. The store
+guard was run first and proved the fixture from the old schema still reads with every
+field intact.
+
 ### It notices when packaging changes
 
 Producers change packaging and rarely announce it. A bottle that was glass last year is

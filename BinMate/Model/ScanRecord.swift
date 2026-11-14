@@ -37,6 +37,12 @@ final class ScanRecord {
     /// When the user took this one back — to a deposit machine or a drop-off point.
     /// Optional with a default so the store migrates without ceremony.
     var returnedAt: Date?
+    /// What the engine actually decided at the time, as JSON.
+    ///
+    /// Optional on purpose: records written before this existed stay readable, and
+    /// `verify-store.sh` proves it. Everything else here recomputes against today's
+    /// rules, which quietly rewrites history — this is the one thing that must not.
+    var decisionJSON: Data?
 
     init(product: ScannedProduct, city: CityRuleset, scannedAt: Date = Date()) {
         self.scannedAt = scannedAt
@@ -57,6 +63,17 @@ final class ScanRecord {
         brand = product.brand
         componentsJSON = (try? JSONEncoder().encode(product.components)) ?? componentsJSON
         originRaw = product.origin.rawValue
+    }
+
+    /// The decision as recorded, or empty for a scan from before this was kept.
+    var decisions: [RecordedDecision] {
+        guard let decisionJSON else { return [] }
+        return (try? JSONDecoder().decode([RecordedDecision].self, from: decisionJSON)) ?? []
+    }
+
+    func recordDecision(_ verdicts: [BinVerdict], cityID: String) {
+        let entries = verdicts.map { RecordedDecision(verdict: $0, cityID: cityID) }
+        decisionJSON = try? JSONEncoder().encode(entries)
     }
 
     var components: [PackagingComponent] {
