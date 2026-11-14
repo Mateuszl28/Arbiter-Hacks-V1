@@ -30,6 +30,7 @@ swiftc -Onone -o "$OUT/bundle-checks" \
   "$ROOT/BinMate/Engine/RulesLibrary.swift" \
   "$ROOT/BinMate/Engine/CityGuide.swift" \
   "$ROOT/BinMate/Engine/NearestCity.swift" \
+  "$ROOT/BinMate/Engine/TakeBackList.swift" \
   "$ROOT/BinMate/Services/SampleProducts.swift" \
   "$ROOT/BinMate/Services/QuickItem.swift" \
   "$ROOT/Tools/BundleLoadChecks/main.swift"

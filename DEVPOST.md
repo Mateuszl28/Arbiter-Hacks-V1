@@ -53,6 +53,9 @@ instruction and the thing people get wrong.
 - **Finds your city — or admits it can't.** One location fix, matched against the
   bundled rulesets. If you are 1,800 km from the nearest one, it says so instead of
   quietly assigning you Berlin's rules.
+- **Closes the loop.** Deposit bottles and drop-off items need a separate trip, so they
+  collect into a **Take back** list you can tick off — grouped by destination, totalled
+  per currency, using each city's own wording.
 - **Works in reverse too.** A browsable rule book answers *"what goes in this bin?"* and
   a search understands synonyms — type `tetra` and you learn that in Kraków a drinks
   carton goes in the *yellow* bin, not with paper. Bins with no rules say so rather than
@@ -138,6 +141,16 @@ intuitive threshold silently discards the right answer. Fixed cut-off out; Apple
 calibrated `hasMinimumPrecision(_:forRecall:)` in, with a fallback to the strongest raw
 labels. The same measurement killed my confidence percentage in the UI — "2% match"
 reads as broken — so it shows *likely / possible / long shot* instead.
+
+**A migration that quietly ate the data.** Building the take-back list, I added a `UUID`
+to the history model so the engine could refer to records without importing SwiftData.
+Everything compiled, every test passed, and the app looked fine — but the history was
+empty. Opening the store with `sqlite3` showed why: the table had been recreated and
+every existing row dropped. A lightweight migration cannot invent a distinct value for a
+new non-optional attribute, so it starts over. On a real update that is silent data loss.
+The attribute is gone; `persistentModelID` was always enough. The app also used to fall
+back to an in-memory store without telling anyone — that now shows up in Settings,
+because a fallback nobody can see is worse than the crash it avoids.
 
 **Knowing when *not* to fall back.** Bundled sample products make the app usable offline,
 but serving one when the database genuinely says "this barcode doesn't exist" would be a

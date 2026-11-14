@@ -22,6 +22,12 @@ final class AppModel {
         didSet { UserDefaults.standard.set(offlineOnly, forKey: Keys.offline) }
     }
 
+    /// Set at launch when the on-disk history store could not be opened and the app fell
+    /// back to memory. Surfaced in Settings so the user is not left scanning into a
+    /// bucket that empties when they quit.
+    var storageIsTemporary = false
+    var storageFailure: String?
+
     var hasCompletedOnboarding: Bool {
         didSet { UserDefaults.standard.set(hasCompletedOnboarding, forKey: Keys.onboarded) }
     }

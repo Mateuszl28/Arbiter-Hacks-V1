@@ -94,30 +94,43 @@ struct StatsView: View {
         .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 14))
     }
 
+    /// Tappable, because a number you cannot act on is trivia. The destination turns the
+    /// same history into a list of things to carry somewhere.
     private func deposits(_ stats: HouseholdStats) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Label("Deposits you can reclaim", systemImage: "banknote")
-                .font(.subheadline.weight(.semibold))
-
-            ForEach(stats.depositTotals, id: \.currency) { entry in
+        NavigationLink {
+            TakeBackView()
+        } label: {
+            VStack(alignment: .leading, spacing: 8) {
                 HStack {
-                    Text(entry.amount.formattedCurrency(code: entry.currency))
-                        .font(.title3.weight(.semibold))
-                        .foregroundStyle(.green)
-                    Spacer()
-                    Text("\(entry.itemCount) returnable \(entry.itemCount == 1 ? "item" : "items")")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
+                    Label("Deposits you can reclaim", systemImage: "banknote")
+                        .font(.subheadline.weight(.semibold))
+                    Spacer(minLength: 0)
+                    Image(systemName: "chevron.right")
+                        .font(.caption2)
+                        .foregroundStyle(.tertiary)
                 }
-            }
 
-            Text("Based on the deposit rate in each city's ruleset, counted across everything you have scanned.")
-                .font(.caption2)
-                .foregroundStyle(.secondary)
+                ForEach(stats.depositTotals, id: \.currency) { entry in
+                    HStack {
+                        Text(entry.amount.formattedCurrency(code: entry.currency))
+                            .font(.title3.weight(.semibold))
+                            .foregroundStyle(.green)
+                        Spacer()
+                        Text("\(entry.itemCount) returnable \(entry.itemCount == 1 ? "item" : "items")")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+
+                Text("Tap to see exactly what to take back, and tick it off.")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 14))
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding()
-        .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 14))
+        .buttonStyle(.plain)
     }
 
     private func honesty(_ stats: HouseholdStats) -> some View {

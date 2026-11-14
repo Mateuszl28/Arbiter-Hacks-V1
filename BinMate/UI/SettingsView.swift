@@ -56,6 +56,28 @@ struct SettingsView: View {
                     Text("Bundled data")
                 }
 
+                if app.storageIsTemporary {
+                    Section {
+                        Label {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text("History is not being saved")
+                                    .font(.subheadline.weight(.semibold))
+                                Text("BinMate could not open its on-device history, so scans are being kept in memory and will be lost when the app quits. Sorting itself is unaffected.")
+                                    .font(.footnote)
+                                    .foregroundStyle(.secondary)
+                                if let failure = app.storageFailure {
+                                    Text(failure)
+                                        .font(.caption2)
+                                        .foregroundStyle(.secondary)
+                                }
+                            }
+                        } icon: {
+                            Image(systemName: "exclamationmark.triangle.fill")
+                                .foregroundStyle(.orange)
+                        }
+                    }
+                }
+
                 if !app.loadProblems.isEmpty {
                     Section("Load problems") {
                         ForEach(app.loadProblems, id: \.self) { problem in

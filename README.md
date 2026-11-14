@@ -31,9 +31,9 @@ reads better, from the Mac Catalyst build of the same code.
 |---|---|---|
 | ![Identify from a photo](docs/screenshots/identify-from-photo.png) | ![Sorting stats](docs/screenshots/sorting.png) | ![History](docs/screenshots/history.png) |
 
-| The rule book, read backwards | Search, with synonyms |
-|---|---|
-| ![Rule book](docs/screenshots/rulebook.png) | ![Rule book search](docs/screenshots/rulebook-search.png) |
+| The rule book, read backwards | Search, with synonyms | Things to carry somewhere |
+|---|---|---|
+| ![Rule book](docs/screenshots/rulebook.png) | ![Rule book search](docs/screenshots/rulebook-search.png) | ![Take-back list](docs/screenshots/take-back.png) |
 
 ## The demonstration
 
@@ -312,6 +312,29 @@ that lands in the *yellow* bin, which is exactly the rule people get wrong.
 | San Francisco | 11 | 4 / 5 |
 | Tokyo (Shibuya) | 12 | 6 / 6 |
 | New York City | 11 | 5 / 6 |
+
+## From knowing to doing
+
+Most packaging just goes in a bin. Two kinds do not: **deposit items**, which are worth
+money, and **drop-off items**, which the kerbside collection refuses. The app knew about
+both and did nothing useful with them — it printed a reclaimable total and left the user
+to remember which bottles it meant.
+
+The **Take back** list turns history into a trip you can tick off, grouped by destination
+and city, using each city's own wording rather than a second set of instructions:
+
+```
+€0.25 waiting to be reclaimed
+
+  Pfandautomat · Berlin · 1 item                          €0.25
+    Sample Cola, 500 ml bottle — Bottle · PET plastic     €0.25
+  "Take it back to any shop that sells drinks and get 25 cents."
+```
+
+Each record is re-resolved against the city it was *scanned* in, not the city currently
+selected: a bottle scanned in Berlin is worth 25 cents at a German machine no matter
+where its owner is standing today. Euros and dollars are totalled separately, and a city
+with no deposit scheme produces nothing rather than a zero.
 
 ## Siri and Shortcuts
 

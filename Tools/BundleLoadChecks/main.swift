@@ -406,5 +406,112 @@ let broken = WasteStream(
 check(broken.rgbComponents == nil, "a malformed hex should not parse")
 check(!broken.prefersDarkSymbol, "a malformed colour should fall back to a white symbol on grey")
 
+// MARK: - Take-back list
+
+print("\nTake-back list:")
+
+var recordCounter = 0
+func record(_ product: ScannedProduct, cityID: String, name: String) -> (
+    key: TakeBackList.RecordKey, productName: String, scannedAt: Date, cityID: String, product: ScannedProduct
+) {
+    recordCounter += 1
+    return (
+        key: TakeBackList.RecordKey(recordCounter),
+        productName: name,
+        scannedAt: Date(timeIntervalSince1970: 0),
+        cityID: cityID,
+        product: product
+    )
+}
+
+let sixCans = ScannedProduct(
+    barcode: nil, name: "Six cans", brand: nil, imageURL: nil,
+    components: [PackagingComponent(shape: "en:can", material: "en:aluminium", numberOfUnits: 6)],
+    origin: .manual
+)
+let cardboardOnly = ScannedProduct(
+    barcode: nil, name: "Plain box", brand: nil, imageURL: nil,
+    components: [PackagingComponent(shape: "en:box", material: "en:cardboard")],
+    origin: .manual
+)
+let corkOnly = ScannedProduct(
+    barcode: nil, name: "Cork", brand: nil, imageURL: nil,
+    components: [PackagingComponent(material: "en:cork")],
+    origin: .manual
+)
+
+// Six cans scanned in Berlin: 6 x 0.25 = 1.50 EUR, as one deposit destination.
+let berlinCans = TakeBackList.build(
+    records: [record(sixCans, cityID: "de-berlin", name: "Six cans")],
+    library: library
+)
+check(berlinCans.destinations.count == 1, "six cans should produce one destination")
+check(berlinCans.destinations.first?.unitCount == 6, "the six cans should be counted individually")
+check(
+    berlinCans.valueByCurrency.first?.amount == Decimal(string: "1.50"),
+    "six Berlin cans should total 1.50, got \(berlinCans.valueByCurrency)"
+)
+
+// A kerbside-only item must never appear. A bin is not a to-do list.
+let boxOnly = TakeBackList.build(
+    records: [record(cardboardOnly, cityID: "de-berlin", name: "Plain box")],
+    library: library
+)
+check(boxOnly.isEmpty, "a plain cardboard box needs no trip and must not be listed")
+
+// Drop-off items have no money but still need carrying — Berlin collects cork separately.
+let berlinCork = TakeBackList.build(
+    records: [record(corkOnly, cityID: "de-berlin", name: "Cork")],
+    library: library
+)
+check(!berlinCork.isEmpty, "Berlin cork goes to a drop-off point and should be listed")
+check(
+    berlinCork.destinations.first?.stream.kind == .dropOff,
+    "cork should be listed as a drop-off, not a deposit"
+)
+check(
+    berlinCork.valueByCurrency.isEmpty,
+    "a drop-off with no deposit must not claim a refund"
+)
+
+// Scanned in one city, reckoned in that city. A bottle scanned in Berlin is worth 25
+// cents at a German machine regardless of where its owner is standing today.
+let mixedTrip = TakeBackList.build(
+    records: [
+        record(sixCans, cityID: "de-berlin", name: "Berlin cans"),
+        record(sixCans, cityID: "us-san-francisco", name: "SF cans"),
+    ],
+    library: library
+)
+check(mixedTrip.destinations.count == 2, "two cities should not be merged into one trip")
+let currencies = Set(mixedTrip.valueByCurrency.map(\.currency))
+check(currencies == ["EUR", "USD"], "each city's deposit should stay in its own currency, got \(currencies)")
+for entry in mixedTrip.valueByCurrency {
+    print("  \(entry.amount.formattedCurrency(code: entry.currency)) waiting in \(entry.currency)")
+}
+
+// Money first: a destination worth something outranks one that is merely a chore.
+let ordered = TakeBackList.build(
+    records: [
+        record(corkOnly, cityID: "de-berlin", name: "Cork"),
+        record(sixCans, cityID: "de-berlin", name: "Cans"),
+    ],
+    library: library
+)
+check(
+    ordered.destinations.first?.totalValue ?? 0 > 0,
+    "the destination worth money should be listed first"
+)
+
+// Cities with no deposit scheme must simply produce nothing rather than a zero total.
+let krakowCans = TakeBackList.build(
+    records: [record(sixCans, cityID: "pl-krakow", name: "Cans")],
+    library: library
+)
+check(
+    krakowCans.valueByCurrency.isEmpty,
+    "Kraków has no deposit scheme, so there is nothing to reclaim"
+)
+
 print(failures == 0 ? "\nAll bundle checks passed." : "\n\(failures) check(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

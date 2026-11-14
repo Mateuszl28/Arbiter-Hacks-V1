@@ -10,6 +10,14 @@ import SwiftData
 final class ScanRecord {
     #Index<ScanRecord>([\.scannedAt], [\.barcode])
 
+    // Deliberately no `id` attribute of our own.
+    //
+    // An earlier version added `var id: UUID = UUID()` so the engine could refer to
+    // records without importing SwiftData. Inspecting the store afterwards showed the
+    // table had been recreated and every existing row dropped: a lightweight migration
+    // cannot invent a distinct value for a new non-optional attribute, so it starts
+    // over. On a real update that is silent data loss. The engine takes an opaque key
+    // supplied by the caller instead, and `persistentModelID` serves perfectly well.
     var scannedAt: Date = Date()
     var barcode: String?
     var productName: String = ""
@@ -23,6 +31,9 @@ final class ScanRecord {
     /// JSON keeps the record readable if the schema ever needs migrating by hand.
     var componentsJSON: Data = Data()
     var originRaw: String = ScannedProduct.Origin.manual.rawValue
+    /// When the user took this one back — to a deposit machine or a drop-off point.
+    /// Optional with a default so the store migrates without ceremony.
+    var returnedAt: Date?
 
     init(product: ScannedProduct, city: CityRuleset, scannedAt: Date = Date()) {
         self.scannedAt = scannedAt
