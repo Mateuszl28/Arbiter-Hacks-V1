@@ -11,7 +11,13 @@ func loadRuleset(_ path: String) throws -> CityRuleset {
 // Set by Tools/verify-rules.sh so the checks are not tied to one machine.
 let base = (ProcessInfo.processInfo.environment["BINMATE_RULES"] ?? "BinMate/Resources/Rules")
     + "/"
-let cities = try ["pl-krakow.json", "de-berlin.json", "us-san-francisco.json", "jp-tokyo-shibuya.json"].map {
+let cities = try [
+    "pl-krakow.json",
+    "de-berlin.json",
+    "us-san-francisco.json",
+    "jp-tokyo-shibuya.json",
+    "us-new-york-city.json",
+].map {
     try loadRuleset(base + $0)
 }
 
@@ -82,8 +88,16 @@ check(plaVerdicts[0].stream.kind == .residual, "Kraków must not compost PLA")
 check(plaVerdicts[1].stream.kind == .residual, "Berlin must not compost PLA")
 check(plaVerdicts[2].stream.kind == .organic, "San Francisco must compost PLA")
 check(plaVerdicts[3].stream.id == "burnable", "Tokyo should burn PLA")
-check(Set(plaVerdicts.map(\.stream.id)).count == 4, "PLA should land in four distinct streams")
-check(Set(plaVerdicts.compactMap(\.caution)).count == 4, "each city should give its own PLA caveat")
+// Counted from the loaded set rather than hardcoded, so adding a city does not break a
+// test that is really about every city having its own answer.
+check(
+    Set(plaVerdicts.map(\.stream.id)).count == cities.count,
+    "PLA should land in a distinct stream in each of the \(cities.count) cities"
+)
+check(
+    Set(plaVerdicts.compactMap(\.caution)).count == cities.count,
+    "each city should give its own PLA caveat"
+)
 print("  PLA cup: " + cities.enumerated().map { i, c in
     "\(c.displayName)=\(RulesEngine(ruleset: c).verdict(for: pla).stream.name)"
 }.joined(separator: ", "))
@@ -140,15 +154,43 @@ check(
     "Tokyo non-bottle glass should be non-burnable"
 )
 
-// 11. Four cities, four different instructions for one PET bottle. This is the claim the
+// 11. Five cities, five different instructions for one PET bottle. This is the claim the
 // whole product rests on, so it is asserted rather than asserted in a README.
 let bottleInstructions = cities.map {
     RulesEngine(ruleset: $0).verdict(for: bottle.components[0]).instruction ?? ""
 }
 check(
-    Set(bottleInstructions).count == 4,
-    "all four cities should give a distinct instruction for the same PET bottle"
+    Set(bottleInstructions).count == cities.count,
+    "every city should give a distinct instruction for the same PET bottle"
 )
+
+// 12. The sharpest form of the argument: two cities in the SAME COUNTRY disagree, and
+// their bin colours mean opposite things. "Just use national rules" does not work.
+let sanFrancisco = RulesEngine(ruleset: cities[2])
+let newYork = RulesEngine(ruleset: cities[4])
+check(cities[2].region.contains("USA") && cities[4].region.contains("USA"), "both should be US cities")
+
+let cardboard = PackagingComponent(shape: "en:box", material: "en:cardboard")
+let sfCardboard = sanFrancisco.verdict(for: cardboard)
+let nyCardboard = newYork.verdict(for: cardboard)
+check(sfCardboard.stream.localName == "Blue bin", "San Francisco puts cardboard in the blue bin")
+check(nyCardboard.stream.localName == "Green bin", "New York puts cardboard in the green bin")
+
+// And the same colour name means different things in each.
+let sfGreen = cities[2].streams.first { $0.localName == "Green bin" }
+let nyGreen = cities[4].streams.first { $0.localName == "Green bin" }
+check(sfGreen?.kind == .organic, "San Francisco's green bin is compost")
+check(nyGreen?.kind == .recycling, "New York's green bin is paper")
+check(
+    sfGreen?.kind != nyGreen?.kind,
+    "the green bin must mean something different in each US city — that is the whole point"
+)
+print("  Green bin means: \(cities[2].displayName)=\(sfGreen?.name ?? "?"), \(cities[4].displayName)=\(nyGreen?.name ?? "?")")
+
+// Compostable plastic: composted in one US city, landfilled in the other.
+let plaUS = PackagingComponent(shape: "en:cup", material: "en:pla-polylactic-acid")
+check(sanFrancisco.verdict(for: plaUS).stream.kind == .organic, "San Francisco composts PLA")
+check(newYork.verdict(for: plaUS).stream.kind == .residual, "New York does not compost PLA")
 print("  PET bottle instructions:")
 for (city, instruction) in zip(cities, bottleInstructions) {
     print("    \(city.flag) \(city.displayName): \(instruction)")

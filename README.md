@@ -37,25 +37,42 @@ reads better, from the Mac Catalyst build of the same code.
 
 ## The demonstration
 
-The same 500 ml PET bottle, in four cities, resolved offline and instantly:
+The same 500 ml PET bottle, in five cities, resolved offline and instantly:
 
-| | 🇵🇱 Kraków | 🇩🇪 Berlin | 🇺🇸 San Francisco | 🇯🇵 Tokyo |
-|---|---|---|---|---|
-| **Bottle** (PET) | Yellow bin | **Deposit, +0.25 €** | **CRV, +0.05 $** | PET bottle collection |
-| | *"squash it flat"* | *"**do not crush it** — the machine has to read the barcode"* | *"the blue bin also takes it — you just forfeit the nickel"* | *"take the cap **and the label** off, rinse, then crush it flat"* |
-| **Cap** (PP) | Yellow bin | Gelbe Tonne | Blue bin | プラ packaging |
-| **Label** (paper) | Blue bin | Blaue Tonne | Blue bin | 古紙 paper |
+| | 🇵🇱 Kraków | 🇩🇪 Berlin | 🇺🇸 San Francisco | 🇯🇵 Tokyo | 🇺🇸 New York |
+|---|---|---|---|---|---|
+| **Bottle** (PET) | Yellow bin | **Deposit, +0.25 €** | **CRV, +0.05 $** | PET bottle collection | **Deposit, +0.05 $** |
+| | *"squash it flat"* | *"**do not crush it** — the machine has to read the barcode"* | *"the blue bin also takes it — you just forfeit the nickel"* | *"take the cap **and the label** off, rinse, then crush it flat"* | *"milk and juice bottles are **not** covered — those go in the blue bin"* |
+| **Cap** (PP) | Yellow bin | Gelbe Tonne | Blue bin | プラ packaging | Blue bin |
+| **Label** (paper) | Blue bin | Blaue Tonne | Blue bin | 古紙 paper | **Green bin** |
 
-Four cities, four different instructions — and Kraków and Berlin give **directly
+Five cities, five different instructions — and Kraków and Berlin give **directly
 contradictory** physical ones. No app that returns a single global answer can be right in
-all four places. *(This is an assertion in the test suite, not a claim in a README.)*
+all five places. *(This is an assertion in the test suite, not a claim in a README.)*
 
 A compostable PLA bowl makes the same point from the other direction:
 
-| 🇵🇱 Kraków | 🇩🇪 Berlin | 🇺🇸 San Francisco | 🇯🇵 Tokyo |
-|---|---|---|---|
-| Mixed waste | Residual waste | **Compost** | **Burned** |
-| *"not accepted in the brown bio bin here, despite the label"* | *"rejected by the Biogut process — doesn't break down fast enough"* | *"green bin, if it carries a BPI certification mark"* | *"no household composting collection here, so it is simply burned"* |
+| 🇵🇱 Kraków | 🇩🇪 Berlin | 🇺🇸 San Francisco | 🇯🇵 Tokyo | 🇺🇸 New York |
+|---|---|---|---|---|
+| Mixed waste | Residual waste | **Compost** | **Burned** | **Trash** |
+| *"not accepted in the brown bio bin here, despite the label"* | *"rejected by the Biogut process — doesn't break down fast enough"* | *"green bin, if it carries a BPI certification mark"* | *"no household composting collection here, so it is simply burned"* | *"not accepted in New York's curbside composting, unlike in San Francisco"* |
+
+### Same country, opposite meaning
+
+The obvious objection to all of this is *"fine, but national rules would be close
+enough"*. They would not. San Francisco and New York City are in the same country, and
+their bins contradict each other:
+
+| | 🇺🇸 San Francisco | 🇺🇸 New York City |
+|---|---|---|
+| **Green bin means** | **Compost** | **Paper & cardboard** |
+| Cardboard box | Blue bin | **Green bin** |
+| Compostable cup | Composted | **Trash** |
+| Cartons | Blue bin | Blue bin, *"not with paper"* |
+
+Someone who moves from one to the other and keeps their habits puts food waste into a
+paper stream. Both of those facts are asserted in the test suite — including that the
+green bin's *kind* genuinely differs between the two.
 
 ### Tokyo is the architectural proof
 
@@ -119,7 +136,7 @@ lets a user calibrate their trust, and doubles as a to-do list for ruleset maint
 
 ## Verification
 
-Two suites, both runnable in seconds on any Mac, neither needing a simulator:
+Four suites, all runnable in seconds on any Mac, none needing a simulator:
 
 ```bash
 ./Tools/verify-rules.sh     # engine logic against the real city JSON
@@ -215,7 +232,7 @@ Database License.
 
 ## Current limitations
 
-- **Four cities.** The architecture scales to any number; the bottleneck is the research
+- **Five cities.** The architecture scales to any number; the bottleneck is the research
   per city, which is genuinely manual work.
 - **Photo identification suggests, it does not decide.** Items with no barcode can be
   photographed, and `VNClassifyImageRequest` — Apple's general image classifier, which
@@ -294,6 +311,7 @@ that lands in the *yellow* bin, which is exactly the rule people get wrong.
 | Kraków | 7 | 4 / 6 |
 | San Francisco | 11 | 4 / 5 |
 | Tokyo (Shibuya) | 12 | 6 / 6 |
+| New York City | 11 | 5 / 6 |
 
 ## Siri and Shortcuts
 

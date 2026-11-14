@@ -87,6 +87,14 @@ That ordering is load-bearing. Berlin's `PET + bottle → deposit` rule must bea
 broader `plastic → yellow bin` rule, or the app tells you to bin 25 cents. So it's an
 asserted test, not a hope.
 
+**The objection I had to answer.** "Fine, but surely national rules would be close
+enough?" So I added a second American city. San Francisco and New York are in the same
+country and their bins contradict each other: in San Francisco the **green bin is
+compost**, in New York the **green bin is paper**. Someone who moves between them and
+keeps their habits is putting food waste into a paper stream. Compostable cups are
+composted in one and landfilled in the other. Both facts are asserted in the test suite,
+including that the green bin's *kind* genuinely differs.
+
 **The design got its real test from Tokyo.** Japan doesn't sort by material the way
 Europe does — it sorts substantially by *burnability*, and treats a PET bottle, its cap
 and its label as three separate resource streams that you physically disassemble before

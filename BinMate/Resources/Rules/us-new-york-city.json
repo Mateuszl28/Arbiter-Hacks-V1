@@ -1,0 +1,137 @@
+{
+  "id": "us-new-york-city",
+  "displayName": "New York City",
+  "region": "New York, USA",
+  "flag": "🇺🇸",
+  "regionCode": "US",
+  "latitude": 40.7128,
+  "longitude": -74.0060,
+  "compiledOn": "2026-11-14",
+  "sourceName": "NYC Department of Sanitation — recycling and composting guidance",
+  "sourceURL": "https://www.nyc.gov/assets/dsny/site/services/recycling",
+  "defaultStreamID": "trash",
+  "streams": [
+    {
+      "id": "deposit",
+      "name": "Bottle deposit",
+      "localName": "Redemption centre",
+      "colorHex": "00897B",
+      "symbol": "arrow.uturn.backward.circle",
+      "kind": "deposit",
+      "depositAmount": 0.05,
+      "depositCurrencyCode": "USD"
+    },
+    {
+      "id": "mgp",
+      "name": "Metal, glass, plastic & cartons",
+      "localName": "Blue bin",
+      "colorHex": "1565C0",
+      "symbol": "arrow.3.trianglepath",
+      "kind": "recycling"
+    },
+    {
+      "id": "paper",
+      "name": "Paper & cardboard",
+      "localName": "Green bin",
+      "colorHex": "2E7D32",
+      "symbol": "newspaper",
+      "kind": "recycling"
+    },
+    {
+      "id": "compost",
+      "name": "Curbside composting",
+      "localName": "Brown bin",
+      "colorHex": "6D4C41",
+      "symbol": "leaf",
+      "kind": "organic"
+    },
+    {
+      "id": "trash",
+      "name": "Trash",
+      "localName": "Black bag",
+      "colorHex": "37474F",
+      "symbol": "trash",
+      "kind": "residual"
+    },
+    {
+      "id": "hazardous",
+      "name": "Household hazardous waste",
+      "localName": "Drop-off only",
+      "colorHex": "8E44AD",
+      "symbol": "exclamationmark.triangle",
+      "kind": "dropOff"
+    }
+  ],
+  "rules": [
+    {
+      "materials": ["en:pet-polyethylene-terephthalate"],
+      "shapes": ["en:bottle"],
+      "stream": "deposit",
+      "instruction": "Most drinks bottles carry a 5 cent New York deposit. Take it to a redemption centre or a supermarket machine.",
+      "caution": "Milk and most juice bottles are not covered — those go in the blue bin."
+    },
+    {
+      "materials": ["en:aluminium", "en:steel", "en:tinplate"],
+      "shapes": ["en:can"],
+      "stream": "deposit",
+      "instruction": "Drinks cans carry a 5 cent deposit in New York State.",
+      "caution": null
+    },
+    {
+      "materials": ["en:ldpe-low-density-polyethylene", "en:hdpe-high-density-polyethylene"],
+      "shapes": ["en:film", "en:bag", "en:wrapper"],
+      "stream": "trash",
+      "instruction": "Plastic bags and film are not collected at the kerb. Trash, or a store drop-off bin.",
+      "caution": "Never put bags in the blue bin — they jam the sorting machinery."
+    },
+    {
+      "materials": ["en:plastic"],
+      "stream": "mgp",
+      "instruction": "Rigid plastic, rinsed. Blue bin, together with metal and glass.",
+      "caution": null
+    },
+    {
+      "materials": ["en:metal"],
+      "stream": "mgp",
+      "instruction": "Rinse it. Blue bin.",
+      "caution": null
+    },
+    {
+      "materials": ["en:glass"],
+      "stream": "mgp",
+      "instruction": "All colours together, caps off. Blue bin.",
+      "caution": null
+    },
+    {
+      "materials": ["en:composite"],
+      "stream": "mgp",
+      "instruction": "Cartons go in the blue bin with metal, glass and plastic — not with paper.",
+      "caution": null
+    },
+    {
+      "materials": ["en:paper-or-cardboard"],
+      "shapes": ["en:wrapper", "en:napkin", "en:plate"],
+      "stream": "compost",
+      "instruction": "Food-soiled paper belongs in the brown composting bin.",
+      "caution": null
+    },
+    {
+      "materials": ["en:paper-or-cardboard"],
+      "stream": "paper",
+      "instruction": "Flatten boxes and put them in the GREEN bin.",
+      "caution": "New York's green bin is paper, not compost. Composting is the brown bin here."
+    },
+    {
+      "materials": ["en:pla-polylactic-acid", "en:bio-based-plastic"],
+      "stream": "trash",
+      "instruction": "Trash.",
+      "caution": "Compostable plastics are not accepted in New York's curbside composting, unlike in San Francisco."
+    },
+    {
+      "materials": ["en:wood", "en:cork"],
+      "stream": "trash",
+      "instruction": "Small wooden and cork items go in the trash.",
+      "caution": null
+    }
+  ]
+}

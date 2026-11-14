@@ -37,9 +37,9 @@ if !library.problems.isEmpty {
     for problem in library.problems { print("  - \(problem)") }
 }
 
-check(library.cities.count == 4, "expected 4 cities, got \(library.cities.count)")
+check(library.cities.count == 5, "expected 5 cities, got \(library.cities.count)")
 check(library.problems.isEmpty, "ruleset loading should report no problems")
-for expected in ["pl-krakow", "de-berlin", "us-san-francisco", "jp-tokyo-shibuya"] {
+for expected in ["pl-krakow", "de-berlin", "us-san-francisco", "jp-tokyo-shibuya", "us-new-york-city"] {
     check(library.city(id: expected) != nil, "\(expected) ruleset should load")
 }
 
