@@ -42,7 +42,7 @@ enum QuickItem: String, CaseIterable, Sendable {
     /// A deliberate simplification, and the reason the spoken answer always points back
     /// at the app: a real yogurt pot is three parts in three bins, and Siri answering
     /// "the yellow bin" for the pot alone would be the exact mistake BinMate exists to
-    /// correct. `followUp` below carries that caveat.
+    /// correct. `isMultiPartInReality` below carries that caveat.
     var component: PackagingComponent {
         switch self {
         case .plasticBottle:

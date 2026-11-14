@@ -230,6 +230,30 @@ No common material falls through to a default bin in any city — the ancestry f
 doing its job. Most resolve through a broader rule rather than one of their own, which is
 usually correct and occasionally a gap worth closing.
 
+### It asks one question instead of showing a form
+
+There was already a way to fix thin data: open the manual picker and describe the
+packaging. That is a form, and a form is what you offer when you have no idea what is
+missing. Usually the app does know — a lone bottle almost certainly has a cap, and a
+material it cannot place is the one thing standing between you and a real answer. So it
+asks:
+
+```
+Does it have a cap?
+  The record lists only 1 part. A bottle usually has one,
+  and it often goes in a different bin.
+  [ Yes — PP plastic ] [ Yes — HDPE plastic ] [ Yes — Aluminium ] [ No ]
+```
+
+Questions are ranked by what the answer would buy. An unrecognised material comes first,
+because it is the one blocking a real verdict — answering it moves a cap out of
+*Residual waste* and into *Packaging*, which is asserted. Then missing companion parts,
+then components with no part recorded at all, since deposit and drop-off rules are
+written for shapes.
+
+At most three, and **a well-described product is left alone entirely** — also asserted,
+because the difference between helpful and nagging is whether the app knows when to stop.
+
 ### Mass, with the three meanings of "recovered" kept apart
 
 Open Food Facts records a packaging weight for some components, and the app was storing

@@ -996,5 +996,77 @@ check(
     "coverage should be a real fraction here, got \(ledger.coverage)"
 )
 
+// MARK: - Follow-up questions
+
+// The manual picker is what you offer when you have no idea what is missing. Usually the
+// app does know, so it should ask one question rather than present an empty table — and
+// just as importantly, it should stay quiet when there is nothing worth asking.
+print("\nFollow-up questions:")
+
+// A lone bottle: ask about the cap and the label, not about everything.
+let loneBottle = product([PackagingComponent(shape: "en:bottle", material: "en:pet-polyethylene-terephthalate")])
+let bottleQuestions = FollowUp.questions(for: loneBottle)
+check(!bottleQuestions.isEmpty, "a lone bottle should prompt a question")
+check(
+    bottleQuestions.count <= FollowUp.limit,
+    "no more than \(FollowUp.limit) questions, or it is a questionnaire"
+)
+for question in bottleQuestions { print("  \(question.prompt)") }
+
+// A well-described product must be left alone. This is the check that keeps the feature
+// from becoming nagging.
+check(
+    FollowUp.questions(for: ordinary).isEmpty,
+    "a three-part bottle with everything described should prompt nothing"
+)
+
+// An unrecognised material blocks a real answer, so it outranks anything else.
+let mysterious = product([
+    PackagingComponent(shape: "en:cap", material: "en:unobtainium"),
+    PackagingComponent(shape: "en:bottle", material: "en:pet-polyethylene-terephthalate"),
+])
+let mysteryQuestions = FollowUp.questions(for: mysterious)
+check(mysteryQuestions.first?.id.hasPrefix("material-") == true, "an unknown material should be asked about first")
+check(
+    mysteryQuestions.first?.options.contains { $0.label.contains("PP") } == true,
+    "a cap should be offered plausible cap materials"
+)
+check(
+    mysteryQuestions.first?.options.last?.label == "Not sure",
+    "every question needs an escape hatch"
+)
+print("  \(mysteryQuestions.first?.prompt ?? "")")
+
+// Answering must actually change the product, and the engine must then agree.
+guard let answered = mysteryQuestions.first?.options.first.map({
+    FollowUp.apply($0.effect, to: mysterious)
+}) else { exit(1) }
+check(
+    answered.components.allSatisfy { MaterialTaxonomy.isKnown($0.material) },
+    "answering the material question should leave no unknown materials"
+)
+if let berlinNow = library.city(id: "de-berlin") {
+    let engineNow = RulesEngine(ruleset: berlinNow)
+    let before = engineNow.verdict(for: mysterious.components[0])
+    let after = engineNow.verdict(for: answered.components[0])
+    check(before.quality == .cityDefault, "the unknown cap fell to the default bin")
+    check(after.quality != .cityDefault, "and answering should lift it off the default bin")
+    print("  cap: \(before.stream.name) → \(after.stream.name) once answered")
+}
+
+// Declining must not mutate anything.
+check(
+    FollowUp.apply(.decline, to: mysterious).components == mysterious.components,
+    "declining a question must leave the product untouched"
+)
+
+// A shapeless component cannot benefit from deposit or drop-off rules, which are written
+// for shapes — so it is worth one question.
+let shapeless = product([PackagingComponent(material: "en:aluminium")])
+check(
+    FollowUp.questions(for: shapeless).contains { $0.id.hasPrefix("shape-") },
+    "a component with no shape should be asked about"
+)
+
 print(failures == 0 ? "\nAll bundle checks passed." : "\n\(failures) check(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

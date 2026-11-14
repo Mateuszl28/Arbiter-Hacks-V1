@@ -52,6 +52,10 @@ instruction and the thing people get wrong.
   the rule covers any part in a city that narrows other rules by part, the ruleset is two
   years old. Several apply at once, and each carries a remedy — a warning with nothing to
   do about it is noise.
+- **Asks one question instead of showing a form.** When a record is thin, the app usually
+  knows what is missing — a bottle with no cap listed, a material it cannot place — so it
+  asks, with plausible answers ready. A product that is already well described is left
+  alone.
 - **Weighs what you handled, and says how much of it it actually knows.** Three things
   get called "recovered" and only two are knowable: mass *recognised* from the data, mass
   *directed* by a real rule, and mass actually recovered by a facility — which BinMate

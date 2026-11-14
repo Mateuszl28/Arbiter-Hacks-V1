@@ -18,6 +18,8 @@ struct VerdictView: View {
     @State private var showingCorrection = false
     /// What this product's packaging looked like the last time it was scanned, if ever.
     @State private var previousComponents: [PackagingComponent]?
+    /// Bumped when a question is waved away, so the card does not reappear unchanged.
+    @State private var declinedQuestions = 0
 
     /// What is actually on screen: the user's correction if they made one.
     private var activeProduct: ScannedProduct { correction ?? product }
@@ -38,6 +40,7 @@ struct VerdictView: View {
                     }
 
                     packagingChangeNote
+                    followUpCard
                     attentionNote
                     thinDataNote
 
@@ -191,6 +194,56 @@ struct VerdictView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(Color.orange.opacity(0.1), in: RoundedRectangle(cornerRadius: 12))
         }
+    }
+
+    /// One targeted question beats an empty form.
+    ///
+    /// The manual picker is what you offer when you have no idea what is missing. Usually
+    /// the app does know — a lone bottle almost certainly has a cap; an unrecognised
+    /// material is the one thing blocking a real answer — so it asks instead.
+    @ViewBuilder
+    private var followUpCard: some View {
+        let questions = FollowUp.questions(for: activeProduct)
+        if !questions.isEmpty, let question = questions.first {
+            VStack(alignment: .leading, spacing: 8) {
+                Text(question.prompt)
+                    .font(.subheadline.weight(.semibold))
+                Text(question.rationale)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
+
+                HStack(spacing: 8) {
+                    ForEach(question.options) { option in
+                        Button(option.label) {
+                            answer(option.effect)
+                        }
+                        .font(.caption.weight(.medium))
+                        .buttonStyle(.bordered)
+                    }
+                }
+                .padding(.top, 2)
+
+                if questions.count > 1 {
+                    Text("\(questions.count - 1) more like this once you answer.")
+                        .font(.caption2)
+                        .foregroundStyle(.tertiary)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .background(Color.accentColor.opacity(0.09), in: RoundedRectangle(cornerRadius: 12))
+        }
+    }
+
+    /// An answer is a correction like any other, so it updates the history entry too.
+    private func answer(_ effect: FollowUpQuestion.Effect) {
+        if case .decline = effect {
+            declinedQuestions += 1
+            return
+        }
+        let updated = FollowUp.apply(effect, to: activeProduct)
+        apply(correction: updated)
     }
 
     /// Producers change packaging and rarely announce it. Every scan is already kept, so
