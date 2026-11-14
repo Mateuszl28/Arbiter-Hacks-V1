@@ -35,6 +35,7 @@ swiftc -Onone -o "$OUT/bundle-checks" \
   "$ROOT/BinMate/Engine/DataQuality.swift" \
   "$ROOT/BinMate/Engine/PackagingMass.swift" \
   "$ROOT/BinMate/Engine/FollowUp.swift" \
+  "$ROOT/BinMate/Engine/RulesetExport.swift" \
   "$ROOT/Shared/RulesLibrary.swift" \
   "$ROOT/Shared/SharedDefaults.swift" \
   "$ROOT/Shared/DeepLink.swift" \

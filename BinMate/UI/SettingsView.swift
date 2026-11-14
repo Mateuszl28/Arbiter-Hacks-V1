@@ -54,6 +54,12 @@ struct SettingsView: View {
                     LabeledContent("Sample products", value: "\(app.samples.products.count)")
 
                     NavigationLink {
+                        ExportRulesView()
+                    } label: {
+                        Label("Export rules", systemImage: "square.and.arrow.up")
+                    }
+
+                    NavigationLink {
                         DataQualityView()
                     } label: {
                         let report = DataQuality.assess(library: app.library, samples: app.samples)

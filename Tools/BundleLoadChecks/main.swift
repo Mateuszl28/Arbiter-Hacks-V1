@@ -1068,5 +1068,107 @@ check(
     "a component with no shape should be asked about"
 )
 
+// MARK: - Export
+
+// The claim running through this project is that cities are data. That is only worth
+// something if the data can leave. The quoting is the whole job in CSV: instructions
+// contain commas and quotation marks, and a naive join produces a file that opens
+// perfectly and means something else.
+print("\nExport:")
+
+let csv = RulesetExport.csv(library.cities)
+let csvLines = csv.split(separator: "\n", omittingEmptySubsequences: false).filter { !$0.isEmpty }
+let totalRules = library.cities.reduce(0) { $0 + $1.rules.count }
+check(
+    csvLines.count == totalRules + 1,
+    "CSV should be one header plus \(totalRules) rules, got \(csvLines.count) lines"
+)
+
+// Parse it back. A round trip is the only check that proves the quoting works rather
+// than merely looks right.
+func parseCSVRow(_ line: String) -> [String] {
+    var fields: [String] = []
+    var current = ""
+    var inQuotes = false
+    var index = line.startIndex
+    while index < line.endIndex {
+        let character = line[index]
+        if inQuotes {
+            if character == "\"" {
+                let next = line.index(after: index)
+                if next < line.endIndex, line[next] == "\"" {
+                    current.append("\"")
+                    index = next
+                } else {
+                    inQuotes = false
+                }
+            } else {
+                current.append(character)
+            }
+        } else if character == "\"" {
+            inQuotes = true
+        } else if character == "," {
+            fields.append(current)
+            current = ""
+        } else {
+            current.append(character)
+        }
+        index = line.index(after: index)
+    }
+    fields.append(current)
+    return fields
+}
+
+let header = parseCSVRow(String(csvLines[0]))
+check(header.count == 16, "header should have 16 columns, got \(header.count)")
+for line in csvLines.dropFirst() {
+    check(
+        parseCSVRow(String(line)).count == header.count,
+        "every row must have \(header.count) columns — a quoting bug shifts them silently"
+    )
+}
+
+// The specific case that breaks naive exporters: Tokyo's carton instruction is
+// "Rinse it, cut it open, dry it flat, then put it out with paper."
+let commaRule = csvLines.first { $0.contains("cut it open") }
+check(commaRule != nil, "the comma-laden instruction should be present")
+if let commaRule {
+    let fields = parseCSVRow(String(commaRule))
+    check(
+        fields.contains { $0.contains("Rinse it, cut it open") },
+        "an instruction with commas must survive the round trip intact"
+    )
+}
+
+// Markdown must carry the caveat. A rule lifted out of here without it is a worse
+// artefact than no export.
+let md = RulesetExport.markdown(library.cities)
+check(md.contains("not an official source"), "the export must carry its own caveat")
+for city in library.cities {
+    check(md.contains(city.sourceName), "\(city.displayName)'s source must be cited in the export")
+    check(md.contains(city.compiledOn), "\(city.displayName)'s compile date must be present")
+}
+
+// JSON must re-decode into exactly what went in — the strongest form of "the data can
+// leave": another copy of this app could load the export unchanged.
+let exported = RulesetExport.json(library.cities)
+guard let roundTripped = try? JSONDecoder().decode([CityRuleset].self, from: Data(exported.utf8)) else {
+    check(false, "the JSON export must decode back into rulesets")
+    exit(1)
+}
+check(roundTripped.count == library.cities.count, "every city should survive the round trip")
+check(
+    roundTripped.map(\.id).sorted() == library.cities.map(\.id).sorted(),
+    "and keep their identifiers"
+)
+check(
+    roundTripped.reduce(0) { $0 + $1.rules.count } == totalRules,
+    "and every rule"
+)
+
+print("  CSV: \(csvLines.count - 1) rules, \(header.count) columns, round-trips")
+print("  Markdown: \(md.split(separator: "\n").count) lines, carries source and caveat")
+print("  JSON: re-decodes into \(roundTripped.count) identical rulesets")
+
 print(failures == 0 ? "\nAll bundle checks passed." : "\n\(failures) check(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

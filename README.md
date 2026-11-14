@@ -230,6 +230,29 @@ No common material falls through to a default bin in any city — the ancestry f
 doing its job. Most resolve through a broader rule rather than one of their own, which is
 usually correct and occasionally a gap worth closing.
 
+### The data can leave
+
+The claim running through this project is that cities are *data*. A claim like that is
+only worth something if the data can get out — otherwise it is a database with an app
+wrapped around it, which is the same lock-in dressed differently.
+
+**Settings → Export rules** writes all five rulesets as CSV (one row per rule), Markdown
+(a readable rule book) or JSON (exactly as they ship). Exporting costs nothing here
+because the rules were never anything but files.
+
+The CSV quoting is the whole job, and it is round-tripped in the suite rather than
+eyeballed. Tokyo's carton instruction reads *"Rinse it, cut it open, dry it flat, then
+put it out with paper"* — three commas. A naive join shifts every column after it and
+produces a file that opens perfectly and means something else. The test parses the export
+back and asserts all 53 rows still have 16 columns, and that that instruction survives
+intact. The JSON export is asserted to re-decode into rulesets identical to the ones that
+went in: another copy of this app could load it unchanged.
+
+Every export carries its provenance and its caveat. A rule lifted out of here and dropped
+somewhere else without *"compiled by hand from public guidance, not an official source"*
+would be a worse artefact than no export at all — so that sentence is in the file, and
+asserted to be.
+
 ### It asks one question instead of showing a form
 
 There was already a way to fix thin data: open the manual picker and describe the

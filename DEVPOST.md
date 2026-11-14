@@ -52,6 +52,9 @@ instruction and the thing people get wrong.
   the rule covers any part in a city that narrows other rules by part, the ruleset is two
   years old. Several apply at once, and each carries a remedy — a warning with nothing to
   do about it is noise.
+- **Lets the data leave.** All five rulesets export as CSV, Markdown or JSON, each
+  carrying its source, its compile date and its caveat. "Cities are data" is only worth
+  saying if someone else can take the data.
 - **Asks one question instead of showing a form.** When a record is thin, the app usually
   knows what is missing — a bottle with no cap listed, a material it cannot place — so it
   asks, with plausible answers ready. A product that is already well described is left
