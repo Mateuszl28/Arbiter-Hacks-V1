@@ -55,6 +55,13 @@ struct ScanView: View {
                     onManual: { showingManualPacking = true }
                 )
             }
+            // Opened from the widget or a Shortcut. Guarded on the count rather than a
+            // flag so a second request while the app is already open still opens it.
+            .onChange(of: app.scanRequests) { _, _ in
+                lookupError = nil
+                resolved = nil
+                showingScanner = true
+            }
             .alert("Enter a barcode", isPresented: $showingManualBarcode) {
                 TextField("Barcode digits", text: $typedBarcode)
                     .keyboardType(.numberPad)

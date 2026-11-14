@@ -126,6 +126,9 @@ struct BinsWidgetView: View {
 
                 Spacer(minLength: 0)
             }
+            // The configuration description promises a tap opens the scanner, so it has
+            // to. A widget cannot reach the app's state directly, hence a URL.
+            .widgetURL(DeepLink.scan)
         }
     }
 }

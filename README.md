@@ -383,6 +383,24 @@ own copy of the rules, declares `com.apple.widgetkit-extension`, exports its int
 metadata, and is registered by the system — `pluginkit -mv` inside the simulator lists
 `app.binmate.BinMate.widget`. Its rendered appearance on a home screen has not been seen.
 
+**Tapping it works**, which was not true when it was first written. The widget's
+description said "tap to scan" while it had no tap target at all, and the Shortcuts
+action said it opened the app "ready to scan a barcode" while only launching it. Two
+descriptions that were not yet behaviour. Both now land in the same place:
+
+```
+xcrun simctl openurl … "binmate://scan"
+→ app launches from cold, lands on the Scan tab, opens the scanner
+```
+
+The two use different routes because they are in different situations. A widget runs in
+its own process and can only hand back a URL, so `binmate://scan` is registered in the
+app's `Info.plist`. The Shortcuts action, declared by the app with no separate intents
+extension, runs *inside the app's process* — so it leaves a request in the app's own
+defaults, no App Group required. Both are asserted, including that a consumed request
+never fires twice and that `binmate://settings`, `https://binmate.app/scan` and
+`otherapp://scan` are all ignored.
+
 ## Siri and Shortcuts
 
 *"Hey Siri, which bin in BinMate?"* — answered without opening the app, because the rules

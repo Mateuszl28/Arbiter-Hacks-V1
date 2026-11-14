@@ -90,7 +90,10 @@ struct ScanPackagingIntent: AppIntent {
     static var openAppWhenRun: Bool = true
 
     func perform() async throws -> some IntentResult {
-        .result()
+        // This runs in the app's own process, so standard defaults are the app's own and
+        // the request is waiting by the time the app becomes active.
+        PendingAction.requestScanner()
+        return .result()
     }
 }
 

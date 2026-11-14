@@ -29,6 +29,20 @@ final class AppModel {
     var storageIsTemporary = false
     var storageFailure: String?
 
+    /// Bumped when something outside the app asks for the scanner — the widget by URL,
+    /// the Shortcuts action by a pending request. A counter rather than a flag so two
+    /// requests in a row both register.
+    private(set) var scanRequests = 0
+
+    func requestScanner() {
+        scanRequests += 1
+    }
+
+    /// Called when the app becomes active, to pick up a request left by a Shortcut.
+    func consumePendingScannerRequest() {
+        if PendingAction.consumeScannerRequest() { requestScanner() }
+    }
+
     var hasCompletedOnboarding: Bool {
         didSet { UserDefaults.standard.set(hasCompletedOnboarding, forKey: Keys.onboarded) }
     }

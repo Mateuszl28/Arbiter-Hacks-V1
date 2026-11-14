@@ -29,6 +29,7 @@ swiftc -Onone -o "$OUT/bundle-checks" \
   "$ROOT/BinMate/Engine/RulesEngine.swift" \
   "$ROOT/Shared/RulesLibrary.swift" \
   "$ROOT/Shared/SharedDefaults.swift" \
+  "$ROOT/Shared/DeepLink.swift" \
   "$ROOT/BinMate/Engine/CityGuide.swift" \
   "$ROOT/BinMate/Engine/NearestCity.swift" \
   "$ROOT/BinMate/Engine/TakeBackList.swift" \

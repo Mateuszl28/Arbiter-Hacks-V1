@@ -587,5 +587,50 @@ check(
     "the default city must be one that actually loaded"
 )
 
+// MARK: - Ways in from outside
+
+// The widget's description promises a tap opens the scanner, and the Shortcuts action
+// promises the same. Both were descriptions before they were behaviour; these assert the
+// routes that now carry them.
+print("\nDeep links:")
+
+check(DeepLink.isScanRequest(DeepLink.scan), "the widget's own URL must be recognised")
+check(DeepLink.scan.scheme == "binmate", "the scheme must match the one registered in Info.plist")
+print("  widget opens: \(DeepLink.scan)")
+
+// Case should not decide whether someone reaches the scanner.
+check(
+    DeepLink.isScanRequest(URL(string: "BinMate://SCAN")!),
+    "the scheme and host should match case-insensitively"
+)
+// Anything else must be ignored rather than treated as a scan request.
+for rejected in ["binmate://settings", "https://binmate.app/scan", "otherapp://scan", "binmate://"] {
+    check(
+        !DeepLink.isScanRequest(URL(string: rejected)!),
+        "'\(rejected)' should not be read as a scan request"
+    )
+}
+
+// The Shortcuts action leaves a request behind instead of a URL, because it runs inside
+// the app's own process. It has to be consumed exactly once.
+let actionDefaults = UserDefaults(suiteName: "app.binmate.actioncheck")!
+actionDefaults.removePersistentDomain(forName: "app.binmate.actioncheck")
+
+check(
+    !PendingAction.consumeScannerRequest(in: actionDefaults),
+    "a fresh install should have no pending scanner request"
+)
+PendingAction.requestScanner(in: actionDefaults)
+check(
+    PendingAction.consumeScannerRequest(in: actionDefaults),
+    "a request left by the Shortcuts action should be picked up"
+)
+// Consumed means gone: a relaunch days later must not reopen the scanner out of nowhere.
+check(
+    !PendingAction.consumeScannerRequest(in: actionDefaults),
+    "a consumed request must not fire again on the next launch"
+)
+actionDefaults.removePersistentDomain(forName: "app.binmate.actioncheck")
+
 print(failures == 0 ? "\nAll bundle checks passed." : "\n\(failures) check(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

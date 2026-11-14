@@ -171,6 +171,16 @@ first. I could have documented that and moved on. Instead the widget now carries
 city, configured by long-pressing it — no entitlement needed, works in every build, and
 better anyway, because someone who travels can keep one widget per city.
 
+**Two descriptions that weren't behaviour.** Reading back over the project I noticed the
+widget's configuration text said "tap to scan something" while the widget had no tap
+target, and the Shortcuts action said it opened the app "ready to scan a barcode" while
+only launching it. Neither was broken exactly — they just quietly promised more than the
+code did, which is the easiest kind of rough edge to ship. Both now open the scanner, by
+different routes: the widget through a registered `binmate://scan` URL, because a widget
+runs in its own process and can only hand back a URL; the Shortcuts action through a
+request left in the app's own defaults, because an app-declared intent runs *inside* the
+app and needs no App Group at all.
+
 **Knowing when *not* to fall back.** Bundled sample products make the app usable offline,
 but serving one when the database genuinely says "this barcode doesn't exist" would be a
 lie. So fallback only triggers on failures to *reach* the service — a real "not found"
