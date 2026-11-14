@@ -16,9 +16,9 @@ resolves each component against the collection rules of one specific city.
 All captured from the running app — on an iPhone simulator and, where a wider frame
 reads better, from the Mac Catalyst build of the same code.
 
-| Home — iPhone | Camera unavailable, handled — iPhone |
-|---|---|
-| ![Home screen](docs/screenshots/home-iphone.png) | ![Scanner fallback](docs/screenshots/scanner-unavailable-iphone.png) |
+| Onboarding — iPhone | Home — iPhone | Camera unavailable, handled |
+|---|---|---|
+| ![Onboarding](docs/screenshots/onboarding.png) | ![Home screen](docs/screenshots/home-iphone.png) | ![Scanner fallback](docs/screenshots/scanner-unavailable-iphone.png) |
 
 **The same bottle, three cities.** One tap switches between them, instantly and offline.
 
@@ -209,8 +209,17 @@ a demo deterministic.
 open BinMate.xcodeproj    # then ⌘R
 ```
 
+Or, to build, install and relaunch on a booted simulator in one step:
+
+```bash
+./Tools/run-sim.sh
+```
+
+`simctl install` is not hot reload — without terminating and reinstalling, the simulator
+keeps whatever binary was installed last, which makes a change look like it did nothing.
+
 **No simulator runtime installed?** The app also builds and runs as a Mac Catalyst app,
-which needs no runtime at all — this is how the screenshots above were captured:
+which needs no runtime at all:
 
 ```bash
 ./Tools/run-mac.sh
@@ -299,6 +308,10 @@ inventing an answer.
 The distance maths is plain arithmetic, deliberately separated from CoreLocation, so the
 part that decides which city you get is asserted on a desk — against real coordinates,
 a known Berlin→Kraków distance, and a ruleset with no coordinates at all.
+
+It is offered during onboarding as well as in Settings, which is where it belongs: that
+is the one moment the city *must* be chosen, and the one moment a new user has nothing to
+go on except where they are standing.
 
 ## The rule book, read backwards
 

@@ -13,7 +13,7 @@ enum QuickItemAppEnum: String, AppEnum {
 
     // Must be a literal: the App Intents metadata processor reads this at build time and
     // rejects anything computed, so it cannot be derived from `QuickItem.displayName`.
-    // `verify-intents.sh` asserts the two stay in step.
+    // `verify-bundle.sh` reads these back out of this file and fails if they drift.
     static var caseDisplayRepresentations: [QuickItemAppEnum: DisplayRepresentation] = [
         .plasticBottle: "plastic bottle",
         .glassBottle: "glass bottle",

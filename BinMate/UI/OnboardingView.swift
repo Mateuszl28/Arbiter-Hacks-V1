@@ -6,6 +6,7 @@ import SwiftUI
 /// only thing it needs before it can work is which city the user is in.
 struct OnboardingView: View {
     @Environment(AppModel.self) private var app
+    @State private var locator: CityLocator?
 
     var body: some View {
         ScrollView {
@@ -47,6 +48,11 @@ struct OnboardingView: View {
                     Text("Where are you?")
                         .font(.headline)
 
+                    // Offered here rather than only in Settings: this is the one moment
+                    // the city must be chosen, and the one moment someone has no basis
+                    // for choosing beyond where they happen to be standing.
+                    locationRow
+
                     ForEach(app.cities) { city in
                         Button {
                             app.selectedCityID = city.id
@@ -84,6 +90,60 @@ struct OnboardingView: View {
             .padding()
         }
         .background(Color(.systemGroupedBackground))
+    }
+
+    @ViewBuilder
+    private var locationRow: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Button {
+                locator?.locate { cityID in
+                    app.selectedCityID = cityID
+                }
+            } label: {
+                HStack(spacing: 8) {
+                    if locator?.isBusy == true {
+                        ProgressView().controlSize(.small)
+                    } else {
+                        Image(systemName: "location")
+                    }
+                    Text(locator?.isBusy == true ? "Checking…" : "Use my location")
+                        .font(.subheadline.weight(.medium))
+                }
+            }
+            .disabled(locator?.isBusy == true)
+
+            switch locator?.state {
+            case .denied:
+                Text("Location is off, so pick a city below — it works just as well.")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+            case .failed(let message):
+                Text(message)
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+            case .located(let cityID, let summary, let trustworthy):
+                Label {
+                    Text(summary)
+                        .font(.footnote)
+                        .foregroundStyle(trustworthy ? .secondary : .primary)
+                } icon: {
+                    Image(systemName: trustworthy ? "checkmark.circle.fill" : "exclamationmark.triangle.fill")
+                        .foregroundStyle(trustworthy ? Color.green : .orange)
+                }
+                if !trustworthy, cityID != app.selectedCityID,
+                   let city = app.library.city(id: cityID) {
+                    Button("Use \(city.displayName) anyway") {
+                        app.selectedCityID = cityID
+                    }
+                    .font(.footnote.weight(.medium))
+                }
+            default:
+                EmptyView()
+            }
+        }
+        .task {
+            if locator == nil { locator = CityLocator(library: app.library) }
+        }
     }
 
     private func point(symbol: String, title: String, detail: String) -> some View {
