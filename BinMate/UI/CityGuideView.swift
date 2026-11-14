@@ -129,8 +129,24 @@ struct CityGuideView: View {
 
     private func provenance(_ ruleset: CityRuleset) -> some View {
         Section {
+            let conflicts = RuleConflicts.findings(in: ruleset)
+
             VStack(alignment: .leading, spacing: 6) {
                 Text("\(ruleset.rules.count) rules across \(ruleset.streams.count) collection streams.")
+                // Rules are data, and data can contradict itself. A rule shadowed by a
+                // broader one above it never fires, and nothing else would say so.
+                if conflicts.isEmpty {
+                    Label("No rule here is unreachable or contradicted by another.", systemImage: "checkmark.seal")
+                        .foregroundStyle(.secondary)
+                } else {
+                    ForEach(conflicts, id: \.self) { finding in
+                        Label(
+                            "Rule \(finding.ruleIndex + 1) \(finding.message)",
+                            systemImage: finding.severity == .error ? "exclamationmark.triangle.fill" : "exclamationmark.circle"
+                        )
+                        .foregroundStyle(finding.severity == .error ? Color.orange : .secondary)
+                    }
+                }
                 Text("Compiled \(ruleset.compiledOn) from \(ruleset.sourceName). Not an official source — verify anything that matters with your local waste service.")
             }
             .font(.caption)

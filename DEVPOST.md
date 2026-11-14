@@ -40,6 +40,13 @@ instruction and the thing people get wrong.
   BinMate tells you a six-pack of cans is 1.50 € waiting to be reclaimed, not rubbish.
 - **Compares cities instantly.** Tap another city and the whole product re-sorts live.
   It's instant because resolving is a pure function over bundled data.
+- **Shows its working.** Tap *Why?* on any part and the app lays out every step: the
+  material, the part, which rule matched and whether it had to fall back to a broader
+  one, and the source it came from. An app that says "yellow bin" and cannot say why is
+  asking to be trusted on authority.
+- **Checks its own rules for contradictions.** A rule shadowed by a broader one above it
+  never fires, and nothing else would notice — the answer would just be wrong, with a
+  confident explanation attached.
 - **Says how sure it is.** Every verdict is labelled *specific local rule*, *inherited
   general rule*, or *no specific rule — default bin*. The failure mode of every sorting
   app is confident nonsense; this lets you calibrate.

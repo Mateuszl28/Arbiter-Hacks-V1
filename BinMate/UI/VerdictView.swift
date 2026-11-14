@@ -317,6 +317,7 @@ struct StreamCard: View {
 /// One component and what to do with it.
 struct PartRow: View {
     let verdict: BinVerdict
+    @State private var showingWhy = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -363,15 +364,66 @@ struct PartRow: View {
                 }
             }
 
-            TagPill(
-                text: verdict.quality.label,
-                symbol: verdict.quality.symbol,
-                tint: verdict.quality == .cityDefault ? .orange : .secondary
-            )
+            HStack(spacing: 8) {
+                TagPill(
+                    text: verdict.quality.label,
+                    symbol: verdict.quality.symbol,
+                    tint: verdict.quality == .cityDefault ? .orange : .secondary
+                )
+                Button(showingWhy ? "Hide reasoning" : "Why?") {
+                    withAnimation(.snappy) { showingWhy.toggle() }
+                }
+                .font(.caption2.weight(.medium))
+            }
+
+            if showingWhy { reasoning }
         }
         .padding(.horizontal)
         .padding(.vertical, 12)
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    /// The engine's working, shown on request.
+    ///
+    /// An app that says "put this in the yellow bin" and cannot say why is asking to be
+    /// trusted on authority. Every step here is checkable against the object in the
+    /// user's hand, and names the rule and the source that produced the answer — so
+    /// disagreeing with it is possible, which is the point.
+    private var reasoning: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            ForEach(verdict.explanation.steps) { step in
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                    Text(step.label)
+                        .font(.caption2.weight(.semibold))
+                        .foregroundStyle(.secondary)
+                        .frame(width: 86, alignment: .leading)
+                    VStack(alignment: .leading, spacing: 1) {
+                        Text(step.detail)
+                            .font(.caption)
+                        if let note = step.note {
+                            Text(note)
+                                .font(.caption2)
+                                .foregroundStyle(.tertiary)
+                        }
+                    }
+                    Spacer(minLength: 0)
+                }
+            }
+
+            if verdict.explanation.ancestry.count > 1 {
+                Text(verdict.explanation.ancestry
+                        .map { MaterialTaxonomy.displayName(for: $0) }
+                        .joined(separator: "  →  "))
+                    .font(.caption2.monospaced())
+                    .foregroundStyle(.tertiary)
+                    .padding(.top, 2)
+            }
+        }
+        .padding(10)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color.primary.opacity(0.04), in: RoundedRectangle(cornerRadius: 10))
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("Reasoning: " + verdict.explanation.steps.map { "\($0.label) \($0.detail)" }.joined(separator: ", "))
     }
 }
 

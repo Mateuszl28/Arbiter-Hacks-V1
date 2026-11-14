@@ -632,5 +632,69 @@ check(
 )
 actionDefaults.removePersistentDomain(forName: "app.binmate.actioncheck")
 
+// MARK: - Rule conflicts
+
+// Cities being data is only an advantage if the data can be checked. A rule written in
+// good faith can still be dead — shadowed by a broader one above it — and nothing in the
+// app would say so: the verdict would just be quietly wrong, with a confident
+// explanation attached.
+print("\nRule conflicts:")
+
+var totalWarnings = 0
+for city in library.cities {
+    let findings = RuleConflicts.findings(in: city)
+    let errors = findings.filter { $0.severity == .error }
+    let warnings = findings.filter { $0.severity == .warning }
+    totalWarnings += warnings.count
+
+    for finding in findings {
+        print("  \(finding.severity == .error ? "ERROR  " : "warning")  \(city.displayName) rule \(finding.ruleIndex + 1): \(finding.message)")
+    }
+    check(
+        errors.isEmpty,
+        "\(city.displayName) has \(errors.count) unreachable or contradictory rule(s)"
+    )
+}
+if totalWarnings == 0 {
+    print("  none across \(library.cities.count) cities")
+}
+
+// The detector has to be able to fire, or it is decoration. A deliberately broken
+// ruleset must be caught.
+let shadowed = CityRuleset(
+    id: "test", displayName: "Test", region: "Nowhere", flag: "", regionCode: "XX",
+    latitude: nil, longitude: nil, compiledOn: "2026-01-01", sourceName: "test",
+    sourceURL: nil,
+    streams: [
+        WasteStream(id: "a", name: "A", localName: nil, colorHex: "000000", symbol: "trash", kind: .recycling, depositAmount: nil, depositCurrencyCode: nil),
+        WasteStream(id: "b", name: "B", localName: nil, colorHex: "FFFFFF", symbol: "trash", kind: .residual, depositAmount: nil, depositCurrencyCode: nil),
+    ],
+    rules: [
+        // Broad rule first…
+        BinRule(materials: ["en:plastic"], shapes: nil, stream: "a", instruction: nil, caution: nil),
+        // …so this one can never fire, and would have sent the bottle somewhere else.
+        BinRule(materials: ["en:plastic"], shapes: ["en:bottle"], stream: "b", instruction: nil, caution: nil),
+    ],
+    defaultStreamID: "b"
+)
+let caught = RuleConflicts.findings(in: shadowed)
+check(
+    caught.contains { $0.severity == .error && $0.ruleIndex == 1 },
+    "a rule shadowed by a broader one above it must be reported as an error"
+)
+// And it must not cry wolf: the same pair in the correct order is fine.
+let correctOrder = CityRuleset(
+    id: "test2", displayName: "Test", region: "Nowhere", flag: "", regionCode: "XX",
+    latitude: nil, longitude: nil, compiledOn: "2026-01-01", sourceName: "test",
+    sourceURL: nil,
+    streams: shadowed.streams,
+    rules: [shadowed.rules[1], shadowed.rules[0]],
+    defaultStreamID: "b"
+)
+check(
+    RuleConflicts.findings(in: correctOrder).allSatisfy { $0.severity != .error },
+    "the specific-before-general order is correct and must not be reported"
+)
+
 print(failures == 0 ? "\nAll bundle checks passed." : "\n\(failures) check(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

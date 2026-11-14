@@ -35,6 +35,10 @@ reads better, from the Mac Catalyst build of the same code.
 |---|---|---|
 | ![Rule book](docs/screenshots/rulebook.png) | ![Rule book search](docs/screenshots/rulebook-search.png) | ![Take-back list](docs/screenshots/take-back.png) |
 
+| Every answer can show its working |
+|---|
+| ![Why this bin](docs/screenshots/why.png) |
+
 ## The demonstration
 
 The same 500 ml PET bottle, in five cities, resolved offline and instantly:
@@ -131,6 +135,37 @@ Every verdict carries a match quality:
 
 The failure mode of every sorting app is confident nonsense. Surfacing the difference
 lets a user calibrate their trust, and doubles as a to-do list for ruleset maintenance.
+
+### And it can show its working
+
+A label is not an explanation. Tapping **Why?** on any part lays out every step the
+engine took:
+
+```
+Material     PP plastic            en:pp-polypropylene
+Part         Cap                   en:cap
+Matched as   Plastic               no rule for pp plastic specifically,
+                                   so the broader rule applies
+Source       BSR Berliner Stadtreinigung — compiled 2026-11-14
+
+             PP plastic  →  Plastic
+```
+
+Every line is checkable against the object in your hand, and it names the rule and the
+source that produced the answer. An app that says "yellow bin" and cannot say why is
+asking to be trusted on authority; this one can be argued with, which is the point.
+
+### Rules can contradict each other, so they are checked
+
+Cities being data is only an advantage if the data can be checked. A rule written in good
+faith can still be dead — shadowed by a broader rule listed above it — and nothing would
+ever say so: the verdict would simply be wrong, with a confident explanation attached.
+
+`RuleConflicts` finds rules that can never fire, rules made redundant by an earlier one,
+and rules naming no material at all. It runs in the test suite *and* in the app, at the
+foot of each city's rule book. Currently **no conflicts across all five cities** — and
+the detector is itself tested against a deliberately broken ruleset, because a checker
+that cannot fail is decoration.
 
 ---
 
