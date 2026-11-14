@@ -52,6 +52,10 @@ instruction and the thing people get wrong.
   the rule covers any part in a city that narrows other rules by part, the ruleset is two
   years old. Several apply at once, and each carries a remedy — a warning with nothing to
   do about it is noise.
+- **Reports on its own data.** One screen collects every check — rulesets that failed to
+  load, rules that can never fire, sources overdue for review, materials with thin
+  coverage, packaging records that look malformed. With no overall score, because that
+  number would have to be invented.
 - **Keeps an account of what it actually said.** Each scan records the decision — the
   bin, the matching, the confidence, the rule, the source and its date — so history is
   not silently rewritten when rules change. It can then answer *would today's rules say

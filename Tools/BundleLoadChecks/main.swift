@@ -863,5 +863,82 @@ if case .changed(let differences) = soft {
     for difference in differences { print("  \(difference.summary)") }
 }
 
+// MARK: - Packaging anomalies and data quality
+
+// Open Food Facts fails in specific ways rather than randomly: one catch-all component,
+// the same part twice, a material and a shape that do not go together. None of these stop
+// the engine — it will resolve a glass film perfectly happily — which is why they need
+// catching. A confident answer about an implausible object is worse than no answer.
+print("\nPackaging anomalies:")
+
+func product(_ components: [PackagingComponent], name: String = "Test") -> ScannedProduct {
+    ScannedProduct(barcode: nil, name: name, brand: nil, imageURL: nil, components: components, origin: .manual)
+}
+
+let thin = product([PackagingComponent(shape: "en:bottle", material: "en:plastic")])
+check(
+    PackagingAnomalyDetector.anomalies(in: thin).contains(.singleComponent),
+    "a one-component record should be flagged as thin"
+)
+
+let duplicated = product([
+    PackagingComponent(shape: "en:label", material: "en:paper"),
+    PackagingComponent(shape: "en:label", material: "en:paper"),
+    PackagingComponent(shape: "en:bottle", material: "en:clear-glass"),
+])
+check(
+    PackagingAnomalyDetector.anomalies(in: duplicated).contains { if case .repeatedComponent = $0 { return true }; return false },
+    "the same part listed twice should be flagged"
+)
+
+// A paper bottle is a contributor picking the wrong dropdown entry, not a product.
+let implausible = product([
+    PackagingComponent(shape: "en:bottle", material: "en:paper"),
+    PackagingComponent(shape: "en:cap", material: "en:pp-polypropylene"),
+])
+check(
+    PackagingAnomalyDetector.anomalies(in: implausible).contains { if case .implausiblePairing = $0 { return true }; return false },
+    "a paper bottle should be flagged as implausible"
+)
+for anomaly in PackagingAnomalyDetector.anomalies(in: implausible) { print("  \(anomaly.summary)") }
+
+// And it must not cry wolf. A perfectly ordinary three-part bottle is clean.
+let ordinary = product([
+    PackagingComponent(shape: "en:bottle", material: "en:pet-polyethylene-terephthalate"),
+    PackagingComponent(shape: "en:cap", material: "en:pp-polypropylene"),
+    PackagingComponent(shape: "en:label", material: "en:paper"),
+])
+check(
+    PackagingAnomalyDetector.anomalies(in: ordinary).isEmpty,
+    "an ordinary bottle must produce no anomalies, or the detector becomes noise"
+)
+check(
+    PackagingAnomalyDetector.anomalies(in: product([])).contains(.noComponents),
+    "an empty record should be reported"
+)
+
+print("\nData quality report:")
+let quality = DataQuality.assess(library: library, samples: samples)
+print("  checked: \(quality.checked.cities) cities, \(quality.checked.rules) rules, \(quality.checked.materials) materials, \(quality.checked.products) products")
+for issue in quality.issues.prefix(8) {
+    print("  [\(issue.severity == .error ? "error" : (issue.severity == .warning ? "warn" : "info"))] \(issue.area): \(issue.detail)")
+}
+if quality.issues.count > 8 { print("  …and \(quality.issues.count - 8) more") }
+
+check(quality.errors.isEmpty, "the bundled data should contain no errors, found \(quality.errors.count)")
+// Every issue must carry something to do about it. A list of complaints with no remedies
+// is a list nobody opens twice.
+for issue in quality.issues {
+    check(!issue.action.isEmpty, "every issue needs an action: \(issue.detail)")
+    check(!issue.detail.isEmpty, "every issue needs a detail")
+}
+check(
+    quality.checked.cities == library.cities.count,
+    "the report must say how much it checked, not only what was wrong"
+)
+// Severity ordering, so the worst thing is not buried below a note.
+let severities = quality.issues.map(\.severity.rawValue)
+check(severities == severities.sorted(by: >), "issues should be ordered worst first")
+
 print(failures == 0 ? "\nAll bundle checks passed." : "\n\(failures) check(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

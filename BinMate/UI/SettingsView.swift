@@ -52,8 +52,26 @@ struct SettingsView: View {
                 Section {
                     LabeledContent("Cities loaded", value: "\(app.cities.count)")
                     LabeledContent("Sample products", value: "\(app.samples.products.count)")
+
+                    NavigationLink {
+                        DataQualityView()
+                    } label: {
+                        let report = DataQuality.assess(library: app.library, samples: app.samples)
+                        HStack {
+                            Label("Data quality", systemImage: "checklist")
+                            Spacer(minLength: 0)
+                            if report.issues.isEmpty {
+                                Text("clean").foregroundStyle(.secondary)
+                            } else {
+                                Text("\(report.errors.count + report.warnings.count)")
+                                    .foregroundStyle(report.errors.isEmpty ? Color.secondary : Color.orange)
+                            }
+                        }
+                    }
                 } header: {
                     Text("Bundled data")
+                } footer: {
+                    Text("These checks already run in the test suite. Surfacing them here means a problem with the data is visible to whoever is holding the phone, not only to whoever runs the scripts.")
                 }
 
                 if app.storageIsTemporary {

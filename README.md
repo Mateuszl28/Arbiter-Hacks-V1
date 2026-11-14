@@ -230,6 +230,36 @@ No common material falls through to a default bin in any city — the ancestry f
 doing its job. Most resolve through a broader rule rather than one of their own, which is
 usually correct and occasionally a gap worth closing.
 
+### One place that says whether the data is sound
+
+These checks already existed and were scattered: load failures in Settings, conflicts at
+the foot of a rule book, coverage inside a city page, staleness inside a verdict. Each
+was visible only to someone already looking at that screen.
+
+**Settings → Data quality** collects them and answers a question none of them could
+individually — is this data in good shape, and if not, what is worst? It reports what was
+examined, not only what was wrong, because a clean report means nothing unless you know
+its scope:
+
+```
+Checked: 5 cities · 53 rules · 19 common materials · 5 sample products
+Nothing to report.
+```
+
+Every issue carries what would resolve it. A list of complaints with nothing to do about
+them is a list nobody opens twice.
+
+**There is deliberately no overall score.** A single number would have to weigh a dead
+rule against an ageing source against a thin product record, and that weighting would be
+invented — which is the one thing this app does not do.
+
+It includes anomaly detection over packaging records, because Open Food Facts fails in
+specific ways rather than randomly: one catch-all component, the same part listed twice,
+a paper bottle. None of these stop the engine — it will resolve a glass film perfectly
+happily — which is exactly why they need catching. A confident answer about an
+implausible object is worse than no answer. The detector is also asserted *not* to fire
+on an ordinary three-part bottle, since a checker that flags everything is noise.
+
 ### Rules can contradict each other, so they are checked
 
 Cities being data is only an advantage if the data can be checked. A rule written in good
