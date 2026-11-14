@@ -28,9 +28,15 @@ struct StatsView: View {
                     // bar could end up in a different order from the legend beneath it.
                     let stats = HouseholdStats(records: records, library: app.library)
 
+                    let ledger = MassLedger.build(
+                        scans: records.map { (product: $0.product, cityID: $0.cityID) },
+                        library: app.library
+                    )
+
                     VStack(spacing: 18) {
                         tiles(stats)
                         breakdown(stats)
+                        if ledger.partsWithMass > 0 { mass(ledger) }
                         if !stats.depositTotals.isEmpty { deposits(stats) }
                         if stats.partsWithoutLocalRule > 0 { honesty(stats) }
                     }
@@ -92,6 +98,71 @@ struct StatsView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
         .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 14))
+    }
+
+    /// Mass, with the three things people call "recovered" kept apart.
+    ///
+    /// Only two of them are measurable here, and the coverage figure is not decoration:
+    /// a total drawn from a quarter of the parts is a different claim from one drawn
+    /// from nearly all of them, and burying that would make the number dishonest.
+    private func mass(_ ledger: MassLedger) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Label("Packaging material", systemImage: "scalemass")
+                .font(.subheadline.weight(.semibold))
+
+            HStack(alignment: .firstTextBaseline, spacing: 6) {
+                Text(formatted(grams: ledger.recognisedGrams))
+                    .font(.title2.weight(.semibold).monospacedDigit())
+                Text("recognised")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+
+            Text("From \(ledger.partsWithMass) of \(ledger.totalParts) parts — \(Int(ledger.coverage * 100))% of what you scanned records a weight. The rest are not counted.")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
+
+            if ledger.directedGrams > 0 {
+                Divider()
+                HStack(alignment: .firstTextBaseline, spacing: 6) {
+                    Text(formatted(grams: ledger.directedGrams))
+                        .font(.subheadline.weight(.semibold).monospacedDigit())
+                    Text("sorted by a real rule, not a default bin")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
+
+            if !ledger.byMaterial.isEmpty {
+                Divider()
+                ForEach(ledger.byMaterial.prefix(5)) { entry in
+                    HStack {
+                        Text(MaterialTaxonomy.displayName(for: entry.material))
+                            .font(.caption)
+                        Spacer(minLength: 0)
+                        Text(formatted(grams: entry.grams))
+                            .font(.caption.monospacedDigit())
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            }
+
+            Text("This is the weight of packaging you handled, taken from Open Food Facts. It is not a claim about what a recycling facility actually recovered — BinMate has no way to know that.")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(.top, 2)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding()
+        .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 14))
+    }
+
+    private func formatted(grams: Double) -> String {
+        grams >= 1000
+            ? String(format: "%.2f kg", grams / 1000)
+            : String(format: "%.0f g", grams)
     }
 
     /// Tappable, because a number you cannot act on is trivia. The destination turns the

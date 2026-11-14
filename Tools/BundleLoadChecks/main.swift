@@ -940,5 +940,61 @@ check(
 let severities = quality.issues.map(\.severity.rawValue)
 check(severities == severities.sorted(by: >), "issues should be ordered worst first")
 
+// MARK: - Mass
+
+// The field is free text and contributors write what they like into it. The one thing
+// that must never happen is reading a volume as a mass: "25 cl" describes what was in the
+// bottle, not what the bottle weighs, and treating them alike would turn a drinks aisle
+// into hundreds of imaginary kilograms.
+print("\nMass parsing:")
+
+check(PackagingMass.gramsPerUnit(from: "24 g") == 24, "plain grams")
+check(PackagingMass.gramsPerUnit(from: "220g") == 220, "no space")
+check(PackagingMass.gramsPerUnit(from: "13 g each") == 13, "trailing words")
+check(PackagingMass.gramsPerUnit(from: "1.5 kg") == 1500, "kilograms convert")
+check(PackagingMass.gramsPerUnit(from: "1,5 kg") == 1500, "a comma decimal is still a number")
+check(PackagingMass.gramsPerUnit(from: "500 mg") == 0.5, "milligrams convert")
+
+// The refusals. Each of these would otherwise contribute a plausible-looking number.
+for volume in ["25 cl", "330 ml", "1 l", "1.5 litre", "12 fl oz"] {
+    check(
+        PackagingMass.gramsPerUnit(from: volume) == nil,
+        "'\(volume)' is a volume and must not be read as a mass"
+    )
+}
+check(PackagingMass.gramsPerUnit(from: nil) == nil, "a missing field is missing, not zero")
+check(PackagingMass.gramsPerUnit(from: "") == nil, "empty text yields nothing")
+check(PackagingMass.gramsPerUnit(from: "one bottle") == nil, "words without a number yield nothing")
+
+// Multipacks multiply.
+let weighedCans = PackagingComponent(shape: "en:can", material: "en:aluminium", numberOfUnits: 6, quantityPerUnit: "13 g each")
+check(PackagingMass.grams(for: weighedCans) == 78, "six 13 g cans should be 78 g, got \(PackagingMass.grams(for: weighedCans) ?? -1)")
+
+print("\nMass ledger over the bundled samples:")
+let ledger = MassLedger.build(
+    scans: samples.products.map { (product: $0, cityID: "de-berlin") },
+    library: library
+)
+print("  recognised: \(Int(ledger.recognisedGrams)) g across \(ledger.partsWithMass) of \(ledger.totalParts) parts (\(Int(ledger.coverage * 100))% coverage)")
+print("  directed by a real rule: \(Int(ledger.directedGrams)) g")
+for entry in ledger.byMaterial.prefix(4) {
+    print("    \(MaterialTaxonomy.displayName(for: entry.material)): \(Int(entry.grams)) g over \(entry.parts) part(s)")
+}
+
+check(ledger.recognisedGrams > 0, "the bundled samples record some masses")
+check(ledger.partsWithoutMass > 0, "and some without — the coverage figure has to mean something")
+check(
+    ledger.directedGrams <= ledger.recognisedGrams,
+    "mass directed by a rule cannot exceed mass recognised"
+)
+check(
+    abs(ledger.byMaterial.reduce(0) { $0 + $1.grams } - ledger.recognisedGrams) < 0.001,
+    "the per-material breakdown must add up to the total"
+)
+check(
+    ledger.coverage > 0 && ledger.coverage < 1,
+    "coverage should be a real fraction here, got \(ledger.coverage)"
+)
+
 print(failures == 0 ? "\nAll bundle checks passed." : "\n\(failures) check(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

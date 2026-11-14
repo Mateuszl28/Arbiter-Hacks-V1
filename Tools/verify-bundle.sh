@@ -33,6 +33,7 @@ swiftc -Onone -o "$OUT/bundle-checks" \
   "$ROOT/BinMate/Engine/DecisionRecord.swift" \
   "$ROOT/BinMate/Engine/PackagingAnomaly.swift" \
   "$ROOT/BinMate/Engine/DataQuality.swift" \
+  "$ROOT/BinMate/Engine/PackagingMass.swift" \
   "$ROOT/Shared/RulesLibrary.swift" \
   "$ROOT/Shared/SharedDefaults.swift" \
   "$ROOT/Shared/DeepLink.swift" \

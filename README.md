@@ -230,6 +230,31 @@ No common material falls through to a default bin in any city — the ancestry f
 doing its job. Most resolve through a broader rule rather than one of their own, which is
 usually correct and occasionally a gap worth closing.
 
+### Mass, with the three meanings of "recovered" kept apart
+
+Open Food Facts records a packaging weight for some components, and the app was storing
+it and doing nothing with it. It now adds up — carefully, because three different things
+get called *recovered* and only two of them are knowable here:
+
+| | |
+|---|---|
+| **Recognised** | a weight is recorded for the part. Measurable. |
+| **Directed** | that part also resolved to a real rule rather than a catch-all bin. Measurable. |
+| **Recovered** | what a sorting facility actually pulled out. **Not knowable**, and not claimed. |
+
+The coverage figure travels with the total and is not decoration: over the bundled
+samples it reads *324 g across 4 of 15 parts — 26%*. A total drawn from a quarter of the
+parts is a different claim from one drawn from nearly all of them, and hiding that would
+make the number dishonest.
+
+The parser refuses volumes. `25 cl` describes what was *in* the bottle, not what the
+bottle weighs, and reading the two alike would turn a drinks aisle into hundreds of
+imaginary kilograms. Five volume spellings are asserted to produce nothing, alongside the
+mass units that do parse.
+
+This is the alternative to a fabricated "CO₂ saved" figure. BinMate cannot know what you
+would have done without it; it can know what a bottle weighs.
+
 ### One place that says whether the data is sound
 
 These checks already existed and were scattered: load failures in Settings, conflicts at

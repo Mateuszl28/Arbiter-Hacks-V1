@@ -52,6 +52,11 @@ instruction and the thing people get wrong.
   the rule covers any part in a city that narrows other rules by part, the ruleset is two
   years old. Several apply at once, and each carries a remedy — a warning with nothing to
   do about it is noise.
+- **Weighs what you handled, and says how much of it it actually knows.** Three things
+  get called "recovered" and only two are knowable: mass *recognised* from the data, mass
+  *directed* by a real rule, and mass actually recovered by a facility — which BinMate
+  cannot know and does not claim. The parser refuses volumes, because `25 cl` is what was
+  in the bottle, not what the bottle weighs.
 - **Reports on its own data.** One screen collects every check — rulesets that failed to
   load, rules that can never fire, sources overdue for review, materials with thin
   coverage, packaging records that look malformed. With no overall score, because that
