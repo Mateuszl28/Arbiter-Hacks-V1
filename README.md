@@ -497,6 +497,18 @@ Database License.
   constraint on the product, and it is measurable — `./Tools/verify-api.sh` hits the live
   API and shows it:
 
+  It also, for a long time, got the commonest materials in existence wrong. Open Food
+  Facts writes the recycling code into the identifier — `en:pet-1-polyethylene-terephthalate`,
+  `en:pp-5-polypropylene` — and the taxonomy only knew the uncoded spellings. **Every one
+  of the seven standard plastics resolved to nothing and fell into residual waste**, with
+  a confident explanation attached. A resin-coded PET bottle in Berlin was worth 25 cents
+  and the app said to bin it.
+
+  The live API suite had the evidence in its own output and printed it as a *note* rather
+  than failing. It now fails when a live material is one the taxonomy cannot place, which
+  is a BinMate bug rather than a gap in a city's rules — and that distinction is the whole
+  reason it went unnoticed.
+
   | Barcode | What the API returns | Reality |
   |---|---|---|
   | `5449000000996` (Coca-Cola) | 1 component: *drink can, aluminium* | can + ring pull |

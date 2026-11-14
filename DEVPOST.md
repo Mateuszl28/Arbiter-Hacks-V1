@@ -216,6 +216,19 @@ runs in its own process and can only hand back a URL; the Shortcuts action throu
 request left in the app's own defaults, because an app-declared intent runs *inside* the
 app and needs no App Group at all.
 
+**The bug my own test watched and shrugged at.** Open Food Facts writes the recycling
+code into the material identifier: `en:pp-5-polypropylene`, not `en:pp-polypropylene`.
+The taxonomy knew only the uncoded spellings, so all seven standard plastics — the
+commonest packaging materials there are — resolved to nothing and fell into residual
+waste. A resin-coded PET bottle in Berlin is worth 25 cents and the app said to bin it.
+
+The live API suite had printed `en:pp-5-polypropylene` in its own output for days. It
+treated "this material matched no rule" as a note rather than a failure, because
+sometimes that is a legitimate gap in a city's rules. The distinction it was missing is
+that an *unrecognised material* is a bug in BinMate, while an *unruled material* is a gap
+in a city — so it now fails on the first and still only notes the second. Verified by
+deleting one alias and watching it go red.
+
 **Knowing when *not* to fall back.** Bundled sample products make the app usable offline,
 but serving one when the database genuinely says "this barcode doesn't exist" would be a
 lie. So fallback only triggers on failures to *reach* the service — a real "not found"

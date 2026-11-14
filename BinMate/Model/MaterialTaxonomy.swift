@@ -94,7 +94,47 @@ enum MaterialTaxonomy {
     ]
 
     /// Spellings that turn up in contributed data but are not taxonomy entries.
+    ///
+    /// The block carrying resin and material codes is not a nicety — it is what Open
+    /// Food Facts actually returns. The canonical id for polypropylene there is
+    /// `en:pp-5-polypropylene`, with the recycling code embedded, and the same goes for
+    /// all seven standard plastics plus the paper, metal and glass codes. Without these
+    /// the commonest packaging materials in existence resolve to nothing and fall into
+    /// residual waste — which is both wrong and confidently wrong.
     private static let aliases: [TaxonomyID: TaxonomyID] = [
+        // Plastics, codes 1–7.
+        "en:pet-1-polyethylene-terephthalate": "en:pet-polyethylene-terephthalate",
+        "en:hdpe-2-high-density-polyethylene": "en:hdpe-high-density-polyethylene",
+        "en:pe-hd-2-high-density-polyethylene": "en:hdpe-high-density-polyethylene",
+        "en:pvc-3-polyvinyl-chloride": "en:pvc-polyvinyl-chloride",
+        "en:ldpe-4-low-density-polyethylene": "en:ldpe-low-density-polyethylene",
+        "en:pe-ld-4-low-density-polyethylene": "en:ldpe-low-density-polyethylene",
+        "en:pp-5-polypropylene": "en:pp-polypropylene",
+        "en:ps-6-polystyrene": "en:ps-polystyrene",
+        "en:pse-6-expanded-polystyrene": "en:eps-expanded-polystyrene",
+        "en:o-7-other-plastics": "en:other-plastics",
+        "en:other-7-other-plastics": "en:other-plastics",
+        "en:pla-7-polylactic-acid": "en:pla-polylactic-acid",
+
+        // Paper and board, codes 20–22.
+        "en:pap-20-corrugated-cardboard": "en:corrugated-cardboard",
+        "en:pap-21-non-corrugated-cardboard": "en:non-corrugated-cardboard",
+        "en:pap-22-paper": "en:paper",
+
+        // Metals, codes 40–41.
+        "en:fe-40-steel": "en:steel",
+        "en:alu-41-aluminium": "en:aluminium",
+
+        // Glass, codes 70–72.
+        "en:gl-70-clear-glass": "en:clear-glass",
+        "en:gl-71-green-glass": "en:green-glass",
+        "en:gl-72-brown-glass": "en:brown-glass",
+
+        // Composites, code 8x. These carry a C- prefix in the standard.
+        "en:c-pap-81-paper-and-plastic-composite": "en:paper-and-plastic-composite",
+        "en:c-pap-84-cardboard-and-plastic-and-aluminium-composite": "en:beverage-carton",
+        "en:c-x-90-plastic-and-aluminium-composite": "en:plastic-and-aluminium-composite",
+
         "en:pet": "en:pet-polyethylene-terephthalate",
         "en:pete": "en:pet-polyethylene-terephthalate",
         "en:hdpe": "en:hdpe-high-density-polyethylene",

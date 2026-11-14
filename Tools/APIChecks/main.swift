@@ -11,6 +11,8 @@ let barcodes = CommandLine.arguments.count > 1
     : [
         "5449000000996",  // Coca-Cola 500 ml — widely contributed packaging data
         "3017620422003",  // Nutella 400 g — multi-material: glass, plastic, paper
+        "4000417025005",  // Returns en:pp-5-polypropylene — a resin-coded identifier
+        "8000500310427",  // Returns en:o-7-other-plastics
         "0000000000000",  // Should be a clean "not found", not a crash
     ]
 
@@ -53,6 +55,16 @@ for barcode in barcodes {
             let ancestry = MaterialTaxonomy.ancestry(of: component.material)
             let roots = ancestry.map(\.value)
             print("    \(component.headline)  [\(roots.joined(separator: " -> "))]")
+
+            // A material the taxonomy cannot place is a bug in BinMate, not a gap in a
+            // city's rules — and it is the failure mode that is easy to miss, because
+            // the app still gives a confident-looking answer. This check previously
+            // printed such cases as a note and passed, which is how seven resin-code
+            // identifiers returned by this very API went unnoticed while every plastic
+            // in the database resolved to residual waste.
+            if !MaterialTaxonomy.isKnown(MaterialTaxonomy.canonical(component.material)) {
+                fail("\(barcode): the live API returned '\(component.material.value)', which the taxonomy does not know")
+            }
 
             for city in cities {
                 let verdict = RulesEngine(ruleset: city).verdict(for: component)

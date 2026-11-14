@@ -264,5 +264,44 @@ for reason in alienVerdict.uncertainty + capVerdict2.uncertainty + stale {
     check(!reason.summary.isEmpty, "every reason needs a summary")
 }
 
+// 14. Open Food Facts writes the recycling code into the identifier. These are the
+// canonical forms it actually returns, not invented spellings — they were found by
+// reading live API responses, after every plastic in the database had been silently
+// resolving to residual waste.
+print("\n--- resin-coded identifiers ---")
+
+let resinCoded: [(String, TaxonomyID)] = [
+    ("en:pet-1-polyethylene-terephthalate", "en:pet-polyethylene-terephthalate"),
+    ("en:hdpe-2-high-density-polyethylene", "en:hdpe-high-density-polyethylene"),
+    ("en:pvc-3-polyvinyl-chloride", "en:pvc-polyvinyl-chloride"),
+    ("en:ldpe-4-low-density-polyethylene", "en:ldpe-low-density-polyethylene"),
+    ("en:pp-5-polypropylene", "en:pp-polypropylene"),
+    ("en:ps-6-polystyrene", "en:ps-polystyrene"),
+    ("en:o-7-other-plastics", "en:other-plastics"),
+    ("en:pap-22-paper", "en:paper"),
+    ("en:alu-41-aluminium", "en:aluminium"),
+    ("en:fe-40-steel", "en:steel"),
+    ("en:gl-70-clear-glass", "en:clear-glass"),
+]
+for (coded, expected) in resinCoded {
+    check(
+        MaterialTaxonomy.canonical(TaxonomyID(coded)) == expected,
+        "'\(coded)' should canonicalise to \(expected.value)"
+    )
+}
+
+// And the consequence that matters: a coded PET bottle must still reach Berlin's deposit
+// rule, not the residual bin.
+let codedBottle = PackagingComponent(shape: "en:bottle", material: "en:pet-1-polyethylene-terephthalate")
+check(
+    berlin.verdict(for: codedBottle).stream.id == "pfand",
+    "a resin-coded PET bottle must still be worth 25 cents in Berlin"
+)
+check(
+    berlin.verdict(for: codedBottle).quality != .cityDefault,
+    "and must not fall through to the default bin"
+)
+print("  \(resinCoded.count) coded identifiers resolve; coded PET bottle → \(berlin.verdict(for: codedBottle).stream.name)")
+
 print(failures == 0 ? "\nAll assertions passed." : "\n\(failures) assertion(s) FAILED.")
 exit(failures == 0 ? 0 : 1)
