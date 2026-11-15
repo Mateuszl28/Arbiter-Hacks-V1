@@ -8,12 +8,12 @@
       "components": [
         {
           "shape": "en:bottle",
-          "material": "en:pet-polyethylene-terephthalate",
+          "material": "en:pet-1-polyethylene-terephthalate",
           "quantityPerUnit": "24 g"
         },
         {
-          "shape": "en:cap",
-          "material": "en:pp-polypropylene",
+          "shape": "en:lid-or-cap",
+          "material": "en:pp-5-polypropylene",
           "quantityPerUnit": "2 g"
         },
         {
@@ -34,7 +34,7 @@
         },
         {
           "shape": "en:lid",
-          "material": "en:pp-polypropylene"
+          "material": "en:pp-5-polypropylene"
         },
         {
           "shape": "en:seal",
@@ -53,7 +53,7 @@
       "components": [
         {
           "shape": "en:pot",
-          "material": "en:ps-polystyrene"
+          "material": "en:ps-6-polystyrene"
         },
         {
           "shape": "en:lid",
@@ -77,7 +77,7 @@
         },
         {
           "shape": "en:film",
-          "material": "en:pet-polyethylene-terephthalate"
+          "material": "en:pet-1-polyethylene-terephthalate"
         },
         {
           "shape": "en:label",
@@ -98,7 +98,7 @@
         },
         {
           "shape": "en:film",
-          "material": "en:ldpe-low-density-polyethylene"
+          "material": "en:ldpe-4-low-density-polyethylene"
         }
       ]
     }

@@ -22,6 +22,8 @@ trap 'rm -rf "$OUT"' EXIT
 swiftc -Onone -o "$OUT/bundle-checks" \
   "$ROOT/Shared/TaxonomyID.swift" \
   "$ROOT/BinMate/Model/MaterialTaxonomy.swift" \
+  "$ROOT/BinMate/Model/OFFTaxonomy+Generated.swift" \
+  "$ROOT/BinMate/Model/OFFSynonyms.swift" \
   "$ROOT/BinMate/Model/PackagingComponent.swift" \
   "$ROOT/Shared/CityRuleset.swift" \
   "$ROOT/BinMate/Model/CurrencyFormatting.swift" \
@@ -50,4 +52,5 @@ swiftc -Onone -o "$OUT/bundle-checks" \
 
 BINMATE_APP="$APP" \
 BINMATE_INTENT_SOURCE="$ROOT/BinMate/Services/WhichBinIntent.swift" \
+  BINMATE_SYNONYMS="$ROOT/BinMate/Resources/off-synonyms.json" \
   "$OUT/bundle-checks"

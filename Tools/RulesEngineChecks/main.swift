@@ -28,8 +28,8 @@ let bottle = ScannedProduct(
     brand: "Demo",
     imageURL: nil,
     components: [
-        PackagingComponent(shape: "en:bottle", material: "en:pet-polyethylene-terephthalate", quantityPerUnit: "24 g"),
-        PackagingComponent(shape: "en:cap", material: "en:pp-polypropylene"),
+        PackagingComponent(shape: "en:bottle", material: "en:pet-1-polyethylene-terephthalate", quantityPerUnit: "24 g"),
+        PackagingComponent(shape: "en:lid-or-cap", material: "en:pp-5-polypropylene"),
         PackagingComponent(shape: "en:label", material: "en:paper"),
     ],
     origin: .manual
@@ -76,13 +76,13 @@ check(bottleVerdict.stream.id == "pfand", "PET bottle in Berlin must route to Pf
 check(bottleVerdict.depositValue == Decimal(string: "0.25"), "Berlin PET bottle deposit should be 0.25")
 
 // 3. ...but only for that shape. PET film must NOT get the deposit.
-let film = PackagingComponent(shape: "en:film", material: "en:pet-polyethylene-terephthalate")
+let film = PackagingComponent(shape: "en:film", material: "en:pet-1-polyethylene-terephthalate")
 check(berlin.verdict(for: film).stream.id == "gelbe", "PET film in Berlin must go to the yellow bin, not Pfand")
 
 // 4. The same material genuinely diverges across cities — the product's whole premise.
 // Compostable plastic is the sharpest case: San Francisco composts it, the two
 // European cities reject it from organic collection entirely.
-let pla = PackagingComponent(shape: "en:cup", material: "en:pla-polylactic-acid")
+let pla = PackagingComponent(shape: "en:tumbler", material: "en:pla-polylactic-acid")
 let plaVerdicts = cities.map { RulesEngine(ruleset: $0).verdict(for: pla) }
 check(plaVerdicts[0].stream.kind == .residual, "Kraków must not compost PLA")
 check(plaVerdicts[1].stream.kind == .residual, "Berlin must not compost PLA")
@@ -114,7 +114,7 @@ check(mysteryVerdict.quality == .cityDefault, "unknown material should hit the c
 check(mysteryVerdict.stream.id == "mixed", "Kraków default should be mixed waste")
 
 // 7. Contributed spelling variants must normalise onto the taxonomy.
-check(MaterialTaxonomy.canonical("PET") == "en:pet-polyethylene-terephthalate", "'PET' should canonicalise")
+check(MaterialTaxonomy.canonical("PET") == "en:pet-1-polyethylene-terephthalate", "'PET' should canonicalise")
 check(MaterialTaxonomy.canonical(" Aluminum ") == "en:aluminium", "'Aluminum' should canonicalise")
 check(TaxonomyID("en:Bottle") == TaxonomyID("bottle"), "shape ids should normalise case and prefix")
 
@@ -137,11 +137,11 @@ check(
 )
 // A PET bottle is a resource; a PET tray is container packaging; loose PET is burned.
 check(
-    tokyo.verdict(for: PackagingComponent(shape: "en:tray", material: "en:pet-polyethylene-terephthalate")).stream.id == "plastic-packaging",
+    tokyo.verdict(for: PackagingComponent(shape: "en:tray", material: "en:pet-1-polyethylene-terephthalate")).stream.id == "plastic-packaging",
     "Tokyo PET tray should be plastic packaging, not a PET bottle resource"
 )
 check(
-    tokyo.verdict(for: PackagingComponent(material: "en:other-plastics")).stream.id == "burnable",
+    tokyo.verdict(for: PackagingComponent(material: "en:o-7-other-plastics")).stream.id == "burnable",
     "Tokyo non-container plastic should be burnable"
 )
 // Glass splits by shape too: bottles are a resource, everything else is non-burnable.
@@ -188,7 +188,7 @@ check(
 print("  Green bin means: \(cities[2].displayName)=\(sfGreen?.name ?? "?"), \(cities[4].displayName)=\(nyGreen?.name ?? "?")")
 
 // Compostable plastic: composted in one US city, landfilled in the other.
-let plaUS = PackagingComponent(shape: "en:cup", material: "en:pla-polylactic-acid")
+let plaUS = PackagingComponent(shape: "en:tumbler", material: "en:pla-polylactic-acid")
 check(sanFrancisco.verdict(for: plaUS).stream.kind == .organic, "San Francisco composts PLA")
 check(newYork.verdict(for: plaUS).stream.kind == .residual, "New York does not compost PLA")
 print("  PET bottle instructions:")
@@ -264,44 +264,144 @@ for reason in alienVerdict.uncertainty + capVerdict2.uncertainty + stale {
     check(!reason.summary.isEmpty, "every reason needs a summary")
 }
 
-// 14. Open Food Facts writes the recycling code into the identifier. These are the
-// canonical forms it actually returns, not invented spellings — they were found by
-// reading live API responses, after every plastic in the database had been silently
-// resolving to residual waste.
-print("\n--- resin-coded identifiers ---")
+// 14. The seven standard plastics, written the way the taxonomy actually writes them:
+// with the recycling code inside the identifier. These were found by reading live API
+// responses, after every plastic in the database had been silently resolving to residual
+// waste against hand invented spellings like `en:pp-polypropylene`.
+print("\n--- recycling codes, as published ---")
 
-let resinCoded: [(String, TaxonomyID)] = [
-    ("en:pet-1-polyethylene-terephthalate", "en:pet-polyethylene-terephthalate"),
-    ("en:hdpe-2-high-density-polyethylene", "en:hdpe-high-density-polyethylene"),
-    ("en:pvc-3-polyvinyl-chloride", "en:pvc-polyvinyl-chloride"),
-    ("en:ldpe-4-low-density-polyethylene", "en:ldpe-low-density-polyethylene"),
-    ("en:pp-5-polypropylene", "en:pp-polypropylene"),
-    ("en:ps-6-polystyrene", "en:ps-polystyrene"),
-    ("en:o-7-other-plastics", "en:other-plastics"),
-    ("en:pap-22-paper", "en:paper"),
-    ("en:alu-41-aluminium", "en:aluminium"),
-    ("en:fe-40-steel", "en:steel"),
-    ("en:gl-70-clear-glass", "en:clear-glass"),
+let codedPlastics: [TaxonomyID] = [
+    "en:pet-1-polyethylene-terephthalate",
+    "en:hdpe-2-high-density-polyethylene",
+    "en:pvc-3-polyvinyl-chloride",
+    "en:ldpe-4-low-density-polyethylene",
+    "en:pp-5-polypropylene",
+    "en:ps-6-polystyrene",
+    "en:o-7-other-plastics",
 ]
-for (coded, expected) in resinCoded {
+for material in codedPlastics {
+    check(MaterialTaxonomy.isKnown(material), "\(material.value) should be a known material")
     check(
-        MaterialTaxonomy.canonical(TaxonomyID(coded)) == expected,
-        "'\(coded)' should canonicalise to \(expected.value)"
+        MaterialTaxonomy.ancestry(of: material).contains("en:plastic"),
+        "\(material.value) should inherit the general plastic rule"
+    )
+}
+
+// Composite codes are the ones nobody can read off a pack, and they are filed by code
+// only — `xx:84-c-pap` is a beverage carton. Every one of them has to reach the
+// composite rules, two hops up.
+let codedComposites: [TaxonomyID] = ["xx:84-c-pap", "xx:82-c-pap", "xx:81-c-pp", "xx:90-c-pet"]
+for material in codedComposites {
+    check(MaterialTaxonomy.isKnown(material), "\(material.value) should be a known material")
+    check(
+        MaterialTaxonomy.ancestry(of: material).contains("en:composite-material"),
+        "\(material.value) should inherit a composite rule"
     )
 }
 
 // And the consequence that matters: a coded PET bottle must still reach Berlin's deposit
-// rule, not the residual bin.
+// rule rather than the residual bin.
 let codedBottle = PackagingComponent(shape: "en:bottle", material: "en:pet-1-polyethylene-terephthalate")
+check(berlin.verdict(for: codedBottle).stream.id == "pfand", "a coded PET bottle is worth 25 cents in Berlin")
+check(berlin.verdict(for: codedBottle).quality != .cityDefault, "and must not fall through to the default bin")
+print("  \(codedPlastics.count) plastics and \(codedComposites.count) composite codes resolve; coded PET bottle → \(berlin.verdict(for: codedBottle).stream.name)")
+
+// 15. The identifiers BinMate itself used before the tree came from the source. Saved
+// scans are written in these, so they have to keep resolving.
+print("\n--- this app's own older identifiers ---")
+let legacy: [(TaxonomyID, TaxonomyID)] = [
+    ("en:pet-polyethylene-terephthalate", "en:pet-1-polyethylene-terephthalate"),
+    ("en:pp-polypropylene", "en:pp-5-polypropylene"),
+    ("en:beverage-carton", "en:paper-and-cardboard-plastic-aluminium"),
+    ("en:composite", "en:composite-material"),
+    ("en:tinplate", "en:tin-plated-steel"),
+]
+for (old, now) in legacy {
+    check(MaterialTaxonomy.canonical(old) == now, "\(old.value) should still resolve, to \(now.value)")
+}
+print("  \(legacy.count) older identifiers still resolve")
+
+// 16. Contributed data is not in English. All of these were taken from a live sample of
+// one real category, where 7% of packaging identifiers carried another language.
+print("\n--- identifiers in other languages ---")
+let translated: [(TaxonomyID, TaxonomyID)] = [
+    ("es:Plástico", "en:plastic"),
+    ("fr:Plastique", "en:plastic"),
+    ("de:Kunststoff", "en:plastic"),
+    ("fr:PP 5 - Polypropylène", "en:pp-5-polypropylene"),
+    ("es:Cartón no ondulado", "en:non-corrugated-cardboard"),
+    ("it:Vetro", "en:glass"),
+    ("pl:Szkło", "en:glass"),
+]
+for (contributed, expected) in translated {
+    check(
+        MaterialTaxonomy.canonical(contributed) == expected,
+        "\(contributed.value) should resolve to \(expected.value), got \(MaterialTaxonomy.canonical(contributed).value)"
+    )
+}
+let translatedShapes: [(TaxonomyID, TaxonomyID)] = [
+    ("fr:Bouteille", "en:bottle"),
+    ("de:Flasche", "en:bottle"),
+    ("it:Vaschetta", "en:tray"),
+    // The taxonomy has no Spanish word for a tray, which is why this one arrived as raw
+    // text in the first place. It resolves from the short list of terms read off real
+    // products rather than from the derived table.
+    ("es:Bandeja", "en:tray"),
+]
+for (contributed, expected) in translatedShapes {
+    check(
+        ShapeTaxonomy.canonical(contributed) == expected,
+        "\(contributed.value) should resolve to \(expected.value), got \(ShapeTaxonomy.canonical(contributed).value)"
+    )
+}
+print("  \(translated.count) materials and \(translatedShapes.count) shapes resolve from other languages")
+
+// A Spanish plastic bottle must reach the same bin as an English one. This is the whole
+// point of the exercise — not that the word resolves, but that the verdict matches.
+let spanish = PackagingComponent(shape: "es:Botella", material: "es:Plástico")
+let english = PackagingComponent(shape: "en:bottle", material: "en:plastic")
+for city in [krakow, berlin, sanFrancisco] {
+    check(
+        city.verdict(for: spanish).stream.id == city.verdict(for: english).stream.id,
+        "a Spanish bottle and an English one belong in the same bin in \(city.ruleset.displayName)"
+    )
+}
+print("  a Spanish plastic bottle lands where an English one does, in 3 cities")
+
+// 17. Shapes are a hierarchy upstream, and the point of walking it is the shape a real
+// scan actually reports. Tokyo writes its plastic packaging rule about caps; the data
+// says "screw cap".
+print("\n--- broader shape rules catch the specific shapes under them ---")
+
+let tokyoPlasticRule = tokyo.ruleset.rules.first { $0.stream == "plastic-packaging" }
 check(
-    berlin.verdict(for: codedBottle).stream.id == "pfand",
-    "a resin-coded PET bottle must still be worth 25 cents in Berlin"
+    tokyoPlasticRule?.shapes?.contains("en:lid-or-cap") == true,
+    "Tokyo's plastic packaging rule should name caps"
 )
 check(
-    berlin.verdict(for: codedBottle).quality != .cityDefault,
+    tokyoPlasticRule?.shapes?.contains("en:screw-cap") != true,
+    "and should not have to name every kind of cap separately"
+)
+
+let screwCap = PackagingComponent(shape: "en:screw-cap", material: "en:pp-5-polypropylene")
+let screwVerdict = tokyo.verdict(for: screwCap)
+check(
+    screwVerdict.stream.id == "plastic-packaging",
+    "a screw cap should reach Tokyo's plastic packaging rule, got \(screwVerdict.stream.name)"
+)
+check(
+    screwVerdict.quality != .cityDefault,
     "and must not fall through to the default bin"
 )
-print("  \(resinCoded.count) coded identifiers resolve; coded PET bottle → \(berlin.verdict(for: codedBottle).stream.name)")
+
+// A rule naming the exact shape still has to win over one naming its broader form,
+// otherwise the hierarchy would quietly flatten the specific rules cities write.
+let bottleCap = PackagingComponent(shape: "en:bottle-cap", material: "en:pp-5-polypropylene")
+check(
+    tokyo.verdict(for: bottleCap).stream.id == "plastic-packaging",
+    "a bottle cap should too"
+)
+print("  screw cap → \(screwVerdict.stream.name) via \(screwVerdict.explanation.ruleShapes.map(\.value).joined(separator: ", "))")
 
 print(failures == 0 ? "\nAll assertions passed." : "\n\(failures) assertion(s) FAILED.")
 exit(failures == 0 ? 0 : 1)

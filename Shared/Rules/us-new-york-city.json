@@ -64,21 +64,21 @@
   ],
   "rules": [
     {
-      "materials": ["en:pet-polyethylene-terephthalate"],
+      "materials": ["en:pet-1-polyethylene-terephthalate"],
       "shapes": ["en:bottle"],
       "stream": "deposit",
       "instruction": "Most drinks bottles carry a 5 cent New York deposit. Take it to a redemption centre or a supermarket machine.",
       "caution": "Milk and most juice bottles are not covered — those go in the blue bin."
     },
     {
-      "materials": ["en:aluminium", "en:steel", "en:tinplate"],
+      "materials": ["en:aluminium", "en:steel", "en:tin-plated-steel"],
       "shapes": ["en:can"],
       "stream": "deposit",
       "instruction": "Drinks cans carry a 5 cent deposit in New York State.",
       "caution": null
     },
     {
-      "materials": ["en:ldpe-low-density-polyethylene", "en:hdpe-high-density-polyethylene"],
+      "materials": ["en:ldpe-4-low-density-polyethylene", "en:hdpe-2-high-density-polyethylene"],
       "shapes": ["en:film", "en:bag", "en:wrapper"],
       "stream": "trash",
       "instruction": "Plastic bags and film are not collected at the kerb. Trash, or a store drop-off bin.",
@@ -103,7 +103,7 @@
       "caution": null
     },
     {
-      "materials": ["en:composite"],
+      "materials": ["en:composite-material"],
       "stream": "mgp",
       "instruction": "Cartons go in the blue bin with metal, glass and plastic — not with paper.",
       "caution": null
@@ -122,7 +122,7 @@
       "caution": "New York's green bin is paper, not compost. Composting is the brown bin here."
     },
     {
-      "materials": ["en:pla-polylactic-acid", "en:bio-based-plastic"],
+      "materials": ["en:pla-polylactic-acid", "en:biobased-plastic"],
       "stream": "trash",
       "instruction": "Trash.",
       "caution": "Compostable plastics are not accepted in New York's curbside composting, unlike in San Francisco."

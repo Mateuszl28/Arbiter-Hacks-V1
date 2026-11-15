@@ -80,14 +80,14 @@
   ],
   "rules": [
     {
-      "materials": ["en:pet-polyethylene-terephthalate"],
+      "materials": ["en:pet-1-polyethylene-terephthalate"],
       "shapes": ["en:bottle"],
       "stream": "pfand",
       "instruction": "Take it back to any shop that sells drinks and get 25 cents.",
       "caution": "Do not crush it. The machine has to read the barcode and the shape."
     },
     {
-      "materials": ["en:aluminium", "en:steel", "en:tinplate"],
+      "materials": ["en:aluminium", "en:steel", "en:tin-plated-steel"],
       "shapes": ["en:can"],
       "stream": "pfand",
       "instruction": "Drinks cans carry a deposit. Return it to a shop for 25 cents.",
@@ -106,7 +106,7 @@
       "caution": null
     },
     {
-      "materials": ["en:composite"],
+      "materials": ["en:composite-material"],
       "stream": "gelbe",
       "instruction": "Flatten the carton — yellow bin, with the packaging.",
       "caution": null
@@ -136,7 +136,7 @@
       "caution": "Berlin sorts glass by colour. If you cannot tell the colour, coloured glass is the safe choice."
     },
     {
-      "materials": ["en:pla-polylactic-acid", "en:bio-based-plastic"],
+      "materials": ["en:pla-polylactic-acid", "en:biobased-plastic"],
       "stream": "hausmuell",
       "instruction": "Residual waste.",
       "caution": "Compostable plastics are rejected by the Biogut process here — they do not break down fast enough."

@@ -39,7 +39,7 @@ check(glassJar?.materialIsAssumed == false, "a stated material must not be flagg
 
 // 3. An unstated material falls back to the shape default, flagged honestly.
 let plainBottle = guess("bottle")
-check(plainBottle?.material == "en:pet-polyethylene-terephthalate", "a plain bottle should assume PET")
+check(plainBottle?.material == "en:pet-1-polyethylene-terephthalate", "a plain bottle should assume PET")
 check(plainBottle?.materialIsAssumed == true, "an assumed material must be flagged")
 
 // 4. Drink hints override the PET assumption — a wine bottle is not PET.

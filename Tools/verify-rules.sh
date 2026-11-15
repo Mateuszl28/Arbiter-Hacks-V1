@@ -14,10 +14,13 @@ trap 'rm -rf "$OUT"' EXIT
 swiftc -Onone -o "$OUT/rules-checks" \
   "$ROOT/Shared/TaxonomyID.swift" \
   "$ROOT/BinMate/Model/MaterialTaxonomy.swift" \
+  "$ROOT/BinMate/Model/OFFTaxonomy+Generated.swift" \
+  "$ROOT/BinMate/Model/OFFSynonyms.swift" \
   "$ROOT/BinMate/Model/PackagingComponent.swift" \
   "$ROOT/Shared/CityRuleset.swift" \
   "$ROOT/BinMate/Engine/RulesEngine.swift" \
   "$ROOT/BinMate/Engine/Uncertainty.swift" \
   "$ROOT/Tools/RulesEngineChecks/main.swift"
 
-BINMATE_RULES="$ROOT/Shared/Rules" "$OUT/rules-checks"
+BINMATE_RULES="$ROOT/Shared/Rules" \
+  BINMATE_SYNONYMS="$ROOT/BinMate/Resources/off-synonyms.json" "$OUT/rules-checks"

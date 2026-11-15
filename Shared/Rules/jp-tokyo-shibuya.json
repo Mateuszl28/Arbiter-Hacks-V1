@@ -62,80 +62,124 @@
   ],
   "rules": [
     {
-      "materials": ["en:pet-polyethylene-terephthalate"],
-      "shapes": ["en:bottle"],
+      "materials": [
+        "en:pet-1-polyethylene-terephthalate"
+      ],
+      "shapes": [
+        "en:bottle"
+      ],
       "stream": "pet-bottles",
       "instruction": "Take the cap and the label off, rinse it, then crush it flat.",
       "caution": "The cap and label are a different stream — only the bottle itself counts as PET."
     },
     {
-      "materials": ["en:plastic"],
+      "materials": [
+        "en:plastic"
+      ],
       "shapes": [
-        "en:cap", "en:lid", "en:label", "en:sleeve", "en:film", "en:wrapper",
-        "en:tray", "en:bag", "en:seal", "en:pot", "en:cup", "en:box"
+        "en:lid-or-cap",
+        "en:label",
+        "en:sleeve",
+        "en:film",
+        "en:wrapper",
+        "en:tray",
+        "en:bag",
+        "en:seal",
+        "en:pot",
+        "en:tumbler",
+        "en:box"
       ],
       "stream": "plastic-packaging",
       "instruction": "Rinse it and put it out with plastic packaging, on the marked collection day.",
       "caution": "Only packaging marked with the プラ symbol belongs here."
     },
     {
-      "materials": ["en:plastic"],
+      "materials": [
+        "en:plastic"
+      ],
       "stream": "burnable",
       "instruction": "Burnable waste.",
       "caution": "Plastic that is not container packaging is burned here, not recycled."
     },
     {
-      "materials": ["en:aluminium", "en:steel", "en:tinplate"],
-      "shapes": ["en:can"],
+      "materials": [
+        "en:aluminium",
+        "en:steel",
+        "en:tin-plated-steel"
+      ],
+      "shapes": [
+        "en:can"
+      ],
       "stream": "cans-glass",
       "instruction": "Rinse it and put it out with cans and bottles. Do not crush it.",
       "caution": null
     },
     {
-      "materials": ["en:metal"],
+      "materials": [
+        "en:metal"
+      ],
       "stream": "non-burnable",
       "instruction": "Metal that is not a drinks can goes with non-burnable waste.",
       "caution": null
     },
     {
-      "materials": ["en:glass"],
-      "shapes": ["en:bottle", "en:jar"],
+      "materials": [
+        "en:glass"
+      ],
+      "shapes": [
+        "en:bottle",
+        "en:jar"
+      ],
       "stream": "cans-glass",
       "instruction": "Rinse it, take the cap off, and put it out with cans and bottles.",
       "caution": null
     },
     {
-      "materials": ["en:glass"],
+      "materials": [
+        "en:glass"
+      ],
       "stream": "non-burnable",
       "instruction": "Non-burnable waste. Wrap anything broken in paper and mark it.",
       "caution": "Only bottles and jars count as a resource — other glass does not."
     },
     {
-      "materials": ["en:beverage-carton"],
+      "materials": [
+        "en:paper-and-cardboard-plastic-aluminium"
+      ],
       "stream": "paper",
       "instruction": "Rinse it, cut it open, dry it flat, then put it out with paper.",
       "caution": "Cartons with a foil lining are burnable, not paper."
     },
     {
-      "materials": ["en:composite"],
+      "materials": [
+        "en:composite-material"
+      ],
       "stream": "burnable",
       "instruction": "Mixed-material packaging is burnable here.",
       "caution": null
     },
     {
-      "materials": ["en:paper-or-cardboard"],
+      "materials": [
+        "en:paper-or-cardboard"
+      ],
       "stream": "paper",
       "instruction": "Flatten it and tie it with string for paper collection.",
       "caution": "Anything greasy, waxed or food-soiled is burnable instead."
     },
     {
-      "materials": ["en:pla-polylactic-acid", "en:bio-based-plastic"],
+      "materials": [
+        "en:pla-polylactic-acid",
+        "en:biobased-plastic"
+      ],
       "stream": "burnable",
       "instruction": "Burnable waste.",
       "caution": "There is no household composting collection here, so compostable plastic is simply burned."
     },
     {
-      "materials": ["en:wood", "en:cork"],
+      "materials": [
+        "en:wood",
+        "en:cork"
+      ],
       "stream": "burnable",
       "instruction": "Small wooden and cork items are burnable.",
       "caution": null

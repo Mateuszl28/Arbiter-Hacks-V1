@@ -16,6 +16,8 @@ trap 'rm -rf "$OUT"' EXIT
 swiftc -Onone -o "$OUT/regression" \
   "$ROOT/Shared/TaxonomyID.swift" \
   "$ROOT/BinMate/Model/MaterialTaxonomy.swift" \
+  "$ROOT/BinMate/Model/OFFTaxonomy+Generated.swift" \
+  "$ROOT/BinMate/Model/OFFSynonyms.swift" \
   "$ROOT/BinMate/Model/PackagingComponent.swift" \
   "$ROOT/Shared/CityRuleset.swift" \
   "$ROOT/BinMate/Engine/RulesEngine.swift" \
@@ -23,5 +25,6 @@ swiftc -Onone -o "$OUT/regression" \
   "$ROOT/Tools/RegressionLab/main.swift"
 
 BINMATE_RULES="$ROOT/Shared/Rules" \
+  BINMATE_SYNONYMS="$ROOT/BinMate/Resources/off-synonyms.json" \
 BINMATE_BASELINE="$ROOT/Tools/Fixtures/regression-baseline.json" \
   "$OUT/regression"

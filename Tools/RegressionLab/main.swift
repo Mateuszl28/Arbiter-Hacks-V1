@@ -47,7 +47,7 @@ let cities = try cityFiles.map {
 // bottles and cans carry deposits, film and bags are refused at the kerb in some cities,
 // caps and labels are the parts people forget.
 let shapes: [TaxonomyID?] = [
-    nil, "en:bottle", "en:can", "en:jar", "en:cap",
+    nil, "en:bottle", "en:can", "en:jar", "en:lid-or-cap",
     "en:label", "en:film", "en:bag", "en:box", "en:pot",
 ]
 

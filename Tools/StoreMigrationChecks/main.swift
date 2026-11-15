@@ -85,7 +85,7 @@ check(bottle.cityName == "Berlin", "city name should survive")
 check(bottle.origin == .offlineSample, "origin should survive")
 check(bottle.components.count == 3, "all three components should survive, got \(bottle.components.count)")
 check(
-    bottle.components.first?.material == "en:pet-polyethylene-terephthalate",
+    bottle.components.first?.material == "en:pet-1-polyethylene-terephthalate",
     "component materials should survive"
 )
 check(

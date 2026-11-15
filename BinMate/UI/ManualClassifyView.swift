@@ -20,7 +20,7 @@ struct ManualClassifyView: View {
     @State private var parts: [PackagingComponent] = []
     @State private var hasSeeded = false
     @State private var draftShape: TaxonomyID = "en:bottle"
-    @State private var draftMaterial: TaxonomyID = "en:pet-polyethylene-terephthalate"
+    @State private var draftMaterial: TaxonomyID = "en:pet-1-polyethylene-terephthalate"
     @State private var draftCount = 1
 
     private var isCorrecting: Bool { !initialParts.isEmpty }

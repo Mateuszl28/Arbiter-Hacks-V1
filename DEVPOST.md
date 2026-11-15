@@ -111,7 +111,7 @@ plain JSON; adding one is a data change, not a code change:
 
 ```json
 {
-  "materials": ["en:pet-polyethylene-terephthalate"],
+  "materials": ["en:pet-1-polyethylene-terephthalate"],
   "shapes": ["en:bottle"],
   "stream": "pfand",
   "instruction": "Take it back to any shop that sells drinks and get 25 cents.",
@@ -218,9 +218,9 @@ app and needs no App Group at all.
 
 **The bug my own test watched and shrugged at.** Open Food Facts writes the recycling
 code into the material identifier: `en:pp-5-polypropylene`, not `en:pp-polypropylene`.
-The taxonomy knew only the uncoded spellings, so all seven standard plastics — the
-commonest packaging materials there are — resolved to nothing and fell into residual
-waste. A resin-coded PET bottle in Berlin is worth 25 cents and the app said to bin it.
+The hand written tree knew only the uncoded spellings, so all seven standard plastics —
+the commonest packaging materials there are — resolved to nothing and fell into residual
+waste. A PET bottle in Berlin is worth 25 cents and the app said to bin it.
 
 The live API suite had printed `en:pp-5-polypropylene` in its own output for days. It
 treated "this material matched no rule" as a note rather than a failure, because
@@ -228,6 +228,33 @@ sometimes that is a legitimate gap in a city's rules. The distinction it was mis
 that an *unrecognised material* is a bug in BinMate, while an *unruled material* is a gap
 in a city — so it now fails on the first and still only notes the second. Verified by
 deleting one alias and watching it go red.
+
+**Then the fix turned out to be the same mistake again.** I patched it by writing more
+identifiers in the same shape — `en:pap-22-paper`, `en:alu-41-aluminium` — guessed by
+pattern from the handful I had seen. So I downloaded the published taxonomy and compared,
+and the comparison was unkind: none of those spellings exists, 16 of the app's 37
+identifiers were invented, 31 alias keys could never match anything, and the app placed
+**28 of the taxonomy's 310 material entries — 9%**.
+
+The honest fix was to stop writing the tree. It is now generated from a vendored snapshot
+of the published taxonomy, 310 of 310 entries place, and the audit that found all this is
+a suite (`verify-taxonomy.sh`) that fails if any hand written identifier points at
+something upstream does not contain. It immediately found three more: Tokyo's plastic
+packaging rule was keyed to `en:cap`, a shape no scan can produce, so that rule had never
+fired for a cap in its life.
+
+The same check showed shapes form a hierarchy upstream — a screw cap is a bottle cap is a
+cap — which the app had been treating as flat, so a city's rule about caps missed every
+`en:screw-cap` in the data. Walking that hierarchy, nearest-first so exact rules still
+win, moved **zero of the 950 regression cases**: proof it was a relabel and not a
+behaviour change, which is the only way to make a refactor this size safe to ship.
+
+**Contributed data is not in English.** A sample of one real category came back with 7% of
+its packaging identifiers in another language — `es:Plástico`, `fr:PP 5 - Polypropylène`,
+`es:Bandeja` — every one of them bound for residual waste. The taxonomy names its entries
+in 34 languages, so the synonyms are generated from it too: 1,841 material and 1,243 shape
+names, with anything ambiguous dropped rather than guessed. A Spanish plastic bottle now
+lands in the same bin as an English one, asserted in three cities.
 
 **Knowing when *not* to fall back.** Bundled sample products make the app usable offline,
 but serving one when the database genuinely says "this barcode doesn't exist" would be a

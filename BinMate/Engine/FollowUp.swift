@@ -39,22 +39,22 @@ enum FollowUp {
     /// Short lists on purpose: three plausible answers and an escape hatch beats a
     /// nineteen-row picker when the point is to ask a quick question.
     private static let likelyMaterials: [TaxonomyID: [TaxonomyID]] = [
-        "en:cap": ["en:pp-polypropylene", "en:hdpe-high-density-polyethylene", "en:aluminium"],
-        "en:lid": ["en:aluminium", "en:pp-polypropylene", "en:cardboard"],
-        "en:label": ["en:paper", "en:ldpe-low-density-polyethylene", "en:coated-paper"],
-        "en:bottle": ["en:pet-polyethylene-terephthalate", "en:clear-glass", "en:hdpe-high-density-polyethylene"],
-        "en:jar": ["en:clear-glass", "en:pp-polypropylene"],
+        "en:lid-or-cap": ["en:pp-5-polypropylene", "en:hdpe-2-high-density-polyethylene", "en:aluminium"],
+        "en:lid": ["en:aluminium", "en:pp-5-polypropylene", "en:cardboard"],
+        "en:label": ["en:paper", "en:ldpe-4-low-density-polyethylene", "en:coated-paper"],
+        "en:bottle": ["en:pet-1-polyethylene-terephthalate", "en:clear-glass", "en:hdpe-2-high-density-polyethylene"],
+        "en:jar": ["en:clear-glass", "en:pp-5-polypropylene"],
         "en:can": ["en:aluminium", "en:steel"],
-        "en:pot": ["en:ps-polystyrene", "en:pp-polypropylene"],
-        "en:film": ["en:ldpe-low-density-polyethylene", "en:other-plastics"],
-        "en:sleeve": ["en:cardboard", "en:ldpe-low-density-polyethylene"],
-        "en:seal": ["en:aluminium", "en:ldpe-low-density-polyethylene"],
+        "en:pot": ["en:ps-6-polystyrene", "en:pp-5-polypropylene"],
+        "en:film": ["en:ldpe-4-low-density-polyethylene", "en:o-7-other-plastics"],
+        "en:sleeve": ["en:cardboard", "en:ldpe-4-low-density-polyethylene"],
+        "en:seal": ["en:aluminium", "en:ldpe-4-low-density-polyethylene"],
     ]
 
     /// Parts a container of this shape usually has, and the app should ask about when
     /// the record lists only the container itself.
     private static let usualCompanions: [TaxonomyID: [TaxonomyID]] = [
-        "en:bottle": ["en:cap", "en:label"],
+        "en:bottle": ["en:lid-or-cap", "en:label"],
         "en:jar": ["en:lid", "en:label"],
         "en:pot": ["en:lid", "en:sleeve"],
         "en:can": ["en:label"],
@@ -71,7 +71,7 @@ enum FollowUp {
         //    outranks anything else worth asking.
         for component in product.components where !MaterialTaxonomy.isKnown(component.material) {
             let candidates = component.shape.flatMap { likelyMaterials[$0] }
-                ?? ["en:other-plastics", "en:paper", "en:metal"]
+                ?? ["en:o-7-other-plastics", "en:paper", "en:metal"]
 
             questions.append(
                 FollowUpQuestion(
@@ -100,7 +100,7 @@ enum FollowUp {
                       let companions = usualCompanions[shape] else { continue }
 
                 for companion in companions where !presentShapes.contains(companion) {
-                    let materials = likelyMaterials[companion] ?? ["en:other-plastics"]
+                    let materials = likelyMaterials[companion] ?? ["en:o-7-other-plastics"]
                     questions.append(
                         FollowUpQuestion(
                             id: "companion-\(companion.value)",

@@ -24,8 +24,8 @@ let context = ModelContext(container)
 
 // Components encoded exactly as the real app writes them.
 let bottleJSON = """
-[{"material":"en:pet-polyethylene-terephthalate","shape":"en:bottle","numberOfUnits":1},
- {"material":"en:pp-polypropylene","shape":"en:cap","numberOfUnits":1},
+[{"material":"en:pet-1-polyethylene-terephthalate","shape":"en:bottle","numberOfUnits":1},
+ {"material":"en:pp-5-polypropylene","shape":"en:lid-or-cap","numberOfUnits":1},
  {"material":"en:paper","shape":"en:label","numberOfUnits":1}]
 """.data(using: .utf8)!
 let boxJSON = """

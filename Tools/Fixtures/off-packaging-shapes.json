@@ -1,0 +1,1999 @@
+{
+ "en:aerosol-can": {
+  "name": {
+   "ar": "علبة رذاذ",
+   "az": "Aerozol qutusu",
+   "bg": "Аерозолен спрей",
+   "bn": "অ্যারোসল ক্যান",
+   "ca": "Aerosol",
+   "cs": "Aerosolová dóza",
+   "da": "Aerosoldåse",
+   "de": "Sprühdose",
+   "el": "Αεροζόλ",
+   "en": "Aerosol can",
+   "es": "Aerosol",
+   "et": "Aerosoolpurk",
+   "fa": "قوطی آئروسل، قوطی های آئروسل، اسپری آئروسل",
+   "fi": "Aerosolitölkki",
+   "fr": "Aérosol",
+   "he": "מיכל אירוסול",
+   "hi": "एरोसोल कैन",
+   "hr": "Aerosolna limenka",
+   "hu": "Aeroszolos doboz",
+   "id": "Kaleng aerosol",
+   "it": "Bomboletta spray",
+   "ja": "エアゾール缶、エアゾール缶、エアゾールスプレー",
+   "ko": "에어로졸 캔",
+   "lt": "Aerozolinis flakonas",
+   "pl": "Aerozol",
+   "pt": "Aerossol",
+   "ro": "Aerosol",
+   "ru": "Аэрозольный баллон",
+   "sk": "Aerosólová nádoba",
+   "sq": "Sprej aerosol",
+   "sv": "Aerosolburk",
+   "th": "กระป๋องสเปรย์",
+   "tr": "Aerosol kutusu",
+   "uk": "Аерозольний балон",
+   "zh": "气雾罐，气雾罐，气雾喷雾"
+  }
+ },
+ "en:ampoule": {
+  "name": {
+   "bg": "Крушка",
+   "de": "Ampulle",
+   "en": "Ampoule",
+   "fr": "Ampoule",
+   "hr": "ampula",
+   "nl": "Ampulle"
+  }
+ },
+ "en:applicator": {
+  "name": {
+   "en": "Applicator",
+   "fr": "Applicateur",
+   "nl": "Applicator"
+  }
+ },
+ "en:backing": {
+  "name": {
+   "bg": "подплънка",
+   "de": "Stütze",
+   "en": "backing",
+   "fi": "tuki",
+   "fr": "support",
+   "hr": "potpora",
+   "hu": "tartó",
+   "ia": "supporto",
+   "it": "supporto",
+   "mi": "kaupapa",
+   "nl": "drager",
+   "pt": "suporte",
+   "ru": "подкладка"
+  }
+ },
+ "en:bag": {
+  "name": {
+   "ar": "حقيبة",
+   "az": "kisə",
+   "bg": "торбичка",
+   "bn": "থলে",
+   "br": "sac'h",
+   "ca": "bossa",
+   "cs": "pytel",
+   "cv": "михĕ",
+   "cy": "bag",
+   "da": "pose",
+   "de": "Tüte",
+   "el": "σακούλα",
+   "en": "bag",
+   "eo": "sako",
+   "es": "bolsa",
+   "et": "kott",
+   "eu": "zaku",
+   "fa": "کیسه",
+   "fi": "laukku",
+   "fr": "sachet",
+   "ga": "mála",
+   "gl": "bolsa",
+   "gn": "vosa",
+   "ha": "jaka",
+   "hi": "थैला",
+   "ht": "sak",
+   "hu": "zacskó",
+   "hy": "պայուսակ",
+   "id": "tas",
+   "ig": "àkpà",
+   "ik": "miitchuk",
+   "is": "poki",
+   "it": "sacco",
+   "ja": "袋",
+   "jv": "tas",
+   "kk": "дорба",
+   "kn": "ಚೀಲ",
+   "ko": "가방",
+   "la": "saccus",
+   "ln": "libenga",
+   "lt": "rankinė",
+   "lv": "soma",
+   "mk": "торба",
+   "ml": "സഞ്ചി",
+   "ms": "beg",
+   "nb": "pose",
+   "ne": "झोला",
+   "nl": "zak",
+   "nn": "veske",
+   "or": "ବ୍ୟାଗ",
+   "pl": "torba",
+   "pt": "saco",
+   "qu": "wayaqa",
+   "ro": "sac",
+   "ru": "сумка",
+   "sd": "ٿيلھو",
+   "se": "lávka",
+   "sk": "taška",
+   "sl": "vreča",
+   "sn": "bhegi",
+   "so": "bac",
+   "sq": "çantë",
+   "sr": "кеса",
+   "ss": "sikhwama",
+   "su": "kantong",
+   "sv": "påse",
+   "sw": "begi",
+   "te": "సంచి",
+   "th": "ถุง",
+   "tr": "çanta",
+   "ts": "nkwama",
+   "tt": "букча",
+   "uk": "мішок",
+   "uz": "sumka",
+   "vi": "túi",
+   "yi": "זעקל",
+   "za": "daeh",
+   "zh": "袋"
+  }
+ },
+ "en:bag-in-box": {
+  "name": {
+   "de": "Bag-in-Box",
+   "en": "Bag-in-box",
+   "fr": "Bag-in-box",
+   "nl": "Zak-in-doos"
+  }
+ },
+ "en:ball-flask": {
+  "name": {
+   "de": "Deoroller",
+   "en": "Ball flask",
+   "es": "Frascos de bola",
+   "fr": "Flacon à bille",
+   "it": "flacone a sfera",
+   "nl": "Balflacon"
+  }
+ },
+ "en:barrel": {
+  "name": {
+   "de": "Fass",
+   "en": "Barrel",
+   "es": "Barril",
+   "fr": "Tonneau",
+   "it": "Barile",
+   "nl": "Vat",
+   "pt": "Barril"
+  }
+ },
+ "en:basket": {
+  "name": {
+   "bg": "Кошница",
+   "de": "Korb",
+   "en": "Basket",
+   "fr": "Panier",
+   "nl": "Mand"
+  }
+ },
+ "en:blister": {
+  "name": {
+   "bg": "Блистер",
+   "de": "Blister",
+   "en": "Blister",
+   "es": "Blíster",
+   "fr": "Blister",
+   "hu": "Bliszter",
+   "nl": "Blister",
+   "pt": "Blister"
+  }
+ },
+ "en:bottle": {
+  "name": {
+   "bg": "Бутилка",
+   "da": "Flaske",
+   "de": "Flasche",
+   "el": "Μπουκάλι",
+   "en": "Bottle",
+   "es": "botella",
+   "fr": "Bouteille",
+   "hr": "boca",
+   "hu": "Palack",
+   "it": "Bottiglia",
+   "nl": "Fles",
+   "pl": "Butelka",
+   "pt": "Garrafa",
+   "ro": "sticle",
+   "sv": "Flaska"
+  },
+  "parents": [
+   "en:bottle-or-vial"
+  ]
+ },
+ "en:bottle-cap": {
+  "name": {
+   "ar": "غطاء قارورة",
+   "bg": "Капачка",
+   "da": "flaskekapsel",
+   "de": "Flaschenverschluss",
+   "en": "Bottle cap",
+   "et": "pudelikork",
+   "fa": "درب بطری",
+   "fr": "Bouchon",
+   "hu": "Kupak",
+   "hy": "Շշի խցան",
+   "it": "tappo di bottiglia",
+   "ja": "ボトルキャップ",
+   "jv": "tutup botol",
+   "ko": "병마개",
+   "nl": "Dop",
+   "nn": "flaskekapsel",
+   "pl": "Kapsel",
+   "pt": "Cápsula de garrafa",
+   "ru": "бутылочная пробка",
+   "sv": "kapsyl",
+   "uk": "пляшковий корок",
+   "zh": "瓶蓋"
+  },
+  "parents": [
+   "en:lid-or-cap"
+  ]
+ },
+ "en:bottle-or-vial": {
+  "name": {
+   "bg": "Бутилка или флакон",
+   "de": "Flasche oder Fläschchen",
+   "en": "Bottle or vial",
+   "es": "Botella o frasco",
+   "fr": "Bouteille ou Flacon",
+   "it": "Bottiglia o flacona",
+   "nl": "Fles of flacon",
+   "pt": "Garrafa ou frasco"
+  }
+ },
+ "en:bowl": {
+  "name": {
+   "bg": "Купа",
+   "de": "Schüssel",
+   "el": "Μπολ",
+   "en": "Bowl",
+   "fr": "Bol",
+   "hu": "Tál",
+   "nl": "Schaal",
+   "pl": "Miska",
+   "pt": "Tigela"
+  },
+  "parents": [
+   "en:dish"
+  ]
+ },
+ "en:box": {
+  "name": {
+   "bg": "Кутия",
+   "de": "Schachtel",
+   "el": "Κουτί",
+   "en": "Box",
+   "es": "caja",
+   "fr": "Boîte",
+   "hr": "kutija",
+   "hu": "Doboz",
+   "it": "Scatola",
+   "nl": "Doos",
+   "pl": "Pudełko",
+   "pt": "Caixa"
+  }
+ },
+ "en:bread-clip": {
+  "name": {
+   "de": "Beutelclip",
+   "en": "bread clip"
+  },
+  "parents": [
+   "en:fastener"
+  ]
+ },
+ "en:brick": {
+  "name": {
+   "de": "Getränkekarton",
+   "en": "Brick",
+   "fr": "Brique",
+   "hu": "tégla",
+   "nl": "Drankkarton"
+  }
+ },
+ "en:brochure": {
+  "name": {
+   "de": "Broschüre",
+   "en": "Brochure",
+   "es": "Folleto",
+   "fr": "Brochure",
+   "nl": "Folder",
+   "sv": "Broschyr"
+  }
+ },
+ "en:bubble-wrap": {
+  "name": {
+   "ar": "غلاف فقاعي",
+   "az": "Köpüklü qablaşdırma",
+   "bg": "Фолио с мехурчета",
+   "bn": "বাবলWrap",
+   "ca": "Embolcall de bombolles",
+   "cs": "Bublinková fólie",
+   "da": "Bobleplast",
+   "de": "Luftpolsterfolie",
+   "el": "Αεροπλάστ",
+   "en": "Bubble wrap",
+   "eo": "Bobelplasto",
+   "es": "Plástico de burbujas",
+   "et": "Mullkile",
+   "fa": "بسته بندی حبابدار",
+   "fi": "Kuplamuovi",
+   "fr": "Film à bulles",
+   "he": "ניילון בועות",
+   "hi": "बबल रैप",
+   "hr": "Folija s mjehurićima",
+   "hu": "Buborékfólia",
+   "id": "Bungkus gelembung",
+   "it": "Pluriball",
+   "ja": "気泡緩衝材",
+   "ko": "버블 랩",
+   "lt": "Burbulinė plėvelė",
+   "lv": "Burbuļplēve",
+   "ms": "Balut gelembung",
+   "nl": "Bubbeltjesfilm",
+   "no": "Bobleplast",
+   "pl": "Folia bąbelkowa",
+   "pt": "Plástico bolha",
+   "ro": "Folie cu bule",
+   "ru": "Пузырчатая плёнка",
+   "sk": "Bublinková fólia",
+   "sl": "Mehurčkasta folija",
+   "sq": "Mbështjellës me flluska",
+   "sr": "Мехураста фолија",
+   "sv": "Bubbelplast",
+   "th": "บับเบิ้ลแรป",
+   "tr": "Balonlu ambalaj",
+   "uk": "Повітряно-пухирчаста плівка",
+   "vi": "Giấy gói bong bóng",
+   "zh": "气泡膜"
+  }
+ },
+ "en:bucket": {
+  "name": {
+   "af": "emmer",
+   "ar": "دلو",
+   "as": "বাল্টি",
+   "az": "çanaq",
+   "be": "вядро",
+   "bg": "кофа",
+   "br": "sailh",
+   "ca": "galleda",
+   "cs": "kýbl",
+   "cy": "bwced",
+   "da": "spand",
+   "de": "Eimer",
+   "el": "κουβάς",
+   "en": "bucket",
+   "eo": "sitelo",
+   "es": "cubo",
+   "et": "pang",
+   "fa": "سطل",
+   "fi": "sanko",
+   "fo": "spann",
+   "fr": "seau",
+   "fy": "amer",
+   "ga": "buicéad",
+   "he": "דלי",
+   "hi": "बाल्टी",
+   "hu": "veder",
+   "hy": "դույլ",
+   "ia": "situla",
+   "id": "ember",
+   "is": "fata",
+   "it": "secchio",
+   "ja": "バケツ",
+   "ko": "버킷",
+   "lb": "Eemer",
+   "lt": "kibiras",
+   "mt": "barmil",
+   "nl": "emmer",
+   "nn": "bytte",
+   "no": "bøtte",
+   "pl": "wiadro",
+   "pt": "balde",
+   "ro": "galeata",
+   "ru": "ведро",
+   "sk": "vedro",
+   "sl": "vedro",
+   "sq": "kovë",
+   "sv": "hink",
+   "sw": "ndoo",
+   "te": "బక్కెటు",
+   "tr": "kova",
+   "vo": "böket",
+   "zh": "水桶"
+  }
+ },
+ "en:bulk": {
+  "name": {
+   "bg": "насипно",
+   "da": "uden emballage",
+   "de": "ohne Verpackung",
+   "en": "bulk",
+   "es": "a granel",
+   "fr": "vrac",
+   "hu": "ömlesztett",
+   "it": "alla rinfusa",
+   "ja": "包装なし",
+   "nl": "zonder verpakking",
+   "pt": "Granel",
+   "ru": "весовой",
+   "zh": "散装"
+  }
+ },
+ "en:can": {
+  "name": {
+   "bg": "Консерва или кен",
+   "da": "Dåse",
+   "de": "Dose",
+   "en": "Can",
+   "es": "Lata",
+   "fr": "Boîte de conserve ou canette",
+   "hr": "limenka",
+   "hu": "konzervdoboz",
+   "it": "Lattina",
+   "nl": "Bus",
+   "pl": "Puszka",
+   "pt": "Lata"
+  }
+ },
+ "en:canister": {
+  "name": {
+   "de": "Kanister",
+   "en": "Canister",
+   "fr": "Bombonne",
+   "nl": "Spuitbus"
+  },
+  "parents": [
+   "en:jug-or-canister"
+  ]
+ },
+ "en:capsule": {
+  "name": {
+   "bg": "Капсула",
+   "de": "Kapsel",
+   "en": "Capsule",
+   "es": "Cápsula",
+   "fr": "Capsule",
+   "hu": "Kapszula",
+   "it": "Capsula",
+   "lt": "Kapsulė",
+   "nl": "Capsule",
+   "pl": "Kapsułka",
+   "pt": "Cápsula",
+   "ru": "Капсула",
+   "sv": "kapsel"
+  },
+  "parents": [
+   "en:bottle-cap"
+  ]
+ },
+ "en:card": {
+  "name": {
+   "en": "card",
+   "fr": "carte",
+   "hu": "kártya",
+   "nl": "Kaart",
+   "pt": "cartolina"
+  }
+ },
+ "en:carrying-bag": {
+  "name": {
+   "de": "Tragetasche",
+   "en": "Carrying bag",
+   "fr": "Sac de transport",
+   "nl": "Draagtas"
+  },
+  "parents": [
+   "en:bag"
+  ]
+ },
+ "en:cartridge": {
+  "name": {
+   "de": "Kartusche",
+   "en": "Cartridge",
+   "es": "cartucho",
+   "fr": "Cartouche",
+   "it": "cartuccia",
+   "nl": "Cartridge"
+  }
+ },
+ "en:case": {
+  "name": {
+   "de": "Kiste",
+   "en": "Case",
+   "fr": "Caisse",
+   "it": "Cassa",
+   "nl": "Kist",
+   "pt": "Engradado"
+  }
+ },
+ "en:champagne-cork": {
+  "name": {
+   "bg": "Шампанска корк",
+   "da": "champagneprop",
+   "de": "Sektkorken",
+   "el": "Πώμα σαμπάνιας",
+   "en": "Champagne cork",
+   "es": "Corcho de champán",
+   "fr": "bouchon de Champagne",
+   "hu": "Pezsgő dugó",
+   "it": "tappo di champagne",
+   "nb": "sjampanjekork",
+   "nl": "Champagnestop",
+   "pl": "Korek do szampana",
+   "pt": "Tampa de champanhe",
+   "sv": "champagnekork"
+  },
+  "parents": [
+   "en:wine-cork"
+  ]
+ },
+ "en:chopsticks": {
+  "name": {
+   "bg": "Пръчици за хранене",
+   "da": "Spisepinde",
+   "de": "Essstäbchen",
+   "en": "Chopsticks",
+   "es": "Palillos chinos",
+   "fr": "Baguettes",
+   "hu": "evőpálcikák",
+   "it": "Bacchette cinesi",
+   "lt": "Valgymo lazdelės",
+   "nl": "Stokjes",
+   "pl": "Pałeczki",
+   "pt": "Pauzinhos chineses",
+   "ro": "Bățuri de mâncat",
+   "ru": "Палочки для еды",
+   "sv": "Ätpinnar",
+   "tr": "Yemek çubukları"
+  },
+  "parents": [
+   "en:eating-utensils"
+  ]
+ },
+ "en:clamping-ring": {
+  "name": {
+   "de": "Klemmring",
+   "en": "Clamping ring",
+   "fr": "Collier"
+  }
+ },
+ "en:clipband": {
+  "name": {
+   "en": "clipband"
+  },
+  "parents": [
+   "en:fastener"
+  ]
+ },
+ "en:coffee-capsule": {
+  "name": {
+   "de": "Kaffeekapsel",
+   "en": "Coffee capsule",
+   "es": "Cápsula de café",
+   "fr": "Capsule de café",
+   "hu": "Kávékapszula",
+   "it": "Capsula di caffè",
+   "lt": "Kavos kapsulė",
+   "nl": "Koffiecapsule",
+   "pl": "Kapsułka do kawy",
+   "pt": "Cápsula de café"
+  }
+ },
+ "en:coffee-pad": {
+  "name": {
+   "de": "Kaffeepad",
+   "en": "coffee pad",
+   "fr": "dosette de café",
+   "nl": "Koffiepad"
+  }
+ },
+ "en:cosmetic-stick": {
+  "name": {
+   "en": "Cosmetic stick",
+   "fr": "Stick cosmétique"
+  }
+ },
+ "en:crate": {
+  "name": {
+   "de": "Steige",
+   "en": "Crate",
+   "fr": "Cagette",
+   "hu": "Láda",
+   "nl": "Krat",
+   "pt": "Caixote"
+  }
+ },
+ "en:crown-cork": {
+  "name": {
+   "ca": "tap corona",
+   "de": "Kronkorken",
+   "en": "crown cork",
+   "eo": "kronfermilo",
+   "fi": "kruunukorkki",
+   "ja": "王冠 (栓)",
+   "ko": "크라운 코르크",
+   "sv": "kronkork",
+   "zh": "皇冠式瓶蓋"
+  },
+  "parents": [
+   "en:bottle-cap"
+  ]
+ },
+ "en:cutlery": {
+  "name": {
+   "ar": "أدوات المائدة",
+   "az": "Süfrə dəsti",
+   "bg": "Съдове за хранене",
+   "bn": "কাটলারি",
+   "ca": "Coberteria",
+   "cs": "Příbory",
+   "da": "Bestik",
+   "de": "Besteck",
+   "el": "μαχαιροπίρουνα",
+   "en": "Cutlery",
+   "es": "Cubiertos",
+   "et": "Söögiriistad",
+   "fa": "کارد و چنگال",
+   "fi": "Ruokailuvälineet",
+   "fr": "Couverts",
+   "he": "סכו\"ם",
+   "hi": "कटलरी",
+   "hr": "Pribor za jelo",
+   "id": "Alat makan",
+   "it": "Posate",
+   "ja": "カトラリー",
+   "ko": "칼붙이",
+   "lt": "Stalo įrankiai",
+   "lv": "Galda piederumi",
+   "ms": "Kutleri",
+   "pl": "Sztućce",
+   "ro": "Tacâmuri",
+   "ru": "Столовые приборы",
+   "sk": "Príbory",
+   "sl": "Jedilni pribor",
+   "sq": "Takëm",
+   "sr": "Прибор за јело",
+   "sv": "Bestick",
+   "th": "ช้อนส้อม",
+   "tr": "Çatal bıçak takımı",
+   "uk": "Столові прибори",
+   "ur": "کٹلری",
+   "vi": "Dao kéo",
+   "zh": "餐具"
+  },
+  "parents": [
+   "en:eating-utensils"
+  ]
+ },
+ "en:dish": {
+  "name": {
+   "de": "Servierplatte",
+   "en": "Dish",
+   "fr": "Plat"
+  }
+ },
+ "en:dolce-gusto-compatible-capsules": {
+  "name": {
+   "de": "Dolce Gusto-kompatible Kapseln",
+   "en": "Dolce Gusto-compatible capsules",
+   "es": "Cápsulas compatibles con Dolce Gusto",
+   "fr": "Dosettes Dolce Gusto",
+   "it": "Capsule compatibili Dolce Gusto",
+   "lt": "Dolce Gusto kapsulės",
+   "nl": "Dolce Gusto-compatibele Capsules"
+  },
+  "parents": [
+   "en:coffee-capsule"
+  ]
+ },
+ "en:drink-can": {
+  "name": {
+   "bg": "Кен",
+   "de": "Getränkedose",
+   "en": "Drink can",
+   "es": "Lata de bebida",
+   "fr": "Canette",
+   "hu": "italos konzerv",
+   "it": "Lattina per bevande",
+   "nl": "Blikje",
+   "pl": "Puszka na napoje",
+   "pt": "Lata de bebida"
+  },
+  "parents": [
+   "en:can"
+  ]
+ },
+ "en:drinking-straw": {
+  "name": {
+   "be": "саломінка",
+   "bg": "cламка",
+   "bo": "སོག་མ་པི་པི",
+   "ca": "palla",
+   "cs": "slámka",
+   "cy": "gwelltyn",
+   "da": "sugerør",
+   "de": "Trinkhalm",
+   "el": "καλαμάκι",
+   "en": "drinking straw",
+   "eo": "trinkŝalmo",
+   "es": "pajilla",
+   "et": "joogikõrs",
+   "fa": "نی نوشیدنی",
+   "fi": "pilli",
+   "fo": "súgvirør",
+   "fr": "paille",
+   "ga": "sop",
+   "gd": "sràbh",
+   "he": "קש",
+   "ht": "chalimo",
+   "hu": "szívószál",
+   "hy": "ձողիկ",
+   "id": "sedotan",
+   "is": "drykkjarrör",
+   "it": "cannuccia",
+   "ja": "ストロー",
+   "ka": "საწრუპავი",
+   "km": "បំពង់បឺត",
+   "ko": "빨대",
+   "lb": "Stréihallem",
+   "lo": "ຫລອດດູດນ້ຳ",
+   "lt": "šiaudelis",
+   "lv": "salmiņš",
+   "mk": "сламка",
+   "mn": "соруул",
+   "mo": "ngongo",
+   "ms": "penyedut minuman",
+   "nl": "rietje",
+   "nn": "sugerøyr",
+   "no": "sugerør",
+   "pl": "słomka",
+   "pt": "canudo",
+   "ro": "pai",
+   "ru": "соломинка",
+   "sh": "slamka",
+   "sk": "slamka",
+   "sl": "slamica",
+   "sq": "biule",
+   "sv": "sugrör",
+   "th": "หลอด",
+   "tl": "halusan",
+   "tr": "kamış",
+   "uk": "соломинка",
+   "vi": "ống hút",
+   "wa": "paye",
+   "yi": "שטרוי",
+   "zh": "吸管"
+  }
+ },
+ "en:eating-utensils": {
+  "name": {
+   "bg": "Прибори за хранене",
+   "de": "Einwegbesteck",
+   "en": "Eating utensils",
+   "fr": "Ustensiles",
+   "hu": "evőeszközök",
+   "nl": "Bestek",
+   "pt": "Talheres"
+  }
+ },
+ "en:egg-carton": {
+  "name": {
+   "da": "æggebakke",
+   "de": "Eierkarton",
+   "en": "egg carton",
+   "fr": "Boîte à œufs",
+   "it": "scatola di uova",
+   "ja": "卵パック",
+   "nl": "eierdoos",
+   "pl": "Wytłaczanka",
+   "sv": "äggkartong",
+   "tr": "Yumurta kartonu"
+  },
+  "parents": [
+   "en:box"
+  ]
+ },
+ "en:envelope": {
+  "name": {
+   "bg": "плик",
+   "da": "konvolut",
+   "de": "Umschlag",
+   "en": "envelope",
+   "es": "sobre",
+   "fr": "enveloppe",
+   "it": "busta",
+   "nl": "wikkel",
+   "sv": "kuvert"
+  }
+ },
+ "en:fastener": {
+  "name": {
+   "bg": "Клипса",
+   "de": "Clip",
+   "en": "Fastener",
+   "fr": "Attache",
+   "hu": "Rögzítő",
+   "it": "laccetto",
+   "nl": "clip",
+   "pt": "Atilho"
+  }
+ },
+ "en:filling": {
+  "name": {
+   "af": "Stopsel",
+   "bg": "пълнеж",
+   "da": "fyldning",
+   "de": "Füllmaterial",
+   "el": "γέμιση",
+   "en": "Filling",
+   "eo": "remburaĵo",
+   "es": "relleno",
+   "fi": "täyte",
+   "gl": "recheo",
+   "nl": "Opvulmateriaal",
+   "pl": "wypełnienie",
+   "pt": "enchimento",
+   "ru": "наполнение",
+   "sk": "výplň",
+   "th": "ไส้",
+   "zh": "填充"
+  }
+ },
+ "en:film": {
+  "name": {
+   "af": "Foelie",
+   "ar": "فِلْم",
+   "be": "плёнка",
+   "bg": "Фолио",
+   "ca": "Film",
+   "da": "Film",
+   "de": "Folie",
+   "el": "Μεμβράνη",
+   "en": "Film",
+   "fr": "Film",
+   "gd": "film",
+   "gl": "filme",
+   "he": "קְרוּם",
+   "hi": "फ़िल्म",
+   "hu": "Film",
+   "hy": "թաղանթ",
+   "is": "skán",
+   "it": "Film",
+   "ja": "フィルム",
+   "lo": "ຟີມ",
+   "nl": "Folie",
+   "pl": "Folia",
+   "pt": "Película",
+   "ru": "фильм",
+   "sh": "фи̏лм",
+   "sv": "Film",
+   "th": "ฟิล์ม",
+   "ur": "فلم",
+   "zh": "菲林"
+  }
+ },
+ "en:flip-top": {
+  "name": {
+   "ca": "tap de palanca",
+   "da": "patentprop",
+   "de": "Bügelverschluss",
+   "en": "flip-top",
+   "eo": "krampfermilo",
+   "fi": "patenttikorkki",
+   "ja": "フリップトップ",
+   "nb": "patentkork",
+   "sv": "patentkork",
+   "uk": "кліп-кришка"
+  },
+  "parents": [
+   "en:bottle-cap"
+  ]
+ },
+ "en:food-can": {
+  "name": {
+   "bg": "консерва за храна",
+   "de": "Konservendose",
+   "en": "Food can",
+   "es": "Lata de comida",
+   "fr": "Boîte de conserve",
+   "hu": "ételes konzerv",
+   "it": "Lattina di cibo",
+   "nl": "Conservenblik",
+   "pl": "Puszka na żywność",
+   "pt": "Lata de alimentos"
+  },
+  "parents": [
+   "en:can"
+  ]
+ },
+ "en:fork": {
+  "name": {
+   "bg": "Вилица",
+   "da": "Gaffel",
+   "de": "Gabel",
+   "en": "Fork",
+   "fr": "Fourchette",
+   "hr": "vilica",
+   "hu": "villa",
+   "it": "forchetta",
+   "nl": "Vork",
+   "pl": "Widelec",
+   "pt": "Garfo",
+   "sv": "Gaffel"
+  },
+  "parents": [
+   "en:cutlery"
+  ]
+ },
+ "en:grinder-cap": {
+  "name": {
+   "de": "Gewürzmühle",
+   "en": "Grinder cap",
+   "es": "Tapa molinillo",
+   "fr": "Bouchon broyeur",
+   "it": "Tappo macinino"
+  },
+  "parents": [
+   "en:lid-or-cap"
+  ]
+ },
+ "en:grouping-package": {
+  "name": {
+   "de": "Sammelpackung",
+   "en": "Grouping package",
+   "fr": "Emballage de regroupement",
+   "hu": "Csoportosító csomag",
+   "nl": "Groepsverpakking",
+   "pt": "Embalagem de grupagem"
+  }
+ },
+ "en:handle": {
+  "name": {
+   "bg": "Дръжка",
+   "de": "Griff",
+   "en": "Handle",
+   "es": "Asa",
+   "fr": "Poignée",
+   "it": "maniglia",
+   "nl": "Handvat",
+   "pt": "Alça"
+  }
+ },
+ "en:hanger": {
+  "name": {
+   "bg": "закачалка",
+   "de": "Kleiderbügel",
+   "en": "hanger",
+   "fr": "Cintre",
+   "nl": "Kleerhanger",
+   "pt": "Cabide"
+  }
+ },
+ "en:hip-flask": {
+  "name": {
+   "ca": "petaca",
+   "cs": "placatka",
+   "de": "Flachmann",
+   "el": "φλασκί",
+   "en": "hip flask",
+   "es": "petaca",
+   "fi": "taskumatti",
+   "fr": "flasque",
+   "hu": "lapos üveg",
+   "it": "fiaschetta",
+   "lt": "Kišeninė gertuvė",
+   "nl": "heupfles",
+   "nn": "Lommelerke",
+   "pl": "Piersiówka",
+   "ru": "фляжка",
+   "sk": "čutora",
+   "sv": "plunta"
+  },
+  "parents": [
+   "en:bottle"
+  ]
+ },
+ "en:individual-bag": {
+  "name": {
+   "bg": "Индивидуална торбичка",
+   "de": "Einzeltüten",
+   "en": "Individual bag",
+   "fr": "Sachet individuel",
+   "hu": "Külön zacskó",
+   "nl": "Individuele zak",
+   "pt": "Saco individual"
+  },
+  "parents": [
+   "en:bag"
+  ]
+ },
+ "en:individual-dose": {
+  "name": {
+   "ar": "جرعة فردية، كبسولة فردية",
+   "az": "fərdi doza",
+   "bg": "индивидуална доза",
+   "bn": "পৃথক ডোজ",
+   "ca": "dosi individual",
+   "cs": "jednotlivá dávka",
+   "de": "Einzeldosis",
+   "el": "μεμονωμένη δόση",
+   "en": "individual dose",
+   "es": "dosis individual",
+   "et": "individuaalne annus",
+   "fa": "دوز فردی، کپسول فردی",
+   "fi": "yksittäinen annos",
+   "fr": "dose invididuelle",
+   "he": "מנה אישית",
+   "hi": "व्यक्तिगत खुराक",
+   "hu": "egyedi adag",
+   "id": "dosis individual",
+   "it": "dose individuale",
+   "ja": "個別用量、個別カプセル",
+   "ko": "개별 용량",
+   "lt": "individuali dozė",
+   "nl": "individuele dosis",
+   "pl": "dawka indywidualna",
+   "pt": "dose individual",
+   "ro": "doza individuală",
+   "ru": "индивидуальная доза",
+   "sk": "individuálna dávka",
+   "sq": "dozë individuale",
+   "sv": "individuell dos",
+   "th": "ปริมาณต่อหน่วย",
+   "tr": "bireysel doz",
+   "uk": "індивідуальна доза",
+   "zh": "独立剂量，独立胶囊"
+  }
+ },
+ "en:individual-pot": {
+  "name": {
+   "de": "Portionsbecher",
+   "en": "individual pot",
+   "fr": "pot individuel",
+   "hu": "külön edény",
+   "nl": "Individuele pot",
+   "pt": "Pote individual"
+  },
+  "parents": [
+   "en:pot"
+  ]
+ },
+ "en:inlay": {
+  "name": {
+   "de": "Einleger",
+   "en": "Inlay",
+   "nl": "Inlay"
+  }
+ },
+ "en:jar": {
+  "name": {
+   "bg": "Буркан",
+   "de": "Schraubglas",
+   "el": "Βάζο",
+   "en": "Jar",
+   "es": "Tarro",
+   "fr": "Bocal",
+   "hu": "Befőttes üveg",
+   "it": "Vasetto",
+   "nl": "Pot",
+   "pl": "Słoik",
+   "pt": "Jarro",
+   "ro": "Borcan",
+   "sv": "burk"
+  }
+ },
+ "en:jug": {
+  "name": {
+   "de": "Kanne",
+   "en": "Jug",
+   "fr": "Bidon",
+   "it": "Caraffa",
+   "nl": "Kruik",
+   "pt": "garrafão"
+  },
+  "parents": [
+   "en:jug-or-canister"
+  ]
+ },
+ "en:jug-or-canister": {
+  "name": {
+   "en": "Jug or canister",
+   "fr": "Bidon ou bonbonne",
+   "it": "Caraffa o barattolo"
+  }
+ },
+ "en:knife": {
+  "name": {
+   "bg": "Нож",
+   "da": "Kniv",
+   "de": "Messer",
+   "en": "Knife",
+   "fr": "Couteau",
+   "hr": "nož",
+   "hu": "kés",
+   "it": "coltello",
+   "nl": "Mes",
+   "pl": "Nóż",
+   "pt": "Faca",
+   "sv": "Kniv"
+  },
+  "parents": [
+   "en:cutlery"
+  ]
+ },
+ "en:label": {
+  "name": {
+   "bg": "етикет",
+   "de": "Etikett",
+   "en": "label",
+   "fr": "étiquette",
+   "hu": "címke",
+   "nl": "Label",
+   "pl": "Etykieta",
+   "pt": "Etiqueta"
+  }
+ },
+ "en:lid": {
+  "name": {
+   "da": "Låg",
+   "de": "Deckel",
+   "el": "Καπάκι",
+   "en": "Lid",
+   "fr": "Couvercle",
+   "hu": "Fedél",
+   "it": "coperchio",
+   "nb": "Lokk",
+   "nl": "Deksel",
+   "pl": "Nakrętka",
+   "pt": "Tampa",
+   "ro": "capac",
+   "sv": "lock"
+  },
+  "parents": [
+   "en:lid-or-cap"
+  ]
+ },
+ "en:lid-or-cap": {
+  "name": {
+   "en": "Lid or cap",
+   "fr": "Bouchon ou couvercle",
+   "it": "Coperchio o tappo",
+   "sv": "lock‚ kapsyl eller kork"
+  }
+ },
+ "en:mold": {
+  "name": {
+   "en": "Mold",
+   "fr": "Moule",
+   "nl": "Mossel"
+  }
+ },
+ "en:neck-seal": {
+  "name": {
+   "en": "neck seal",
+   "fr": "Collerette"
+  }
+ },
+ "en:nespresso-compatible-capsules": {
+  "name": {
+   "bg": "Кафе капсули съвместими с Nespresso",
+   "de": "Nespresso-kompatible Kapseln",
+   "en": "Nespresso-compatible capsules",
+   "es": "Cápsulas compatibles con Nespresso",
+   "fi": "Nespresso-yhteensopivat kapselit",
+   "fr": "Dosettes compatible Nespresso",
+   "it": "Capsule compatibili Nespresso",
+   "lt": "Nespresso kapsulės",
+   "nl": "Nespresso-compatibele Capsules",
+   "pt": "Cápsulas compatíveis com Nespresso"
+  },
+  "parents": [
+   "en:coffee-capsule"
+  ]
+ },
+ "en:net": {
+  "name": {
+   "bg": "Мрежа",
+   "cy": "ffilm",
+   "de": "Netz",
+   "en": "Net",
+   "fr": "Filet",
+   "hu": "Háló",
+   "nl": "Net",
+   "pl": "Siatka",
+   "pt": "Rede"
+  }
+ },
+ "en:overcap": {
+  "name": {
+   "en": "overcap",
+   "fr": "coiffe"
+  }
+ },
+ "en:overpack": {
+  "name": {
+   "de": "Umverpackung",
+   "en": "Overpack",
+   "fr": "Suremballage",
+   "hu": "gyűjtőcsomag",
+   "nl": "oververpakking",
+   "pt": "Sobreembalagem"
+  }
+ },
+ "en:packaging": {
+  "name": {
+   "bg": "опаковка",
+   "ca": "embalatge",
+   "cs": "zabalení",
+   "de": "Verpackung",
+   "el": "αμπαλάρισμα",
+   "en": "packaging",
+   "fi": "pakkausmateriaali",
+   "fr": "emballage",
+   "hy": "փաթեթավորում",
+   "id": "kemasan",
+   "it": "imballaggio",
+   "nl": "verpakking",
+   "pl": "opakowanie",
+   "ru": "упако́вка",
+   "sq": "pako",
+   "sv": "förpackningsmaterial"
+  }
+ },
+ "en:packet": {
+  "name": {
+   "ar": "حُزْمَة",
+   "az": "paket",
+   "be": "паке́т",
+   "bg": "пакет",
+   "bn": "প্যাকেট",
+   "ca": "paquet",
+   "cs": "balíček",
+   "cy": "pecyn",
+   "da": "pakke",
+   "de": "Packung",
+   "el": "πακέτο",
+   "en": "packet",
+   "eo": "pako",
+   "es": "paquete",
+   "et": "pakett",
+   "eu": "pakete",
+   "fa": "پاکت",
+   "fi": "paketti",
+   "fr": "paquet",
+   "gd": "pacaid",
+   "he": "חֲבִילָה",
+   "hi": "पैकेट",
+   "hu": "csomag",
+   "hy": "կապոց",
+   "is": "pakki",
+   "it": "pacchetto",
+   "ja": "パケット",
+   "ka": "პაკეტი",
+   "kk": "пакет",
+   "km": "បេ",
+   "ko": "패킷",
+   "ky": "пакет",
+   "lo": "ຫໍ່",
+   "lt": "pakelis",
+   "lv": "paciņa",
+   "mk": "пакет",
+   "mn": "пакет",
+   "mo": "pākete",
+   "my": "အထုပ်",
+   "nl": "Pakket",
+   "no": "pakke",
+   "pl": "paczka",
+   "pt": "pacote",
+   "ro": "pachet",
+   "ru": "паке́т",
+   "sh": "замотуљак",
+   "sk": "balíček",
+   "sl": "paket",
+   "sv": "paket",
+   "sw": "pakiti",
+   "tg": "пакет",
+   "th": "ห่อ",
+   "tm": "paket",
+   "tr": "paket",
+   "uk": "паке́т",
+   "uz": "paket",
+   "vi": "gói",
+   "zh": "包"
+  }
+ },
+ "en:pill-box": {
+  "name": {
+   "da": "pilleæske",
+   "de": "Pillendose",
+   "en": "pill box",
+   "fr": "pilulier",
+   "it": "scatola per pillole",
+   "nl": "pillendoos",
+   "pt": "caixa de comprimidos"
+  },
+  "parents": [
+   "en:box"
+  ]
+ },
+ "en:pizza-box": {
+  "name": {
+   "da": "pizzabakke",
+   "de": "Pizzakarton",
+   "en": "Pizza box",
+   "fr": "carton à pizza",
+   "it": "Cartone della pizza",
+   "nl": "Pizzadoos",
+   "sv": "pizzakartong"
+  },
+  "parents": [
+   "en:box"
+  ]
+ },
+ "en:plate": {
+  "name": {
+   "bg": "Чиния",
+   "de": "Teller",
+   "en": "Plate",
+   "fr": "Assiette",
+   "hr": "tanjur",
+   "hu": "tányér",
+   "nl": "Bord",
+   "pl": "Talerz",
+   "pt": "Prato"
+  }
+ },
+ "en:pot": {
+  "name": {
+   "bg": "кофичка",
+   "de": "Becher",
+   "en": "pot",
+   "es": "Bote",
+   "fr": "Pot",
+   "hu": "Pohár",
+   "nl": "Kuip",
+   "pl": "Kubek",
+   "pt": "Pote"
+  }
+ },
+ "en:pouch-flask": {
+  "name": {
+   "de": "Standbeutel",
+   "en": "Pouch flask",
+   "fr": "Gourde",
+   "hu": "Flakon",
+   "it": "Borraccia",
+   "pt": "Frasco"
+  }
+ },
+ "en:pouring-cap": {
+  "name": {
+   "ar": "غطاء صب",
+   "az": "tökmə qapağı",
+   "bg": "Капачка за наливане",
+   "ca": "Tapa abocadora",
+   "cs": "Nalévací víčko",
+   "da": "Hældetud",
+   "de": "Ausgießer",
+   "el": "Καπάκι έκχυσης",
+   "en": "Pouring cap",
+   "es": "Tapa vertedora",
+   "et": "Valamiskork",
+   "fa": "درب ریختن",
+   "fi": "Kaatonuppi",
+   "fr": "Bouchon verseur",
+   "he": "מכסה מזיגה",
+   "hi": "उँडेलने वाला ढक्कन",
+   "hr": "Poklopac za izlijevanje",
+   "hu": "Öntőfedél",
+   "id": "Tutup penuang",
+   "it": "Tappo versatore",
+   "ja": "注ぎ口キャップ",
+   "ko": "붓는 뚜껑",
+   "lt": "Pilamas dangtelis",
+   "nl": "Schroefdop met schenktuit",
+   "pl": "Korek do nalewania",
+   "pt": "Tampa de despejo",
+   "ro": "Capac de turnare",
+   "ru": "Носик для наливания",
+   "sk": "Nalievanie viečka",
+   "sq": "Kapaku i derdhjes",
+   "sv": "Hällkork",
+   "th": "ฝาเท",
+   "tr": "Dökme kapağı",
+   "uk": "Кришка для наливання",
+   "zh": "倒口盖"
+  }
+ },
+ "en:protection-cover": {
+  "name": {
+   "de": "Schutzhülle",
+   "en": "Protection cover",
+   "fr": "Housse",
+   "nl": "Beschermingshoes"
+  }
+ },
+ "en:pump-bottle": {
+  "name": {
+   "de": "Sprühflasche",
+   "en": "pump bottle",
+   "es": "espray",
+   "fr": "Flacon à pompe",
+   "it": "flacone con pompa",
+   "nl": "Spuitfles",
+   "pt": "Frasco com bomba"
+  }
+ },
+ "en:reducer": {
+  "name": {
+   "de": "Tropfeinsatz",
+   "en": "Reducer",
+   "fr": "Réducteur"
+  }
+ },
+ "en:roll": {
+  "name": {
+   "de": "Rolle",
+   "en": "Roll",
+   "fr": "Rouleau"
+  }
+ },
+ "en:salad-bowl": {
+  "name": {
+   "de": "Salatschüssel",
+   "en": "salad bowl",
+   "es": "ensaladera",
+   "fr": "saladier",
+   "it": "insalatiera"
+  },
+  "parents": [
+   "en:dish"
+  ]
+ },
+ "en:screw-cap": {
+  "name": {
+   "da": "skruelåg",
+   "de": "Schraubverschluss",
+   "en": "screw cap",
+   "fi": "kierrekorkki",
+   "ja": "スクリューキャップ",
+   "nn": "skrukork",
+   "zh": "螺旋蓋"
+  },
+  "parents": [
+   "en:bottle-cap"
+  ]
+ },
+ "en:seal": {
+  "name": {
+   "de": "Siegelfolie",
+   "en": "Seal",
+   "fr": "Opercule",
+   "hu": "zárófedő",
+   "nl": "Seal",
+   "pt": "Tampo"
+  }
+ },
+ "en:senseo-compatible-coffee-capsules": {
+  "name": {
+   "bg": "Кафе капсули съвместими с Senseo",
+   "de": "Senseo-kompatible Kapseln",
+   "en": "Senseo-compatible coffee capsules",
+   "es": "Cápsulas de café compatibles con Senseo",
+   "fi": "Senseo-yhteensopivat kahvikapselit",
+   "fr": "Dosettes Senseo",
+   "hu": "Senseo-kompatibilis kávékapszulák",
+   "it": "Capsule di caffè compatibili Senseo",
+   "lt": "Senseo kapsulės",
+   "nl": "Senseo-compatibele koffiecapsules",
+   "pt": "Cápsulas de café compatíveis com Senseo"
+  },
+  "parents": [
+   "en:coffee-pad"
+  ]
+ },
+ "en:sheet": {
+  "name": {
+   "bg": "лист",
+   "de": "Zwischenlage",
+   "en": "sheet",
+   "fr": "feuille",
+   "hu": "fólia",
+   "nl": "blad",
+   "pt": "Folha"
+  }
+ },
+ "en:sleeve": {
+  "name": {
+   "de": "Manschette",
+   "en": "Sleeve",
+   "fr": "Étui",
+   "hu": "haskötő",
+   "nl": "Banderol",
+   "pt": "Manga"
+  }
+ },
+ "en:small-brick": {
+  "name": {
+   "de": "Trinkpäckchen",
+   "en": "small brick",
+   "fr": "briquette",
+   "nl": "briquette"
+  }
+ },
+ "en:small-bucket": {
+  "name": {
+   "da": "lille spand",
+   "en": "small bucket",
+   "nl": "emmertje",
+   "pl": "wiaderko"
+  },
+  "parents": [
+   "en:bucket"
+  ]
+ },
+ "en:special-cap": {
+  "name": {
+   "de": "Spezialverschluss",
+   "en": "Special cap",
+   "fr": "Bouchon spécial"
+  }
+ },
+ "en:spoon": {
+  "name": {
+   "bg": "Лъжица",
+   "da": "Ske",
+   "de": "Löffel",
+   "en": "Spoon",
+   "es": "Cuchara",
+   "fr": "Cuillère",
+   "hr": "žlica",
+   "hu": "kanál",
+   "it": "Cucchiaio",
+   "lt": "Šaukštas",
+   "nl": "lepel",
+   "pl": "Łyżka",
+   "pt": "Colher",
+   "ro": "Lingură",
+   "ru": "Ложка",
+   "sv": "Sked",
+   "tr": "Kaşık"
+  },
+  "parents": [
+   "en:cutlery"
+  ]
+ },
+ "en:spout": {
+  "name": {
+   "az": "lülək",
+   "bg": "чучур",
+   "ca": "broc",
+   "cs": "hubice",
+   "de": "Tülle",
+   "en": "spout",
+   "es": "pico",
+   "fa": "چرنه",
+   "fi": "nokka",
+   "fo": "tútur",
+   "fr": "verseur",
+   "gl": "cano",
+   "hy": "ծորակ",
+   "it": "beccuccio",
+   "ja": "噴出口",
+   "nl": "tuit",
+   "pl": "dzióbek",
+   "pt": "bico",
+   "ru": "носик",
+   "sv": "pip",
+   "tr": "uç",
+   "zh": "嘴子"
+  }
+ },
+ "en:squeeze-bottle": {
+  "name": {
+   "de": "Quetschflasche",
+   "en": "squeeze bottle",
+   "es": "botella exprimible",
+   "fr": "flacon souple",
+   "it": "flacone a pressione",
+   "nl": "Knijpfles",
+   "pt": "frasco de apertar"
+  },
+  "parents": [
+   "en:bottle-or-vial"
+  ]
+ },
+ "en:staple": {
+  "name": {
+   "ar": "دبوس مزدوج السن",
+   "ca": "grapa",
+   "ce": "атлан",
+   "cs": "spony do sešívaček",
+   "cv": "такар",
+   "cy": "stwffwl",
+   "da": "hæfteklamme",
+   "de": "Heftklammer",
+   "en": "staple",
+   "eo": "krampo",
+   "es": "grapa",
+   "et": "aas",
+   "eu": "grapa",
+   "fa": "سوزن منگنه",
+   "fi": "niitti",
+   "fr": "agrafe",
+   "gl": "grampa",
+   "hu": "tűzőkapocs",
+   "id": "Kokot",
+   "it": "agrafes",
+   "ja": "ホッチキス針",
+   "ko": "스테이플",
+   "la": "Uncinulus",
+   "ms": "dawai kokot",
+   "nb": "heftestift",
+   "nl": "nietje",
+   "pl": "zszywka",
+   "pt": "agrafos",
+   "ro": "scoabă",
+   "ru": "скобы для степлеров",
+   "sl": "sponka",
+   "su": "eusi hékter",
+   "sv": "häftklammer",
+   "tr": "zımba telleri",
+   "uk": "скоба",
+   "vi": "đinh kẹp",
+   "yi": "דרעטל",
+   "zh": "订书钉"
+  },
+  "parents": [
+   "en:fastener"
+  ]
+ },
+ "en:stick": {
+  "name": {
+   "de": "Stäbchen",
+   "en": "Stick",
+   "fr": "Batonnet",
+   "hu": "rúd",
+   "nl": "Stok",
+   "pt": "Paus"
+  }
+ },
+ "en:string": {
+  "name": {
+   "de": "Schnur",
+   "en": "String",
+   "fr": "ficelle"
+  }
+ },
+ "en:strip": {
+  "name": {
+   "en": "strip",
+   "fr": "Bandelette"
+  }
+ },
+ "en:syringe": {
+  "name": {
+   "bg": "Спринцовка",
+   "de": "Spritze",
+   "en": "Syringe",
+   "es": "Jeringa",
+   "fr": "Seringue",
+   "it": "Siringa",
+   "nl": "Spuit"
+  }
+ },
+ "en:tablespoon": {
+  "name": {
+   "bg": "супена лъжица",
+   "da": "spiseske",
+   "de": "Esslöffel",
+   "en": "tablespoon",
+   "fr": "cuillère à soupe",
+   "it": "cucchiaino",
+   "nl": "soeplepel",
+   "sv": "matsked"
+  },
+  "parents": [
+   "en:spoon"
+  ]
+ },
+ "en:tassimo-compatible-capsules": {
+  "name": {
+   "de": "Tassimo-kompatible Kapseln",
+   "en": "Tassimo-compatible capsules",
+   "es": "Cápsulas compatibles con Tassimo",
+   "fr": "Dosettes compatible Tassimo",
+   "it": "Capsule compatibili Tassimo",
+   "lt": "Tassimo kapsulės",
+   "nl": "Tassimo-compatibele Capsules"
+  },
+  "parents": [
+   "en:coffee-capsule"
+  ]
+ },
+ "en:tea-bag": {
+  "name": {
+   "bg": "Чаена торбичка",
+   "da": "Tepose",
+   "de": "Teebeutel",
+   "en": "Tea bag",
+   "es": "Bolsa de té",
+   "fr": "Sachet de thé",
+   "it": "bustina di tè",
+   "nl": "Theezakje",
+   "sv": "Tepåse"
+  }
+ },
+ "en:tea-capsules": {
+  "name": {
+   "ar": "كبسولات شاي",
+   "az": "Çay kapsulları",
+   "bg": "Чайни капсули",
+   "bn": "চা ক্যাপসুল",
+   "ca": "Càpsules de te",
+   "cs": "Čajové kapsle",
+   "da": "Te kapsler",
+   "de": "Tee-Kapsel",
+   "el": "Κάψουλες τσαγιού",
+   "en": "Tea capsules",
+   "es": "Cápsulas de té",
+   "et": "Teekapslid",
+   "fa": "کپسول های چای",
+   "fi": "Teekapselit",
+   "fr": "Capsules de thé",
+   "he": "קפסולות תה",
+   "hi": "चाय कैप्सूल",
+   "hr": "Kapsule za čaj",
+   "hu": "Tea kapszulák",
+   "id": "Kapsul teh",
+   "it": "Capsule di tè",
+   "ja": "ティーカプセル",
+   "ko": "차 캡슐",
+   "lt": "Arbatos kapsulės",
+   "lv": "Tējas kapsulas",
+   "ms": "Kapsul teh",
+   "nl": "Theecapsules",
+   "no": "Te-kapsler",
+   "pl": "Kapsułki do herbaty",
+   "pt": "Cápsulas de chá",
+   "ro": "Capsule de ceai",
+   "ru": "Чайные капсулы",
+   "sk": "Čajové kapsuly",
+   "sl": "Čajne kapsule",
+   "sq": "Kapsula çaji",
+   "sr": "Чајне капсуле",
+   "sv": "Te kapslar",
+   "th": "แคปซูลชา",
+   "tr": "Çay kapsülleri",
+   "uk": "Чайні капсули",
+   "vi": "Viên nang trà",
+   "zh": "茶胶囊"
+  }
+ },
+ "en:teaspoon": {
+  "name": {
+   "bg": "чаена лъжичка",
+   "da": "teske",
+   "de": "Teelöffel",
+   "en": "teaspoon",
+   "fr": "cuillère à café",
+   "it": "cucchiaino da tè",
+   "nl": "theelepel",
+   "pl": "Łyżeczki",
+   "sv": "tesked"
+  },
+  "parents": [
+   "en:spoon"
+  ]
+ },
+ "en:terrine-pot": {
+  "name": {
+   "de": "Terrine",
+   "en": "Terrine pot",
+   "es": "Tarrina",
+   "fr": "Terrine"
+  },
+  "parents": [
+   "en:dish"
+  ]
+ },
+ "en:tethered-cap": {
+  "name": {
+   "bg": "Прикрепена капачка",
+   "de": "Tethered Cap",
+   "en": "Tethered cap",
+   "fr": "Bouchon solidaire"
+  }
+ },
+ "en:tie": {
+  "name": {
+   "en": "Tie",
+   "fr": "Lien",
+   "it": "nodo",
+   "nl": "Knoop"
+  }
+ },
+ "en:tray": {
+  "name": {
+   "bg": "Тарелка",
+   "de": "Schale",
+   "en": "Tray",
+   "fr": "Barquette",
+   "hu": "Tálca",
+   "it": "Vaschetta",
+   "nl": "Tray",
+   "pl": "Tacka",
+   "pt": "Tabuleiro"
+  }
+ },
+ "en:tube": {
+  "name": {
+   "de": "Tube",
+   "en": "Tube",
+   "fr": "Tube",
+   "hu": "Tubus",
+   "it": "Tubo",
+   "nl": "Tube",
+   "pt": "Bisnaga"
+  }
+ },
+ "en:tumbler": {
+  "name": {
+   "de": "Trinkbecher",
+   "en": "Tumbler",
+   "fr": "Gobelet",
+   "nl": "Beker"
+  }
+ },
+ "en:unknown": {
+  "name": {
+   "ar": "غير معروف",
+   "bg": "Неизвестно",
+   "cs": "Neznámý",
+   "da": "Ukendt",
+   "de": "Unbekannt",
+   "el": "Άγνωστο",
+   "en": "Unknown",
+   "es": "Desconocido",
+   "et": "Tundmatu",
+   "fi": "Tuntematon",
+   "fr": "Inconnu",
+   "hu": "Ismeretlen",
+   "it": "Sconosciuto",
+   "ja": "不明",
+   "ko": "알 수 없음",
+   "lt": "Nežinomas",
+   "lv": "Nezināms",
+   "nl": "Onbekend",
+   "pl": "Nieznany",
+   "pt": "Desconhecido",
+   "ro": "Necunoscut",
+   "ru": "Неизвестно",
+   "sk": "Neznámy",
+   "sl": "Neznano",
+   "sv": "Okänd",
+   "tr": "Bilinmeyen",
+   "uk": "Невідомо",
+   "zh": "未知"
+  }
+ },
+ "en:valve": {
+  "name": {
+   "de": "Ventil",
+   "en": "Valve",
+   "fr": "Valve"
+  }
+ },
+ "en:vial": {
+  "name": {
+   "de": "Flakon",
+   "en": "Vial",
+   "fr": "Flacon",
+   "nl": "Flacon"
+  },
+  "parents": [
+   "en:bottle-or-vial"
+  ]
+ },
+ "en:wedge": {
+  "name": {
+   "en": "Wedge",
+   "fr": "Cale"
+  }
+ },
+ "en:wine-cork": {
+  "name": {
+   "bg": "Коркова тапа",
+   "de": "Weinkorken",
+   "en": "Wine cork",
+   "fa": "چوب‌پنبه شراب",
+   "fr": "bouchon de bouteille de vin",
+   "hr": "pluteni čep",
+   "it": "tappo di sughero",
+   "nl": "Wijnkurk",
+   "pl": "Korek do wina",
+   "sv": "vinkork"
+  },
+  "parents": [
+   "en:bottle-cap"
+  ]
+ },
+ "en:wings": {
+  "name": {
+   "en": "Wings",
+   "fr": "Ailettes"
+  }
+ },
+ "en:wire-cage": {
+  "name": {
+   "de": "Drahtkorb",
+   "en": "Wire cage",
+   "fr": "Muselet"
+  }
+ },
+ "en:wrapper": {
+  "name": {
+   "de": "Hülle",
+   "en": "wrapper",
+   "es": "envoltorio",
+   "fr": "enveloppage",
+   "pt": "invólucro"
+  }
+ },
+ "fr:bouchon-mecanique": {
+  "name": {
+   "fr": "bouchon mécanique"
+  },
+  "parents": [
+   "en:lid-or-cap"
+  ]
+ },
+ "fr:capsule-a-vis": {
+  "name": {
+   "fr": "Capsule à vis"
+  },
+  "parents": [
+   "en:lid-or-cap"
+  ]
+ },
+ "fr:capsule-crd": {
+  "name": {
+   "fr": "Capsule CRD"
+  }
+ },
+ "xx:cellophane": {
+  "name": {
+   "de": "Cellophan",
+   "nl": "cellofaan",
+   "xx": "cellophane"
+  }
+ }
+}

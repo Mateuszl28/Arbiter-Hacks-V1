@@ -61,13 +61,13 @@ enum PackagingGuess {
         (["can", "tin"], "en:can"),
         (["carton"], "en:box"),
         (["box", "crate", "packet"], "en:box"),
-        (["cup", "mug", "tumbler"], "en:cup"),
+        (["cup", "mug", "tumbler"], "en:tumbler"),
         (["bag", "sack", "pouch"], "en:bag"),
         (["tray", "plate", "dish"], "en:tray"),
         (["tub", "pot", "bowl", "container", "jug"], "en:pot"),
         (["lid", "cap", "cork", "stopper"], "en:lid"),
         (["wrapper", "wrapping", "foil", "film"], "en:wrapper"),
-        (["straw"], "en:straw"),
+        (["straw"], "en:drinking-straw"),
         (["label", "sticker", "tag"], "en:label"),
     ]
 
@@ -77,11 +77,11 @@ enum PackagingGuess {
         (["aluminum", "aluminium"], "en:aluminium"),
         (["foil"], "en:aluminium"),
         (["steel", "metal", "metallic"], "en:metal"),
-        (["tin"], "en:tinplate"),
+        (["tin"], "en:tin-plated-steel"),
         (["cardboard", "corrugated"], "en:cardboard"),
-        (["carton"], "en:beverage-carton"),
+        (["carton"], "en:paper-and-cardboard-plastic-aluminium"),
         (["paper", "papers"], "en:paper"),
-        (["plastic", "polythene", "polyethylene"], "en:other-plastics"),
+        (["plastic", "polythene", "polyethylene"], "en:o-7-other-plastics"),
         (["wood", "wooden", "timber"], "en:wood"),
         (["cork"], "en:cork"),
     ]
@@ -89,17 +89,17 @@ enum PackagingGuess {
     /// What a shape is usually made of when nothing says otherwise. Assumptions, and
     /// flagged as such in the UI.
     private static let assumedMaterial: [TaxonomyID: TaxonomyID] = [
-        "en:bottle": "en:pet-polyethylene-terephthalate",
+        "en:bottle": "en:pet-1-polyethylene-terephthalate",
         "en:jar": "en:clear-glass",
         "en:can": "en:aluminium",
         "en:box": "en:cardboard",
-        "en:cup": "en:other-plastics",
-        "en:bag": "en:ldpe-low-density-polyethylene",
-        "en:tray": "en:other-plastics",
-        "en:pot": "en:other-plastics",
-        "en:lid": "en:pp-polypropylene",
-        "en:wrapper": "en:ldpe-low-density-polyethylene",
-        "en:straw": "en:pp-polypropylene",
+        "en:tumbler": "en:o-7-other-plastics",
+        "en:bag": "en:ldpe-4-low-density-polyethylene",
+        "en:tray": "en:o-7-other-plastics",
+        "en:pot": "en:o-7-other-plastics",
+        "en:lid": "en:pp-5-polypropylene",
+        "en:wrapper": "en:ldpe-4-low-density-polyethylene",
+        "en:drinking-straw": "en:pp-5-polypropylene",
         "en:label": "en:paper",
     ]
 
@@ -143,7 +143,7 @@ enum PackagingGuess {
 
         return Suggestion(
             shape: shape,
-            material: assumedMaterial[shape] ?? "en:other-plastics",
+            material: assumedMaterial[shape] ?? "en:o-7-other-plastics",
             confidence: confidence,
             sourceLabel: label,
             materialIsAssumed: true

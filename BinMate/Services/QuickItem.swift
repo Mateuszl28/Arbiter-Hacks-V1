@@ -46,7 +46,7 @@ enum QuickItem: String, CaseIterable, Sendable {
     var component: PackagingComponent {
         switch self {
         case .plasticBottle:
-            PackagingComponent(shape: "en:bottle", material: "en:pet-polyethylene-terephthalate")
+            PackagingComponent(shape: "en:bottle", material: "en:pet-1-polyethylene-terephthalate")
         case .glassBottle:
             PackagingComponent(shape: "en:bottle", material: "en:clear-glass")
         case .drinksCan:
@@ -54,17 +54,17 @@ enum QuickItem: String, CaseIterable, Sendable {
         case .glassJar:
             PackagingComponent(shape: "en:jar", material: "en:clear-glass")
         case .yogurtPot:
-            PackagingComponent(shape: "en:pot", material: "en:ps-polystyrene")
+            PackagingComponent(shape: "en:pot", material: "en:ps-6-polystyrene")
         case .cardboardBox:
             PackagingComponent(shape: "en:box", material: "en:cardboard")
         case .plasticBag:
-            PackagingComponent(shape: "en:bag", material: "en:ldpe-low-density-polyethylene")
+            PackagingComponent(shape: "en:bag", material: "en:ldpe-4-low-density-polyethylene")
         case .beverageCarton:
-            PackagingComponent(shape: "en:box", material: "en:beverage-carton")
+            PackagingComponent(shape: "en:box", material: "en:paper-and-cardboard-plastic-aluminium")
         case .compostableCup:
-            PackagingComponent(shape: "en:cup", material: "en:pla-polylactic-acid")
+            PackagingComponent(shape: "en:tumbler", material: "en:pla-polylactic-acid")
         case .bottleCap:
-            PackagingComponent(shape: "en:cap", material: "en:pp-polypropylene")
+            PackagingComponent(shape: "en:lid-or-cap", material: "en:pp-5-polypropylene")
         case .paperLabel:
             PackagingComponent(shape: "en:label", material: "en:paper")
         case .foilWrapper:

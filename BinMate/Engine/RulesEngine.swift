@@ -237,8 +237,13 @@ struct RulesEngine: Sendable {
             let candidates = ruleset.rules.enumerated().filter { $0.element.materials.contains(material) }
             guard !candidates.isEmpty else { continue }
 
+            // Shapes form a hierarchy upstream, so a city rule about caps has to catch
+            // the screw cap a real scan actually reports. Walked nearest-first, so a
+            // rule naming the exact shape still beats one naming its broader form.
             if let shape = component.shape,
-               let shapeSpecific = candidates.first(where: { $0.element.shapes?.contains(shape) == true }) {
+               let shapeSpecific = ShapeTaxonomy.ancestry(of: shape).lazy
+                   .compactMap({ step in candidates.first(where: { $0.element.shapes?.contains(step) == true }) })
+                   .first {
                 return Match(
                     rule: shapeSpecific.element,
                     quality: depth == 0 ? .exactWithShape : .inherited(from: material),

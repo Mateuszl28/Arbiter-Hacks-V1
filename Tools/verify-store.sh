@@ -16,6 +16,8 @@ trap 'rm -rf "$OUT"' EXIT
 swiftc -Onone -o "$OUT/store-checks" \
   "$ROOT/Shared/TaxonomyID.swift" \
   "$ROOT/BinMate/Model/MaterialTaxonomy.swift" \
+  "$ROOT/BinMate/Model/OFFTaxonomy+Generated.swift" \
+  "$ROOT/BinMate/Model/OFFSynonyms.swift" \
   "$ROOT/BinMate/Model/PackagingComponent.swift" \
   "$ROOT/Shared/CityRuleset.swift" \
   "$ROOT/BinMate/Engine/RulesEngine.swift" \
@@ -25,4 +27,5 @@ swiftc -Onone -o "$OUT/store-checks" \
   "$ROOT/BinMate/Model/ScanRecord.swift" \
   "$ROOT/Tools/StoreMigrationChecks/main.swift"
 
-BINMATE_FIXTURE="$ROOT/Tools/Fixtures/history-legacy.store" "$OUT/store-checks"
+BINMATE_FIXTURE="$ROOT/Tools/Fixtures/history-legacy.store" \
+  BINMATE_SYNONYMS="$ROOT/BinMate/Resources/off-synonyms.json" "$OUT/store-checks"

@@ -24,6 +24,22 @@ func check(_ condition: Bool, _ message: String) {
 
 print("Bundle: \(appPath)")
 
+// MARK: - Synonym table
+
+// The table of localised names is a bundled resource, and a resource that fails to ship
+// does not break the build — it just quietly stops every non-English identifier from
+// resolving, which is the failure mode this suite exists for. The rule library was once
+// silently empty for exactly this reason.
+let synonymURL = bundle.url(forResource: "off-synonyms", withExtension: "json")
+    ?? bundle.url(forResource: "off-synonyms", withExtension: "json", subdirectory: "Resources")
+check(synonymURL != nil, "off-synonyms.json is missing from the bundle")
+
+if let synonymURL {
+    let loaded = (try? Data(contentsOf: synonymURL)).map(\.count) ?? 0
+    check(loaded > 10_000, "off-synonyms.json is suspiciously small at \(loaded) bytes")
+    print("\nSynonym table: \(loaded / 1024) kB at \(synonymURL.lastPathComponent)")
+}
+
 // MARK: - Rulesets
 
 let library = RulesLibrary.loadBundled(bundle: bundle)
@@ -705,14 +721,14 @@ print("\nPackaging changes:")
 
 let oldBottle = [
     PackagingComponent(shape: "en:bottle", material: "en:clear-glass"),
-    PackagingComponent(shape: "en:cap", material: "en:pp-polypropylene"),
+    PackagingComponent(shape: "en:lid-or-cap", material: "en:pp-5-polypropylene"),
     PackagingComponent(shape: "en:label", material: "en:paper"),
 ]
 let newBottle = [
     // Same three parts, but the bottle is now plastic.
-    PackagingComponent(shape: "en:cap", material: "en:pp-polypropylene"),
+    PackagingComponent(shape: "en:lid-or-cap", material: "en:pp-5-polypropylene"),
     PackagingComponent(shape: "en:label", material: "en:paper"),
-    PackagingComponent(shape: "en:bottle", material: "en:pet-polyethylene-terephthalate"),
+    PackagingComponent(shape: "en:bottle", material: "en:pet-1-polyethylene-terephthalate"),
 ]
 
 let diff = PackagingDiff.between(previous: oldBottle, current: newBottle)
@@ -809,8 +825,8 @@ let auditEngine = RulesEngine(ruleset: berlinCity)
 let auditedProduct = ScannedProduct(
     barcode: "1", name: "Audited bottle", brand: nil, imageURL: nil,
     components: [
-        PackagingComponent(shape: "en:bottle", material: "en:pet-polyethylene-terephthalate"),
-        PackagingComponent(shape: "en:cap", material: "en:pp-polypropylene"),
+        PackagingComponent(shape: "en:bottle", material: "en:pet-1-polyethylene-terephthalate"),
+        PackagingComponent(shape: "en:lid-or-cap", material: "en:pp-5-polypropylene"),
     ],
     origin: .manual
 )
@@ -894,7 +910,7 @@ check(
 // A paper bottle is a contributor picking the wrong dropdown entry, not a product.
 let implausible = product([
     PackagingComponent(shape: "en:bottle", material: "en:paper"),
-    PackagingComponent(shape: "en:cap", material: "en:pp-polypropylene"),
+    PackagingComponent(shape: "en:lid-or-cap", material: "en:pp-5-polypropylene"),
 ])
 check(
     PackagingAnomalyDetector.anomalies(in: implausible).contains { if case .implausiblePairing = $0 { return true }; return false },
@@ -904,8 +920,8 @@ for anomaly in PackagingAnomalyDetector.anomalies(in: implausible) { print("  \(
 
 // And it must not cry wolf. A perfectly ordinary three-part bottle is clean.
 let ordinary = product([
-    PackagingComponent(shape: "en:bottle", material: "en:pet-polyethylene-terephthalate"),
-    PackagingComponent(shape: "en:cap", material: "en:pp-polypropylene"),
+    PackagingComponent(shape: "en:bottle", material: "en:pet-1-polyethylene-terephthalate"),
+    PackagingComponent(shape: "en:lid-or-cap", material: "en:pp-5-polypropylene"),
     PackagingComponent(shape: "en:label", material: "en:paper"),
 ])
 check(
@@ -1004,7 +1020,7 @@ check(
 print("\nFollow-up questions:")
 
 // A lone bottle: ask about the cap and the label, not about everything.
-let loneBottle = product([PackagingComponent(shape: "en:bottle", material: "en:pet-polyethylene-terephthalate")])
+let loneBottle = product([PackagingComponent(shape: "en:bottle", material: "en:pet-1-polyethylene-terephthalate")])
 let bottleQuestions = FollowUp.questions(for: loneBottle)
 check(!bottleQuestions.isEmpty, "a lone bottle should prompt a question")
 check(
@@ -1022,8 +1038,8 @@ check(
 
 // An unrecognised material blocks a real answer, so it outranks anything else.
 let mysterious = product([
-    PackagingComponent(shape: "en:cap", material: "en:unobtainium"),
-    PackagingComponent(shape: "en:bottle", material: "en:pet-polyethylene-terephthalate"),
+    PackagingComponent(shape: "en:lid-or-cap", material: "en:unobtainium"),
+    PackagingComponent(shape: "en:bottle", material: "en:pet-1-polyethylene-terephthalate"),
 ])
 let mysteryQuestions = FollowUp.questions(for: mysterious)
 check(mysteryQuestions.first?.id.hasPrefix("material-") == true, "an unknown material should be asked about first")

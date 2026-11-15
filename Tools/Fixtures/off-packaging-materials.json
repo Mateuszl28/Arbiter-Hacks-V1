@@ -1,0 +1,4223 @@
+{
+ "da:genbrugt": {
+  "name": {
+   "da": "genbrugt"
+  }
+ },
+ "en:61-tex-jute": {
+  "name": {
+   "bg": "61 TEX юта",
+   "ca": "61 TEX jute",
+   "cs": "61 TEX Juta",
+   "da": "61 TEX jute",
+   "de": "61 TEX Jute",
+   "el": "61 TEX Γιούτα",
+   "en": "61 TEX Jute",
+   "es": "61 TEX yute",
+   "et": "61 TEX Džuut",
+   "fi": "61 TEX Juutti",
+   "fr": "61 TEX jute",
+   "hr": "61 TEX juta",
+   "hu": "61 TEX juta",
+   "it": "61 TEX iuta",
+   "lt": "61 TEX Džiutas",
+   "lv": "61 TEX Džuta",
+   "mk": "61 TEX јута",
+   "nb": "61 TEX jute",
+   "nl": "61 TEX jute",
+   "nn": "61 TEX jute",
+   "pl": "61 TEX juta",
+   "pt": "61 TEX juta",
+   "ro": "61 TEX Iută",
+   "ru": "61 TEX джут",
+   "sk": "61 TEX Juta",
+   "sl": "61 TEX juti",
+   "sr": "61 TEX jute",
+   "sv": "61 TEX jute",
+   "tr": "61 TEX Jüt",
+   "uk": "61 TEX Джут",
+   "xx": "61 TEX"
+  }
+ },
+ "en:76-gl-leaded-glass": {
+  "name": {
+   "ca": "76 GL - vidre de plom",
+   "cs": "76 GL - Křišťálové sklo",
+   "da": "76 GL - blyglas",
+   "de": "76 GL - Bleiglas",
+   "en": "76 GL - Leaded Glass",
+   "es": "76 GL - vidrio de plomo",
+   "et": "76 GL - Pliiklaas",
+   "fi": "76 GL - Kristalli",
+   "fr": "76 GL - cristal",
+   "hu": "76 GL - Ólomüveg",
+   "it": "76 GL - vetro cristallo",
+   "lt": "76 GL - Krištolas",
+   "mk": "76 GL - кристал",
+   "nb": "76 GL - Krystallglass",
+   "nl": "76 GL - kristal",
+   "nn": "76 GL - Krystallglas",
+   "pl": "76 GL - szkło ołowiowe",
+   "pt": "76 GL - Vidro de crits",
+   "ro": "76 GL - Cristal",
+   "ru": "76 GL - хрусталь",
+   "sv": "76 GL - kristallglas",
+   "uk": "76 GL - Кришталь",
+   "xx": "76 GL"
+  },
+  "parents": [
+   "en:glass"
+  ]
+ },
+ "en:abs-acrylonitrile-butadiene-styrene": {
+  "name": {
+   "bg": "ABS - Акрилонитрил-бутадиен-стирен",
+   "ca": "ABS - Acrilonitril butadiè estirè",
+   "cs": "ABS - Akrylonitrilbutadienstyren",
+   "de": "ABS - Acrylnitril-Butadien-Styrol",
+   "en": "ABS - Acrylonitrile butadiene styrene",
+   "es": "ABS - Acrilonitrilo butadieno estireno",
+   "fi": "ABS - Akryylinitriilibutadieenistyreeni",
+   "fr": "ABS - Acrylonitrile butadiène styrène",
+   "hu": "ABS - Akrilnitril-butadién-sztirol",
+   "it": "ABS - acrilonitrile butadiene stirene",
+   "nb": "ABS - Akrylnitril-butadien-styren",
+   "nl": "ABS - Acrylonitrilbutadieenstyreen",
+   "nn": "ABS - akrylnitrilbutadienstyren",
+   "pt": "ABS - Acrilonitrila butadieno estireno",
+   "ru": "ABS - акрилонитрил бутадиен стирол",
+   "sk": "ABS - Akrylonitrilbutadiénstyrén",
+   "sr": "ABS - акрилонитрил бутадиен стирен",
+   "tr": "ABS - Akrilonitril bütadien stiren",
+   "xx": "ABS"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:plastic"
+  ]
+ },
+ "en:adhesive-plastic-tape": {
+  "name": {
+   "de": "Kunststoffklebeband",
+   "en": "adhesive plastic tape",
+   "es": "cinta adhesiva de plástico",
+   "fr": "ruban adhésif en plastique",
+   "it": "nastro adesivo in plastica",
+   "nl": "kunststof plakband",
+   "pt": "fita adesiva de plástico"
+  },
+  "parents": [
+   "en:adhesive-tape"
+  ]
+ },
+ "en:adhesive-tape": {
+  "name": {
+   "de": "Klebeband",
+   "en": "adhesive tape",
+   "es": "cinta adhesiva",
+   "fr": "ruban adhésif",
+   "it": "nastro adesivo",
+   "ja": "粘着テープ",
+   "ko": "접착 테이프",
+   "nl": "plakband",
+   "pt": "fita adesiva",
+   "ru": "скотч",
+   "zh": "胶带"
+  }
+ },
+ "en:alkaline-battery": {
+  "name": {
+   "bg": "Алкална батерия",
+   "ca": "pila alcalina",
+   "cs": "alkalický článek",
+   "de": "Alkalibatterie",
+   "en": "Alkaline battery",
+   "es": "pila alcalina",
+   "et": "leelisaku",
+   "fi": "alkaliparisto",
+   "fr": "Pile alcaline",
+   "hr": "alkalni članak",
+   "hu": "Alkáli elem",
+   "it": "batteria alcalina",
+   "nb": "Alkalisk batteri",
+   "nl": "Alkalinebatterij",
+   "pl": "bateria alkaliczna",
+   "pt": "Bateria alcalina",
+   "ro": "baterie alcalină",
+   "ru": "Щелочной элемент",
+   "sk": "alkalický článok",
+   "sr": "alkalna baterija",
+   "sv": "alkaliskt batteri",
+   "tr": "alkalin pil",
+   "uk": "Лужна батарейка",
+   "xx": "09 Alkaline"
+  }
+ },
+ "en:aluminium": {
+  "name": {
+   "bg": "Алуминий",
+   "ca": "alumini",
+   "cs": "hliník",
+   "da": "aluminium",
+   "de": "Aluminium",
+   "el": "αργίλιο",
+   "en": "Aluminium",
+   "es": "aluminio",
+   "et": "alumiinium",
+   "fi": "alumiini",
+   "fr": "Aluminium",
+   "ga": "alúmanam",
+   "hr": "aluminij",
+   "hu": "Alumínium",
+   "it": "Alluminio",
+   "ja": "アルミ",
+   "lt": "aliuminis",
+   "lv": "alumīnijs",
+   "mt": "aluminju",
+   "nl": "Aluminium",
+   "nn": "aluminium",
+   "pl": "Aluminium",
+   "pt": "Alumínio",
+   "ro": "aluminiu",
+   "ru": "Алюминий",
+   "sk": "hliník",
+   "sl": "aluminij",
+   "sv": "aluminium",
+   "tr": "alüminyum",
+   "uk": "алюміній",
+   "xx": "41 ALU",
+   "zh": "铝"
+  },
+  "parents": [
+   "en:recyclable-metals"
+  ]
+ },
+ "en:aluminium-foil": {
+  "name": {
+   "da": "stanniol",
+   "en": "aluminium foil",
+   "eo": "aluminifolio",
+   "fi": "alumiinifolio",
+   "se": "silbabábir",
+   "sv": "aluminiumfolie"
+  },
+  "parents": [
+   "en:light-aluminium"
+  ]
+ },
+ "en:apet-amorphous-polyethylene-terephthalate": {
+  "name": {
+   "en": "APET - Amorphous polyethylene terephthalate",
+   "xx": "APET"
+  },
+  "parents": [
+   "en:pet-1-polyethylene-terephthalate"
+  ]
+ },
+ "en:armed-cardboard": {
+  "name": {
+   "bg": "Въоръжен картон",
+   "ca": "Cartó armat",
+   "cs": "Ozbrojený karton",
+   "da": "Armeret pap",
+   "de": "Bewehrter Karton",
+   "en": "Armed cardboard",
+   "es": "Cartón armado",
+   "et": "Reljeefne kartong",
+   "fi": "Vahvistettu pahvi",
+   "fr": "Carton armé",
+   "ga": "Cairtchlár armtha",
+   "hr": "Oklopljeni karton",
+   "hu": "Fegyveres karton",
+   "it": "Cartone armato",
+   "lt": "Ginkluotas kartonas",
+   "lv": "Ieroču kartons",
+   "mk": "наоружан картон",
+   "nl": "Gewapend karton",
+   "pl": "Karton zbrojony",
+   "pt": "Cartão armado",
+   "ro": "Carton armat",
+   "ru": "Вооруженный картон",
+   "sv": "Armerad kartong",
+   "uk": "Озброєний картон"
+  },
+  "parents": [
+   "en:cardboard"
+  ]
+ },
+ "en:baking-paper": {
+  "name": {
+   "bg": "Пергаментова хартия",
+   "ca": "Paper vegetal",
+   "cs": "pečicí papír",
+   "da": "bagepapir",
+   "de": "Backpapier",
+   "el": "λαδόκολλα",
+   "en": "baking paper",
+   "es": "papel sulfurizado",
+   "fi": "leivinpaperi",
+   "fr": "Papier sulfurisé",
+   "hu": "sütőpapír",
+   "is": "Smjörpappír",
+   "it": "Carta da forno",
+   "lv": "pergamentpapīrs",
+   "nb": "bakepapir",
+   "nl": "bakpapier",
+   "pl": "Papier do pieczenia",
+   "pt": "papel vegetal",
+   "ru": "Пергаментная бумага",
+   "sv": "Bakplåtspapper",
+   "tr": "Fırın kâğıdı",
+   "uk": "Пергаментний папір"
+  }
+ },
+ "en:bio-ldpe-biobased-ldpe": {
+  "name": {
+   "ar": "Bio-LDPE - LDPE الحيوي",
+   "bg": "Bio-LDPE - Био-базиран LDPE",
+   "ca": "Bio-LDPE - LDPE de base biològica",
+   "cs": "Bio-LDPE - Bio LDPE",
+   "da": "Bio-LDPE - Biobaseret LDPE",
+   "de": "Bio-LDPE - Biobasiertes LDPE",
+   "el": "Bio-LDPE - Βιολογικό LDPE",
+   "en": "Bio-LDPE - Biobased LDPE",
+   "es": "Bio-LDPE - LDPE de base biológica",
+   "et": "Bio-LDPE - Biolagunev LDPE",
+   "fi": "Bio-LDPE - Biopohjainen LDPE",
+   "fr": "Bio-PELD - PELD biosourcé",
+   "he": "ביו-LDPE - LDPE ביו-מבוסס",
+   "hr": "Bio-LDPE - Bio-bazirani LDPE",
+   "hu": "Bio-LDPE - Biobázisú LDPE",
+   "it": "Bio-LDPE - LDPE biologico",
+   "ja": "バイオLDPE - バイオベースLDPE、バイオベースLDPE",
+   "ko": "바이오 LDPE - 바이오 기반 LDPE",
+   "lt": "Bio-LDPE - Biologinis LDPE",
+   "lv": "Bio-LDPE - Bio LDPE",
+   "nl": "Bio-LDPE - Biologische LDPE",
+   "no": "Bio-LDPE - Biobasert LDPE",
+   "pl": "Bio-LDPE - Bio oparte LDPE",
+   "pt": "Bio-PELD - Bioplástico PELD",
+   "ro": "Bio-LDPE - LDPE bio",
+   "ru": "Bio-LDPE - Био-основанный LDPE",
+   "sk": "Bio-LDPE - Bio LDPE",
+   "sl": "Bio-LDPE - Bio LDPE",
+   "sv": "Bio-LDPE - Biobaserad LDPE",
+   "tr": "Bio-LDPE - Biyo-bazlı LDPE",
+   "uk": "Bio-LDPE - Біо-LDPE",
+   "xx": "Bio-LDPE",
+   "zh": "生物基LDPE - 生物基LDPE，生物基LDPE"
+  },
+  "parents": [
+   "en:biope-biobased",
+   "en:ldpe-4-low-density-polyethylene"
+  ]
+ },
+ "en:biobased": {
+  "name": {
+   "en": "biobased",
+   "fr": "biosourcé"
+  }
+ },
+ "en:biobased-plastic": {
+  "name": {
+   "da": "Biobaseret plastik",
+   "de": "Biobasierter Kunststoff",
+   "en": "Biobased plastic",
+   "es": "Plástico de base biológica",
+   "fr": "Plastique biosourcé",
+   "hu": "Biobázisú műanyag",
+   "it": "Plastica biologica",
+   "pt": "Plástico biobaseado",
+   "sv": "Biobaserad plast"
+  },
+  "parents": [
+   "en:plastic"
+  ]
+ },
+ "en:biobased-tetra-pak": {
+  "name": {
+   "de": "Biobasiertes Tetra Pak",
+   "en": "Biobased Tetra Pak",
+   "fr": "Tetra Pak biosourcé"
+  },
+  "parents": [
+   "en:tetra-pak"
+  ]
+ },
+ "en:biodegradable-plastic": {
+  "name": {
+   "bg": "Биоразградима пластмаса",
+   "de": "Biologisch abbaubarer Kunststoff",
+   "en": "Biodegradable plastic",
+   "hu": "Lebomló műanyag",
+   "it": "Plastica biodegradabile",
+   "nl": "Biologisch afbreekbaar plastic",
+   "pt": "Plástico biodegradável",
+   "xx": "87 CSL"
+  },
+  "parents": [
+   "en:plastic"
+  ]
+ },
+ "en:biohdpe-biobased-hdpe": {
+  "name": {
+   "de": "bioHDPE - Biobasiertes HDPE",
+   "en": "bioHDPE - Biobased HDPE",
+   "es": "bioHDPE - HDPE de base biológica",
+   "fr": "bioHDPE - PEHD biosourcé",
+   "hu": "bioHDPE - Biobázisú HDPE",
+   "it": "bioHDPE - HDPE biobased",
+   "nl": "bioHDPE - Biologische HDPE",
+   "pt": "bioHDPE - Bioplástico PEHD",
+   "xx": "Bio-HDPE"
+  },
+  "parents": [
+   "en:biope-biobased",
+   "en:hdpe-2-high-density-polyethylene"
+  ]
+ },
+ "en:biope-biobased": {
+  "name": {
+   "de": "bioPE - Biobasiertes",
+   "en": "bioPE - Biobased",
+   "fr": "bioPE - biosourcé",
+   "hu": "bioPE - Biobázisú",
+   "nl": "bioPE - Biobased",
+   "pt": "bioPE - Bioplástico",
+   "xx": "Bio-PE"
+  },
+  "parents": [
+   "en:pe-7-polyethylene"
+  ]
+ },
+ "en:bpet-biobased-pet": {
+  "name": {
+   "da": "bPET - biobaseret PET",
+   "de": "bPET - Biobasiertes PET",
+   "en": "bPET - Biobased PET",
+   "fr": "bPET - PET biosourcé",
+   "hu": "bPET - Biobázisú PET",
+   "it": "bPET - PET biologico",
+   "nl": "bPET - Biobased PET",
+   "pt": "bPET - Bioplástico PET",
+   "sv": "bPET - biobaserad PET",
+   "xx": "bPET"
+  },
+  "parents": [
+   "en:pet-1-polyethylene-terephthalate"
+  ]
+ },
+ "en:brown-glass": {
+  "name": {
+   "bg": "Кафяво стъкло",
+   "cs": "hnědé sklo",
+   "da": "brunt glas",
+   "de": "Braunglas",
+   "el": "καφέ γυαλί",
+   "en": "Brown Glass",
+   "es": "vidrio marrón",
+   "et": "pruun klaas",
+   "fi": "ruskea lasi",
+   "fr": "Verre brun",
+   "ga": "glais donn",
+   "hr": "smeđe staklo",
+   "hu": "barna üveg",
+   "is": "brúnt gler",
+   "it": "vetro marrone",
+   "lt": "ruda stiklas",
+   "lv": "brūns stikls",
+   "mk": "кафеаво стакло",
+   "mt": "ħġieġ braun",
+   "nb": "brunt glass",
+   "nl": "Bruin glas",
+   "nn": "brunt glas",
+   "pl": "Brązowe szkło",
+   "pt": "vidro marrom",
+   "ro": "sticlă maro",
+   "ru": "коричневое стекло",
+   "sk": "hnedé sklo",
+   "sl": "rjavo steklo",
+   "sq": "xham kafe",
+   "sr": "braon staklo",
+   "sv": "brunt glas",
+   "tr": "kahverengi cam",
+   "uk": "коричневе скло",
+   "xx": "72 GL"
+  },
+  "parents": [
+   "en:coloured-glass"
+  ]
+ },
+ "en:cardboard": {
+  "name": {
+   "bg": "Картон",
+   "ca": "cartó",
+   "cs": "lepenka",
+   "da": "karton",
+   "de": "Karton",
+   "en": "Cardboard",
+   "et": "papp",
+   "fi": "pahvi",
+   "fr": "Carton",
+   "ga": "cairtchlár",
+   "hr": "karton",
+   "hu": "Hullámkarton",
+   "it": "Cartone",
+   "lt": "Kartonas",
+   "lv": "kartons",
+   "mk": "картон",
+   "nl": "Karton",
+   "pl": "karton",
+   "pt": "Cartão",
+   "ro": "carton",
+   "ru": "картон",
+   "sv": "Kartong",
+   "uk": "картон"
+  },
+  "parents": [
+   "en:paper-or-cardboard"
+  ]
+ },
+ "en:cellophane": {
+  "name": {
+   "bg": "Целофан",
+   "en": "Cellophane",
+   "fr": "Cellophane",
+   "it": "Cellophane"
+  }
+ },
+ "en:cellulose": {
+  "name": {
+   "bg": "Целулоза",
+   "en": "Cellulose",
+   "es": "Celulosa",
+   "fr": "Cellulose",
+   "it": "Cellulosa"
+  }
+ },
+ "en:ceramic": {
+  "name": {
+   "bg": "Керамика",
+   "da": "Keramik",
+   "de": "Keramik",
+   "en": "Ceramic",
+   "fr": "Céramique",
+   "hr": "keramika",
+   "hu": "Kerámia",
+   "it": "ceramica",
+   "nl": "Keramiek",
+   "pt": "Cerâmica"
+  }
+ },
+ "en:clear-glass": {
+  "name": {
+   "bg": "Безцветно стъкло",
+   "da": "Klar Glas",
+   "de": "Klarglas",
+   "en": "Clear Glass",
+   "es": "Vidrio transparente",
+   "fr": "Verre transparent",
+   "hr": "bezbojno staklo",
+   "hu": "Fehér üveg",
+   "it": "Vetro trasparente",
+   "nl": "transparant glas",
+   "pl": "Przezroczyste szkło",
+   "pt": "Vidro transparente",
+   "sv": "Klart glas",
+   "tr": "Net cam",
+   "uk": "Прозоре скло",
+   "xx": "70 GL"
+  },
+  "parents": [
+   "en:glass"
+  ]
+ },
+ "en:co2-carbon-dioxide": {
+  "name": {
+   "de": "CO2 - Kohlendioxid",
+   "en": "CO2 - Carbon dioxide",
+   "es": "CO2 - Dióxido de carbono",
+   "fr": "CO2 - Dioxide de carbone",
+   "it": "CO2 - Anidride carbonica",
+   "nl": "CO2 - Koolstofdioxide",
+   "pt": "CO2 - Dióxido de carbono",
+   "xx": "CO2"
+  },
+  "parents": [
+   "en:gas"
+  ]
+ },
+ "en:colored": {
+  "name": {
+   "en": "colored",
+   "fr": "coloré"
+  }
+ },
+ "en:coloured-glass": {
+  "name": {
+   "da": "farvet glas",
+   "en": "Coloured Glass",
+   "fr": "Verre coloré",
+   "sv": "färgat glas"
+  },
+  "parents": [
+   "en:glass"
+  ]
+ },
+ "en:composite-material": {
+  "name": {
+   "ar": "مادة مركبة",
+   "bg": "композитен материал",
+   "ca": "Material compost",
+   "da": "Kompositmateriale",
+   "de": "Verbundwerkstoff",
+   "en": "composite material",
+   "es": "material compuesto",
+   "et": "Komposiitmaterjal",
+   "eu": "Material konposatu",
+   "fi": "komposiittimateriaali",
+   "fr": "Composites multicouches",
+   "he": "חומר מרוכב",
+   "hr": "kompozitni materijal",
+   "hu": "kompozit anyag",
+   "it": "materiale composito",
+   "ja": "複合材料",
+   "ko": "복합 재료",
+   "lv": "kompozītmateriāli",
+   "mk": "композитен материјал",
+   "nl": "Composietmateriaal",
+   "nn": "kompositt",
+   "pl": "Materiał kompozytowy",
+   "pt": "Compósito de várias camadas",
+   "ro": "material compozit",
+   "ru": "композиционный материал",
+   "sk": "kompozitný materiál",
+   "sl": "Kompozit",
+   "sq": "Material kompozit",
+   "sr": "композитни материјал",
+   "sv": "Kompositmaterial",
+   "tr": "Kompozit malzemeler",
+   "uk": "композиційний матеріал",
+   "zh": "复合材料"
+  }
+ },
+ "en:copper-mixed-copper-backed-glass": {
+  "name": {
+   "de": "Kupfer gemischt/Glas mit Kupfer hinterlegt",
+   "en": "Copper Mixed/Copper Backed Glass",
+   "xx": "77 GL"
+  },
+  "parents": [
+   "en:glass"
+  ]
+ },
+ "en:cork": {
+  "name": {
+   "af": "kurk",
+   "bg": "Корк",
+   "ca": "suro",
+   "co": "sùvaru",
+   "cs": "korek",
+   "da": "Kork",
+   "de": "Kork",
+   "en": "Cork",
+   "eo": "korko",
+   "es": "corcho",
+   "fi": "korkki",
+   "fo": "tøppur",
+   "fr": "Liège",
+   "fy": "koark",
+   "hr": "pluto",
+   "hu": "Parafa",
+   "id": "gabus",
+   "io": "korko",
+   "it": "sughero",
+   "nl": "Kurk",
+   "oc": "siure",
+   "pl": "Korek",
+   "pt": "Cortiça",
+   "ru": "Пробка",
+   "sv": "kork",
+   "sw": "kizibo",
+   "xx": "51 FOR"
+  }
+ },
+ "en:corrugated-cardboard": {
+  "name": {
+   "bg": "Вълнообразен картон",
+   "ca": "Cartró ondulat",
+   "cs": "vlnitá lepenka",
+   "de": "Wellpappe",
+   "en": "Corrugated cardboard",
+   "es": "cartón ondulado",
+   "fi": "aaltopahvi",
+   "fr": "Carton ondulé",
+   "hr": "valovita ljepenka",
+   "it": "cartone ondulato",
+   "nb": "Bølgepapp",
+   "nl": "golfkarton",
+   "pt": "cartão ondulado",
+   "ro": "Carton ondulat",
+   "ru": "гофрокартон",
+   "sv": "wellpapp",
+   "tr": "Oluklu mukavva",
+   "uk": "гофрокартон",
+   "xx": "20 PAP"
+  },
+  "parents": [
+   "en:cardboard"
+  ]
+ },
+ "en:cotton": {
+  "name": {
+   "af": "katoen",
+   "ar": "قطن",
+   "az": "pambıq",
+   "be": "бавоўнік",
+   "bg": "Памук",
+   "br": "koton",
+   "ca": "cotó",
+   "cs": "bavlna",
+   "da": "Bomuld",
+   "de": "Baumwolle",
+   "el": "βαμβάκι",
+   "en": "Cotton",
+   "eo": "kotono",
+   "es": "algodón",
+   "et": "puuvill",
+   "eu": "algodoi",
+   "fa": "پنبه",
+   "fi": "puuvilla",
+   "fo": "bummull",
+   "fr": "Coton",
+   "fy": "ketoen",
+   "he": "כותנה",
+   "hr": "pamuk",
+   "hu": "Pamut",
+   "hy": "բամբակենի",
+   "id": "kapas",
+   "is": "baðmull",
+   "it": "Cotone",
+   "ja": "綿",
+   "ka": "ბამბა",
+   "ko": "면화",
+   "lt": "medvilnė",
+   "lv": "kokvilna",
+   "mn": "хөвөн",
+   "mt": "qoton",
+   "nl": "Katoen",
+   "no": "bomull",
+   "pl": "bawełna",
+   "pt": "Algodão",
+   "ro": "bumbac",
+   "ru": "Хлопок",
+   "sk": "bavlna",
+   "sl": "bombaž",
+   "sq": "pambuk",
+   "sr": "памук",
+   "sv": "bomull",
+   "th": "ฝ้าย",
+   "tr": "pamuk",
+   "uk": "бавовна",
+   "vi": "bông",
+   "xx": "60 COT",
+   "zh": "棉花"
+  },
+  "parents": [
+   "en:textile"
+  ]
+ },
+ "en:cpla-crystallized-polyactic-acid": {
+  "name": {
+   "bg": "CPLA - Кристализиран полилактичен киселинен полимер",
+   "ca": "CPLA - Àcid polilàctic cristal·litzat",
+   "cs": "CPLA - Krystalizovaná kyselina polymléčná",
+   "da": "CPLA - Krystalliseret polyactisk syre",
+   "de": "CPLA - Kristallisiertes Polymilchsäure",
+   "el": "CPLA - Κρυσταλλωμένο πολυγαλακτικό οξύ",
+   "en": "CPLA - Crystallized Polyactic Acid",
+   "es": "CPLA - Ácido poliláctico cristalizado",
+   "et": "CPLA - Kristalliseerunud polüaktiinhape",
+   "fi": "CPLA - Kiteytynyt polylaktiinihappo",
+   "fr": "CPLA - Acide polylactique cristallisé",
+   "ga": "CPLA - Aigéad polilactaide criostalaithe",
+   "hu": "CPLA - Kristályosodott polilaktinsav",
+   "it": "CPLA - Acido polilattico cristallizzato",
+   "nb": "CPLA - Krystallisert polyaktisk syre",
+   "nl": "CPLA - Gekristalliseerd polylactisch zuur",
+   "nn": "CPLA - Krystallisert polyaktisk syre",
+   "pl": "CPLA - Kryształowy kwas polimlekowy",
+   "pt": "CPLA - Ácido poliláctico cristalizado",
+   "ru": "CPLA - Кристаллизованная полимолочная кислота",
+   "sk": "CPLA - Krystalizovaná kyselina polymliečna",
+   "sl": "CPLA - Kristalizirana polilaktična kislina",
+   "sr": "CPLA - кристализована полилактична киселина",
+   "sv": "CPLA - Kristalliserad polyaktisk syra",
+   "tr": "CPLA - Kristalize polilaktik asit",
+   "uk": "CPLA - Кристалізована полімолочна кислота",
+   "xx": "CPLA"
+  },
+  "parents": [
+   "en:pla-polylactic-acid"
+  ]
+ },
+ "en:cpp-cast-polypropylen": {
+  "name": {
+   "de": "CPP - Ungerecktes Polypropylen",
+   "en": "CPP - Cast PolyPropylen",
+   "fr": "CPP - Polypropylène coulé",
+   "nl": "CPP - Gegoten polypropeen",
+   "xx": "CPP"
+  },
+  "parents": [
+   "en:pp-5-polypropylene"
+  ]
+ },
+ "en:d-pak": {
+  "name": {
+   "en": "D-PAK",
+   "xx": "D-PAK"
+  },
+  "parents": [
+   "en:composite-material",
+   "en:elopak"
+  ]
+ },
+ "en:dark-sort-glass": {
+  "name": {
+   "de": "Dunkles Sortierglas",
+   "en": "Dark Sort Glass",
+   "es": "Vidrio oscuro",
+   "fr": "Verre sombre",
+   "hr": "ostalih boja staklo",
+   "hu": "Sötét válogatott üveg",
+   "it": "Vetro scuro",
+   "nl": "Donker glas",
+   "xx": "73 GL"
+  },
+  "parents": [
+   "en:glass"
+  ]
+ },
+ "en:elopak": {
+  "name": {
+   "en": "Elopak",
+   "xx": "Elopak"
+  }
+ },
+ "en:eps-expanded-polystyrene": {
+  "name": {
+   "ar": "EPS - البوليسترين الموسع، البوليسترين الرغوي",
+   "bg": "EPS - Експандиран полистирол",
+   "ca": "EPS - poliestirè expandit",
+   "cs": "EPS - expandovaný polystyren",
+   "da": "EPS - Ekspanderet polystyren",
+   "de": "EPS - Expandiertes Polystyrol",
+   "el": "EPS - διογκωμένο πολυστυρένιο",
+   "en": "EPS - Expanded polystyrene",
+   "es": "EPS - poliestireno expandido",
+   "et": "EPS - paisutatud polüstüreen",
+   "fi": "EPS - expandeerattu polystyreeni",
+   "fr": "PSE - Polystyrène expansé",
+   "hr": "EPS - ekspandirani polistiren",
+   "hu": "EPS - expandált polisztirol",
+   "it": "EPS - polistirene espanso",
+   "ja": "EPS - 発泡ポリスチレン、発泡ポリスチレン",
+   "ko": "EPS - 발포 폴리스티렌",
+   "lt": "EPS - polistireninis putplastis",
+   "lv": "EPS - putupolistirols",
+   "nl": "EPS - geëxpandeerd polystyreen",
+   "pl": "EPS - polistyren ekspandowany",
+   "pt": "EPS - poliestireno expandido",
+   "ru": "EPS - вспененный полистирол",
+   "sk": "EPS - expandovaný polystyrén",
+   "sl": "EPS - ekspandirani polistiren",
+   "sv": "EPS - expanderad polystyren",
+   "tr": "EPS - Genleştirilmiş polistiren",
+   "uk": "EPS - спінений полістирол",
+   "zh": "EPS - 膨胀聚苯乙烯，泡沫聚苯乙烯"
+  },
+  "parents": [
+   "en:ps-6-polystyrene"
+  ]
+ },
+ "en:fabric": {
+  "name": {
+   "de": "Stoff",
+   "en": "fabric",
+   "fr": "tissu",
+   "it": "stoffa",
+   "nl": "stof"
+  }
+ },
+ "en:fsc-cardboard": {
+  "name": {
+   "de": "FSC Karton",
+   "en": "FSC cardboard",
+   "es": "Cartón FSC",
+   "fr": "Carton FSC",
+   "it": "Cartone FSC",
+   "ja": "FSCカードボード",
+   "nl": "FSC karton",
+   "pl": "Karton FSC",
+   "pt": "Cartão FSC",
+   "ro": "Carton FSC",
+   "ru": "Картон FSC",
+   "sv": "FSC kartong",
+   "zh": "FSC纸板"
+  },
+  "parents": [
+   "en:cardboard"
+  ]
+ },
+ "en:fsc-paper": {
+  "name": {
+   "de": "FSC Papier",
+   "en": "FSC paper",
+   "es": "Papel FSC",
+   "fr": "Papier FSC",
+   "it": "Carta FSC",
+   "nl": "FSC-papier",
+   "pl": "Papier FSC",
+   "pt": "Papel FSC",
+   "ru": "Бумага FSC",
+   "sv": "FSC-papper"
+  },
+  "parents": [
+   "en:paper"
+  ]
+ },
+ "en:gas": {
+  "name": {
+   "de": "Gas",
+   "en": "Gas",
+   "es": "Gas",
+   "fr": "Gaz",
+   "it": "Gas",
+   "nl": "Gas",
+   "pt": "Gás",
+   "ro": "Gaz",
+   "ru": "Газ",
+   "sv": "Gas"
+  }
+ },
+ "en:glass": {
+  "name": {
+   "bg": "Стъкло",
+   "bs": "Staklo",
+   "ca": "vidre",
+   "cs": "sklo",
+   "da": "Glas",
+   "de": "Glas",
+   "el": "γυαλί",
+   "en": "Glass",
+   "es": "Vidrio",
+   "et": "klaas",
+   "fi": "lasi",
+   "fr": "Verre",
+   "ga": "gloine",
+   "hr": "staklo",
+   "hu": "Üveg",
+   "is": "Gler",
+   "it": "Vetro",
+   "lt": "Stiklas",
+   "lv": "stikls",
+   "mk": "стакло",
+   "mt": "ħġieġ",
+   "nb": "glass",
+   "nl": "Glas",
+   "nn": "glas",
+   "pl": "szkło",
+   "pt": "vidro",
+   "ro": "sticlă",
+   "ru": "стекло",
+   "sk": "sklo",
+   "sl": "steklo",
+   "sq": "xham",
+   "sr": "стакло",
+   "sv": "glas",
+   "tr": "Cam",
+   "uk": "скло"
+  }
+ },
+ "en:glass-aluminium": {
+  "name": {
+   "de": "Glas/Aluminium",
+   "en": "Glass/aluminium",
+   "hr": "staklo/aluminij",
+   "xx": "96 C/X"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:glass-miscellaneous-metals": {
+  "name": {
+   "de": "Glas/verschiedene Metalle",
+   "en": "Glass/miscellaneous metals",
+   "hr": "staklo/raznovrsni metali",
+   "xx": "98 C/X"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:glass-plastic": {
+  "name": {
+   "de": "Glas/Kunststoff",
+   "en": "Glass/Plastic",
+   "hr": "staklo/plastika",
+   "xx": "95 C/X"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:glass-tinplate": {
+  "name": {
+   "de": "Glas/Weißblech",
+   "en": "Glass/tinplate",
+   "hr": "staklo/bijeli lim",
+   "xx": "97 C/X"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:gold-mixed-gold-backed-glass": {
+  "name": {
+   "de": "Gold gemischt/Glas mit Gold hinterlegt",
+   "en": "Gold Mixed/Gold Backed Glass",
+   "xx": "79 GL"
+  },
+  "parents": [
+   "en:glass"
+  ]
+ },
+ "en:grass-carton": {
+  "name": {
+   "de": "Graskarton",
+   "en": "Grass carton"
+  },
+  "parents": [
+   "en:cardboard"
+  ]
+ },
+ "en:green-glass": {
+  "name": {
+   "bg": "Зелено стъкло",
+   "cs": "Zelené sklo",
+   "da": "Grønt Glas",
+   "de": "Grünglas",
+   "en": "Green Glass",
+   "es": "Vidrio verde",
+   "et": "roheline klaas",
+   "fi": "vihreä lasi",
+   "fr": "Verre vert",
+   "ga": "glais glas",
+   "hr": "zeleno staklo",
+   "hu": "Zöld üveg",
+   "is": "grænt gler",
+   "it": "vetro verde",
+   "lt": "žalias stiklas",
+   "lv": "zaļš stikls",
+   "mk": "зелено стакло",
+   "nb": "grønt glass",
+   "nl": "Groen glas",
+   "nn": "grønt glas",
+   "pl": "Zielone szkło",
+   "pt": "Vidro verde",
+   "ro": "sticlă verde",
+   "ru": "зеленое стекло",
+   "sk": "zelené sklo",
+   "sl": "zeleno steklo",
+   "sq": "xhami jeshil",
+   "sr": "зелено стакло",
+   "sv": "grönt glas",
+   "tr": "Yeşil cam",
+   "uk": "зелене скло",
+   "xx": "71 GL"
+  },
+  "parents": [
+   "en:coloured-glass"
+  ]
+ },
+ "en:hard-plastic": {
+  "name": {
+   "da": "hård plast",
+   "en": "hard plastic",
+   "sv": "hårdplast"
+  },
+  "parents": [
+   "en:plastic"
+  ]
+ },
+ "en:hdpe-2-high-density-polyethylene": {
+  "name": {
+   "ar": "HDPE 2 - متعدد إثيلين عالي الكثافة",
+   "bg": "HDPE 2 - Полиетилен с висока плътност",
+   "ca": "HDPE 2 - polietilè d'alta densitat",
+   "cs": "HDPE 2 - Polyethylen s vysokou hustotou",
+   "de": "HDPE 2 - Polyethylen hoher Dichte",
+   "en": "HDPE 2 - High-density polyethylene",
+   "fi": "HDPE 2 - suurtiheyspolyeteeni",
+   "fr": "PEHD 2 - Polyéthylène haute densité",
+   "hr": "HDPE 2 - polietilen visoke gustoće",
+   "hu": "HDPE 2 - Nagy sűrűségű polietilén",
+   "it": "HDPE 2 - Polietilene ad alta densità",
+   "lt": "HDPE 2 - Didelio tankio polietilenas",
+   "nl": "HDPE 2 - Hogedichtheidpolyetheen",
+   "nn": "HDPE 2 - høgdensitetspolyetylen",
+   "pl": "HDPE 2 - polietylen wysokiej gęstości",
+   "pt": "HDPE 2 - Polietileno de alta densidade",
+   "ru": "HDPE 2 - полиэтилен высокой плотности",
+   "uk": "HDPE 2 - Поліетилен високої щільності",
+   "xx": "HDPE"
+  },
+  "parents": [
+   "en:pe-7-polyethylene",
+   "en:plastic"
+  ]
+ },
+ "en:heavy-aluminium": {
+  "name": {
+   "bg": "Тежък алуминий",
+   "ca": "Alumini pesat",
+   "cs": "Těžký hliník",
+   "da": "Tung aluminium",
+   "de": "Schweres Aluminium",
+   "el": "Βαρύ αργίλιο",
+   "en": "Heavy aluminium",
+   "es": "Aluminio grueso",
+   "et": "Raske alumiinium",
+   "fi": "Paksu alumiini",
+   "fr": "Aluminium lourd",
+   "ga": "Alúmanam trom",
+   "hr": "Teški aluminij",
+   "hu": "Nehéz alumínium",
+   "it": "Alluminio spesso",
+   "ja": "重いアルミニウム、厚いアルミニウム",
+   "lt": "Sunkus aliuminis",
+   "lv": "Smags alumīnijs",
+   "mt": "Aluminju tqil",
+   "nl": "Dik aluminium",
+   "nn": "Tungt aluminium",
+   "pl": "Grube aluminium",
+   "pt": "Alumínio pesado",
+   "ro": "Aluminiu greu",
+   "ru": "Тяжелый алюминий",
+   "sk": "Ťažký hliník",
+   "sl": "Težek aluminij",
+   "sv": "Tungt aluminium",
+   "tr": "Ağır alüminyum",
+   "uk": "Важкий алюміній",
+   "zh": "重铝"
+  },
+  "parents": [
+   "en:aluminium"
+  ]
+ },
+ "en:italpack": {
+  "name": {
+   "en": "Italpack",
+   "xx": "Italpack"
+  }
+ },
+ "en:kraft-paper": {
+  "name": {
+   "bg": "Крафт хартия",
+   "cs": "Kraftový papír",
+   "da": "Kraftpapir",
+   "de": "Kraftpapier",
+   "el": "Χαρτί Kraft",
+   "en": "Kraft paper",
+   "es": "Papel de saco",
+   "et": "Kraftpaber",
+   "fi": "Kraft-paperi",
+   "fr": "Papier kraft",
+   "hr": "natronski papir",
+   "hu": "Kraft papír",
+   "it": "Carta kraft",
+   "lt": "Krafto popierius",
+   "lv": "Kraft papīrs",
+   "mk": "Крафт хартија",
+   "nb": "Kraftpapir",
+   "nl": "Kraft-papier",
+   "nn": "Kraftpapir",
+   "pl": "Papier kraft",
+   "pt": "Papel kraft",
+   "ru": "Крафт-бумага",
+   "sv": "Kraftpapper",
+   "tr": "Kraft kağıdı",
+   "uk": "Крафт-папір",
+   "zh": "牛皮纸"
+  },
+  "parents": [
+   "en:paper"
+  ]
+ },
+ "en:ldpe-4-low-density-polyethylene": {
+  "name": {
+   "bg": "LDPE 4 - Полиетилен с ниска плътност",
+   "ca": "LDPE 4 - Polietilè de baixa densitat",
+   "cs": "LDPE 4 - Polyethylen s nízkou hustotou",
+   "de": "LDPE 4 - Polyethylen niedriger Dichte",
+   "en": "LDPE 4 - Low-density polyethylene",
+   "es": "LDPE 4 - polietileno de baja densidad",
+   "fr": "PEBD 4 - Polyéthylène basse densité",
+   "hr": "LDPE 4 - polietilen niske gustoće",
+   "hu": "LDPE 4 - Kis sűrűségű polietilén",
+   "it": "LDPE 4 - Polietilene a bassa densità",
+   "lt": "LDPE 4 - Mažo tankio polietilenas",
+   "nl": "LDPE 4 - Lagedichtheidpolyetheen",
+   "nn": "LDPE 4 - polyeten med låg tettleik",
+   "pl": "LDPE 4 - polietylen niskiej gęstości",
+   "pt": "LDPE 4 - Polietileno de baixa densidade",
+   "ru": "LDPE 4 - полиэтилен низкой плотности",
+   "uk": "LDPE 4 - поліетилен низької щільності",
+   "xx": "LDPE"
+  },
+  "parents": [
+   "en:pe-7-polyethylene",
+   "en:plastic"
+  ]
+ },
+ "en:lead-acid-battery": {
+  "name": {
+   "de": "Bleibatterie",
+   "en": "Lead–acid battery",
+   "es": "Batería de plomo-ácido",
+   "fr": "Batterie au plomb",
+   "hu": "Ólom-sav akkumulátor",
+   "it": "Batteria al piombo-acido",
+   "nl": "Lood",
+   "pl": "Akumulator kwasowo-ołowiowy",
+   "pt": "Bateria de chumbo-ácido",
+   "ru": "Свинцово-кислотный аккумулятор",
+   "xx": "08 Lead"
+  }
+ },
+ "en:light-aluminium": {
+  "name": {
+   "bg": "Лек алуминий",
+   "ca": "Alumini lleuger",
+   "cs": "Lehký hliník",
+   "da": "Lette aluminium",
+   "de": "Leichtes Aluminium",
+   "el": "Ελαφρύ αργίλιο",
+   "en": "Light aluminium",
+   "es": "Papel de aluminio",
+   "et": "Kerge alumiinium",
+   "eu": "Aluminio arina",
+   "fi": "Kevyt alumiini",
+   "fr": "Aluminium léger",
+   "ga": "Alúmanam éadrom",
+   "hr": "Lagani aluminij",
+   "hu": "Könnyű alumínium",
+   "is": "Léttur alúminíum",
+   "it": "Alluminio leggero",
+   "lt": "Lengvas aliuminis",
+   "lv": "Viegls alumīnijs",
+   "mt": "Aluminju ring",
+   "nl": "Dun aluminium",
+   "nn": "Lett aluminium",
+   "pl": "Cienkie aluminium",
+   "pt": "Alumínio leve",
+   "ro": "Aluminiu ușor",
+   "ru": "Легкий алюминий",
+   "sk": "Ľahký hliník",
+   "sl": "Lahki aluminij",
+   "sv": "Lätt aluminium",
+   "tr": "Hafif alüminyum",
+   "uk": "Легкий алюміній",
+   "zh": "轻铝"
+  },
+  "parents": [
+   "en:aluminium"
+  ]
+ },
+ "en:light-leaded-glass": {
+  "name": {
+   "de": "Leichtes Bleiglas",
+   "en": "Light Leaded Glass",
+   "es": "Vidrio con un poco de plomo",
+   "fr": "Verre plombé léger",
+   "it": "Vetro al piombo leggero",
+   "nl": "Licht loodglas",
+   "xx": "75 GL"
+  },
+  "parents": [
+   "en:glass"
+  ]
+ },
+ "en:light-sort-glass": {
+  "name": {
+   "de": "Helles Sortierglas",
+   "en": "Light Sort Glass",
+   "es": "Vidrio claro",
+   "fr": "Verre clair",
+   "hu": "Világos válogatott üveg",
+   "it": "Vetro chiaro",
+   "nl": "Lichtgekleurd glas",
+   "xx": "74 GL"
+  },
+  "parents": [
+   "en:glass"
+  ]
+ },
+ "en:linen": {
+  "name": {
+   "bg": "Лен",
+   "de": "Leinen",
+   "en": "Linen",
+   "es": "Lino",
+   "fr": "Lin",
+   "it": "Lino",
+   "nl": "Linnen",
+   "pt": "Linho"
+  },
+  "parents": [
+   "en:textile"
+  ]
+ },
+ "en:lithium-battery": {
+  "name": {
+   "bg": "Литиева батерия",
+   "de": "Lithiumbatterie",
+   "en": "Lithium battery",
+   "fr": "Accumulateur lithium",
+   "hu": "Lítium akkumulátor",
+   "it": "batteria al litio",
+   "nl": "Lithium-ion-accu",
+   "pt": "Bateria de lítio",
+   "xx": "12 Li"
+  }
+ },
+ "en:lldpe-linear-low-density-polyethylene": {
+  "name": {
+   "de": "LLDPE - Lineares Polyethylen niedriger Dichte",
+   "en": "LLDPE - Linear low-density polyethylene",
+   "fr": "LLDPE - Polyéthylène basse densité linéaire",
+   "it": "LLDPE - Polietilene lineare a bassa densità",
+   "nl": "LLDPE - Lineair lagedichtheidpolyethyleen",
+   "nn": "LLDPE - lineært polyeten med låg tettleik",
+   "xx": "LLDPE"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:pe-7-polyethylene",
+   "en:plastic"
+  ]
+ },
+ "en:mdpe-medium-density-polyethylene": {
+  "name": {
+   "de": "MDPE - Polyethylen mittlerer Dichte",
+   "en": "MDPE - Medium-density polyethylene",
+   "fr": "MDPE - Polyéthylène moyenne densité",
+   "nl": "MDPE - Gemiddelde dichtheidspolyethyleen",
+   "xx": "MDPE"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:pe-7-polyethylene",
+   "en:plastic"
+  ]
+ },
+ "en:metal": {
+  "name": {
+   "bg": "Метал",
+   "da": "Metal",
+   "de": "Metall",
+   "en": "Metal",
+   "es": "Metal",
+   "fr": "Métal",
+   "hr": "metale",
+   "hu": "Fém",
+   "it": "Metallo",
+   "nl": "Metaal",
+   "pl": "Metal",
+   "pt": "Metais",
+   "ru": "Металл",
+   "sv": "metall"
+  }
+ },
+ "en:mixed-plastics": {
+  "name": {
+   "ar": "البلاستيك المختلط",
+   "bg": "Смесени пластмаси",
+   "ca": "Plàstics mixtos",
+   "cs": "Směsné plasty",
+   "da": "Blandet plastik",
+   "de": "Mischkunststoffe",
+   "el": "Μικτά πλαστικά",
+   "en": "Mixed plastics",
+   "es": "Plásticos mixtos",
+   "et": "Segaplastid",
+   "eu": "Plastiko mistoak",
+   "fi": "Sekamuovit",
+   "fr": "Plastiques mixtes",
+   "hr": "Miješana plastika",
+   "hu": "Kevert műanyagok",
+   "it": "Plastica mista",
+   "ja": "混合プラスチック",
+   "ko": "혼합 플라스틱",
+   "lt": "Mišrios plastmasės",
+   "lv": "Jauktas plastmasas",
+   "nl": "Gemengde plastics",
+   "pl": "Tworzywa mieszane",
+   "pt": "Plásticos misturados",
+   "ro": "Materiale plastice amestecate",
+   "ru": "Смешанные пластмассы",
+   "sk": "Zmiešané plasty",
+   "sl": "Mešana plastika",
+   "sq": "Plastika të përziera",
+   "sr": "Мешана пластика",
+   "sv": "Blandade plaster",
+   "tr": "Karışık plastikler",
+   "uk": "Змішані пластмаси",
+   "zh": "混合塑料"
+  },
+  "parents": [
+   "en:plastic"
+  ]
+ },
+ "en:n2-azote": {
+  "name": {
+   "de": "N2 - Stickstoff",
+   "en": "N2 - Azote",
+   "es": "N2 - Nitrógeno",
+   "fr": "N2 - Azote",
+   "it": "N2 - Azoto",
+   "nl": "N2 - Stikstof",
+   "pt": "N2 - Nitrogênio",
+   "xx": "N2"
+  },
+  "parents": [
+   "en:gas"
+  ]
+ },
+ "en:naturally-pure-pak": {
+  "name": {
+   "en": "Naturally Pure-Pak",
+   "xx": "Naturally Pure-Pak"
+  },
+  "parents": [
+   "en:pure-pak"
+  ]
+ },
+ "en:nickel-cadmium-battery": {
+  "name": {
+   "bg": "Никел-кадмиева батерия",
+   "de": "Nickel–Cadmium-Batterie",
+   "en": "Nickel–cadmium battery",
+   "es": "Batería de níquel-cadmio",
+   "fr": "Accumulateur nickel-cadmium",
+   "hr": "nikal-kadmijeva baterija",
+   "hu": "Nikkel-kadmium akkumulátor",
+   "it": "Batteria al nichel-cadmio",
+   "nl": "Nikkel-cadmium-accu",
+   "pl": "Akumulator niklowo-kadmowy",
+   "pt": "Bateria de níquel cádmio",
+   "ru": "Никель-кадмиевый аккумулятор",
+   "xx": "10 NiCD"
+  }
+ },
+ "en:nickel-metal-hydride-battery": {
+  "name": {
+   "de": "Nickelmetallhydrid Batterie",
+   "en": "Nickel–metal hydride battery",
+   "fr": "Accumulateur nickel-hydrure métallique",
+   "hr": "nikal-metal-hibridna baterija",
+   "hu": "Nikkel-fémhidrid akkumulátor",
+   "nl": "nikkel-metaalhydride-accu",
+   "pt": "Bateria de níquel-hidreto metálico",
+   "xx": "11 NiMH"
+  }
+ },
+ "en:non-corrugated-cardboard": {
+  "name": {
+   "bg": "Друг картон",
+   "de": "Ungewellte Pappe",
+   "en": "Non-corrugated cardboard",
+   "es": "Cartón no ondulado",
+   "fr": "Carton non ondulé",
+   "hr": "ravna ljepenka",
+   "it": "Cartone non ondulato",
+   "xx": "21 PAP"
+  },
+  "parents": [
+   "en:cardboard"
+  ]
+ },
+ "en:o-7-other-plastics": {
+  "name": {
+   "bg": "O 7 - Други пластмаси",
+   "da": "O 7 - Anden plast",
+   "de": "O 7 - Andere Kunststoffe",
+   "en": "O 7 - Other plastics",
+   "fr": "O 7 - Autres plastiques",
+   "hr": "O 7 - ostali polimerni materijali",
+   "hu": "O 7 - Egyéb műanyag",
+   "it": "O 7 - Altre plastiche",
+   "nl": "O 7 - Andere plastics",
+   "pl": "O 7 - Inne",
+   "pt": "O 7 - Outros plásticos",
+   "ru": "O 7 - Другие пластики",
+   "xx": "07 OTHER"
+  },
+  "parents": [
+   "en:plastic"
+  ]
+ },
+ "en:opp-oriented-polypropylen": {
+  "name": {
+   "de": "OPP - Orientiertes Polypropylen",
+   "en": "OPP - Oriented PolyPropylen",
+   "fr": "OPP - PolyPropylène Orienté",
+   "nl": "OPP - Georienteerde polypropeen",
+   "xx": "OPP"
+  },
+  "parents": [
+   "en:pp-5-polypropylene"
+  ]
+ },
+ "en:other-gas": {
+  "name": {
+   "de": "Andere Gase",
+   "en": "Other gas",
+   "es": "Otros gases",
+   "fr": "Autre gaz",
+   "it": "Altro gas",
+   "nl": "Andere gassen",
+   "pt": "Outros gases",
+   "ro": "Alte gaze",
+   "ru": "Другие газы",
+   "sv": "Andra gaser"
+  },
+  "parents": [
+   "en:gas"
+  ]
+ },
+ "en:other-paper": {
+  "name": {
+   "de": "Sonstiges Papier",
+   "en": "Other paper",
+   "es": "Otros tipos de papel",
+   "fr": "Autres papiers",
+   "hu": "Egyéb papír",
+   "it": "Altra carta",
+   "nl": "Ander karton",
+   "pt": "Outro papel"
+  },
+  "parents": [
+   "en:paper"
+  ]
+ },
+ "en:other-textiles": {
+  "name": {
+   "bg": "Друг текстил",
+   "de": "Andere Textilien",
+   "en": "Other Textiles",
+   "es": "Otros textiles",
+   "fr": "Autres textiles",
+   "hu": "Egyéb textilek",
+   "it": "Altri Tessili",
+   "nl": "Ander textiel",
+   "pt": "Outros têxteis",
+   "ro": "Alte textile",
+   "ru": "Другие текстильные изделия",
+   "sv": "Andra textilier",
+   "xx": "62 TEX"
+  },
+  "parents": [
+   "en:textile"
+  ]
+ },
+ "en:pa-polyamide": {
+  "name": {
+   "ca": "PA - poliamida",
+   "cs": "PA - polyamid",
+   "de": "PA - Polyamide",
+   "el": "PA - Πολυαμίδιο",
+   "en": "PA - Polyamide",
+   "es": "PA - poliamida",
+   "et": "PA - Polüamiid",
+   "fi": "PA - Polyamidi",
+   "fr": "PA - Polyamide",
+   "hr": "PA - poliamid",
+   "hu": "PA - poliamid",
+   "it": "PA - Poliammide",
+   "lt": "PA - Poliamidas",
+   "nb": "PA - polyamid",
+   "nl": "PA - polyamide",
+   "nn": "PA - polyamid",
+   "pl": "PA - poliamidy",
+   "pt": "PA - poliamida",
+   "ro": "PA - Poliamidă",
+   "ru": "PA - Полиамиды",
+   "sk": "PA - Polyamid",
+   "sv": "PA - polyamid",
+   "tr": "PA - Poliamit",
+   "uk": "PA - Поліамід",
+   "xx": "PA"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:plastic"
+  ]
+ },
+ "en:paper": {
+  "name": {
+   "bg": "Хартия",
+   "da": "Papir",
+   "de": "Papier",
+   "en": "Paper",
+   "es": "Papel",
+   "fr": "Papier",
+   "hr": "papir",
+   "hu": "Papír",
+   "it": "Carta",
+   "ja": "紙",
+   "nl": "Papier",
+   "pl": "papier",
+   "pt": "Papel",
+   "ru": "Бумага",
+   "sv": "Papper",
+   "xx": "22 PAP"
+  },
+  "parents": [
+   "en:paper-or-cardboard"
+  ]
+ },
+ "en:paper-and-cardboard-plastic-aluminium": {
+  "name": {
+   "bg": "Хартия и картон / Пластмаси / Алуминий",
+   "de": "Papier und Pappe/Kunststoff/Aluminium",
+   "en": "Paper and cardboard / Plastic / Aluminium",
+   "hr": "papir i karton/plastika/aluminij",
+   "hu": "Papír és karton / Műanyag / Alumínium",
+   "xx": "84 C/X"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:paper-and-fibreboard-aluminium": {
+  "name": {
+   "de": "Papier und Pappe/Aluminium",
+   "en": "Paper and fibreboard/aluminium",
+   "hr": "papir i karton/aluminij",
+   "xx": "82 C/X"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:paper-and-fibreboard-miscellaneous-metals": {
+  "name": {
+   "de": "Papier und Pappe/verschiedene Metalle",
+   "en": "Paper and fibreboard/miscellaneous metals",
+   "hr": "papir i karton/raznovrsni metali",
+   "xx": "80 C/X"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:paper-and-fibreboard-plastic-aluminium-tinplate": {
+  "name": {
+   "de": "Papier und Pappe/Kunststoff/Aluminium/Weißblech",
+   "en": "Paper and fibreboard/plastic/aluminium/tinplate",
+   "hr": "papir i karton/plastika/aluminij/bijeli lim",
+   "xx": "85 C/X"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:paper-and-fibreboard-tinplate": {
+  "name": {
+   "de": "Papier und Pappe/Weißblech",
+   "en": "Paper and fibreboard/tinplate",
+   "hr": "papir i karton/bijeli lim",
+   "xx": "83 C/X"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:paper-and-plastic": {
+  "name": {
+   "bg": "Хартия и картон / пластмаси",
+   "de": "Papier und Pappe/Kunststoff",
+   "en": "Paper and plastic",
+   "fr": "Papier et plastique",
+   "hr": "papir i karton/plastika",
+   "hu": "Papír és műanyag",
+   "it": "Carta e plastica",
+   "nl": "Papier en plastic",
+   "pt": "Papel e plástico",
+   "xx": "81 C/X"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:paper-or-cardboard": {
+  "name": {
+   "en": "Paper or cardboard",
+   "fr": "Papier ou carton",
+   "it": "Carta o cartone",
+   "sv": "Papper eller kartong"
+  }
+ },
+ "en:paper-packaging": {
+  "name": {
+   "en": "Paper packaging",
+   "sv": "Pappersförpackning"
+  },
+  "parents": [
+   "en:paper-or-cardboard"
+  ]
+ },
+ "en:paperboard": {
+  "name": {
+   "en": "Paperboard",
+   "es": "Cartón duro",
+   "fi": "Kartonki",
+   "fr": "Papier cartonné",
+   "hr": "ljepenka",
+   "hu": "Kartonpapír",
+   "it": "Cartoncino",
+   "pt": "Papel cartonado",
+   "xx": "23 PBD"
+  },
+  "parents": [
+   "en:cardboard"
+  ]
+ },
+ "en:pc-polycarbonate": {
+  "name": {
+   "bg": "PC - Поликарбонат",
+   "ca": "PC - policarbonat",
+   "cs": "PC - polykarbonát",
+   "da": "PA - Polykarbonat",
+   "de": "PC - Polycarbonate",
+   "el": "PC - πολυανθρακικό",
+   "en": "PC - Polycarbonate",
+   "et": "PC - Polükarbonaadid",
+   "fi": "PC - Polykarbonaatti",
+   "fr": "PC - Polycarbonate",
+   "hr": "PC - polikarbonati",
+   "hu": "PC - polikarbonát",
+   "is": "PC - Pólýkarbónat",
+   "it": "PC - policarbonato",
+   "lt": "PC - Polikarbonatas",
+   "mk": "PC - поликарбонат",
+   "nb": "PC - polykarbonat",
+   "nl": "PC - polycarbonaat",
+   "nn": "PC - polykarbonat",
+   "pl": "PC - poliwęglany",
+   "pt": "PC - policarbonato",
+   "ro": "PC - Policarbonat",
+   "ru": "PC - поликарбонаты",
+   "sr": "PC - поликарбонат",
+   "sv": "PC - Polykarbonat",
+   "tr": "PC - Polikarbonat",
+   "uk": "PC - полікарбонат",
+   "xx": "PC"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:plastic"
+  ]
+ },
+ "en:pe-7-polyethylene": {
+  "name": {
+   "bg": "PE 7 - Полиетилен",
+   "ca": "PE 7- polietilè",
+   "cs": "PE 7 - polyethylen",
+   "da": "PE 7 - polyethylen",
+   "de": "PE 7 - Polyethylen",
+   "el": "PE 7 - Πολυαιθυλένιο",
+   "en": "PE 7 - Polyethylene",
+   "es": "PE 7 - polietileno",
+   "et": "PE 7 - polüeteen",
+   "fi": "PE 7 - polyeteeni",
+   "fr": "PE 7 - Polyéthylène",
+   "hr": "PE 7 - Polietilen",
+   "hu": "PE 7 - polietilén",
+   "is": "PE 7 - Fjöletýlen",
+   "it": "PE 7 - polietilene",
+   "lt": "PE 7 - Polietilenas",
+   "lv": "PE 7 - Polietilēns",
+   "nb": "PE 7 - polyetenpolyeten",
+   "nl": "PE 7 - polyetheen",
+   "nn": "PE 7 - polyetylen",
+   "pl": "PE 7 - polietylen",
+   "pt": "PE 7 - polietileno",
+   "ro": "PE 7 - Polietilenă",
+   "ru": "PE 7 - полиэтилен",
+   "sk": "PE 7 - Polyetylén",
+   "sl": "PE 7 - Polieten",
+   "sq": "PE 7 - Polietileni",
+   "sv": "PE 7 - polyeten",
+   "uk": "PE 7 - поліетилен",
+   "xx": "PE"
+  },
+  "parents": [
+   "en:plastic"
+  ]
+ },
+ "en:pemet-metalized-polyethylene": {
+  "name": {
+   "de": "PEmet - Metallisiertes Polyethylen",
+   "en": "PEmet - Metalized polyethylene",
+   "es": "PEmet - Polietileno metalizado",
+   "fr": "PEmet - Polyéthylène métallisé",
+   "it": "PEmet - Polietilene metallizzato",
+   "pt": "PEmet - Polietileno metalizado",
+   "xx": "PEmet"
+  },
+  "parents": [
+   "en:composite-material",
+   "en:pe-7-polyethylene"
+  ]
+ },
+ "en:pet-1-polyethylene-terephthalate": {
+  "name": {
+   "bg": "PET 1 - Полиетилентерефталат",
+   "de": "PET 1 - Polyethylenterephtalat",
+   "en": "PET 1 - Polyethylene terephthalate",
+   "fr": "PET 1 - Polytéréphtalate d'éthylène",
+   "hr": "PET 1 - polietilen tereftalat",
+   "hu": "PET 1 - Polietilén-tereftalát",
+   "it": "PET 1 - Polietilene tereftalato",
+   "nl": "PET 1 - Polyethyleentereftalaat",
+   "pt": "PET 1 - Tereftalato de polietileno",
+   "ru": "PET 1 - Полиэтилентерефталат",
+   "xx": "PET"
+  },
+  "parents": [
+   "en:plastic"
+  ]
+ },
+ "en:pet-colored": {
+  "name": {
+   "da": "PET - farvet",
+   "de": "PET - Gefärbtes",
+   "en": "PET - Colored",
+   "es": "PET - coloreado",
+   "fr": "PET - coloré",
+   "hu": "PET - Színezet",
+   "it": "PET - colorato",
+   "nl": "PET - gekleurd",
+   "pt": "PET - colorido",
+   "sv": "PET - färgat"
+  },
+  "parents": [
+   "en:pet-1-polyethylene-terephthalate"
+  ]
+ },
+ "en:pet-opaque": {
+  "name": {
+   "da": "PET - ugennemsigtig",
+   "de": "PET - Undurchsichtiges",
+   "en": "PET - Opaque",
+   "es": "PET - opaco",
+   "fr": "PET - opaque",
+   "it": "PET - opaco",
+   "nl": "PET - ondoorzichtig",
+   "pt": "PET - opaco"
+  },
+  "parents": [
+   "en:pet-1-polyethylene-terephthalate"
+  ]
+ },
+ "en:pet-transparent": {
+  "name": {
+   "da": "PET - gennemsigtig",
+   "de": "PET - Transparentes",
+   "en": "PET - Transparent",
+   "fr": "PET - transparent",
+   "hu": "PET - Átlátszó",
+   "it": "PET - trasparente",
+   "nl": "PET - transparant",
+   "pt": "PET - transparente",
+   "sv": "PET - genomskinlig"
+  },
+  "parents": [
+   "en:pet-1-polyethylene-terephthalate"
+  ]
+ },
+ "en:petg-polyethylene-terephthalate-glycol": {
+  "name": {
+   "en": "PETG- Polyethylene terephthalate glycol",
+   "fr": "PETG - Polyéthylène téréphtalate glycolisé",
+   "xx": "PETG"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:plastic"
+  ]
+ },
+ "en:petmet-metalized-polyethylene-terephthalate": {
+  "name": {
+   "de": "PETmet - Metallisiertes Polyethylenterephthalat",
+   "en": "PETmet - Metalized polyethylene terephthalate",
+   "fr": "PETmet - Polyéthylène téréphtalate métallisé",
+   "xx": "PETmet"
+  },
+  "parents": [
+   "en:composite-material",
+   "en:pet-1-polyethylene-terephthalate"
+  ]
+ },
+ "en:pla-polylactic-acid": {
+  "name": {
+   "ca": "PLA - Acid polilàctic",
+   "cs": "PLA - polylaktid",
+   "da": "PLA - Polymælkesyre",
+   "de": "PLA - Polylactide",
+   "el": "PLA - Πολυγαλακτικό οξύ",
+   "en": "PLA - Polylactic acid",
+   "es": "PLA - poliácido láctico",
+   "fi": "PLA - Polylaktidi",
+   "fr": "PLA - Acide polylactique",
+   "hu": "PLA - Politejsav",
+   "it": "PLA - acido polilattico",
+   "nb": "PLA - Polymelkesyre",
+   "nl": "PLA - Polymelkzuur",
+   "nn": "PLA - polymjølkesyre",
+   "pl": "PLA - Polilaktyd",
+   "pt": "PLA - Ácido poliláctico",
+   "ro": "PLA - Acid polilactic",
+   "ru": "PLA - полимолочная кислота",
+   "sv": "PLA - Polylaktid",
+   "tr": "PLA - Polilaktik asit",
+   "uk": "PLA - полілактид",
+   "xx": "PLA"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:plastic"
+  ]
+ },
+ "en:plastic": {
+  "name": {
+   "ar": "بلاستيك",
+   "be": "пластма́са",
+   "bg": "Пластмаса",
+   "ca": "plàstic",
+   "cs": "umělá hmota",
+   "da": "plastik",
+   "de": "Kunststoff",
+   "el": "πλαστικό",
+   "en": "Plastic",
+   "es": "Plástico",
+   "et": "plast",
+   "fi": "Muovi",
+   "fr": "Plastique",
+   "he": "פלסטיק",
+   "hr": "plastika",
+   "hu": "Műanyag",
+   "is": "plast",
+   "it": "Plastica",
+   "ja": "プラスチック",
+   "ko": "플라스틱",
+   "lt": "plastikas",
+   "lv": "plastmasa",
+   "mk": "пластика",
+   "nl": "Plastic",
+   "no": "plast",
+   "pl": "Plastik",
+   "pt": "Plástico",
+   "ru": "Пластик",
+   "sk": "plast",
+   "sl": "plastika",
+   "sv": "plast",
+   "tr": "plastik",
+   "uk": "пластма́са",
+   "zh": "塑料"
+  }
+ },
+ "en:plastic-aluminium": {
+  "name": {
+   "de": "Kunststoff/Aluminium",
+   "en": "Plastic/aluminium",
+   "hr": "plastika/aluminij",
+   "xx": "90 C/ALU"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:plastic-miscellaneous-metals": {
+  "name": {
+   "de": "Kunststoff/verschiedene Metalle",
+   "en": "Plastic/miscellaneous metals",
+   "hr": "plastika/raznovrsni metali",
+   "xx": "92 C/X"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:plastic-steelplate": {
+  "name": {
+   "de": "Kunststoff/Weißblech",
+   "en": "Plastic/steelplate",
+   "hr": "plastika/bijeli lim",
+   "xx": "91 C/FE"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:pmma-poly-methyl-methacrylate": {
+  "name": {
+   "bg": "PMMA - Полиметилметакрилат",
+   "ca": "PMMA - polimetilmetacrilat",
+   "cs": "PMMA - Polymethylmethakrylát",
+   "da": "PMMA - Akryl",
+   "de": "PMMA - Polymethylmethacrylat",
+   "el": "PMMA - Πολυμεθακρυλικό μεθύλιο",
+   "en": "PMMA - Poly(methyl methacrylate)",
+   "es": "PMMA - polimetilmetacrilato",
+   "et": "PMMA - polümetüülmetakrülaat",
+   "fi": "PMMA - akryyli",
+   "fr": "PMMA - Polyméthacrylate de méthyle",
+   "ga": "PMMA - Peirspéacs",
+   "hu": "PMMA - poli-metil-metakrilát",
+   "it": "PMMA - polimetilmetacrilato",
+   "nb": "PMMA - Polymetylmetakrylat",
+   "nl": "PMMA - polymethylmethacrylaat",
+   "nn": "PMMA - polymetylmetakrylat",
+   "pl": "PMMA - polimetakrylan metylu",
+   "pt": "PMMA - acrílico",
+   "ru": "PMMA - органическое стекло",
+   "sk": "PMMA - Polymetylmetakrylát",
+   "sl": "PMMA - polimetilmetaakrilat",
+   "sr": "PMMA - плексиглас",
+   "sv": "PMMA - polymetylmetakrylat",
+   "tr": "PMMA - Pleksi",
+   "uk": "PMMA - органічне скло",
+   "xx": "PMMA"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:plastic"
+  ]
+ },
+ "en:porcelain": {
+  "name": {
+   "af": "porselein",
+   "bg": "порцелан",
+   "da": "porcelæn",
+   "de": "Porzellan",
+   "en": "porcelain",
+   "eo": "porcelano",
+   "es": "porcelana",
+   "fr": "Porcelaine",
+   "it": "porcellana",
+   "nl": "porselein",
+   "no": "porselen",
+   "pl": "porcelán",
+   "pt": "porcelana",
+   "sv": "porslin"
+  }
+ },
+ "en:pp-5-polypropylene": {
+  "name": {
+   "bg": "PP 5 - Полипропилен",
+   "ca": "PP 5 - polipropilè",
+   "cs": "pp 5 - polypropylen",
+   "da": "PP 5 - polypropylen",
+   "de": "PP 5 - Polypropylen",
+   "el": "PP 5 - Πολυπροπυλένιο",
+   "en": "PP 5 - Polypropylene",
+   "et": "PP 5 - polüpropeen",
+   "fi": "PP 5 - polypropeeni",
+   "fr": "PP 5 - Polypropylène",
+   "ga": "PP 5 - Polaprópailéin",
+   "hr": "PP 5 - polipropilen",
+   "hu": "PP 5 - Polipropilén",
+   "is": "PP 5 - Fjölprópýlen",
+   "it": "PP 5 - Polipropilene",
+   "lt": "PP 5 - Polipropilenas",
+   "nb": "PP 5 - polypropen",
+   "nl": "PP 5 - Polypropeen",
+   "nn": "PP 5 - polypropylen",
+   "pl": "PP 5 - polipropylen",
+   "pt": "PP 5 - Polipropileno",
+   "ro": "PP 5 - Polipropilenă",
+   "ru": "ПП 5 - Полипропилен",
+   "sk": "PP 5 - Polypropylén",
+   "sr": "PP 5 - полипропилен",
+   "sv": "PP 5 - polypropen",
+   "tr": "PP 5 - Polipropilen",
+   "uk": "PP 5 - поліпропілен",
+   "xx": "PP"
+  },
+  "parents": [
+   "en:plastic"
+  ]
+ },
+ "en:ps-6-polystyrene": {
+  "name": {
+   "bg": "PS 6 - Полистирен",
+   "bs": "PS 6 - Polistiren",
+   "ca": "PS 6 - poliestirè",
+   "cs": "PS 6 - polystyren",
+   "da": "PS 6 - Polystyren",
+   "de": "PS 6 - Polystyrol",
+   "el": "PS 6 - Πολυστυρένιο",
+   "en": "PS 6 - Polystyrene",
+   "et": "PS 6 - Polüstürool",
+   "fi": "PS 6 - Polystyreeni",
+   "fr": "PS 6 - Polystyrène",
+   "ga": "PS 6 - Polaistiréin",
+   "hr": "PS 6 - polistiren",
+   "hu": "PS 6 - Polisztirol",
+   "it": "PS 6 - Polistirene",
+   "lt": "PS 6 - Polistirenas",
+   "lv": "PS 6 - polistirols",
+   "mk": "PS 6 - Полистирен",
+   "nb": "PS 6 - polystyren",
+   "nl": "PS 6 - Polystyreen",
+   "nn": "PS 6 - polystyren",
+   "pl": "PS 6 - polistyren",
+   "pt": "PS 6 - Poliestireno",
+   "ro": "PS 6 - Polistiren",
+   "ru": "PS 6 - Полистирол",
+   "sk": "PS 6 - Polystyrén",
+   "sl": "PS 6 - Polistiren",
+   "sv": "PS 6 - polystyren",
+   "tr": "PS 6 - polistiren",
+   "uk": "PS 6 - полістирол",
+   "xx": "PS"
+  },
+  "parents": [
+   "en:plastic"
+  ]
+ },
+ "en:pu-pur-polyurethane": {
+  "name": {
+   "bg": "PU/PUR - Полиуретан",
+   "ca": "PU/PUR - Poliuretà",
+   "cs": "PU/PUR - Polyuretan",
+   "da": "PU/PUR - Polyurethan",
+   "de": "PU/PUR - Polyurethan",
+   "el": "PU/PUR - Πολυουρεθάνη",
+   "en": "PU/PUR - Polyurethane",
+   "es": "PU/PUR - Poliuretano",
+   "et": "PU/PUR - Polüuretaan",
+   "fi": "PU/PUR - Polyuretaani",
+   "hr": "PU/PUR - Poliuretan",
+   "hu": "PU/PUR - Poliuretán",
+   "is": "PU/PUR - Pólýúretan",
+   "it": "PU/PUR - Poliuretano",
+   "lt": "PU/PUR - Poliuretanas",
+   "mk": "PU/PUR - полиуретан",
+   "nb": "PU/PUR - Polyuretan",
+   "nl": "PU/PUR - Polyurethaan",
+   "nn": "PU/PUR - Polyuretan",
+   "pl": "PU/PUR - Poliuretan",
+   "pt": "PU/PUR - Poliuretano",
+   "ro": "PU/PUR - Poliuretan",
+   "ru": "PU/PUR - полиуретан",
+   "sk": "PU/PUR - Polyuretán",
+   "sr": "PU/PUR - полиуретан",
+   "sv": "PU/PUR - Polyuretan",
+   "tr": "PU/PUR - Poliüretan",
+   "uk": "PU/PUR - поліуретан",
+   "xx": "PU/PUR"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:plastic"
+  ]
+ },
+ "en:pure-pak": {
+  "name": {
+   "en": "Pure-Pak",
+   "xx": "Pure-Pak"
+  },
+  "parents": [
+   "en:composite-material",
+   "en:elopak"
+  ]
+ },
+ "en:pure-pak-classic": {
+  "name": {
+   "en": "Pure-Pak Classic",
+   "xx": "Pure-Pak Classic"
+  },
+  "parents": [
+   "en:pure-pak"
+  ]
+ },
+ "en:pure-pak-esense": {
+  "name": {
+   "en": "Pure-Pak eSense",
+   "xx": "Pure-Pak eSense"
+  },
+  "parents": [
+   "en:pure-pak"
+  ]
+ },
+ "en:pure-pak-imagine": {
+  "name": {
+   "en": "Pure-Pak Imagine",
+   "xx": "Pure-Pak Imagine"
+  },
+  "parents": [
+   "en:pure-pak"
+  ]
+ },
+ "en:pure-pak-sense": {
+  "name": {
+   "en": "Pure-Pak Sense",
+   "xx": "Pure-Pak Sense"
+  },
+  "parents": [
+   "en:pure-pak"
+  ]
+ },
+ "en:pure-pak-sense-aseptic": {
+  "name": {
+   "en": "Pure-Pak Sense Aseptic",
+   "xx": "Pure-Pak Sense Aseptic"
+  },
+  "parents": [
+   "en:pure-pak"
+  ]
+ },
+ "en:pvc-3-polyvinyl-chloride": {
+  "name": {
+   "bg": "PVC 3 - Поливинил хлорид",
+   "ca": "PVC 3 - clorur de polivinil",
+   "cs": "PVC 3 - polyvinylchlorid",
+   "da": "PVC 3 - Polyvinylchlorid",
+   "de": "PVC 3 - Polyvinylchlorid",
+   "el": "PVC 3 - Πολυβινυλοχλωρίδιο",
+   "en": "PVC 3 - Polyvinyl chloride",
+   "es": "PVC 3 - cloruro de polivinilo",
+   "et": "PVC 3 - polüvinüülkloriid",
+   "fi": "PVC 3 - polyvinyylikloridi",
+   "fr": "PVC 3 - Polychlorure de vinyle",
+   "ga": "PVC 3 - Polaiviniolclóiríd",
+   "hr": "PVC 3 - polivinil-klorid",
+   "hu": "PVC 3 - Polivinil-klorid",
+   "it": "PVC 3 - Cloruro di polivinile",
+   "lt": "PVC 3 - Polivinilchloridas",
+   "nl": "PVC 3 - Polyvinylchloride",
+   "pt": "PVC 3 - Policloreto de vinil",
+   "ro": "PVC 3 - Policlorură de vinil",
+   "ru": "ПВХ 3 - Поливинилхлорид",
+   "sk": "PVC 3 - Polyvinylchlorid",
+   "sl": "PVC 3 - Polivinil klorid",
+   "sv": "PVC 3 - polyvinylklorid",
+   "xx": "PVC"
+  },
+  "parents": [
+   "en:plastic"
+  ]
+ },
+ "en:pvdc-7-polyvinylidene-chloride": {
+  "name": {
+   "de": "PVDC 7 - Polyvinylidenchlorid",
+   "en": "PVDC 7 - Polyvinylidene chloride",
+   "es": "PVDC 7 - cloruro de polivinilideno",
+   "fr": "PVDC 7 - Chlorure de polyvinylidène",
+   "hu": "PVDC 7 - polivinilidén-klorid",
+   "it": "PVDC 7 - Polivinildencloruro",
+   "nl": "PVDC 7 - Polyvinylidene chloride",
+   "nn": "PVDC 7 - polyvinylidenklorid",
+   "ru": "PVDC 7 - поливинилиденхлорид",
+   "sv": "PVDC 7 - Polyvinylidenklorid",
+   "xx": "PVDC"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:plastic"
+  ]
+ },
+ "en:recyclable-material": {
+  "name": {
+   "ar": "مادة قابلة للتدوير",
+   "bg": "Рециклируем материал",
+   "ca": "Material reciclable",
+   "da": "Genanvendeligt materiale",
+   "de": "wiederverwertbares Material",
+   "en": "Recyclable material",
+   "es": "material reciclable",
+   "et": "Töödeldav materjal",
+   "eu": "Material birziklagarri",
+   "fi": "Kierrätettävä materiaali",
+   "fr": "Matériau recyclable",
+   "hr": "Reciklabilni materijal",
+   "hu": "Újrahasznosítható anyag",
+   "is": "Endurvinnanlegt efni",
+   "it": "Materiale riciclabile",
+   "ja": "リサイクル可能な材料",
+   "ko": "재활용 가능한 재료",
+   "lt": "Perdirbamas medžiaga",
+   "lv": "Pārstrādājams materiāls",
+   "mk": "Рециклирање на материјали",
+   "nl": "Recycleerbaar materiaal",
+   "no": "Resirkulerbart materiale",
+   "pl": "Materiał nadający się do recyklingu",
+   "pt": "Material reciclável",
+   "ro": "Material reciclabil",
+   "ru": "Перерабатываемый материал",
+   "sk": "Recyklovateľný materiál",
+   "sl": "Reciklabilni material",
+   "sq": "Materiali i riciklueshëm",
+   "sr": "Материјал за рециклирање",
+   "sv": "Återvinningsbart material",
+   "tr": "Geri dönüştürülebilir malzeme",
+   "uk": "Перероблюваний матеріал"
+  }
+ },
+ "en:recyclable-metals": {
+  "name": {
+   "bg": "Рециклируеми метали",
+   "de": "Wiederverwertbare Metalle",
+   "en": "Recyclable Metals",
+   "es": "Metales Reciclables",
+   "fr": "Métaux recyclables",
+   "hu": "Újrahasznosítható fémek",
+   "it": "Metalli riciclabili",
+   "nl": "Recyclebaar metaal",
+   "pl": "Metal do recyclingu",
+   "pt": "Metais recicláveis",
+   "ru": "Перерабатываемые металлы",
+   "sv": "Återvinningsbara metaller",
+   "uk": "Перероблювані метали",
+   "zh": "可回收金属"
+  },
+  "parents": [
+   "en:metal"
+  ]
+ },
+ "en:recyclable-plastic": {
+  "name": {
+   "bg": "Рециклируема пластмаса",
+   "ca": "Plàstic reciclable",
+   "da": "Genanvendelig plastik",
+   "de": "wiederverwertbarer Kunststoff",
+   "en": "Recyclable plastic",
+   "es": "Plástico reciclable",
+   "et": "Töödeldav plastik",
+   "eu": "Plastiko birziklagarria",
+   "fi": "Kierrätettävä muovi",
+   "fr": "Plastique recyclable",
+   "hr": "Reciklabilna plastika",
+   "hu": "Újrahasznosítható műanyag",
+   "it": "Plastica riciclabile",
+   "ja": "プラマーク",
+   "lv": "Pārstrādājama plastmasa",
+   "mk": "Рециклирана пластика",
+   "nl": "Recycleerbaar plastic",
+   "nn": "Resirkulerbar plast",
+   "pl": "Plastik nadający się do recyklingu",
+   "pt": "Plástico reciclável",
+   "ro": "Plastic reciclabil",
+   "ru": "Перерабатываемый пластик",
+   "sk": "Recyklovateľný plast",
+   "sl": "Reciklabilna plastika",
+   "sq": "Plastika riciklueshme",
+   "sr": "Reciklabilna plastika",
+   "sv": "Återvinningsbar plast",
+   "tr": "Geri dönüştürülebilir plastik",
+   "uk": "Перероблюваний пластик",
+   "zh": "可回收塑料"
+  },
+  "parents": [
+   "en:plastic",
+   "en:recyclable-material"
+  ]
+ },
+ "en:recycled-aluminium": {
+  "name": {
+   "en": "recycled aluminium",
+   "sv": "återvunnen aluminium"
+  },
+  "parents": [
+   "en:aluminium",
+   "en:recycled-material"
+  ]
+ },
+ "en:recycled-cardboard": {
+  "name": {
+   "da": "Genbrugspap",
+   "de": "Recycelte Pappe",
+   "en": "Recycled cardboard",
+   "es": "Cartón reciclado",
+   "fr": "Carton recyclé",
+   "hu": "Újrahasznosított hullámpapír",
+   "it": "Cartone riciclato",
+   "nl": "Recycled karton",
+   "pt": "Cartão reciclado"
+  },
+  "parents": [
+   "en:cardboard",
+   "en:recycled-material"
+  ]
+ },
+ "en:recycled-material": {
+  "name": {
+   "ar": "مادة معاد تدويرها",
+   "bg": "Рециклиран материал",
+   "ca": "Material reciclat",
+   "cs": "Recyklovaný materiál",
+   "da": "Genbrugt materiale",
+   "de": "wiederverwertetes Material",
+   "el": "Ανακυκλωμένο υλικό",
+   "en": "Recycled material",
+   "es": "Material reciclado",
+   "et": "Taaskasutatud materjal",
+   "eu": "Material birziklatua",
+   "fi": "Kierrätetty materiaali",
+   "fr": "Matériau recyclé",
+   "hr": "Reciklirani materijal",
+   "hu": "Újrahasznosított anyag",
+   "it": "Materiale riciclato",
+   "ja": "リサイクル材",
+   "ko": "재활용 재료",
+   "lt": "Perdirbta medžiaga",
+   "lv": "Pārstrādāts materiāls",
+   "nl": "Hergebruikt materiaal",
+   "pl": "Materiał z recyklingu",
+   "pt": "Material reciclado",
+   "ro": "Material reciclat",
+   "ru": "Переработанный материал",
+   "sk": "Recyklovaný materiál",
+   "sl": "Recikliran material",
+   "sq": "Material i ricikluar",
+   "sv": "Återvunnet material",
+   "tr": "Geri dönüştürülmüş malzeme",
+   "uk": "Перероблений матеріал",
+   "zh": "回收材料"
+  }
+ },
+ "en:recycled-paper": {
+  "name": {
+   "bg": "Рециклирана хартия",
+   "da": "Genbrugspapir",
+   "de": "Recyceltes Papier",
+   "en": "Recycled paper",
+   "es": "Papel reciclado",
+   "fr": "Papier recyclé",
+   "hu": "Újrahasznosított papír",
+   "it": "Carta riciclata",
+   "nl": "Recycled papier",
+   "pt": "Papel reciclado"
+  },
+  "parents": [
+   "en:paper"
+  ]
+ },
+ "en:recycled-plastic": {
+  "name": {
+   "ar": "البلاستيك المعاد تدويره",
+   "bg": "Рециклирана пластмаса",
+   "ca": "Plàstic reciclat",
+   "cs": "Recyklovaný plast",
+   "da": "Genbrugt plastik",
+   "de": "wiederverwerteter Kunststoff",
+   "el": "Ανακυκλωμένο πλαστικό",
+   "en": "Recycled plastic",
+   "es": "Plástico reciclado",
+   "et": "Taaskasutatud plast",
+   "fi": "Kierrätetty muovi",
+   "fr": "Plastique recyclé",
+   "hr": "Reciklirana plastika",
+   "hu": "Újrahasznosított műanyag",
+   "it": "Plastica riciclata",
+   "ja": "リサイクルプラスチック",
+   "ko": "재활용 플라스틱",
+   "lt": "Perdirbtas plastikas",
+   "lv": "Pārstrādāta plastmasa",
+   "nl": "Hergebruikt plastic",
+   "pl": "Plastik z recyklingu",
+   "pt": "Plástico reciclado",
+   "ro": "Plastic reciclat",
+   "ru": "Переработанный пластик",
+   "sk": "Recyklovaný plast",
+   "sl": "Reciklirana plastika",
+   "sq": "Plastikë e ricikluar",
+   "sv": "Återvunnen plast",
+   "tr": "Geri dönüştürülmüş plastik",
+   "uk": "Перероблений пластик",
+   "zh": "再生塑料"
+  },
+  "parents": [
+   "en:plastic",
+   "en:recycled-material"
+  ]
+ },
+ "en:rpet-recycled-polyethylene-terephthalate": {
+  "name": {
+   "ar": "rPET - بولي إيثيلين تيرفثالات معاد تدويره",
+   "bg": "rPET - Рециклиран полиетилен терефталат",
+   "ca": "rPET - Tereftalat de polietilè reciclat",
+   "cs": "rPET - Recyklovaný polyethylentereftalát",
+   "da": "rPET - Genanvendt polyethylenterephthalat",
+   "de": "rPET - Wiederverwertetes PET",
+   "el": "rPET - Ανακυκλωμένο τερεφθαλικό πολυαιθυλένιο",
+   "en": "rPET - Recycled Polyethylene terephthalate",
+   "es": "rPET - Tereftalato de polietileno reciclado",
+   "et": "rPET - Taaskasutatud polüetüleentereftalaat",
+   "fi": "rPET - Kierrätetty polyeteenitereftalaatti",
+   "fr": "rPET - Polytéréphtalate d'éthylène recyclé",
+   "hu": "rPET - Újrahasznosított PET",
+   "it": "rPET - Polietilene tereftalato riciclato",
+   "ja": "rPET - リサイクルポリエチレンテレフタレート",
+   "ko": "rPET - 재활용 폴리에틸렌 테레프탈레이트",
+   "lt": "rPET - Perdirbtas polietileno tereftalatas",
+   "lv": "rPET - Pārstrādāts polietilēntereftalāts",
+   "nl": "rPET - Hergebruikt Polyethyleentereftalaat",
+   "pl": "rPET - Politereftalan etylenu z recyklingu",
+   "pt": "rPET - Tereftalato de polietileno reciclado",
+   "ro": "rPET - Polietilen tereftalat reciclat",
+   "ru": "rPET - Переработанный полиэтилентерефталат",
+   "sk": "rPET - Recyklovaný polyetyléntereftalát",
+   "sl": "rPET - Recikliran polietilen tereftalat",
+   "sv": "rPET - Återvunnen polyetentereftalat",
+   "tr": "rPET - Geri dönüştürülmüş Polietilen tereftalat",
+   "uk": "rPET - Перероблений поліетилентерефталат",
+   "xx": "rPET",
+   "zh": "rPET - 回收聚对苯二甲酸乙二醇酯"
+  },
+  "parents": [
+   "en:pet-1-polyethylene-terephthalate",
+   "en:recycled-plastic"
+  ]
+ },
+ "en:rpet-transparent": {
+  "name": {
+   "ar": "rPET - شفاف",
+   "bg": "rPET - Прозрачен",
+   "ca": "rPET - Transparent",
+   "cs": "rPET - Transparentní",
+   "da": "rPET - gennemsigtig",
+   "de": "rPET - Transparentes",
+   "el": "rPET - Διαφανές",
+   "en": "rPET - Transparent",
+   "es": "rPET - Transparente",
+   "et": "rPET - Läbipaistev",
+   "fi": "rPET - Läpinäkyvä",
+   "fr": "rPET - transparent",
+   "hr": "rPET - Transparentan",
+   "hu": "rPET - Átlátszó",
+   "it": "rPET - trasparente",
+   "ja": "rPET - 透明",
+   "ko": "rPET - 투명한",
+   "lt": "rPET - Skaidrus",
+   "lv": "rPET - Caurspīdīgs",
+   "nl": "rPET - transparant",
+   "pl": "rPET - Przezroczysty",
+   "pt": "rPET - transparente",
+   "ro": "rPET - Transparent",
+   "ru": "rPET - Прозрачный",
+   "sk": "rPET - Priehľadný",
+   "sl": "rPET - Transparenten",
+   "sq": "rPET - Transparent",
+   "sv": "rPET - genomskinlig",
+   "tr": "rPET - Şeffaf",
+   "uk": "rPET - Прозорий",
+   "zh": "rPET - 透明"
+  },
+  "parents": [
+   "en:rpet-recycled-polyethylene-terephthalate"
+  ]
+ },
+ "en:rubber": {
+  "name": {
+   "bg": "Каучук",
+   "de": "Gummi",
+   "en": "Rubber",
+   "es": "Goma",
+   "fr": "Caoutchouc",
+   "it": "Gomma",
+   "ja": "ゴム",
+   "nl": "Rubber",
+   "pl": "Guma",
+   "pt": "Borracha",
+   "ru": "Резина",
+   "zh": "橡胶"
+  }
+ },
+ "en:sandstone": {
+  "name": {
+   "ca": "gres",
+   "cs": "pískovec",
+   "da": "sandsten",
+   "de": "Sandstein",
+   "el": "ψαμμίτης",
+   "en": "sandstone",
+   "eo": "grejso",
+   "es": "arenisca",
+   "fi": "hiekkakivi",
+   "fr": "Grès",
+   "io": "greso",
+   "it": "gres",
+   "nl": "zandsteen",
+   "po": "piaskowiec",
+   "ru": "песчаник",
+   "sv": "sandsten"
+  }
+ },
+ "en:sig": {
+  "name": {
+   "en": "SIG",
+   "xx": "SIG"
+  }
+ },
+ "en:sig-combibloc": {
+  "name": {
+   "en": "SIG Combibloc",
+   "xx": "SIG Combibloc"
+  },
+  "parents": [
+   "en:sig"
+  ]
+ },
+ "en:silicone": {
+  "name": {
+   "de": "Silikon",
+   "en": "Silicone",
+   "es": "Silicona",
+   "fr": "Silicone",
+   "it": "Silicone",
+   "nl": "Silicone",
+   "pt": "Silicone",
+   "sv": "Silikon",
+   "xx": "Silicone"
+  }
+ },
+ "en:silver-mixed-silver-backed-glass": {
+  "name": {
+   "de": "Silber gemischt/Glas mit Silber hinterlegt",
+   "en": "Silver Mixed/Silver Backed Glass",
+   "xx": "78 GL"
+  },
+  "parents": [
+   "en:glass"
+  ]
+ },
+ "en:silver-oxide-battery": {
+  "name": {
+   "de": "Silberoxidbatterie",
+   "en": "Silver-oxide battery",
+   "hr": "srebrov oksid baterija",
+   "hu": "Ezüst-oxid akkumulátor",
+   "nl": "Zilveroxide batterij",
+   "pt": "Bateria de óxido de prata",
+   "xx": "13 SO(Z)"
+  }
+ },
+ "en:soft-plastic": {
+  "name": {
+   "da": "blød plast",
+   "en": "soft plastic",
+   "fi": "pehmeä muovi",
+   "sv": "mjukplast"
+  },
+  "parents": [
+   "en:plastic"
+  ]
+ },
+ "en:steel": {
+  "name": {
+   "bg": "Стомана",
+   "da": "Stål",
+   "de": "Stahl",
+   "en": "Steel",
+   "es": "Acero",
+   "fr": "Acier",
+   "hr": "čelik",
+   "hu": "Acél",
+   "it": "Acciaio",
+   "ja": "スチール",
+   "nl": "IJzer",
+   "pl": "Żelazo",
+   "pt": "Aço",
+   "ru": "Сталь",
+   "xx": "40 FE"
+  },
+  "parents": [
+   "en:metal"
+  ]
+ },
+ "en:tetra-brik": {
+  "name": {
+   "en": "Tetra Brik",
+   "xx": "Tetra Brik"
+  },
+  "parents": [
+   "en:tetra-pak"
+  ]
+ },
+ "en:tetra-brik-aseptic": {
+  "name": {
+   "en": "Tetra Brik Aseptic",
+   "xx": "Tetra Brik Aseptic"
+  },
+  "parents": [
+   "en:tetra-pak"
+  ]
+ },
+ "en:tetra-classic-aseptic": {
+  "name": {
+   "en": "Tetra Classic Aseptic",
+   "xx": "Tetra Classic Aseptic"
+  },
+  "parents": [
+   "en:tetra-pak"
+  ]
+ },
+ "en:tetra-fino-aseptic": {
+  "name": {
+   "en": "Tetra Fino Aseptic",
+   "xx": "Tetra Fino Aseptic"
+  },
+  "parents": [
+   "en:tetra-pak"
+  ]
+ },
+ "en:tetra-gemina-aseptic": {
+  "name": {
+   "en": "Tetra Gemina Aseptic",
+   "xx": "Tetra Gemina Aseptic"
+  },
+  "parents": [
+   "en:tetra-pak"
+  ]
+ },
+ "en:tetra-pak": {
+  "name": {
+   "en": "Tetra Pak",
+   "fr": "Tetra Pak",
+   "it": "Tetra pak",
+   "xx": "Tetra Pak"
+  },
+  "parents": [
+   "en:composite-material"
+  ]
+ },
+ "en:tetra-prisma-aseptic": {
+  "name": {
+   "en": "Tetra Prisma Aseptic",
+   "xx": "Tetra Prisma Aseptic"
+  },
+  "parents": [
+   "en:tetra-pak"
+  ]
+ },
+ "en:tetra-recart": {
+  "name": {
+   "en": "Tetra Recart",
+   "xx": "Tetra Recart"
+  },
+  "parents": [
+   "en:tetra-pak"
+  ]
+ },
+ "en:tetra-rex": {
+  "name": {
+   "en": "Tetra Rex",
+   "xx": "Tetra Rex"
+  },
+  "parents": [
+   "en:tetra-pak"
+  ]
+ },
+ "en:tetra-stelo-aseptic": {
+  "name": {
+   "en": "Tetra Stelo Aseptic",
+   "xx": "Tetra Stelo Aseptic"
+  },
+  "parents": [
+   "en:tetra-pak"
+  ]
+ },
+ "en:tetra-top": {
+  "name": {
+   "en": "Tetra Top",
+   "xx": "Tetra Top"
+  },
+  "parents": [
+   "en:tetra-pak"
+  ]
+ },
+ "en:tetra-wedge-aseptic": {
+  "name": {
+   "en": "Tetra Wedge Aseptic",
+   "xx": "Tetra Wedge Aseptic"
+  },
+  "parents": [
+   "en:tetra-pak"
+  ]
+ },
+ "en:textile": {
+  "name": {
+   "af": "Tekstiel",
+   "ar": "نسيج",
+   "az": "Tekstil",
+   "be": "Тэкстыль",
+   "bg": "Текстил",
+   "br": "Tekstil",
+   "ca": "Tèxtil",
+   "cs": "Textil",
+   "da": "Tekstil",
+   "de": "Textil",
+   "el": "Υφαντουργία",
+   "en": "Textile",
+   "eo": "Tekstilaĵo",
+   "es": "Textil",
+   "et": "Tekstiil",
+   "eu": "Textila",
+   "fa": "متن",
+   "fi": "Tekstiili",
+   "fo": "Tekstil",
+   "fr": "Textile",
+   "fy": "Tekstyl",
+   "he": "טקסטיל",
+   "hr": "Tekstil",
+   "hu": "Textil",
+   "id": "Tekstil",
+   "io": "Tekstilo",
+   "it": "Tessile",
+   "lt": "Tekstilė",
+   "lv": "Tekstils",
+   "mk": "Текстил",
+   "mt": "Tekstil",
+   "nb": "Tekstil",
+   "nl": "Textiel",
+   "nn": "Tekstil",
+   "oc": "Textil",
+   "pl": "Tekstylia",
+   "pt": "Têxtil",
+   "ro": "Textil",
+   "ru": "Текстиль",
+   "sk": "Textil",
+   "sl": "Tekstil",
+   "sq": "Tekstil",
+   "sr": "Текстил",
+   "sv": "Textil",
+   "sw": "Kitambaa",
+   "tr": "Tekstil",
+   "uk": "Текстиль",
+   "xx": "52 FOR"
+  }
+ },
+ "en:tin-plated-steel": {
+  "name": {
+   "ca": "Llauna",
+   "de": "Weißblech",
+   "en": "Tin-plated steel",
+   "es": "hojalata",
+   "eu": "Latorri",
+   "fr": "Fer blanc",
+   "hu": "fehérbádog",
+   "it": "latta",
+   "nl": "blik",
+   "pt": "folha de flandres",
+   "ru": "жесть",
+   "sv": "Bleck",
+   "tr": "Teneke",
+   "uk": "Бляха"
+  },
+  "parents": [
+   "en:steel"
+  ]
+ },
+ "en:uncoloured-glass": {
+  "name": {
+   "da": "ufarvet glas",
+   "en": "Uncoloured Glass",
+   "fr": "Verre incolore",
+   "sv": "ofärgat glas"
+  },
+  "parents": [
+   "en:glass"
+  ]
+ },
+ "en:unknown": {
+  "name": {
+   "ar": "غير معروف",
+   "bg": "Неизвестно",
+   "cs": "Neznámý",
+   "da": "Ukendt",
+   "de": "Unbekannt",
+   "el": "Άγνωστο",
+   "en": "Unknown",
+   "es": "Desconocido",
+   "et": "Tundmatu",
+   "fi": "Tuntematon",
+   "fr": "Inconnu",
+   "hu": "Ismeretlen",
+   "it": "Sconosciuto",
+   "ja": "不明",
+   "ko": "알 수 없음",
+   "lt": "Nežinomas",
+   "lv": "Nezināms",
+   "nl": "Onbekend",
+   "pl": "Nieznany",
+   "pt": "Desconhecido",
+   "ro": "Necunoscut",
+   "ru": "Неизвестно",
+   "sk": "Neznámy",
+   "sl": "Neznano",
+   "sv": "Okänd",
+   "tr": "Bilinmeyen",
+   "uk": "Невідомо",
+   "zh": "未知"
+  }
+ },
+ "en:washi-tape": {
+  "name": {
+   "de": "Washi-Tape",
+   "en": "washi tape",
+   "es": "cinta washi",
+   "fr": "ruban washi",
+   "it": "nastro washi",
+   "ja": "和紙テープ",
+   "nl": "washi-tape",
+   "pt": "fita washi",
+   "ru": "восковая лента"
+  },
+  "parents": [
+   "en:adhesive-tape"
+  ]
+ },
+ "en:wax": {
+  "name": {
+   "bg": "Восък",
+   "ca": "cera",
+   "cs": "vosk",
+   "da": "Voks",
+   "de": "Wachs",
+   "el": "κερί",
+   "en": "Wax",
+   "es": "cera",
+   "et": "Vahad",
+   "fi": "vaha",
+   "fr": "Cire",
+   "ga": "Céir",
+   "hr": "vosak",
+   "hu": "Viasz",
+   "is": "Vax",
+   "it": "cera",
+   "lt": "Vaškas",
+   "lv": "vaski",
+   "mk": "восок",
+   "nb": "voks",
+   "nl": "Was",
+   "nn": "voks",
+   "pl": "woski",
+   "pt": "cera",
+   "ro": "ceară",
+   "ru": "воск",
+   "sk": "Vosk",
+   "sl": "vosek",
+   "sr": "vosak",
+   "sv": "vax",
+   "uk": "віск"
+  }
+ },
+ "en:wood": {
+  "name": {
+   "bg": "Дървесина",
+   "ca": "fusta",
+   "cs": "dřevo",
+   "da": "Træ",
+   "de": "Holz",
+   "el": "ξύλο",
+   "en": "Wood",
+   "es": "madera",
+   "et": "puit",
+   "eu": "zur",
+   "fi": "puuaines",
+   "fr": "Bois",
+   "ga": "adhmad",
+   "hr": "drvo",
+   "hu": "Fa",
+   "is": "Viður",
+   "it": "Legno",
+   "lt": "Mediena",
+   "lv": "koksne",
+   "mk": "дрво",
+   "mt": "injam",
+   "nb": "treverk",
+   "nl": "Hout",
+   "nn": "trevirke",
+   "pl": "Drewno",
+   "pt": "Madeira",
+   "ro": "lemn",
+   "ru": "Древесина",
+   "sk": "drevo",
+   "sl": "les",
+   "sq": "dru",
+   "sr": "дрво",
+   "sv": "trä",
+   "tr": "tahta",
+   "uk": "деревина",
+   "xx": "50 FOR"
+  }
+ },
+ "en:zinc-carbon-battery": {
+  "name": {
+   "de": "Zink–Kohle-Batterie",
+   "en": "Zinc–carbon battery",
+   "hr": "cink-ugljik baterija",
+   "hu": "Cink-szén akkumulátor",
+   "nl": "Zink-koolstofcel",
+   "pt": "Bateria de zinco-carbono",
+   "xx": "14 CZ"
+  }
+ },
+ "fr:transparent": {
+  "name": {
+   "fr": "transparent"
+  }
+ },
+ "it:materiale": {
+  "name": {
+   "it": "materiale"
+  }
+ },
+ "it:mista": {
+  "name": {
+   "it": "mista"
+  }
+ },
+ "it:riciclabili": {
+  "name": {
+   "it": "riciclabili"
+  }
+ },
+ "it:riciclato": {
+  "name": {
+   "it": "riciclato"
+  }
+ },
+ "xx:80-c-alu": {
+  "name": {
+   "xx": "80 C/ALU"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-miscellaneous-metals"
+  ]
+ },
+ "xx:80-c-fe": {
+  "name": {
+   "xx": "80 C/FE"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-miscellaneous-metals"
+  ]
+ },
+ "xx:81-c-abs": {
+  "name": {
+   "xx": "81 C/ABS"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-cpp": {
+  "name": {
+   "xx": "81 C/CPP"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-evoh": {
+  "name": {
+   "xx": "81 C/EVOH"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-hdpe": {
+  "name": {
+   "xx": "81 C/HDPE"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-ldpe": {
+  "name": {
+   "xx": "81 C/LDPE"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-lldpe": {
+  "name": {
+   "xx": "81 C/LLDPE"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-mdpe": {
+  "name": {
+   "xx": "81 C/MDPE"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-opp": {
+  "name": {
+   "xx": "81 C/OPP"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-pa": {
+  "name": {
+   "xx": "81 C/PA"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-pap": {
+  "name": {
+   "xx": "81 C/PAP"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-pc": {
+  "name": {
+   "xx": "81 C/PC"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-pemet": {
+  "name": {
+   "xx": "81 C/PEmet"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-pet": {
+  "name": {
+   "xx": "81 C/PET"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-petmet": {
+  "name": {
+   "xx": "81 C/PETmet"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-pla": {
+  "name": {
+   "xx": "81 C/PLA"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-pp": {
+  "name": {
+   "xx": "81 C/PP"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-pvc": {
+  "name": {
+   "xx": "81 C/PVC"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-pvdc": {
+  "name": {
+   "xx": "81 C/PVDC"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:81-c-rpet": {
+  "name": {
+   "xx": "81 C/rPET"
+  },
+  "parents": [
+   "en:paper-and-plastic"
+  ]
+ },
+ "xx:82-c-alu": {
+  "name": {
+   "xx": "82 C/ALU"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-aluminium"
+  ]
+ },
+ "xx:82-c-pap": {
+  "name": {
+   "xx": "82 C/PAP"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-aluminium"
+  ]
+ },
+ "xx:83-c-fe": {
+  "name": {
+   "xx": "83 C/FE"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-tinplate"
+  ]
+ },
+ "xx:83-c-pap": {
+  "name": {
+   "xx": "83 C/PAP"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-tinplate"
+  ]
+ },
+ "xx:84-c-abs": {
+  "name": {
+   "xx": "84 C/ABS"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-alu": {
+  "name": {
+   "xx": "84 C/ALU"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-cpp": {
+  "name": {
+   "xx": "84 C/CPP"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-evoh": {
+  "name": {
+   "xx": "84 C/EVOH"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-hdpe": {
+  "name": {
+   "xx": "84 C/HDPE"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-ldpe": {
+  "name": {
+   "xx": "84 C/LDPE"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-lldpe": {
+  "name": {
+   "xx": "84 C/LLDPE"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-mdpe": {
+  "name": {
+   "xx": "84 C/MDPE"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-opp": {
+  "name": {
+   "xx": "84 C/OPP"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-pa": {
+  "name": {
+   "xx": "84 C/PA"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-pap": {
+  "name": {
+   "xx": "84 C/PAP"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-pc": {
+  "name": {
+   "xx": "84 C/PC"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-pemet": {
+  "name": {
+   "xx": "84 C/PEmet"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-pet": {
+  "name": {
+   "xx": "84 C/PET"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-petmet": {
+  "name": {
+   "xx": "84 C/PETmet"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-pla": {
+  "name": {
+   "xx": "84 C/PLA"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-pp": {
+  "name": {
+   "xx": "84 C/PP"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-pvc": {
+  "name": {
+   "xx": "84 C/PVC"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-pvdc": {
+  "name": {
+   "xx": "84 C/PVDC"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:84-c-rpet": {
+  "name": {
+   "xx": "84 C/rPET"
+  },
+  "parents": [
+   "en:paper-and-cardboard-plastic-aluminium"
+  ]
+ },
+ "xx:85-c-abs": {
+  "name": {
+   "xx": "85 C/ABS"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-alu": {
+  "name": {
+   "xx": "85 C/ALU"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-cpp": {
+  "name": {
+   "xx": "85 C/CPP"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-evoh": {
+  "name": {
+   "xx": "85 C/EVOH"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-fe": {
+  "name": {
+   "xx": "85 C/FE"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-hdpe": {
+  "name": {
+   "xx": "85 C/HDPE"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-ldpe": {
+  "name": {
+   "xx": "85 C/LDPE"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-lldpe": {
+  "name": {
+   "xx": "85 C/LLDPE"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-mdpe": {
+  "name": {
+   "xx": "85 C/MDPE"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-opp": {
+  "name": {
+   "xx": "85 C/OPP"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-pa": {
+  "name": {
+   "xx": "85 C/PA"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-pap": {
+  "name": {
+   "xx": "85 C/PAP"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-pc": {
+  "name": {
+   "xx": "85 C/PC"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-pemet": {
+  "name": {
+   "xx": "85 C/PEmet"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-pet": {
+  "name": {
+   "xx": "85 C/PET"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-petmet": {
+  "name": {
+   "xx": "85 C/PETmet"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-pla": {
+  "name": {
+   "xx": "85 C/PLA"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-pp": {
+  "name": {
+   "xx": "85 C/PP"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-pvc": {
+  "name": {
+   "xx": "85 C/PVC"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-pvdc": {
+  "name": {
+   "xx": "85 C/PVDC"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:85-c-rpet": {
+  "name": {
+   "xx": "85 C/rPET"
+  },
+  "parents": [
+   "en:paper-and-fibreboard-plastic-aluminium-tinplate"
+  ]
+ },
+ "xx:90-c-abs": {
+  "name": {
+   "xx": "90 C/ABS"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-cpp": {
+  "name": {
+   "xx": "90 C/CPP"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-evoh": {
+  "name": {
+   "xx": "90 C/EVOH"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-hdpe": {
+  "name": {
+   "xx": "90 C/HDPE"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-ldpe": {
+  "name": {
+   "xx": "90 C/LDPE"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-lldpe": {
+  "name": {
+   "xx": "90 C/LLDPE"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-mdpe": {
+  "name": {
+   "xx": "90 C/MDPE"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-opp": {
+  "name": {
+   "xx": "90 C/OPP"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-pa": {
+  "name": {
+   "xx": "90 C/PA"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-pc": {
+  "name": {
+   "xx": "90 C/PC"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-pemet": {
+  "name": {
+   "xx": "90 C/PEmet"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-pet": {
+  "name": {
+   "xx": "90 C/PET"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-petmet": {
+  "name": {
+   "xx": "90 C/PETmet"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-pla": {
+  "name": {
+   "xx": "90 C/PLA"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-pp": {
+  "name": {
+   "xx": "90 C/PP"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-pvc": {
+  "name": {
+   "xx": "90 C/PVC"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-pvdc": {
+  "name": {
+   "xx": "90 C/PVDC"
+  },
+  "parents": [
+   "en:plastic-aluminium"
+  ]
+ },
+ "xx:90-c-rpet": {
+  "name": {
+   "xx": "90 C/rPET"
+  },
+  "parents": [
+   "xx:90-c-pet"
+  ]
+ },
+ "xx:91-c-abs": {
+  "name": {
+   "xx": "91 C/ABS"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-cpp": {
+  "name": {
+   "xx": "91 C/CPP"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-evoh": {
+  "name": {
+   "xx": "91 C/EVOH"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-hdpe": {
+  "name": {
+   "xx": "91 C/HDPE"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-ldpe": {
+  "name": {
+   "xx": "91 C/LDPE"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-lldpe": {
+  "name": {
+   "xx": "91 C/LLDPE"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-mdpe": {
+  "name": {
+   "xx": "91 C/MDPE"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-opp": {
+  "name": {
+   "xx": "91 C/OPP"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-pa": {
+  "name": {
+   "xx": "91 C/PA"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-pc": {
+  "name": {
+   "xx": "91 C/PC"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-pemet": {
+  "name": {
+   "xx": "91 C/PEmet"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-pet": {
+  "name": {
+   "xx": "91 C/PET"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-petmet": {
+  "name": {
+   "xx": "91 C/PETmet"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-pla": {
+  "name": {
+   "xx": "91 C/PLA"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-pp": {
+  "name": {
+   "xx": "91 C/PP"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-pvc": {
+  "name": {
+   "xx": "91 C/PVC"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-pvdc": {
+  "name": {
+   "xx": "91 C/PVDC"
+  },
+  "parents": [
+   "en:plastic-steelplate"
+  ]
+ },
+ "xx:91-c-rpet": {
+  "name": {
+   "xx": "91 C/rPET"
+  },
+  "parents": [
+   "xx:91-c-pet"
+  ]
+ },
+ "xx:92-c-abs": {
+  "name": {
+   "xx": "92 C/ABS"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-alu": {
+  "name": {
+   "xx": "92 C/ALU"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-cpp": {
+  "name": {
+   "xx": "92 C/CPP"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-evoh": {
+  "name": {
+   "xx": "92 C/EVOH"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-fe": {
+  "name": {
+   "xx": "92 C/FE"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-hdpe": {
+  "name": {
+   "xx": "92 C/HDPE"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-ldpe": {
+  "name": {
+   "xx": "92 C/LDPE"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-lldpe": {
+  "name": {
+   "xx": "92 C/LLDPE"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-mdpe": {
+  "name": {
+   "xx": "92 C/MDPE"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-opp": {
+  "name": {
+   "xx": "92 C/OPP"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-pa": {
+  "name": {
+   "xx": "92 C/PA"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-pc": {
+  "name": {
+   "xx": "92 C/PC"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-pemet": {
+  "name": {
+   "xx": "92 C/PEmet"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-pet": {
+  "name": {
+   "xx": "92 C/PET"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-petmet": {
+  "name": {
+   "xx": "92 C/PETmet"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-pla": {
+  "name": {
+   "xx": "92 C/PLA"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-pp": {
+  "name": {
+   "xx": "92 C/PP"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-pvc": {
+  "name": {
+   "xx": "92 C/PVC"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-pvdc": {
+  "name": {
+   "xx": "92 C/PVDC"
+  },
+  "parents": [
+   "en:plastic-miscellaneous-metals"
+  ]
+ },
+ "xx:92-c-rpet": {
+  "name": {
+   "xx": "92 C/rPET"
+  },
+  "parents": [
+   "xx:92-c-pet"
+  ]
+ },
+ "xx:95-c-abs": {
+  "name": {
+   "xx": "95 C/ABS"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-bopp": {
+  "name": {
+   "xx": "95 C/BOPP"
+  },
+  "parents": [
+   "xx:95-c-pp"
+  ]
+ },
+ "xx:95-c-cpp": {
+  "name": {
+   "xx": "95 C/CPP"
+  },
+  "parents": [
+   "xx:95-c-pp"
+  ]
+ },
+ "xx:95-c-evoh": {
+  "name": {
+   "xx": "95 C/EVOH"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-hdpe": {
+  "name": {
+   "xx": "95 C/HDPE"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-ldpe": {
+  "name": {
+   "xx": "95 C/LDPE"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-lldpe": {
+  "name": {
+   "xx": "95 C/LLDPE"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-mdpe": {
+  "name": {
+   "xx": "95 C/MDPE"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-opp": {
+  "name": {
+   "xx": "95 C/OPP"
+  },
+  "parents": [
+   "xx:95-c-pp"
+  ]
+ },
+ "xx:95-c-pa": {
+  "name": {
+   "xx": "95 C/PA"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-pc": {
+  "name": {
+   "xx": "95 C/PC"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-pemet": {
+  "name": {
+   "xx": "95 C/PEmet"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-pet": {
+  "name": {
+   "xx": "95 C/PET"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-petmet": {
+  "name": {
+   "xx": "95 C/PETmet"
+  },
+  "parents": [
+   "xx:95-c-pet"
+  ]
+ },
+ "xx:95-c-pla": {
+  "name": {
+   "xx": "95 C/PLA"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-pp": {
+  "name": {
+   "xx": "95 C/PP"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-pvc": {
+  "name": {
+   "xx": "95 C/PVC"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-pvdc": {
+  "name": {
+   "xx": "95 C/PVDC"
+  },
+  "parents": [
+   "en:glass-plastic"
+  ]
+ },
+ "xx:95-c-rpet": {
+  "name": {
+   "xx": "95 C/rPET"
+  },
+  "parents": [
+   "xx:95-c-pet"
+  ]
+ },
+ "xx:96-c-alu": {
+  "name": {
+   "xx": "96 C/ALU"
+  },
+  "parents": [
+   "en:glass-aluminium"
+  ]
+ },
+ "xx:97-c-fe": {
+  "name": {
+   "xx": "97 C/FE"
+  },
+  "parents": [
+   "en:glass-tinplate"
+  ]
+ },
+ "xx:98-c-alu": {
+  "name": {
+   "xx": "98 C/ALU"
+  },
+  "parents": [
+   "en:glass-miscellaneous-metals"
+  ]
+ },
+ "xx:98-c-fe": {
+  "name": {
+   "xx": "98 C/FE"
+  },
+  "parents": [
+   "en:glass-miscellaneous-metals"
+  ]
+ },
+ "xx:eva": {
+  "name": {
+   "es": "EVA - Etileno-acetato de vinilo",
+   "fr": "EVA - Éthylène-acétate de vinyle",
+   "it": "EVA - Etilene-acetato di vinile",
+   "nl": "EVA - Etheen-acetaatvinyl",
+   "pt": "EVA - Etileno-acetato de vinilo",
+   "xx": "EVA"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:plastic"
+  ]
+ },
+ "xx:evoh": {
+  "name": {
+   "de": "EVOH - Ethylen-Vinylalkohol-Copolymer",
+   "en": "EVOH - Ethylene vinyl alcohol",
+   "fr": "EVOH - Ethylène alcool vinylique",
+   "xx": "EVOH"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:plastic"
+  ]
+ },
+ "xx:pan": {
+  "name": {
+   "es": "PAN - Poliacrilonitrilo",
+   "fr": "PAN - Polyacrylonitrile",
+   "it": "PAN - Poliacrilonitrile",
+   "nl": "PAN - Polyacrylonitril",
+   "pt": "PAN - Poliacrilonitrilo",
+   "xx": "PAN"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:plastic"
+  ]
+ },
+ "xx:pef": {
+  "name": {
+   "fr": "PEF - Polyethylène Furanoate",
+   "xx": "PEF"
+  },
+  "parents": [
+   "en:o-7-other-plastics",
+   "en:plastic"
+  ]
+ },
+ "xx:recycling-code": {
+  "name": {
+   "xx": "Recycling Code"
+  }
+ }
+}

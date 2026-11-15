@@ -44,6 +44,31 @@ struct TaxonomyID: Hashable, Sendable, Codable, ExpressibleByStringLiteral, Cust
         return ([first.capitalized] + words.dropFirst()).joined(separator: " ")
     }
 
+    /// The language prefix, or `en` when the value never carried one.
+    var language: String {
+        guard let colon = value.firstIndex(of: ":") else { return "en" }
+        return String(value[value.startIndex..<colon])
+    }
+
+    /// The entry reduced to a bare comparable term: accents folded away, every run of
+    /// punctuation collapsed to a single hyphen.
+    ///
+    /// Contributed data is not tidy. Open Food Facts stores a term it cannot match as
+    /// the contributor typed it, so the same material arrives as `es:Plástico`,
+    /// `fr:PP 5 - Polypropylène` or `de:Wickler`. Normalising alone leaves
+    /// `fr:pp-5---polypropylène`, which matches nothing. Folding makes all of them
+    /// comparable, and it has to agree exactly with `fold()` in
+    /// Tools/generate-taxonomy.py, which is what builds the synonym table.
+    var folded: String {
+        let stripped = slug.folding(
+            options: [.diacriticInsensitive, .caseInsensitive, .widthInsensitive],
+            locale: Locale(identifier: "en_US_POSIX")
+        )
+        return stripped
+            .split(whereSeparator: { !($0.isLetter || $0.isNumber) })
+            .joined(separator: "-")
+    }
+
     private static func normalize(_ raw: String) -> String {
         var text = raw.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         text = text.replacingOccurrences(of: "_", with: "-")

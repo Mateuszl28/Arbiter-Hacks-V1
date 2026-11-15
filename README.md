@@ -104,7 +104,7 @@ So the engineering effort went into a **rules layer**, not a model. Cities are p
 
 ```json
 {
-  "materials": ["en:pet-polyethylene-terephthalate"],
+  "materials": ["en:pet-1-polyethylene-terephthalate"],
   "shapes": ["en:bottle"],
   "stream": "pfand",
   "instruction": "Take it back to any shop that sells drinks and get 25 cents.",
@@ -116,7 +116,12 @@ Adding a city is a data change, not a code change.
 
 ### Resolution is hierarchical
 
-Materials come from the Open Food Facts taxonomy, which is a tree. A rule written for
+Materials come from the Open Food Facts taxonomy, which is read rather than retyped —
+`Tools/generate-taxonomy.py` turns a vendored snapshot of the published taxonomy into
+the tree the app uses, and `./Tools/verify-taxonomy.sh` fails if anything in it cannot be
+placed. That arrangement exists because the alternative was tried: the tree used to be
+hand written, and **28 of the taxonomy's 310 material entries resolved**. It is now 310.
+A rule written for
 `en:plastic` automatically covers `en:rpet-recycled-polyethylene-terephthalate`, because
 resolution walks the ancestry nearest-first. A city only writes a specific rule where it
 genuinely differs.
@@ -142,8 +147,8 @@ A label is not an explanation. Tapping **Why?** on any part lays out every step 
 engine took:
 
 ```
-Material     PP plastic            en:pp-polypropylene
-Part         Cap                   en:cap
+Material     PP plastic            en:pp-5-polypropylene
+Part         Cap                   en:lid-or-cap
 Matched as   Plastic               no rule for pp plastic specifically,
                                    so the broader rule applies
 Source       BSR Berliner Stadtreinigung — compiled 2026-11-14
@@ -348,7 +353,7 @@ that cannot fail is decoration.
 
 ## Verification
 
-Six suites, all runnable in seconds on any Mac, none needing a simulator:
+Seven suites, all runnable in seconds on any Mac, none needing a simulator:
 
 ```bash
 ./Tools/verify-rules.sh       # engine logic against the real city JSON
@@ -357,6 +362,7 @@ Six suites, all runnable in seconds on any Mac, none needing a simulator:
 ./Tools/verify-guess.sh       # photo-label to packaging-part mapping
 ./Tools/verify-store.sh       # an older build's history still opens, intact and writable
 ./Tools/verify-regression.sh  # 950 known cases still resolve exactly as recorded
+./Tools/verify-taxonomy.sh    # the material tree against the published taxonomy it comes from
 ./Tools/verify-api.sh         # live Open Food Facts calls (needs a network; not in the build)
 ```
 
@@ -390,6 +396,15 @@ prevents. It pairs with the conflict detector, which catches the same edit from 
 end: the regression lab shows the blast radius, the conflict detector names the cause
 ("rule 2 is unreachable for Plastic: rule 1 matches it first"). Both were verified by
 deliberately breaking a ruleset and watching them fire.
+
+`verify-taxonomy.sh` is the suite that should have existed first. It asserts that every
+one of the 310 published material entries and 125 shape entries resolves to something the
+app can reason about, and — the assertion that was missing — that **no hand written
+identifier points at something the published taxonomy does not contain**. It checks the
+city rulesets too, which is how it found that Tokyo's plastic-packaging rule was keyed to
+`en:cap`, a shape identifier no scan can ever produce. It reports the 45 entries that
+reach no rule-bearing concept by name (batteries, textiles, gases, brand names) rather
+than rounding them away.
 
 `verify-guess.sh` checks the photo-label mapping, including that token matching is used
 rather than substring matching — otherwise *candle*, *candy*, *canyon* and *toucan* all
@@ -499,15 +514,31 @@ Database License.
 
   It also, for a long time, got the commonest materials in existence wrong. Open Food
   Facts writes the recycling code into the identifier — `en:pet-1-polyethylene-terephthalate`,
-  `en:pp-5-polypropylene` — and the taxonomy only knew the uncoded spellings. **Every one
-  of the seven standard plastics resolved to nothing and fell into residual waste**, with
-  a confident explanation attached. A resin-coded PET bottle in Berlin was worth 25 cents
-  and the app said to bin it.
+  `en:pp-5-polypropylene` — and the hand written tree only knew uncoded spellings that
+  nobody upstream uses. **Every one of the seven standard plastics resolved to nothing and
+  fell into residual waste**, with a confident explanation attached. A PET bottle in Berlin
+  is worth 25 cents and the app said to bin it.
 
   The live API suite had the evidence in its own output and printed it as a *note* rather
   than failing. It now fails when a live material is one the taxonomy cannot place, which
   is a BinMate bug rather than a gap in a city's rules — and that distinction is the whole
   reason it went unnoticed.
+
+  The first fix was worse than the bug in one respect: it added two dozen more invented
+  spellings — `en:pap-22-paper`, `en:alu-41-aluminium`, `en:gl-70-clear-glass` — guessed
+  by pattern from the few real ones. Downloading the published taxonomy and comparing
+  showed that **none of those exist**, that 16 of the app's 37 identifiers were inventions,
+  and that 31 alias keys could never match anything. The tree is now generated from the
+  source, the inventions that remain are declared as extensions in the code, and
+  `verify-taxonomy.sh` fails on any new one.
+
+  Contributed data is also not in English. A sample of one real category came back with
+  **7% of packaging identifiers carrying another language** — `es:Plástico`,
+  `fr:PP 5 - Polypropylène`, `es:Bandeja` — all of which went to residual waste. The
+  taxonomy names its entries in 34 languages, so 1,841 material and 1,243 shape synonyms
+  are generated from it; a term naming two different materials is dropped rather than
+  guessed. A Spanish plastic bottle now lands in the same bin as an English one, which is
+  asserted in three cities.
 
   | Barcode | What the API returns | Reality |
   |---|---|---|

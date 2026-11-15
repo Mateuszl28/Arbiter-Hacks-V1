@@ -56,21 +56,21 @@
   ],
   "rules": [
     {
-      "materials": ["en:pet-polyethylene-terephthalate"],
+      "materials": ["en:pet-1-polyethylene-terephthalate"],
       "shapes": ["en:bottle"],
       "stream": "crv",
       "instruction": "Labelled CA REDEMPTION VALUE? A recycling centre pays you 5 cents for it.",
       "caution": "The blue bin also accepts it — you just forfeit the nickel."
     },
     {
-      "materials": ["en:aluminium", "en:steel", "en:tinplate"],
+      "materials": ["en:aluminium", "en:steel", "en:tin-plated-steel"],
       "shapes": ["en:can"],
       "stream": "crv",
       "instruction": "Drinks cans carry CRV. 5 cents each at a recycling centre.",
       "caution": null
     },
     {
-      "materials": ["en:ldpe-low-density-polyethylene", "en:hdpe-high-density-polyethylene"],
+      "materials": ["en:ldpe-4-low-density-polyethylene", "en:hdpe-2-high-density-polyethylene"],
       "shapes": ["en:film", "en:bag", "en:wrapper"],
       "stream": "landfill",
       "instruction": "Black bin, or take it to a grocery-store film drop-off.",
@@ -83,7 +83,7 @@
       "caution": null
     },
     {
-      "materials": ["en:pla-polylactic-acid", "en:bio-based-plastic"],
+      "materials": ["en:pla-polylactic-acid", "en:biobased-plastic"],
       "stream": "compost",
       "instruction": "Certified compostable plastic belongs in the green bin here.",
       "caution": "Only if it carries a BPI compostable certification mark."
@@ -95,7 +95,7 @@
       "caution": null
     },
     {
-      "materials": ["en:composite"],
+      "materials": ["en:composite-material"],
       "stream": "recycle",
       "instruction": "Cartons are accepted in the blue bin. Flatten them.",
       "caution": null

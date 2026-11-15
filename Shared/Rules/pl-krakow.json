@@ -74,7 +74,7 @@
       "caution": null
     },
     {
-      "materials": ["en:composite"],
+      "materials": ["en:composite-material"],
       "stream": "plastic-metal",
       "instruction": "Flatten the carton and put it with plastics and metals.",
       "caution": "Cartons are not paper in Poland — the blue bin is the wrong bin."
@@ -92,7 +92,7 @@
       "caution": "No window glass, mirrors, ceramics or light bulbs."
     },
     {
-      "materials": ["en:pla-polylactic-acid", "en:bio-based-plastic"],
+      "materials": ["en:pla-polylactic-acid", "en:biobased-plastic"],
       "stream": "mixed",
       "instruction": "Put it in mixed waste.",
       "caution": "Compostable plastic is not accepted in the brown bio bin here, despite the label."
